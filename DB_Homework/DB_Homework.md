@@ -4,11 +4,11 @@ SELECT *
 FROM
     (select COUNT(*) AS MEN
        from member
-      where SUBSTR(mem_regno2,0,1) = 1 OR SUBSTR(mem_regno2,0,1) =3
+      where SUBSTR(mem_regno2,1,1) = '1' OR SUBSTR(mem_regno2,1,1) ='3'
     ),
     (select COUNT(*) AS WOMEN
        from member
-      where SUBSTR(mem_regno2,0,1) = 2 OR SUBSTR(mem_regno2,0,1) =4
+      where SUBSTR(mem_regno2,1,1) = '2' OR SUBSTR(mem_regno2,1,1) ='4'
     )
 
 ```
@@ -143,7 +143,7 @@ from (
         inner join cart on (mem_id = cart_member)
         inner join prod on (cart_prod = prod_id)
         inner join lprod on (prod_lgu = lprod_gu)
-    where SUBSTR(mem_regno2,0,1) = 1 OR SUBSTR(mem_regno2,0,1) =3
+    where SUBSTR(mem_regno2,0,1) = '1' OR SUBSTR(mem_regno2,0,1) ='3'
     group by cart_prod, prod_name, lprod_nm
     order by sum(cart_qty) desc)
 where rownum=1 
@@ -155,7 +155,7 @@ from (
         inner join cart on (mem_id = cart_member)
         inner join prod on (cart_prod = prod_id)
         inner join lprod on (prod_lgu = lprod_gu)
-    where SUBSTR(mem_regno2,0,1) = 2 OR SUBSTR(mem_regno2,0,1) =4
+    where SUBSTR(mem_regno2,0,1) = '2' OR SUBSTR(mem_regno2,0,1) ='4'
     group by cart_prod, prod_name, lprod_nm
     order by sum(cart_qty) desc)
 where rownum=1
