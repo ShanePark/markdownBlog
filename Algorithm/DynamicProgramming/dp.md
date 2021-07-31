@@ -4,7 +4,7 @@
 
 https://programmers.co.kr/learn/courses/30/lessons/12913
 
-![image-20210731191647775](dp.assets/image-20210731191647775.png)
+![image-20210731191647775](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/DynamicProgramming/dp.assets/image-20210731191647775.png)
 
 > 자세한 문제는 programmers를 통해 확인 해 주세요.
 
@@ -162,7 +162,7 @@ for 반복문 안의 조건에 들어가는 숫자 번째까지의 피보나치 
 
 프로그램을 실행하면
 
-![image-20210731211437156](dp.assets/image-20210731211437156.png)
+![image-20210731211437156](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/DynamicProgramming/dp.assets/image-20210731211437156.png)
 
 
 
@@ -223,7 +223,7 @@ public class FibonacciDP {
 }
 ```
 
-![image-20210731212853227](dp.assets/image-20210731212853227.png)
+![image-20210731212853227](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/DynamicProgramming/dp.assets/image-20210731212853227.png)
 
 물론 그 계산 결과는 똑같습니다만, 그 과정에 큰 차이가 있습니다. 한번 했단 계산은 다시 하지 않습니다.
 
@@ -268,7 +268,7 @@ public class Fibonacci {
 }
 ```
 
-![image-20210731213326186](dp.assets/image-20210731213326186.png)
+![image-20210731213326186](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/DynamicProgramming/dp.assets/image-20210731213326186.png)
 
 CPU가 바쁘게 연산하고 있습니다.
 
@@ -276,9 +276,9 @@ CPU가 바쁘게 연산하고 있습니다.
 
 
 
-![image-20210731213505513](dp.assets/image-20210731213505513.png)
+![image-20210731213505513](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/DynamicProgramming/dp.assets/image-20210731213505513.png)
 
-<img src="dp.assets/image-20210731213519244.png" alt="image-20210731213519244" style="zoom:200%;" />
+<img src="https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/DynamicProgramming/dp.assets/image-20210731213519244.png" alt="image-20210731213519244" style="zoom:200%;" />
 
 
 
@@ -321,13 +321,13 @@ public class FibonacciDP {
 }
 ```
 
-<img src="dp.assets/image-20210731213841482.png" alt="image-20210731213841482" style="zoom:200%;" />
+<img src="https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/DynamicProgramming/dp.assets/image-20210731213841482.png" alt="image-20210731213841482" style="zoom:200%;" />
 
 1초만에 결과가 나왔습니다. 허무하게도 비교가 무의미할 정도의 차이입니다. CPU 사용량을 체크할 것도 없이 바로 종료가 되어버렸습니다. 50번째가 문제가 아니라 90번째가 넘어가도 실행하는 즉시 결과를 알려 주었습니다.
 
 
 
-![image-20210731214024253](dp.assets/image-20210731214024253.png)
+![image-20210731214024253](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/DynamicProgramming/dp.assets/image-20210731214024253.png)
 
 
 
@@ -412,7 +412,7 @@ land를 두번째 행 (i=1) 부터 하나씩 내려가며 자신의 윗 행에�
 
 
 
-![image-20210731220256644](dp.assets/image-20210731220256644.png)
+![image-20210731220256644](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/DynamicProgramming/dp.assets/image-20210731220256644.png)
 
 
 
