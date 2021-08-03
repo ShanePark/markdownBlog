@@ -441,6 +441,10 @@ public class SortController2 {
 
 심지어 정렬된 배열을 QuickSort 방식으로 정렬하려고 하니 StackOverflow가 발생했습니다.
 
+재귀호출을 하다 보니 스택관리가 필요합니다. 심지어 최악의 경우에 걸렸기 때문에 끝도 없이 쌓여버렸네요.
+
+
+
 아주 기본적인 Quick Sort는 결국 실전에 사용하기에 부족합니다. java에서도 그렇기 때문에 아까 위에서의 예처럼 Quick Sort가 Dual-pivot Quick Sort보다 조금의 성능에서 우위에 있었다고 해서 사용할 수는 없었을 겁니다.
 
 ​	
