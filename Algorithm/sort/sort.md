@@ -12,9 +12,9 @@
 
 > 결론부터 말하자면 안전한 길을 택했습니다. 솔직히 버블정렬의 쉬운 난이도에도 불구하고 항상 실제로 코드를 구동해보고 테스트 하기 전 까지는 맞는지 문제가 있는지 확신이 서지 않았습니다.
 
+​	
 
-
-
+​	
 
 ### 과거로 돌아가, 학원에서 초급 자바시간에 정렬에 대해 배우는 기회가 있었습니다.
 
@@ -22,7 +22,7 @@
 
 >  지금 배운 정렬들은 외울 필요가 없고 그냥 한번 알고 지나가면 됩니다. 어차피 성능이 좋은 정렬도 아니고 필드에서는 쓰지 않아요.
 
-
+​	
 
 선택, 버블, 삽입정렬을 알려주시고 코드를 간단하게 작성해서 정렬이 되는걸 보여주실때는 정말 신기하고 해당 정렬들에 대해 대단하다는 생각을 하고 있었는데 선생님께서 말씀하신 "성능이 좋지 않은 정렬" 이라는 말에 의문을 품었습니다. 또한 좋지 않은 정렬이라고 하시는데 그렇다면 왜 좋은 정렬은 알려주시지 않는지도 궁금했습니다. 
 
@@ -34,7 +34,7 @@
 
 ![image-20210803112701129](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803112701129.png)
 
-
+​	
 
 ### 사실 정렬 알고리즘의 성능 순위는 상황에 따라 다릅니다
 
@@ -52,11 +52,11 @@
 
 이렇게 작성하고 보니 저 때 적어둔 정렬 순위가 어느 정도 맞긴 한 것 같습니다.
 
-
+​	
 
 한번씩 코드를 작성해보며 정렬 코드가 제대로 되었는지 확인하고, 그 성능도 확인 해 보도록 하겠습니다.
 
-
+​	
 
 ```java
 package shane.study.sort;
@@ -107,17 +107,17 @@ public class SortController {
 }
 ```
 
-
+​	
 
 테스트용 컨트롤러를 작성 해 보았습니다. Sorter 인터페이스를 구현한 정렬 클래스들을 만들 예정이고 첫번째로는 새로 구현한 코드로 정렬해보며 그 시간을 측정하고, 두번째로는 Arrays 클래스에 있는 sort 메서드를 이용해 정렬하며 그 시간을 측정합니다.
 
-
+​	
 
 ![image-20210803115046492](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803115046492.png)
 
 > Arrays 클래스의 sort 메서드는 Dual- Pivot QuickSort 방식으로 정렬하네요.
 
-
+​	
 
 각각 정렬을 마친 후에는 제가 작성한 정렬 알고리즘에 에러가 없는지 확인 하기 위해 각 두개의 배열을 비교 합니다. 알고리즘 에러 체크는 잘 정렬된 배열과 비교해도 되고, 아니면 
 
@@ -132,7 +132,7 @@ for(int i=0; i<SIZE-1; i++){
 
 이런식으로 배열 한개로도 검증할 수도 있습니다. 
 
-
+​	
 
 ## Bubble Sort (버블정렬)
 
@@ -174,7 +174,7 @@ public class BubbleSort implements Sorter {
 
 조금 더 오래 걸리는 수준이 아니고 그냥 버블정렬을 사용하고 싶은 마음이 쏙 사라지는 성능입니다.
 
-
+​	
 
 ```java
 package shane.study.sort;
@@ -205,17 +205,17 @@ public class Bubble2 implements Sorter {
 }
 ```
 
-
+​	
 
 중간에 정렬이 되었으면 break 하는 코드를 넣어서 작성해 보았는데
 
-
+​	
 
 ![image-20210803115851600](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803115851600.png)
 
 미세하게 더 좋아지긴 하는데 정렬 라이브러리와 비교하면 이 역시 의미가 없습니다.
 
-
+​	
 
 ### SelectionSort (선택정렬)
 
@@ -251,7 +251,7 @@ public class SelectionSort implements Sorter {
 
 버블정렬에 비해 확실히 유의미한 성능 차이가 보입니다. O(n²) 이라고 다 같은 수준이 아니라고 말하는 것 같네요.
 
-
+​	
 
 ### MergeSort (삽입정렬)
 
@@ -281,7 +281,7 @@ public class MergeSort implements Sorter {
 
 ```
 
-
+​	
 
 이번엔 삽입 정렬 입니다.
 
@@ -289,13 +289,13 @@ public class MergeSort implements Sorter {
 
 약간 더 개선된 성능을 보여줍니다. 
 
+​	
 
-
-
+​	
 
 이제 위의 알고리즘들과는 결이 다르다는 O(nlog(n)) 알고리즘을 테스트 해 보겠습니다.
 
-
+​	
 
 ### QuickSort (퀵정렬)
 
@@ -305,7 +305,7 @@ public class MergeSort implements Sorter {
 
 이를 방지하기 위해 개발된 여러 기법들이 있는데, java에서 dual-pivot을 잡는 이유도 상기한 내용 때문입니다.
 
-
+​	
 
 오른쪽 피벗 선택 방식의 코드를 살펴보겠습니다.
 
@@ -361,17 +361,17 @@ public class QuickSort2 implements Sorter {
 }
 ```
 
-
+​	
 
 실행을 해 보면
 
 ![image-20210803180859316](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803180859316.png)
 
-
+​	
 
 java의 기본 sorting 보다 더 빠르게 끝냈습니다!  몇번을 해도 결과는 비슷했는데요. java 에서 채택한 dual-pivot Quick Sort의 경우에는 최악의 경우를 감안하여 평균적으로 더 좋은 성능을 내도록 설계 되어 있기 때문입니다.
 
-
+​	
 
 ### 그러면 이번엔 그 최악의 경우를 테스트 해 보겠습니다.
 
@@ -421,19 +421,19 @@ public class SortController2 {
 }
 ```
 
-
+​	
 
 각 배열에는 숫자가 랜덤이 아닌 0부터 순서대로 커지는 숫자가 들어갑니다. 이미 정렬이 된 상태인데요,
 
 이 상태에서 Quick sort 성능 테스트를 진행 해 보겠습니다.
 
-
+​	
 
 ![image-20210803181453835](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803181453835.png)
 
 아! 둘다 Quicksort인데, 시간차이가 굉장합니다. MergeSort로 **정렬 되지 않은 같은 길이의 배열을 정렬**할때 같은 시간이 소요됩니다. 정렬이 이미 된 배열을 정렬하는건 MergeSort가 워낙 강해서 비교할 필요도 없습니다.
 
-
+​	
 
 #### 그런데 여태 SIZE 를 30000으로 했는데 왜 10000으로 줄였을까요?
 
@@ -443,16 +443,17 @@ public class SortController2 {
 
 아주 기본적인 Quick Sort는 결국 실전에 사용하기에 부족합니다. java에서도 그렇기 때문에 아까 위에서의 예처럼 Quick Sort가 Dual-pivot Quick Sort보다 조금의 성능에서 우위에 있었다고 해서 사용할 수는 없었을 겁니다.
 
-
+​	
 
 이 외에도 Heap Sort, Tree Sort, 그리고 정렬 알고리즘들을 하이브리드로 모두 사용한 Tim Sort, Intro Sort 등 여러 정렬 알고리즘이 있습니다. 아! 빌게이츠가 제시했던 Pancake Sorting도 있네요.
 
-
+​	
 
 이렇게 몇 개의 정렬 알고리즘들을 알아 보았는데요 
 
 라이브러리에 있는 정렬 함수들을 사용하더라도, **해당 라이브러리가 어떤 알고리즘으로 이루어 져 있는지, 그리고 상황에 따라 어떠한 정렬 알고리즘을 사용해야 하는지**를 알고 쓴다면 더 즐겁게 코딩 할 수 있을 것 같습니다.
 
-
+​	
 
 수고하셨습니다!
+
