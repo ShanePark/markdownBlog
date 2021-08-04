@@ -253,7 +253,7 @@ public class SelectionSort implements Sorter {
 
 ​	
 
-### InsertionSort (삽입정렬)
+### Insertion Sort (삽입정렬)
 
 ```java
 package shane.study.sort;
@@ -431,7 +431,7 @@ public class SortController2 {
 
 ![image-20210803181453835](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803181453835.png)
 
-아! 둘다 Quicksort인데, 시간차이가 굉장합니다. InsertionSort로 **정렬 되지 않은 같은 길이의 배열을 정렬**할때 같은 시간이 소요됩니다. 정렬이 이미 된 배열을 정렬하는건 InsertionSort가 워낙 강해서 비교할 필요도 없습니다.
+아! 둘다 Quicksort인데, 시간차이가 굉장합니다.삽입정렬로 **정렬 되지 않은 같은 길이의 배열을 정렬**할때 같은 시간이 소요됩니다. 정렬이 이미 된 배열을 정렬하는건 Insertion Sort가 워낙 강해서 비교할 필요도 없습니다.
 
 ​	
 
@@ -449,7 +449,7 @@ public class SortController2 {
 
 ​	
 
-이 외에도 Heap Sort, Tree Sort, 그리고 정렬 알고리즘들을 하이브리드로 모두 사용한 Tim Sort, Intro Sort 등 여러 정렬 알고리즘이 있습니다. 아! 빌게이츠가 제시했던 Pancake Sorting도 있네요.
+이 외에도 Heap Sort, Tree Sort, Merge Sort, 그리고 정렬 알고리즘들을 하이브리드로 사용한 Tim Sort, Intro Sort 등 여러 정렬 알고리즘이 있습니다. 아! 빌게이츠가 제시했던 Pancake Sorting도 있네요.
 
 ​	
 
