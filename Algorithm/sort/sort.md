@@ -253,14 +253,14 @@ public class SelectionSort implements Sorter {
 
 ​	
 
-### MergeSort (삽입정렬)
+### InsertionSort (삽입정렬)
 
 ```java
 package shane.study.sort;
 
 import shane.study.sort.SortController.Sorter;
 
-public class MergeSort implements Sorter {
+public class InsertionSort implements Sorter {
 
 	@Override
 	public void sort(int[] arr) {
@@ -431,7 +431,7 @@ public class SortController2 {
 
 ![image-20210803181453835](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803181453835.png)
 
-아! 둘다 Quicksort인데, 시간차이가 굉장합니다. MergeSort로 **정렬 되지 않은 같은 길이의 배열을 정렬**할때 같은 시간이 소요됩니다. 정렬이 이미 된 배열을 정렬하는건 MergeSort가 워낙 강해서 비교할 필요도 없습니다.
+아! 둘다 Quicksort인데, 시간차이가 굉장합니다. InsertionSort로 **정렬 되지 않은 같은 길이의 배열을 정렬**할때 같은 시간이 소요됩니다. 정렬이 이미 된 배열을 정렬하는건 InsertionSort가 워낙 강해서 비교할 필요도 없습니다.
 
 ​	
 
