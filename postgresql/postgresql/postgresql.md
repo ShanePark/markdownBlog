@@ -18,7 +18,7 @@
 brew search postgresql
 ```
 
-![](postgresql.assets/image-20210804111252355.png)
+![](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804111252355.png)
 
 ```bash
 brew install postgresql 
@@ -28,7 +28,7 @@ brew install postgresql
 
 ​	
 
-![image-20210804111016817](postgresql.assets/image-20210804111016817.png)
+![image-20210804111016817](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804111016817.png)
 
 설치가 완료되었습니다. To start postgresql : 이라며 친절하게 시작하는 방법을 알려주네요, 그대로 입력합니다.
 
@@ -38,7 +38,7 @@ brew install postgresql
 brew services start postgresql
 ```
 
-![image-20210804111122961](postgresql.assets/image-20210804111122961.png)
+![image-20210804111122961](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804111122961.png)
 
 ​	
 
@@ -48,7 +48,7 @@ brew services start postgresql
 postgres -V
 ```
 
-![image-20210804111632615](postgresql.assets/image-20210804111632615.png)
+![image-20210804111632615](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804111632615.png)
 
 
 
@@ -56,7 +56,7 @@ postgres -V
 
 ​	
 
-![image-20210804112153207](postgresql.assets/image-20210804112153207.png)
+![image-20210804112153207](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804112153207.png)
 
 > https://www.postgresql.org/docs/current/postgres-user.html
 
@@ -70,7 +70,7 @@ Default 접속 계정을 확인하려고 PostgreSQL 의 Document를 확인하는
 psql postgres
 ```
 
-![image-20210804112349018](postgresql.assets/image-20210804112349018.png)
+![image-20210804112349018](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804112349018.png)
 
 아래 명령어로 role 리스트를 확인 할 수 있습니다.
 
@@ -80,9 +80,9 @@ psql postgres
 
 
 
-![image-20210804112516669](postgresql.assets/image-20210804112516669.png)
+![image-20210804112516669](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804112516669.png)
 
-![image-20210804112558176](postgresql.assets/image-20210804112558176.png)
+![image-20210804112558176](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804112558176.png)
 
 > 정말로 shane 이라는 Superuser가 생성되어 있습니다. Q 를 입력해 빠져나옵니다.
 
@@ -94,19 +94,19 @@ psql postgres
 
 
 
-![image-20210804111653995](postgresql.assets/image-20210804111653995.png)
+![image-20210804111653995](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804111653995.png)
 
 >  PostgreSQL 을 선택 하고
 
 ​	
 
-![image-20210804111718836](postgresql.assets/image-20210804111718836.png)	
+![image-20210804111718836](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804111718836.png)	
 
 > 필요한 Driver를 다운 받습니다.
 
 
 
-![image-20210804112817533](postgresql.assets/image-20210804112817533.png)
+![image-20210804112817533](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804112817533.png)
 
 
 
@@ -124,7 +124,7 @@ create database study;
 
 
 
-![image-20210804114635428](postgresql.assets/image-20210804114635428.png)
+![image-20210804114635428](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804114635428.png)
 
 ​		
 
@@ -136,7 +136,7 @@ create user testuser with encrypted password 'testpass';
 
 
 
-![image-20210804114757062](postgresql.assets/image-20210804114757062.png)
+![image-20210804114757062](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804114757062.png)
 
 ​	
 
@@ -146,7 +146,7 @@ testuser에게 데이터 베이스 생성 권한도 부여합니다.
 alter user testuser createdb
 ```
 
-![image-20210804130407989](postgresql.assets/image-20210804130407989.png)
+![image-20210804130407989](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804130407989.png)
 
 > \du 로 확인해보니 권한이 잘 설정 되었습니다.
 
@@ -158,13 +158,13 @@ alter user testuser createdb
 grant all privileges on database study to testuser;
 ```
 
-​	![image-20210804115213814](postgresql.assets/image-20210804115213814.png)
+​	![image-20210804115213814](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804115213814.png)
 
 
 
 ### 연습용 Database기 때문에 모든 권한을 부여하지만 권한 설정을 자세하게 하려면 아래를 참고해주세요
 
-![image-20210804114911171](postgresql.assets/image-20210804114911171.png)
+![image-20210804114911171](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804114911171.png)
 
 > https://www.postgresql.org/docs/13/sql-grant.html 에서 확인 할 수 있습니다.
 
@@ -176,7 +176,7 @@ grant all privileges on database study to testuser;
 \list
 ```
 
-![image-20210804115845086](postgresql.assets/image-20210804115845086.png)
+![image-20210804115845086](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804115845086.png)
 
 
 
@@ -196,7 +196,7 @@ grant all privileges on database study to testuser;
 \connect study
 ```
 
-![image-20210804120013637](postgresql.assets/image-20210804120013637.png)
+![image-20210804120013637](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804120013637.png)
 
 ​		
 
@@ -208,7 +208,7 @@ psql postgres -U testuser
 
 
 
-![image-20210804124947663](postgresql.assets/image-20210804124947663.png)
+![image-20210804124947663](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804124947663.png)
 
 > postgres-# 에서 postgres=> 으로 바뀌었습니다. #은 super user를 뜻 합니다.
 
@@ -218,11 +218,11 @@ psql postgres -U testuser
 
 
 
-![image-20210804123255425](postgresql.assets/image-20210804123255425.png)
+![image-20210804123255425](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804123255425.png)
 
 
 
-![image-20210804123526458](postgresql.assets/image-20210804123526458.png)
+![image-20210804123526458](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804123526458.png)
 
 
 
@@ -284,7 +284,7 @@ from emp;
 
 
 
-![image-20210804135906609](postgresql.assets/image-20210804135906609.png)
+![image-20210804135906609](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804135906609.png)
 
 
 
@@ -298,7 +298,7 @@ from emp
 	inner join dept on (emp.deptno = dept.deptno);
 ```
 
-![image-20210804141139949](postgresql.assets/image-20210804141139949.png)
+![image-20210804141139949](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804141139949.png)
 
 > join 도 Oracle이나 MySQL 에서 썼던것처럼 ANSI SQL을 그대로 사용하면 됩니다.
 
@@ -312,7 +312,7 @@ group by dept.deptno, dname
 order by deptno;
 ```
 
-![image-20210804141723203](postgresql.assets/image-20210804141723203.png)
+![image-20210804141723203](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804141723203.png)
 
 group by 집계 함수도 사용 해 보았습니다. Oracle 데이터베이스를 처음 공부할 때 배우는 내용인데요, deptno=40에 해당하는 emp가 없기 때문에 count(*) 을 넣으면 의도한 값이 나오지 않습니다.  count(empno)라고 입력합니다.
 
@@ -328,7 +328,7 @@ where rank = 1;
 
 이번에는 각 부서별 최저 급여를 받는 사원 정보를 조회해 보았습니다.
 
-![](postgresql.assets/image-20210804143931366.png)
+![](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804143931366.png)
 
 
 
@@ -346,7 +346,7 @@ where rank = 1;
 
 PostgreSQL 에서는 FROM절에 있는 Subquery  (Inline View) 는 반드시 alias를 가져야 한다고 하며 실행이 되지 않습니다.
 
-![image-20210804143347457](postgresql.assets/image-20210804143347457.png)
+![image-20210804143347457](https://github.com/Shane-Park/markdownBlog/raw/master/postgresql/postgresql/postgresql.assets/image-20210804143347457.png)
 
 
 
