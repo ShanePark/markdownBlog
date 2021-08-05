@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+	const contextPath = window.location.pathname.substring(0, window.location.pathname.indexOf("/",2));
+</script>
+<body>
+	<h1 th:text="${board.title}"></h1>
+	<h3 th:text="'작성자 : ' + ${board.writer}"></h3>
+	<p th:text="${board.content}"></p>
+	<button onclick="location.href = contextPath">뒤로 가기</button>
+</body>
+</html>

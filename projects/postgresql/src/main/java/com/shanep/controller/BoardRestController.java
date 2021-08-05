@@ -1,8 +1,5 @@
 package com.shanep.controller;
 
-import java.util.List;
-import java.util.Optional;
-
 import org.apache.logging.log4j.LogManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,10 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.shanep.enumpkg.ServiceResult;
 import com.shanep.model.Board;
-import com.shanep.model.ErrorResponse;
 import com.shanep.model.Result;
 import com.shanep.repositories.BoardRepository;
 import com.shanep.service.BoardService;
@@ -36,29 +30,19 @@ public class BoardRestController {
 	
 	@GetMapping
 	public Result retrieveBoardList() {
-		List<Board> list = repository.findAllByOrderByBoardnoDesc();
-		Result result = new Result();
-		result.setPayload(list);
+		Result result = boardService.retrieveBoardList();
 		return result;
 	}
 	
 	@GetMapping("/{boardno}")
 	public Result retrieveBoard(@PathVariable Integer boardno) {
-		Optional<Board> board = repository.findById(boardno);
-		Result result = new Result();
-		if(board.isPresent()) {
-			result.setPayload(board);
-		}else {
-			result.setError(new ErrorResponse(ServiceResult.NOTEXIST.toString()));
-		}
+		Result result = boardService.retrieveBoard(boardno);
 		return result;
 	}
 	
 	@PostMapping
 	public Result createBoard(@ModelAttribute Board board) {
-		board = repository.save(board);
-		Result result = new Result();
-		result.setPayload(board);
+		Result result = boardService.createBoard(board);
 		return result;
 	}
 	

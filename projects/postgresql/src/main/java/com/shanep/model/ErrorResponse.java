@@ -8,7 +8,7 @@ import lombok.ToString;
 @Setter
 @ToString
 public class ErrorResponse {
-	private int code;
+	private Integer code;
 	private String message;
 	
 	public ErrorResponse(String message) {

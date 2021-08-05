@@ -1,5 +1,6 @@
 package com.shanep.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.apache.logging.log4j.LogManager;
@@ -39,6 +40,34 @@ public class BoardServiceImpl implements BoardService{
 			result.setError(new ErrorResponse(ServiceResult.NOTEXIST.toString()));
 		}else {
 			repository.deleteById(boardno);
+		}
+		return result;
+	}
+
+	@Override
+	public Result createBoard(Board board) {
+		board = repository.save(board);
+		Result result = new Result();
+		result.setPayload(board);
+		return result;
+	}
+
+	@Override
+	public Result retrieveBoardList() {
+		List<Board> list = repository.findAllByOrderByBoardnoDesc();
+		Result result = new Result();
+		result.setPayload(list);
+		return result;
+	}
+
+	@Override
+	public Result retrieveBoard(int boardno) {
+		Optional<Board> optionalBoard = repository.findById(boardno);
+		Result result = new Result();
+		if(optionalBoard.isPresent()) {
+			result.setPayload(optionalBoard.get());
+		}else {
+			result.setError(new ErrorResponse(ServiceResult.NOTEXIST.toString()));
 		}
 		return result;
 	}
