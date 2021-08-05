@@ -24,9 +24,7 @@
 <title>board</title>
 </head>
 <script>
-	const contextPath = window.location.pathname.substring(0, window.location.pathname.indexOf("/",2));
-	
-	fetch(contextPath+'/restapi/board', {
+	fetch('/restapi/board', {
 		method:'GET'
 	}).then(function (response) {
 		return response.json();
@@ -41,7 +39,7 @@
 					let cell1 = row.insertCell(1);
 					let cell2 = row.insertCell(2);
 					cell0.innerHTML = board.boardno;
-					let url = contextPath + '/board/' + board.boardno;
+					let url = '/board/' + board.boardno;
 					cell1.innerHTML = '<a href="'+url+'">'+board.title + '</a>';
 					cell2.innerHTML = board.writer;
 				}
@@ -52,12 +50,22 @@
 </script>
 <body>
 	<table id="board">
-		<tr>
-			<th>글번호</th>
-			<th>제목</th>
-			<th>작성자</th>
-		</tr>
+		<thead>
+			<tr>
+				<th>글번호</th>
+				<th>제목</th>
+				<th>작성자</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3">
+					<button onclick="location.href = '/board/write';">글 작성</button>
+				</td>
+			</tr>
+		</tfoot>
 	</table>
-	<button onclick="location.href = contextPath + '/board/write';">글 작성</button>
 </body>
 </html>
