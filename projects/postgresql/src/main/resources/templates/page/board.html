@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/layout">
+
 <head>
 <meta charset="UTF-8">
 <style>
@@ -38,8 +42,8 @@
 					let cell0 = row.insertCell(0);
 					let cell1 = row.insertCell(1);
 					let cell2 = row.insertCell(2);
-					cell0.innerHTML = board.boardno;
 					let url = '/board/' + board.boardno;
+					cell0.innerHTML = board.boardno;
 					cell1.innerHTML = '<a href="'+url+'">'+board.title + '</a>';
 					cell2.innerHTML = board.writer;
 				}

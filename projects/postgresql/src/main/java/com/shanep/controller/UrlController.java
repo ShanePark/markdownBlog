@@ -15,12 +15,7 @@ public class UrlController {
 	@Autowired
 	BoardService boardService;
 	
-	@RequestMapping("/")
-	public String index() {
-		return "index";
-	}
-	
-	@RequestMapping("board")
+	@RequestMapping(value={"/","board"})
 	public ModelAndView boardList(ModelAndView mav) {
 		mav.setViewName("board");
 		return mav;
@@ -35,5 +30,21 @@ public class UrlController {
 		mav.addObject(board);
 		return mav;
 	}
-
+	
+	@RequestMapping("board/write")
+	public ModelAndView write(ModelAndView mav) {
+		mav.setViewName("write");
+		return mav;
+	}
+	
+	@RequestMapping("board/{boardno}/edit")
+	public ModelAndView edit(
+			ModelAndView mav
+			, @PathVariable int boardno) {
+		mav.setViewName("edit");
+		Board board = (Board) boardService.retrieveBoard(boardno).getPayload();
+		mav.addObject(board);
+		return mav;
+	}
+	
 }
