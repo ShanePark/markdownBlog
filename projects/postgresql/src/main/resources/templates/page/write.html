@@ -2,9 +2,39 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<style>
+	form div{
+		margin : 5px;
+	}
+	label{
+		width : 50px;
+		display : inline-block;
+	}
+	.btns{
+		margin-left : 100px;
+	}
+</style>
 <title>Insert title here</title>
 </head>
 <body>
 	<h1>게시판 글 작성</h1>
+	<form>
+		<div>
+			<label for="title">제목</label>
+			<input type="text" id="title">
+		</div>
+		<div>
+			<label for="writer">작성자</label>
+			<input type="text" id="writer">
+		</div>
+		<div>
+			<label for="cont">내용</label>
+			<textarea id="cont"></textarea>
+		</div>
+	</form>
+	<div class="btns">
+		<button type="button" onclick="location.href = '/board';">뒤로가기</button>
+		<button>저장</button>
+	</div>
 </body>
 </html>

@@ -17,7 +17,7 @@ public class UrlController {
 	
 	@RequestMapping(value={"/","board"})
 	public ModelAndView boardList(ModelAndView mav) {
-		mav.setViewName("board");
+		mav.setViewName("page/board");
 		return mav;
 	}
 	
@@ -25,7 +25,7 @@ public class UrlController {
 	public ModelAndView board(
 			ModelAndView mav
 			, @PathVariable int boardno) {
-		mav.setViewName("view");
+		mav.setViewName("page/view");
 		Board board = (Board) boardService.retrieveBoard(boardno).getPayload();
 		mav.addObject(board);
 		return mav;
@@ -33,7 +33,7 @@ public class UrlController {
 	
 	@RequestMapping("board/write")
 	public ModelAndView write(ModelAndView mav) {
-		mav.setViewName("write");
+		mav.setViewName("page/write");
 		return mav;
 	}
 	
@@ -41,7 +41,7 @@ public class UrlController {
 	public ModelAndView edit(
 			ModelAndView mav
 			, @PathVariable int boardno) {
-		mav.setViewName("edit");
+		mav.setViewName("page/edit");
 		Board board = (Board) boardService.retrieveBoard(boardno).getPayload();
 		mav.addObject(board);
 		return mav;
