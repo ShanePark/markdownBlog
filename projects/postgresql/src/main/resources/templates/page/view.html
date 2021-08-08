@@ -8,7 +8,7 @@
 	<h1 th:text="${board.title}"></h1>
 	<h3 th:text="'작성자 : ' + ${board.writer}"></h3>
 	<p th:text="${board.content}"></p>
-	<button onclick="location.href='/board'">뒤로가기</button>
+	<button onclick="location.href='/board'">목록으로</button>
 	<button onclick="location.href=window.location.href+'/edit'">수정하기</button>
 	<button onclick="location.href=window.location.href+'/delete'">삭제하기</button>
 </body>

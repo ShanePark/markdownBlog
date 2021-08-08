@@ -18,23 +18,23 @@
 </head>
 <body>
 	<h1>게시판 글 작성</h1>
-	<form>
+	<form id="writeForm" action="" method="post">
 		<div>
 			<label for="title">제목</label>
-			<input type="text" id="title">
+			<input type="text" id="title" name="title">
 		</div>
 		<div>
 			<label for="writer">작성자</label>
-			<input type="text" id="writer">
+			<input type="text" id="writer" name="writer">
 		</div>
 		<div>
-			<label for="cont">내용</label>
-			<textarea id="cont"></textarea>
+			<label for="content">내용</label>
+			<textarea id="content" name="content"></textarea>
 		</div>
 	</form>
 	<div class="btns">
-		<button type="button" onclick="location.href = '/board';">뒤로가기</button>
-		<button>저장</button>
+		<button type="button" onclick="location.href = '/board';">취소</button>
+		<button type="submit" form="writeForm">저장</button>
 	</div>
 </body>
 </html>
