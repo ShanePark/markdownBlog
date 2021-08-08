@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1 th:text="${board.title}"></h1>
+	<h1 th:text="${board.boardno}+'. '+${board.title}"></h1>
 	<h3 th:text="'작성자 : ' + ${board.writer}"></h3>
 	<p th:text="${board.content}"></p>
 	<button onclick="location.href='/board'">목록으로</button>
