@@ -6,7 +6,6 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 public class Result {
 	private ErrorResponse error;
 	private Object payload;
