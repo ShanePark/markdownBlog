@@ -2,13 +2,13 @@
 
 매번 SSH 접속 할 때 마다 비밀번호 입력하려면 매우 번거롭습니다. 이 때, 신뢰할 수 있는 컴퓨터라면 공개키를 등록 해서 비밀번호 없이 간편하게 접속 할 수 있습니다.
 
-아래와 같이 public key가 있다면 SSH Key 생성 과정은 건너 띌 수 있습니다.
+아래와 같이 public key가 있다면 SSH Key 생성 과정은 건너 띌 수 있습니다. key 가 있으신 분은 SSH Key 등록하기 로 쭉쭉 스크롤 하시면 됩니다.
 
 ![](https://github.com/Shane-Park/markdownBlog/raw/master/ssh/sshkey.assets/image-20210810153821908.png)
 
 
 
-## SSH Key 생성하기
+## 1. SSH Key 생성하기
 
 ssh-keygen이 있다면 아래의 명령어를 입력해 간단하게 생성 할 수 있습니다.
 
@@ -33,6 +33,10 @@ passphrase는 굳이 입력 하지 않아도 되며, 키를 저장할 경로도 
 그러면 .ssh 폴더 아래에 키가 생성됩니다.
 
 ![image-20210810153818487](https://github.com/Shane-Park/markdownBlog/raw/master/ssh/sshkey.assets/image-20210810153818487.png)
+
+
+
+## 2.SSH Key 등록하기
 
 .pub이 공개키 인데 해당 공개키를 서버에 등록 하면 다음부터 비밀번호를 입력 할 필요가 없습니다.
 
@@ -71,6 +75,10 @@ $ vi authorized_keys
 
 
 이제 SSH 접속을 해 보면 더이상 비밀번호를 요구하지 않습니다 !
+
+​	
+
+## 3. SSH 접속정보 설정파일로 저장하기
 
 또한 SSH 접속을 할때 ubuntu@222.123.123.123 이런식으로 입력을 했다면, 아이피 주소를 외우기가 곤란 하기 때문에 매번 귀찮은 상황이 발생 했을 텐데요,
 
