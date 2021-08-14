@@ -1,0 +1,35 @@
+{% extends "./base" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+    <h1> Home </h1>
+    <p> Welcome to my home page. My name is {{ name }}.</p>
+    {% if arr != null %}
+	    {% for data in arr %}
+	    	<p>{{ data }}</p>
+	    {% endfor %}
+	    {% if arr2 contains "apple" %}
+	    	apple을 포함합니다.
+	    {% else %}
+	    	apple을 포함하지 않습니다.
+	    {% endif %}
+	{% else %}
+		데이터가 없습니다.
+	{% endif %}
+	<br>
+	{% verbatim %}
+	    {% if arr != null %}
+		    {% for data in arr %}
+		    	<p>{{ data }}</p>
+		    {% endfor %}
+		    {% if arr2 contains "apple" %}
+		    	apple을 포함합니다.
+		    {% else %}
+		    	apple을 포함하지 않습니다.
+		    {% endif %}
+		{% else %}
+			데이터가 없습니다.
+		{% endif %}
+	{% endverbatim %}
+{% endblock %}
