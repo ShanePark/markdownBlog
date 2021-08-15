@@ -1,8 +1,10 @@
 # Spring 에서 페블 템플릿 Pebble template 사용하기 2 ) Spring boot 프로젝트에서 사용하기
 
-​	
 
-본 글은 https://pebbletemplates.io/wiki/guide/spring-boot-integration/ 를 토대로 작성되었습니다.
+
+https://shanepark.tistory.com/197 글에 이어지는 내용입니다.	
+
+본 포스팅은 https://pebbletemplates.io/wiki/guide/spring-boot-integration/ 를 토대로 작성되었습니다.
 
 ​	
 

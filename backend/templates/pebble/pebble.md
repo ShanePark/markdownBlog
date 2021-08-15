@@ -190,7 +190,7 @@ server.port = 8081
 
 다음번에는 Spring Boot에 PebbleViewResolver를 선언하고 PebbleEngine이나 Loader도 커스터마이징 해 보도록 하겠습니다.
 
-그 다음 글에서는 Pebble 문법에 대해 알아 보겠습니다.
+다음글에서는 Spring Boot 프로젝트에서 PebbleViewResolver를 활용해 보고, 문법도 알아보겠습니다.
 
 
 
