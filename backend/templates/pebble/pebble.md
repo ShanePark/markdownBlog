@@ -4,7 +4,7 @@
 
 ## Pebble Template이란 ?
 
-![image-20210812224842647](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812224842647.png)
+![image-20210812224842647](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812224842647.png)
 
 > Pebble은 PHP의 유명 템플릿 엔진인 Twig 에서 영감을 받았으며 Python Jinja의 Template Engine 문법과 유사한 Java 템플릿 엔진 입니다. template을 상속 하는 기능과 읽기 쉬운 문법이 특징인 서버사이드 템플릿 엔진 입니다.
 
@@ -16,7 +16,7 @@
 
 1. ### dependency 를 추가합니다
 
-![image-20210812230724671](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812230724671.png)
+![image-20210812230724671](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812230724671.png)
 
 > Spring Boot 에서는 pebble-spring-boot-starter 를 추가해서 사용하지만, 일단 Basic Usage에 쓰인 대로 따라가보겠습니다.
 
@@ -42,13 +42,13 @@ compile "io.pebbletemplates:pebble:3.1.5"
 
    ​	
 
-   ![image-20210812231324182](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812231324182.png)
+   ![image-20210812231324182](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812231324182.png)
 
    
 
    저는 프로젝트 패키지 구조를 아래와 같이 생성 했습니다.
 
-   ![image-20210812231428853](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812231428853.png)
+   ![image-20210812231428853](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812231428853.png)
 
    
 
@@ -82,7 +82,7 @@ compile "io.pebbletemplates:pebble:3.1.5"
 
 ​	
 
-![image-20210812231731732](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812231731732.png)
+![image-20210812231731732](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812231731732.png)
 
 ```html
 {% extends "./base.html" %}
@@ -99,7 +99,7 @@ compile "io.pebbletemplates:pebble:3.1.5"
 
 ### 4. template을 컴파일 해 렌더링 해봅니다.
 
-![image-20210812231952548](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812231952548.png)
+![image-20210812231952548](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812231952548.png)
 
 PebbleController.java 를 생성해 렌더링한 html을 바로 확인 할 수 있도록 해보겠습니다.
 
@@ -148,7 +148,7 @@ public class PebbleController {
 
 ### 5. 결과물은 아래와 같습니다.
 
-![image-20210812232057794](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812232057794.png)
+![image-20210812232057794](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812232057794.png)
 
 
 
@@ -158,7 +158,7 @@ public class PebbleController {
 
 일단 서버를 실행 하고 
 
-![image-20210812232124276](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812232124276.png)
+![image-20210812232124276](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812232124276.png)
 
 
 
@@ -170,7 +170,7 @@ server.port = 8081
 
 를 추가해서 port를 8081 로 변경했기 때문에 localhost:8081 로 접속하지만, 설정하지 않았다면 기본적으로 8080 포트로 설정 되어 있습니다.
 
-![image-20210812232154433](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812232154433.png)
+![image-20210812232154433](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812232154433.png)
 
 잘 렌더링 되어서 보여주는 것을 확인 할 수 있습니다.
 
@@ -178,9 +178,9 @@ server.port = 8081
 
 우클릭을 해서 페이지 소스보기를 해보면
 
-![image-20210812232353917](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812232353917.png)
+![image-20210812232353917](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812232353917.png)
 
-![image-20210812232424466](https://github.com/Shane-Park/markdownBlog/raw/master/pebble/pebble.assets/image-20210812232424466.png)
+![image-20210812232424466](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812232424466.png)
 
 
 
