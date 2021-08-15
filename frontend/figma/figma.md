@@ -1,5 +1,5 @@
 # Figma 사용하기
-<br>
+​	
 
 > Figma는 UI/UX design 프로토타이핑 툴 입니다.    
 처음에는 sketch 무료 1개월 체험을 이용해 프로젝트를 진행해보려고 했습니다.    
@@ -12,7 +12,7 @@
 >처음 가입을 하고 프로젝트를 생성하면 이런 화면이 나옵니다.   
 Community에서 버튼이나 아이콘 등 다른 이용자들이 만들어 무료로 배표해둔 자료들을 손쉽게 이용할 수 있는것도 마음에 듭니다.
 
-![img](2.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/figma/figma.assets2.png)
 > 연습용으로 작업해 봤던 메인 로그인 화면입니다.
 
 <br> 

@@ -1,4 +1,9 @@
+# Oracle 데이터 베이스 10개 문제 풀어보기
+
+​	
+
 ## 1. 남녀 성별 인원수 조회
+
 ```sql
 SELECT *
 FROM
@@ -15,7 +20,7 @@ FROM
 
 >![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/1.png)
 
-​          
+​	          
 
 ## 2. 지금까지 한번도 상품을 구매한 적이 없는 회원의 인적사항 조회(아이디, 이름, 이메일)
 ```
@@ -29,7 +34,7 @@ where orders = 0
 ```
 >![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/2.png)
 
-​          
+​          	
 
 ## 3. 등록된 상품이 한건도 없는 상품분류 조회(상품분류코드, 분류명)
 ```
