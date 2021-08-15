@@ -4,7 +4,7 @@
 
 아래와 같이 public key가 있다면 SSH Key 생성 과정은 건너 띌 수 있습니다. key 가 있으신 분은 SSH Key 등록하기 로 쭉쭉 스크롤 하시면 됩니다.
 
-![](https://github.com/Shane-Park/markdownBlog/raw/master/ssh/sshkey.assets/image-20210810153821908.png)
+![](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810153821908.png)
 
 
 
@@ -32,7 +32,7 @@ passphrase는 굳이 입력 하지 않아도 되며, 키를 저장할 경로도 
 
 그러면 .ssh 폴더 아래에 키가 생성됩니다.
 
-![image-20210810153818487](https://github.com/Shane-Park/markdownBlog/raw/master/ssh/sshkey.assets/image-20210810153818487.png)
+![image-20210810153818487](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810153818487.png)
 
 
 
@@ -64,7 +64,7 @@ scp를 사용해도 되고 vi를 이용해 붙여넣기를 해도 상관 없습�
 
 id_rsa.pub 에 있는 모든 내용을 복사해서
 
-![image-20210810154227911](https://github.com/Shane-Park/markdownBlog/raw/master/ssh/sshkey.assets/image-20210810154227911.png)
+![image-20210810154227911](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810154227911.png)
 
 접속한 서버의 .ssh 폴더 내에 있는 authorized_keys 파일을 수정해 해당 내용을 모두 붙여 넣고 저장합니다.
 
@@ -84,7 +84,7 @@ $ vi authorized_keys
 
 사용자의 .ssh 폴더 내에 확장자가 없는 config 파일을 만들고
 
-![image-20210810154550934](https://github.com/Shane-Park/markdownBlog/raw/master/ssh/sshkey.assets/image-20210810154550934.png)
+![image-20210810154550934](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810154550934.png)
 
 ```json
 Host myserver
