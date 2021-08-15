@@ -30,9 +30,9 @@
 
  오랜만에 그때의 노트를 꺼내어 봤습니다. 혼자 공부하며 나름대로 각 정렬들의 순위도 두었던게 재밌어 사진도 찍었습니다. 
 
-![image-20210803111801033](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803111801033.png)
+![image-20210803111801033](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/sort.assets/image-20210803111801033.png)
 
-![image-20210803112701129](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803112701129.png)
+![image-20210803112701129](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/sort.assets/image-20210803112701129.png)
 
 ​	
 
@@ -113,7 +113,7 @@ public class SortController {
 
 ​	
 
-![image-20210803115046492](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803115046492.png)
+![image-20210803115046492](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/sort.assets/image-20210803115046492.png)
 
 > Arrays 클래스의 sort 메서드는 Dual- Pivot QuickSort 방식으로 정렬하네요.
 
@@ -168,7 +168,7 @@ public class BubbleSort implements Sorter {
 
 
 
-![image-20210803115636113](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803115636113.png)
+![image-20210803115636113](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/sort.assets/image-20210803115636113.png)
 
 다행히도 손코딩 했던 알고리즘에 문제가 없었습니다! 굳이 문제가 있다면 그 소요 시간이 문제입니다.
 
@@ -211,7 +211,7 @@ public class Bubble2 implements Sorter {
 
 ​	
 
-![image-20210803115851600](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803115851600.png)
+![image-20210803115851600](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/sort.assets/image-20210803115851600.png)
 
 미세하게 더 좋아지긴 하는데 정렬 라이브러리와 비교하면 이 역시 의미가 없습니다.
 
@@ -247,7 +247,7 @@ public class SelectionSort implements Sorter {
 }
 ```
 
-![image-20210803120459688](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803120459688.png)
+![image-20210803120459688](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/sort.assets/image-20210803120459688.png)
 
 버블정렬에 비해 확실히 유의미한 성능 차이가 보입니다. O(n²) 이라고 다 같은 수준이 아니라고 말하는 것 같네요.
 
@@ -285,7 +285,7 @@ public class InsertionSort implements Sorter {
 
 이번엔 삽입 정렬 입니다.
 
-![image-20210803120821148](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803120821148.png)
+![image-20210803120821148](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/sort.assets/image-20210803120821148.png)
 
 약간 더 개선된 성능을 보여줍니다. 
 
@@ -365,7 +365,7 @@ public class QuickSort2 implements Sorter {
 
 실행을 해 보면
 
-![image-20210803180859316](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803180859316.png)
+![image-20210803180859316](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/sort.assets/image-20210803180859316.png)
 
 ​	
 
@@ -429,7 +429,7 @@ public class SortController2 {
 
 ​	
 
-![image-20210803181453835](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803181453835.png)
+![image-20210803181453835](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/sort.assets/image-20210803181453835.png)
 
 아! 둘다 Quicksort인데, 시간차이가 굉장합니다.삽입정렬로 **정렬 되지 않은 같은 길이의 배열을 정렬**할때 같은 시간이 소요됩니다. 정렬이 이미 된 배열을 정렬하는건 Insertion Sort가 워낙 강해서 비교할 필요도 없습니다.
 
@@ -437,7 +437,7 @@ public class SortController2 {
 
 #### 그런데 여태 SIZE 를 30000으로 했는데 왜 10000으로 줄였을까요?
 
-![image-20210803181812682](https://github.com/Shane-Park/markdownBlog/raw/master/Algorithm/sort/sort.assets/image-20210803181812682.png)
+![image-20210803181812682](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/sort.assets/image-20210803181812682.png)
 
 심지어 정렬된 배열을 QuickSort 방식으로 정렬하려고 하니 StackOverflow가 발생했습니다.
 
