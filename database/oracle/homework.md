@@ -13,9 +13,9 @@ FROM
 
 ```
 
->![](1.png)
+>![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/1.png)
 
-</br></br></br></br></br>
+​          
 
 ## 2. 지금까지 한번도 상품을 구매한 적이 없는 회원의 인적사항 조회(아이디, 이름, 이메일)
 ```
@@ -27,9 +27,9 @@ from (
     group by mem_id, mem_name, mem_mail)
 where orders = 0
 ```
->![](2.png)
+>![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/2.png)
 
-</br></br></br></br></br>
+​          
 
 ## 3. 등록된 상품이 한건도 없는 상품분류 조회(상품분류코드, 분류명)
 ```
@@ -41,9 +41,9 @@ from(
     group by lprod_gu, lprod_nm)
 where cnt = 0
 ```
-![](3.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/3.png)
 
-</br></br></br></br></br>
+​          
 
 ## 4. 지금까지 가장 많이 팔린 상품 조회(상품코드, 상품명, 상품분류명, 거래처명, 마일리지)
 ## 5. 지금까지 가장 적게 팔린 상품 조회(상품코드, 상품명, 상품분류명, 거래처명, 마일리지)
@@ -57,7 +57,7 @@ from prod
 group by prod_id, prod_name,lprod_nm,prod_mileage, buyer_name
 order by sales desc
 ```
-![](4.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/4.png)
 
 >가장 많이 팔린 상품    
 
@@ -74,7 +74,7 @@ from(
     order by sales desc) a
 where rownum = 1;
 ```
-![](5.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/5.png)
 >가장 적게 팔린 상품    
 
 ```
@@ -90,9 +90,9 @@ from(
     order by sales asc) a
 where rownum = 1;
 ```
->![](6.png)
+>![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/6.png)
 
-</br></br></br></br></br>
+​          
 
 ## 6. 거래처 중 거래 품목 수가 가장 많은 거래처 조회(거래처코드, 거래처명, 거래처분류명, 담당자명)
 ## 7. 거래처 중 거래 품목 수가 가장 적은 거래처 조회(거래처코드, 거래처명, 거래처분류명, 담당자명)
@@ -104,7 +104,7 @@ from buyer
 group by buyer_id, buyer_name,lprod_nm
 order by cnt desc; 
 ```
-![](7.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/7.png)
 > 가장 많은 거래처
 ```
 select a.*
@@ -117,7 +117,7 @@ from(
     order by cnt desc)a
 where rownum = 1;
 ```
-![](8.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/8.png)
 > 가장 적은 거래처
 ```
 select a.*
@@ -130,9 +130,9 @@ from(
     order by cnt asc)a
 where rownum = 1;
 ```
-![](9.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/9.png)
 
-</br></br></br></br></br>
+​          
 
 ## 8. 남녀 성별 각각 구매율이 높은 상품 조회(성별, 상품코드, 상품명, 분류명)
 ```
@@ -160,9 +160,9 @@ from (
     order by sum(cart_qty) desc)
 where rownum=1
 ```
-![](10.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/10.png)
 
-</br></br></br></br></br>
+​          
 
 ## 9. 각 회원별 구매 총액 조회(회원아이디, 회원명, 구매총액)
 ```
@@ -173,8 +173,8 @@ from member
 group by mem_id, mem_name
 order by amount desc
 ```
-![](11.png)
-</br></br></br></br></br>
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/11.png)
+          
 
 ## 10. 각 상품별 구매왕 조회(구매왕아이디, 회원명, 구매총액)
 ```
@@ -188,4 +188,4 @@ from(
 where rank=1
 ```
 
-![](12.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/12.png)
