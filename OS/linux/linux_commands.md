@@ -11,7 +11,7 @@
 - -l : 파일들의 상세 정보를 나타냅니다.
 - -a : 숨김 파일들을 표시합니다.
 
-![image-20210811091048650](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811091048650.png)
+![image-20210811091048650](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811091048650.png)
 
 > 위의 사진에서 처럼 보이지 않던 폴더들이  (.으로 시작하는 폴더들은 hidden 입니다) ls -al 명령어에서는 보여줍니다.
 
@@ -65,7 +65,7 @@
 cat .profile
 ```
 
-![image-20210811093622274](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811093622274.png)
+![image-20210811093622274](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811093622274.png)
 
 .profile 내용을 출력해서 보여줍니다.
 
@@ -73,7 +73,7 @@ cat .profile
 cat .profile | more
 ```
 
-![image-20210811094025034](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811094025034.png)
+![image-20210811094025034](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811094025034.png)
 
 more 명령어를 붙이면 한 화면에 다 보여지지 않을때 조금 더 편하게 읽을 수 있게 해줍니다.
 
@@ -89,7 +89,7 @@ more 명령어를 붙이면 한 화면에 다 보여지지 않을때 조금 더 
 head -n 10 .profile
 ```
 
-![image-20210811094342436](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811094342436.png)
+![image-20210811094342436](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811094342436.png)
 
 -f 명령어를 이용하면 실시간으로 추가되는 내용을 모니터링 할 수 있습니다.
 
@@ -103,7 +103,7 @@ head -n 10 .profile
 
 > 현재 경로를 출력합니다
 
-![image-20210811092147288](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811092147288.png)
+![image-20210811092147288](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811092147288.png)
 
 ​	
 
@@ -111,7 +111,7 @@ head -n 10 .profile
 
 > 각각 호스트에 로그인한 사용자 정보 / 내 접속 정보 를 출력해줍니다.
 
-![image-20210811092440119](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811092440119.png)
+![image-20210811092440119](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811092440119.png)
 
 ​	
 
@@ -119,7 +119,7 @@ head -n 10 .profile
 
 > 환경 변수를 출력합니다.
 
-![image-20210811094554165](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811094554165.png)
+![image-20210811094554165](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811094554165.png)
 
 ​	
 
@@ -133,7 +133,7 @@ head -n 10 .profile
 grep if .profile
 ```
 
-![image-20210811094824271](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811094824271.png)
+![image-20210811094824271](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811094824271.png)
 
 ​	
 
@@ -147,7 +147,7 @@ grep if .profile
 env | grep user
 ```
 
-![image-20210811095025207](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811095025207.png)
+![image-20210811095025207](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811095025207.png)
 
 이렇게 env명령의 결과에서 user 문자열을 검색 할 수도 있습니다.
 
@@ -164,7 +164,7 @@ env | grep user
 ps -ef | grep tomcat
 ```
 
-![image-20210811095350982](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811095350982.png)
+![image-20210811095350982](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811095350982.png)
 
 ps -ef의 결과에서 tomcat 이라는 단어를 검색 해 보았습니다.
 
@@ -174,7 +174,7 @@ ps -ef의 결과에서 tomcat 이라는 단어를 검색 해 보았습니다.
 
 > 메모리 상태를 확인하는 명령어 입니다. -h (Human Readable) 옵션과 함께 사용합니다.
 
-![image-20210811095508478](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811095508478.png)
+![image-20210811095508478](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811095508478.png)
 
 
 
@@ -182,7 +182,7 @@ df (Disk Free)
 
 > 디스크 사용량을 확인합니다. 이 역시 -h 옵션과 함께 사용합니다. 특정 디렉터리를 기준으로 하려면 du 명령어를 사용 하면 됩니다.
 
-![image-20210811095614191](https://github.com/Shane-Park/markdownBlog/raw/master/linux/linux_commands.assets/image-20210811095614191.png)
+![image-20210811095614191](https://github.com/Shane-Park/markdownBlog/raw/master/OSlinux/linux_commands.assets/image-20210811095614191.png)
 
 ​	
 
