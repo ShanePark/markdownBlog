@@ -7,7 +7,7 @@
 
 <br>
 
-https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/jsCookie.assets.1.png
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/jsCookie.assets/1.png)
 
 아직 테스트중인 페이지이기 때문에 시안이 좀 투박하나 양해 부탁드립니다.
 
