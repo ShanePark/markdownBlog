@@ -2,7 +2,7 @@
 
 ​	
 
-![image-20210816194319145](vue.assets/image-20210816194319145.png)
+![image-20210816194319145](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816194319145.png)
 
 ​	
 
@@ -18,7 +18,7 @@
 
 사실 Vue.js는 자바스크립트 프레임워크기 때문에 Node.js 를 쓰건 SpringBoot를 사용하건, 아니면 아에 그냥 .html 파일만 만들어서 해도 무방 할 듯 합니다.
 
-![image-20210816191954366](vue.assets/image-20210816191954366.png)
+![image-20210816191954366](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816191954366.png)
 
 ​	
 
@@ -26,11 +26,11 @@ Dependency 는 Web 정도 있으면 일단 될텐데, 봐서 DB도 연동하기 
 
 다만, JPA를 추가 하면 반드시 datasource 를 입력 해야하기 때문에 
 
-![](vue.assets/image-20210816192452274.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816192452274.png)
 
 ​	
 
-![image-20210816192530764](vue.assets/image-20210816192530764.png)
+![image-20210816192530764](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816192530764.png)
 
 Finish를 눌러 프로젝트를 생성 합니다.
 
@@ -50,7 +50,7 @@ spring.datasource.password=java
 
 src/main/resources/static 폴더에 index.html 파일을 만들겠습니다.
 
-![image-20210816193944453](vue.assets/image-20210816193944453.png)
+![image-20210816193944453](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816193944453.png)
 
 ```html
 <!DOCTYPE html>
@@ -69,7 +69,7 @@ src/main/resources/static 폴더에 index.html 파일을 만들겠습니다.
 
 이제 준비는 끝났습니다. 서버를 실행 하면 index.html 파일의 내용이 나옵니다.
 
-![image-20210816194207196](vue.assets/image-20210816194207196.png)
+![image-20210816194207196](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816194207196.png)
 
 ## 지금부터 Vue.js 기본을 하나씩 따라해보겠습니다.
 
@@ -77,7 +77,7 @@ https://vuejs.org/v2/guide/ 의 공식 가이드를 참고했습니다.
 
 ​	
 
-![image-20210816195246816](vue.assets/image-20210816195246816.png)
+![image-20210816195246816](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816195246816.png)
 
 일단 Vue.js를 추가합니다. 저희는 개발자기 떄문에 위에 있는 development version을 사용하겠습니다.
 
@@ -90,13 +90,13 @@ https://vuejs.org/v2/guide/ 의 공식 가이드를 참고했습니다.
 
 해당 내용을 추가 한 후 페이지를 새로 고침 해보니 vue.js 파일을 정상적으로 불러 옵니다.
 
-![image-20210816195444386](vue.assets/image-20210816195444386.png)
+![image-20210816195444386](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816195444386.png)
 
 # 
 
 당연히 처음에는 Hello world를 빼놓을 수 없겠죠 ?
 
-![image-20210816195558941](vue.assets/image-20210816195558941.png)
+![image-20210816195558941](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816195558941.png)
 
 
 
@@ -134,13 +134,13 @@ data 속성을 통해 message 라는 변수에 Hello Vue! 라는 데이터를 �
 
 
 
-![image-20210816200335359](vue.assets/image-20210816200335359.png)
+![image-20210816200335359](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816200335359.png)
 
 아주 간단하지만 처음으로 Vue.js 를 이용해 페이지를 만들어 보았습니다.
 
 ​	
 
-![image-20210816200434631](vue.assets/image-20210816200434631.png)
+![image-20210816200434631](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816200434631.png)
 
 
 
@@ -175,7 +175,7 @@ data 속성을 통해 message 라는 변수에 Hello Vue! 라는 데이터를 �
 
 
 
-![image-20210816201136239](vue.assets/image-20210816201136239.png)
+![image-20210816201136239](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816201136239.png)
 
 
 
@@ -183,7 +183,7 @@ data 속성을 통해 message 라는 변수에 Hello Vue! 라는 데이터를 �
 
 
 
-![image-20210816201250286](vue.assets/image-20210816201250286.png)
+![image-20210816201250286](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816201250286.png)
 
 v-bind는 directive 입니다. Vue 에서는 특별한 속성들을 v- 로 시작하는데요, 렌더링 되는 DOM 요소에 특별한 동적인 행동을 추가할 수 있습니다.
 
@@ -193,7 +193,7 @@ v-bind는 directive 입니다. Vue 에서는 특별한 속성들을 v- 로 시�
 
 ​	
 
-![image-20210816201527489](vue.assets/image-20210816201527489.png)
+![image-20210816201527489](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816201527489.png)
 
 조건문은 위에 보이는 것 처럼 v-if 속성을 넣어 사용 할 수 있습니다.
 
@@ -230,7 +230,7 @@ v-bind는 directive 입니다. Vue 에서는 특별한 속성들을 v- 로 시�
 
 위와 같이 코드를 작성하면
 
-![image-20210816201630034](vue.assets/image-20210816201630034.png)
+![image-20210816201630034](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816201630034.png)
 
 seen 변수가 true로 지정되어 있기 때문에 해당 내용이 표시 됩니다. seen:false 라면 아무것도 보이지 않습니다.
 
@@ -238,7 +238,7 @@ seen 변수가 true로 지정되어 있기 때문에 해당 내용이 표시 됩
 
 이번엔 반복문입니다.
 
-![image-20210816202605489](vue.assets/image-20210816202605489.png)
+![image-20210816202605489](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816202605489.png)
 
 
 
@@ -284,7 +284,7 @@ seen 변수가 true로 지정되어 있기 때문에 해당 내용이 표시 됩
 
 ### 저장하고 확인해보면
 
-![image-20210816202552743](vue.assets/image-20210816202552743.png)
+![image-20210816202552743](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816202552743.png)
 
 Vue.js 플러그인을 이클립스에 깔았더니 훨씬 낫네요 ! todos 배열의 데이터들을 하나씩 반복하며 보여줍니다.
 
@@ -294,7 +294,7 @@ Vue.js 플러그인을 이클립스에 깔았더니 훨씬 낫네요 ! todos 배
 
 
 
-![image-20210816203040203](vue.assets/image-20210816203040203.png)
+![image-20210816203040203](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816203040203.png)
 
 
 
@@ -334,7 +334,7 @@ Vue.js 플러그인을 이클립스에 깔았더니 훨씬 낫네요 ! todos 배
 </html>
 ```
 
-![image-20210816203308568](vue.assets/image-20210816203308568.png)
+![image-20210816203308568](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816203308568.png)
 
 methods: 속성에 Reverse Message 라는 함수를 선언 해 두고, 해당 버튼에 v-on:click 속성으로 클릭시 해당 함수를 호출하게끔 되어 있습니다. 눌렀을 때 글자가 반대로 출력되는 것이 확인됩니다.
 
@@ -377,13 +377,13 @@ vue06.html 파일은 input 태그에 텍스트가 변경되면 바로 바로 해
 
 v-model 속성을 사용해 양방향 데이터 바인딩이 가능합니다.
 
-![image-20210816203628267](vue.assets/image-20210816203628267.png)
+![image-20210816203628267](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816203628267.png)
 
 
 
 ### Composing과 Components
 
-![image-20210816204010685](vue.assets/image-20210816204010685.png)
+![image-20210816204010685](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816204010685.png)
 
 
 
@@ -454,4 +454,5 @@ Vue.js에서의 또 다른 중요한 개념인 Component System에 대한 설명
 
 
 
-이상입니다.
+이상입니다. 해당 포스팅의 프로젝트 내 모든 코드들은 https://github.com/Shane-Park/markdownBlog/tree/master/projects/vuejs 에서 확인 하실 수 있습니다.
+
