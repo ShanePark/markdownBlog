@@ -1,0 +1,75 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>title</title>
+</head>
+
+<body>
+	<h2>Vue Board</h2>
+	<table id="board">
+		<thead>
+			<th>글번호</th>
+			<th>제목</th>
+			<th>작성자</th>
+			<th>내용</th>
+		</thead>
+		<tr v-if="!boardlist">
+			<td>게시글이 없습니다.</td>
+		</tr>
+		<tr v-for="board in boardlist">
+			<td v-text="board.boardno"></td>
+			<td v-text="board.title"></td>
+			<td v-text="board.writer"></td>
+			<td v-text="board.content"></td>
+		</tr>
+	</table>
+	<br/>
+	<div id="regform">
+		<form v-on:submit.prevent="create">
+			<span>제목</span><input type="text" name="title">
+			<span>작성자</span><input type="text" name="writer">
+			<span>내용</span><input type="text" name="content">
+			<button>등록</button>
+		</form>
+	</div>
+<script>
+	let regform = new Vue({
+		el:'#regform',
+		methods:{
+			create: function(){
+				$.ajax({
+					url : '/restapi/board'
+					,method : 'post'
+					,data : regform.body
+				}).done(function(data){
+					board.load()
+				})
+			}
+		}
+	})
+	
+	let board = new Vue({
+		el: '#board',
+		data: {
+			boardlist : []
+		},
+		mounted : function(){
+			this.load()
+		} ,
+		methods:{
+			load : function(){
+				let that = this;
+				$.ajax({
+					url : '/restapi/board'
+				}).done(function(data){
+					that.boardlist = data.payload;
+				})
+			}
+		}
+	})
+</script>
+</body>
+</html>
