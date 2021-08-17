@@ -457,5 +457,222 @@ mount는 해당 뷰 인스턴스가 준비 되었을 때 실행되는데, load �
 
 게시글 목록들을 잘 불러옵니다 !
 
+​	
+
+### 이번에는 글 작성을 해보았습니다.
+
+![image-20210817232334253](vueboard.assets/image-20210817232334253.png)
+
+이렇게 input 태그에 내용을 작성 하고 "등록" 을 누르면
+
+​	
+
+![image-20210817232429467](vueboard.assets/image-20210817232429467.png)
+
+깜빡임 없이 간단하게 새 글이 맨 위에 등록 됩니다. 중간의 텅 빈 화면에서 눈치 채셨겠지만 저도 꽤나 삽질을 했습니다.
 
 
+
+새 글 작성하는 간단한 form 입니다.
+
+```html
+	<div id="regform">
+		<form v-on:submit.prevent="create">
+			<span>제목</span><input type="text" name="title" v-model="title">
+			<span>작성자</span><input type="text" name="writer" v-model="writer">
+			<span>내용</span><input type="text" name="content" v-model="content">
+			<button>등록</button>
+		</form>
+	</div>
+```
+
+
+
+v-on:submit.prevent="create"는 해당 form은 submit 해도 preventDefault()를 하며, create라는 method를 호출 하도록 한 것입니다. v-model 을 이용하면 하나하나의 input 태그에 id 값을 따로 주지 않더라도 Vue 인스턴스의 data로 사용 할 수 있습니다.
+
+
+
+### 해당하는 Vue 코드를 확인해보겠습니다.
+
+```javascript
+let regform = new Vue({
+		el:'#regform',
+		data : {
+			title:''
+			,writer:''
+			,content:''
+		},
+		methods:{
+			create: function(){
+				$.ajax({
+					url : '/restapi/board'
+					,data : {
+						title : regform.title
+						,writer : regform.writer
+						,content : regform.content
+					}
+					,method : 'POST'
+				}).done(function(data){
+					board.load()
+				})
+			}
+		}
+	})
+```
+
+data에 필요한 변수 명들을 선언 해 주어야 합니다. create 함수 호출시에는 ajax로 비동기 POST 요청을 하고, 성공시에 아까 만들어둔 board의 load 메서드를 호출 해서 간단하게 해당하는 부분만 새로 받아와서 보여줍니다. 기존의 비동기 요청에서는 하나하나 렌더링을 해 줘야 해서 불편했는데 정말 편하게 할 수 있습니다.
+
+
+
+### 이번에는 마지막으로 삭제 하는 기능을 추가해보겠습니다.
+
+![image-20210817235044469](vueboard.assets/image-20210817235044469.png)
+
+
+
+'삭제' 버튼을 클릭하면 간단하게 바로바로 삭제 되도록 구현 했습니다. 위에서 삽질하면서 잔뜩 생겼던 빈 내용들이 싹 사라져서 기분이 좋네요.
+
+
+
+```html
+<td><button v-on:click="remove(board.boardno)">삭제</button></td>
+```
+
+삭제 버튼을 테이블에 간단하게 추가 해 주었습니다. 삭제 버튼을 클릭하면 remove 메서드를 호출 하며 해당 게시판의 넘버를 파라미터로 넘기도록 했습니다.
+
+​	
+
+```javascript
+remove : function(boardno){
+				$.ajax({
+					url : '/restapi/board'
+					,method : 'post'
+					,data : {
+						boardno : boardno
+						,_method : 'delete'
+					}
+				}).done(function(data){
+					board.load();
+				})
+			}
+```
+
+이번엔 해당 remove 메서드 입니다.
+
+RESTAPI 에 delete 요청으로 boardno를 데이터로 넘기는데 , delete 요청을 ajax 에서 보내기 위해서 post 요청으로 보내며 _method로 'delete'를 보냈습니다.
+
+
+
+### vueboard.html 
+
+```html
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>title</title>
+</head>
+
+<body>
+	<h2>Vue.js Board</h2>
+	<table id="board">
+		<thead>
+			<th>글번호</th>
+			<th>제목</th>
+			<th>작성자</th>
+			<th>내용</th>
+			<th>삭제</th>
+		</thead>
+		<tr v-if="!boardlist">
+			<td>게시글이 없습니다.</td>
+		</tr>
+		<tr v-for="board in boardlist">
+			<td v-text="board.boardno"></td>
+			<td v-text="board.title"></td>
+			<td v-text="board.writer"></td>
+			<td v-text="board.content"></td>
+			<td><button v-on:click="remove(board.boardno)">삭제</button></td>
+		</tr>
+	</table>
+	<br/>
+	<div id="regform">
+		<form v-on:submit.prevent="create">
+			<span>제목</span><input type="text" name="title" v-model="title">
+			<span>작성자</span><input type="text" name="writer" v-model="writer">
+			<span>내용</span><input type="text" name="content" v-model="content">
+			<button>등록</button>
+		</form>
+	</div>
+<script>
+	let regform = new Vue({
+		el:'#regform',
+		data : {
+			title:''
+			,writer:''
+			,content:''
+		},
+		methods:{
+			create: function(){
+				$.ajax({
+					url : '/restapi/board'
+					,data : {
+						title : regform.title
+						,writer : regform.writer
+						,content : regform.content
+					}
+					,method : 'POST'
+				}).done(function(data){
+					board.load();
+				})
+			}
+		}
+	})
+	
+	let board = new Vue({
+		el: '#board',
+		data: {
+			boardlist : []
+		},
+		mounted : function(){
+			this.load()
+		} ,
+		methods:{
+			load : function(){
+				$.ajax({
+					url : '/restapi/board'
+				}).done(function(data){
+					board.boardlist = data.payload;
+				})
+			},
+			remove : function(boardno){
+				$.ajax({
+					url : '/restapi/board'
+					,method : 'post'
+					,data : {
+						boardno : boardno
+						,_method : 'delete'
+					}
+				}).done(function(data){
+					board.load();
+				})
+			}
+		}
+	})
+</script>
+</body>
+</html>
+```
+
+
+
+그렇게 해서 코드가 제법 길어졌습니다.
+
+C/R/U/D 중에 U 를 제외한 내용들을 간단하게 Vue.js 를 통해서 시도 해 보았습니다.
+
+워낙 간단하기 때문에 남은 "수정" 항목은 위에서 연습한 내용을 바탕으로 한번 씩 스스로 해보시면 되겠습니다. 
+
+
+
+수고하셨습니다.

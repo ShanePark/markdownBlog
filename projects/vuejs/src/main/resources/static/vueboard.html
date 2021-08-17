@@ -8,13 +8,14 @@
 </head>
 
 <body>
-	<h2>Vue Board</h2>
+	<h2>Vue.js Board</h2>
 	<table id="board">
 		<thead>
 			<th>글번호</th>
 			<th>제목</th>
 			<th>작성자</th>
 			<th>내용</th>
+			<th>삭제</th>
 		</thead>
 		<tr v-if="!boardlist">
 			<td>게시글이 없습니다.</td>
@@ -24,28 +25,38 @@
 			<td v-text="board.title"></td>
 			<td v-text="board.writer"></td>
 			<td v-text="board.content"></td>
+			<td><button v-on:click="remove(board.boardno)">삭제</button></td>
 		</tr>
 	</table>
 	<br/>
 	<div id="regform">
 		<form v-on:submit.prevent="create">
-			<span>제목</span><input type="text" name="title">
-			<span>작성자</span><input type="text" name="writer">
-			<span>내용</span><input type="text" name="content">
+			<span>제목</span><input type="text" name="title" v-model="title">
+			<span>작성자</span><input type="text" name="writer" v-model="writer">
+			<span>내용</span><input type="text" name="content" v-model="content">
 			<button>등록</button>
 		</form>
 	</div>
 <script>
 	let regform = new Vue({
 		el:'#regform',
+		data : {
+			title:''
+			,writer:''
+			,content:''
+		},
 		methods:{
 			create: function(){
 				$.ajax({
 					url : '/restapi/board'
-					,method : 'post'
-					,data : regform.body
+					,data : {
+						title : regform.title
+						,writer : regform.writer
+						,content : regform.content
+					}
+					,method : 'POST'
 				}).done(function(data){
-					board.load()
+					board.load();
 				})
 			}
 		}
@@ -61,11 +72,22 @@
 		} ,
 		methods:{
 			load : function(){
-				let that = this;
 				$.ajax({
 					url : '/restapi/board'
 				}).done(function(data){
-					that.boardlist = data.payload;
+					board.boardlist = data.payload;
+				})
+			},
+			remove : function(boardno){
+				$.ajax({
+					url : '/restapi/board'
+					,method : 'post'
+					,data : {
+						boardno : boardno
+						,_method : 'delete'
+					}
+				}).done(function(data){
+					board.load();
 				})
 			}
 		}
