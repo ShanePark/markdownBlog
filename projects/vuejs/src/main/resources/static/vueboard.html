@@ -4,7 +4,38 @@
 	<meta charset="UTF-8">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/style.css" />
 	<title>title</title>
+	 <script type="text/x-template" id="modal-template">
+      <transition name="modal">
+        <div class="modal-mask">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+
+              <div class="modal-header">
+                <slot name="header">
+                  default header
+                </slot>
+              </div>
+
+              <div class="modal-body">
+                <slot name="body">
+                  default body
+                </slot>
+              </div>
+
+              <div class="modal-footer">
+                <slot name="footer">
+                  <button class="modal-default-button" @click="$emit('close')">
+                    close
+                  </button>
+                </slot>
+              </div>
+            </div>
+          </div>
+        </div>
+      </transition>
+    </script>
 </head>
 
 <body>
@@ -30,20 +61,38 @@
 	</table>
 	<br/>
 	<div id="regform">
-		<form v-on:submit.prevent="create">
-			<span>제목</span><input type="text" name="title" v-model="title">
-			<span>작성자</span><input type="text" name="writer" v-model="writer">
-			<span>내용</span><input type="text" name="content" v-model="content">
-			<button>등록</button>
-		</form>
+      <button id="show-modal" @click="showModal = true">작성</button>
+      <!-- use the modal component, pass in the prop -->
+      <modal v-if="showModal" @close="showModal = false">
+        <h3 slot="header">게시글 작성</h3>
+      	<div slot="body">
+			<form v-on:submit.prevent="create">
+				<label>제목
+					<input type="text" name="title" v-model="title">
+				</label><br/>
+				<label>작성자
+					<input type="text" name="writer" v-model="writer">
+				</label><br/>
+				<label>내용
+				<input type="text" name="content" v-model="content">
+				</label>
+				<button>등록</button>
+			</form>
+      	</div>
+      </modal>
 	</div>
 <script>
+	Vue.component("modal", {
+	    template: "#modal-template"
+	  });
+	
 	let regform = new Vue({
 		el:'#regform',
 		data : {
 			title:''
 			,writer:''
 			,content:''
+			,showModal: false
 		},
 		methods:{
 			create: function(){
@@ -56,6 +105,10 @@
 					}
 					,method : 'POST'
 				}).done(function(data){
+					regform.title = '';
+					regform.writer = '';
+					regform.content = '';
+					regform.showModal = false;
 					board.load();
 				})
 			}

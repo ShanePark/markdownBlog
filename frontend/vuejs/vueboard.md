@@ -2,7 +2,7 @@
 
 ​	
 
-Vue.js, SpringBoot, PostgreSQL, Hibernate 중 익숙하지 않은 기술이 있는 분은 아래의 두 포스팅을 참고하시면 코드를 잘 읽을 수 있습니다.
+Vue.js, SpringBoot, PostgreSQL, Hibernate 중 익숙하지 않은 기술이 있는 분은 아래의 두 포스팅을 먼저 참고하시면 코드를 좀 더 쉽게 읽으실 수 있습니다.
 
 ### [Vue.js 사용 하기 1 ) 기본 문법](https://shanepark.tistory.com/201)
 
