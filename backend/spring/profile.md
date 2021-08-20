@@ -16,13 +16,13 @@
 
 ## 그럼 이제 새로 만든 프로필로 어플리케이션을 실행하도록 설정하는 방법을 알아보겠습니다.
 
-1. ### 해당 프로젝트를 우클릭 하고 - properties를 들어갑니다.
+### 1. 해당 프로젝트를 우클릭 하고 - properties를 들어갑니다.
 
 ![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img.png)
 
 
 
-2. ### Run/Debug Setting 으로 갑니다.
+### 2. Run/Debug Setting 으로 갑니다.
 
 ![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830379.png)
 
@@ -36,7 +36,7 @@
 
  	
 
-4. ### Arguments 를 클릭하고, VM arguments 란에 아래와 같이 입력합니다.
+### 4. Arguments 를 클릭하고, VM arguments 란에 아래와 같이 입력합니다.
 
 ```
 -Dspring.profiles.active=dev
@@ -46,7 +46,7 @@
 
 
 
-5. ### 그러면 이제 application-dev.yml 파일 혹은 application-dev.properties 파일을 기본 프로필로 이용합니다.
+### 5. 그러면 이제 application-dev.yml 파일 혹은 application-dev.properties 파일을 기본 프로필로 이용합니다.
 
 설정 전 후 비교를 해보면 아래 보이는 것 처럼 원래는 어플리케이션을 실행했을때 default profiles: default 라고 나오지만
 
