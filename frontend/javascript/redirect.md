@@ -24,7 +24,7 @@ window.location.href = 'https://shanepark.tistory.com';
 
 
 
-대다수의 상황에서 windows.location.href 는 별 문제 없이 작동하지만, 해당 리다이렉트 방법을 사용하면 안되는 경우도 있을 수 있습니다. 아마 이 포스팅을 읽고 있는 분들도 많이들 겪어 보셨을 거라고 생각합니다.
+대다수의 상황에서 window.location.href 는 별 문제 없이 작동하지만, 해당 리다이렉트 방법을 사용하면 안되는 경우도 있을 수 있습니다. 아마 이 포스팅을 읽고 있는 분들도 많이들 겪어 보셨을 거라고 생각합니다.
 
 그 상황을 한번 임의로 만들어 보겠습니다.
 
@@ -118,7 +118,7 @@ window.location.href = 'https://shanepark.tistory.com';
 
 
 
-### windows.location.replace 를 이용하면 해결 할 수 있습니다.
+### window.location.replace 를 이용하면 해결 할 수 있습니다.
 
 위의 2.html 코드를 조금만 수정해보겠습니다.
 
@@ -135,7 +135,7 @@ window.location.href = 'https://shanepark.tistory.com';
 
 
 
-### windows.location.href 대신 replace를 썼을 뿐인데 어떻게 달라졌나 확인 을 해보겠습니다.
+### window.location.href 대신 replace를 썼을 뿐인데 어떻게 달라졌나 확인 을 해보겠습니다.
 
 ​	
 
@@ -143,8 +143,12 @@ window.location.href = 'https://shanepark.tistory.com';
 
 이 경우에는 뒤로가기와 앞으로가기를 눌러도 2.html 파일이 노출되지 않습니다.
 
-그래서 의도에 따라 "클릭" 등으로 이동 할때는 windows.location.href 가 좋을 수 있지만 페이지를 넘겨 버리는 역할에서는 windows.location.replace가 필요합니다.
+그래서 의도에 따라 "클릭" 등으로 이동 할때는 window.location.href 가 좋을 수 있지만 페이지를 넘겨 버리는 역할에서는 window.location.replace가 필요합니다.
+
+
+
+사용방법의 차이에서 눈치챘을 수도 있지만, window.location.href="" 는 속성을 변경하는 것 이지만 window.location.replace() 는 함수를 호출 합니다.
 
 ​	
 
-### 둘중 어떤 함수를 이용할 지 고민된다면, Browser history에 쌓을지 말지를 고민해보시면 되겠습니다.
+### 둘중 어떤걸 이용할 지 고민된다면, Browser history에 쌓을지 말지를 고민해보시면 되겠습니다.
