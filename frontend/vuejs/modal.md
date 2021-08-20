@@ -99,7 +99,7 @@ Vue.js 공식 홈페이지의 Modal 관련한 부분은 https://vuejs.org/v2/exa
 
 ​	
 
-### 이제 <head> 부분에 
+### 이제  &lt;head&gt; 부분에 
 
 ```html
 <link rel="stylesheet" type="text/css" href="/style.css" />
