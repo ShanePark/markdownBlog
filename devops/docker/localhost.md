@@ -2,33 +2,33 @@
 
 ​	
 
-### docker에서 컨테이너들을 실행 중인 서버를 바라 봐야 할 경우가 있습니다. 
+### docker에서 컨테이너들이 실행 중인 서버를 바라 봐야 할 경우가 있습니다. 
 
  Docker Compose를 이용해 여러개의 도커 컨테이너를 실행해서 하나의 어플리케이션을 담당한다고 했을때, 하나의 네트워크로 연결해 사용하게 되는데요. 정작 컨테이너에서 로컬 서버에는 어떻게 접근해야 할까요?
 
 ![image-20210821144823960](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821144823960.png)
 
-제 맥북에서 사용중인 Docker에는 컨테이너가 아직 PostgreSQL 하나밖에 없어서, 이 컨테이너를 이용해 해보겠습니다.
+제 맥북에서 사용중인 Docker에는 컨테이너가 아직 PostgreSQL 하나밖에 없어서, 이 컨테이너를 이용해서 시도 해 보겠습니다.
 
+​	
 
+제 컨테이너 같이 DB 서버라면 사실 필요할 일은 없지만, Apache나 NginX 같은 웹 서버의 경우는 흔하게 필요한 상황이 발생 할 수 있겠습니다.
 
-보통 컨테이너가 로컬을 바라봐야 하는 경우가 있다면, Apache 웹서버나 NginX 의 경우는 흔하게 발생 할 수 있겠습니다.
-
-
+​	
 
 일단 해당 Container로 접속 해 보겠습니다.
 
-GUI환경이라면
+### GUI환경이라면
 
 ![image-20210821145005719](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145005719.png)
 
-로 쉽게 터미널을 띄울 수 있습니다.
+위에 보이는 CLI 버튼으로 쉽게 접속 해 터미널을 띄울 수 있습니다.
 
 ![image-20210821145031263](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145031263.png)
 
-간단하죠. 그렇다면 CLI 환경에서 한번 차근차근 띄워보겠습니다.
+간단하죠. 그렇다면 이번에는 CLI 환경에서 한번 차근차근 띄워보겠습니다.
 
-
+​	
 
 ### 1. 터미널을 켭니다
 
@@ -62,9 +62,9 @@ docker ps
 
 그러면 이제 해당 컨테이너에 접속이 완료 된 상태입니다.
 
+​	
 
-
-### cURL 설치
+### 3. cURL 설치
 
 ![image-20210821145813776](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145813776.png)
 
@@ -92,6 +92,8 @@ curl을 설치 해 줍니다.
 
 당연히 Y 를 입력해야 설치가 됩니다. 
 
+​	
+
 이제 localhost로 curl 명령을 보내 보겠습니다.
 
 ```bash
@@ -104,13 +106,13 @@ curl localhost:8080
 
 Failed to connect to localhost port 8080: Connection refused 가 나오네요..
 
-
+​	
 
 하지만
 
 ![image-20210821150118245](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150118245.png)
 
-​	
+​		
 
 저는 분명 localhost에 서버를 하나 띄워 두었습니다.
 
@@ -120,7 +122,9 @@ Failed to connect to localhost port 8080: Connection refused 가 나오네요..
 
 잘 받아오는 것을 확인할 수 있습니다. Docker에서 localhost는 컨테이너 그 자신의 주소기 때문에 이런 문제가 발생 한 것 입니다.
 
+​	
 
+​	
 
 ## 그렇다면 docker container에서 localhost를 어떻게 접근할까?
 
@@ -152,7 +156,9 @@ curl 192.168.0.19:8080
 
 물론, 접속이 잘 되지만 이건 좋은 방법이 아닙니다. 내부아이피야 인터넷 사용하는 환경에 따라 매번 달라질 수 있는데 그럴때마다 수정을 할 수도 없고 번거롭습니다.
 
+​	
 
+​	
 
 ### 2. host.docker.internal를 이용합니다.
 
