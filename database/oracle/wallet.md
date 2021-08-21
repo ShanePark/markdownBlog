@@ -18,9 +18,11 @@
 
 ## 지금부터 간단한 프로젝트를 생성 해서 데이터베이스와 Oracle 전자지갑 이용해 DB 연결을 하는 것을 함께 해 보겠습니다. 쉽지 않은 내용이니 차근차근 읽으며 해주시고 막히는 부분은 댓글로 남겨주세요.
 
+​	
 
+​	
 
-## 1 스프링 부트 프로젝트 생성
+### 1 스프링 부트 프로젝트 생성
 
 > 기존에 프로젝트가 있는 분들은 그냥 사용중인 프로젝트 이용하시면 됩니다.
 
@@ -28,7 +30,7 @@
 
 스프링 부트 프로젝트와 DB 연결을 해보기 위해 스프링 부트 프로젝트를 생성 합니다.
 
-
+### 	
 
 ![image-20210821095435493](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821095435493.png)
 
@@ -107,9 +109,11 @@ ORDER BY COLUMN_ID;
 
 
 
-## 일단 지갑으로 연결을 하기 전에 기존의 방식대로 연결을 하는 프로젝트를 생성 하고, 전자지갑으로 연결하도록 변경을 해 보도록 하겠습니다.
+## 기존의 URL 방식대로 연결을 하는 프로젝트를 생성
 
-​		
+> 작동을 확인한 후에 전자지갑으로 연결하도록 변경을 해 보도록 하겠습니다.
+
+​			
 
 패키지 구조는 아래와 같습니다.
 
@@ -247,7 +251,7 @@ mybatis.type-aliases-package=com.shane.vo
 mybatis.mapper-locations=classpath:mappers/*.xml
 ```
 
-
+​	
 
 이렇게 간단한 어플리케이션을 생성 해서 작동 해 보았습니다.
 
@@ -275,7 +279,7 @@ http://javaperformancetools.blogspot.com/2017/06/oracle-wallet-jdbc-jpa-configur
 
 ![image-20210821112724130](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821112724130.png)
 
-
+​	
 
 ### application.properties
 
@@ -293,31 +297,31 @@ mybatis.type-aliases-package=com.shane.vo
 mybatis.mapper-locations=classpath:mappers/*.xml
 ```
 
-
+​	
 
 일단 위와 같이 변경해서 시도 해보았습니다.
 
-
+​	
 
 ![image-20210821113259914](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821113259914.png)
 
-
+​	
 
 몇가지 에러가 뜨는데요, 해당 에러들을 해결 하면 될 것 같습니다.
 
-
+​	
 
 ![image-20210821113516004](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821113516004.png)
 
-
+​	
 
 일단 블로그에 댓글 달아주신 help 님이 OJDBC 문제로 고생 하셨었다고 하는데 저도 stack trace에 ojdbc8 이 뜨는걸 보니 이걸 우선 해결 해 보겠습니다.
 
-
+​	
 
 ### ojdbc 10으로 변경
 
-​	
+​		
 
 pom.xml 에서 ojdbc를 8 에서 10으로 변경합니다.
 
@@ -330,7 +334,7 @@ pom.xml 에서 ojdbc를 8 에서 10으로 변경합니다.
 		</dependency>
 ```
 
-
+​	
 
 ojdbc를 10으로 갈아끼우고 나니 실행할 때 아래와 같은 에러가 발생했는데요
 
@@ -338,7 +342,7 @@ ojdbc를 10으로 갈아끼우고 나니 실행할 때 아래와 같은 에러�
 Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
 ```
 
-
+​	
 
 Oracle 9 이후로는 oracle.jdbc.driver.OracleDriver 대신 oracle.jdbc.OracleDriver 를 이용하기 때문입니다.
 
@@ -348,7 +352,7 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 드라이버 이름을 위와 같이 변경합니다.
 
-
+​	
 
 ![image-20210821114935495](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821114935495.png)
 
@@ -356,7 +360,7 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 > 이때 제가 댓글 열심히 달았던 내용을 보니 제가 동문서답 한 내용들이 많이 보여 부끄러웠습니다.
 
-​	
+​		
 
 ```xml
 		<dependency>
@@ -376,7 +380,7 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 		<dependency>
 ```
 
-
+​	
 
 이제 다시 시도 해 보겠습니다.
 
@@ -384,7 +388,7 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 분명 오류 메시지인데 왜이렇게 기쁠까요 ? 비밀번호는 잘 입력한 것 같은데 보니 username 을 확인해보니 admin 으로 써야 하는데 shane 이라고 써놨었습니다. 해당 내용을 변경 한 후 다시 시도 해보면..
 
-
+​	
 
 ![image-20210821115612007](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821115612007.png)
 
@@ -392,15 +396,15 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 성공했습니다.  쉽지 않았네요. 저보다 먼저 고생하며 앞에서 길을 열어준 "help"님 덕분에 많은 분들에게 해당 내용을 공유할 수 있게 되어 기쁩니다.
 
-
+​	
 
 ## 맥북을 구매하셔서 오라클 데이터베이스를 사용하는데 큰 어려움이 있으시겠지만 모두 개발자로서의 큰 성장의 트리거가 되셨으면 좋겠습니다. 수고하셨습니다.
 
-
+​	
 
 마지막으로 pom.xml과 application.properties 공유 해 드리고 마치겠습니다.
 
-
+​	
 
 ### pom.xml
 
@@ -418,7 +422,7 @@ mybatis.type-aliases-package=com.shane.vo
 mybatis.mapper-locations=classpath:mappers/*.xml
 ```
 
-
+​	
 
 ### application.properties
 
@@ -436,6 +440,6 @@ mybatis.type-aliases-package=com.shane.vo
 mybatis.mapper-locations=classpath:mappers/*.xml
 ```
 
-
+​	
 
 전체 코드는 https://github.com/Shane-Park/markdownBlog/tree/master/projects/oraclewallet 에서 확인하실 수 있습니다.
