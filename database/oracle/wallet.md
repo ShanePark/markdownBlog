@@ -1,4 +1,4 @@
-# Mac) Oracle FreeTier 이용해 웹 어플리케이션 배포하기 5) 오라클 전자지갑 사용해 프로젝트와 연결하기
+# Mac) Oracle FreeTier 이용해 웹 어플리케이션 배포하기 6) 오라클 전자지갑 사용해 프로젝트와 연결하기
 
 
 
@@ -436,3 +436,6 @@ mybatis.type-aliases-package=com.shane.vo
 mybatis.mapper-locations=classpath:mappers/*.xml
 ```
 
+
+
+전체 코드는 https://github.com/Shane-Park/markdownBlog/tree/master/projects/oraclewallet 에서 확인하실 수 있습니다.
