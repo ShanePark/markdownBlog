@@ -251,4 +251,4 @@ Eclipse도 그렇지만, 다양한 Plugin을 제공합니다. 다만 이클립�
 
 ![image-20210822093227801](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210822093227801.png)
 
-![image-20210822093135000]https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210822093135000.png)
+![image-20210822093135000](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210822093135000.png)
