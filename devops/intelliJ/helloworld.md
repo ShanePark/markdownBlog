@@ -247,4 +247,8 @@ Eclipse도 그렇지만, 다양한 Plugin을 제공합니다. 다만 이클립�
 
 
 
-그래서 저는 8월이 끝나기 전에 30% 할인된 가격으로 구독을 하기로 했습니다. 당장 업무에서 사용하기에는 무리가 있고 단축키를 익히는데 시간이 필요하겠지만, 개인적인 공부나 프로젝트에서 활용하며 점차 그 사용을 늘려 볼 계획입니다.
+그래서 저는 8월이 끝나기 전에 30% 할인된 가격으로 구독을 하기로 결정했습니다. 당장 업무에서 사용하기에는 무리가 있고 단축키를 익히는데 시간이 필요하겠지만, 개인적인 공부나 프로젝트에서 활용하며 점차 그 사용을 늘려 볼 계획입니다.
+
+![image-20210822093227801](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210822093227801.png)
+
+![image-20210822093135000]https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210822093135000.png)
