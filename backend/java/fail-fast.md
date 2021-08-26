@@ -111,3 +111,7 @@ Fail-Safe 컬렉션의 예로는 java.util.concurrent 패키지의 ConcurrentHas
 이번 포스팅에서 Fail-Safe와 Fail-Fast Iterators가 Java에서 어떻게 구현되었는지 알아 보았습니다.
 
 빠르게 실패할 것인가, 아니면 안전하게 실패할 것인가. 지금의 문제 상황을 어떻게 트러블 슈팅 해내는게 맞는지 한번 잘 고민해 볼 때입니다.
+
+
+
+reference : https://www.baeldung.com/java-fail-safe-vs-fail-fast-iterator
