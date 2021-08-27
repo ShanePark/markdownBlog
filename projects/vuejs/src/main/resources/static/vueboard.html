@@ -11,7 +11,6 @@
         <div class="modal-mask">
           <div class="modal-wrapper">
             <div class="modal-container">
-
               <div class="modal-header">
                 <slot name="header">
                   default header
@@ -40,28 +39,55 @@
 
 <body>
 	<h2>Vue.js Board</h2>
-	<table id="board">
-		<thead>
-			<th>글번호</th>
-			<th>제목</th>
-			<th>작성자</th>
-			<th>내용</th>
-			<th>삭제</th>
-		</thead>
-		<tr v-if="!boardlist">
-			<td>게시글이 없습니다.</td>
-		</tr>
-		<tr v-for="board in boardlist">
-			<td v-text="board.boardno"></td>
-			<td v-text="board.title"></td>
-			<td v-text="board.writer"></td>
-			<td v-text="board.content"></td>
-			<td><button v-on:click="remove(board.boardno)">삭제</button></td>
-		</tr>
-	</table>
+	<div id="board">
+		<table>
+			<thead>
+				<th>글번호</th>
+				<th>제목</th>
+				<th>작성자</th>
+				<th>내용</th>
+				<th>삭제</th>
+			</thead>
+			<tbody>
+				<tr v-if="!boardlist">
+					<td>게시글이 없습니다.</td>
+				</tr>
+				<tr v-for="board in boardlist">
+					<td>
+						<span v-text="board.boardno"></span>
+					</td>
+					<td>
+						<span v-on:click="retrieve(board.boardno)" class="title" v-text="board.title"></span>
+					</td>
+					<td>
+						<span v-text="board.writer"></span>
+					</td>
+					<td>
+						<span v-text="board.content"></span>
+					</td>
+					<td>
+						<button v-on:click.prevent="remove(board.boardno)">삭제</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<modal v-if="showModal" @close="showModal = false">
+			<h3 slot="header">게시글 조회</h3>
+			<div slot="body">
+				<form>
+					<input hidden v-model="board.boardno" name="boardno"></input><br/>
+					제목 <input :disabled="!isEditing" v-model="board.title" name="title"></input><br/>
+					작가 <input :disabled="!isEditing" v-model="board.writer" name="writer"></input><br/>
+					내용 <input :disabled="!isEditing" v-model="board.content" name="content"></input>
+					<button v-on:click.prevent="isEditing=true" v-if="!isEditing">수정</button>
+					<button v-else>저장</button>
+				</form>
+			</div>
+		</modal>
+	</div>
 	<br/>
 	<div id="regform">
-      <button id="show-modal" @click="showModal = true">작성</button>
+	  <button id="show-modal" @click="showModal = true">작성</button>
       <!-- use the modal component, pass in the prop -->
       <modal v-if="showModal" @close="showModal = false">
         <h3 slot="header">게시글 작성</h3>
@@ -114,11 +140,14 @@
 			}
 		}
 	})
-	
+
 	let board = new Vue({
 		el: '#board',
 		data: {
 			boardlist : []
+			,board : {}
+			,showModal : false
+			,isEditing : false
 		},
 		mounted : function(){
 			this.load()
@@ -142,6 +171,17 @@
 				}).done(function(data){
 					board.load();
 				})
+			},
+			retrieve : function(boardno){
+				this.showModal=true;
+				$.ajax({
+					url : '/restapi/board/'+boardno
+				}).done(function(data){
+					board.board = data.payload;
+				})
+			},
+			editMode : function(){
+				alert('hi')
 			}
 		}
 	})
