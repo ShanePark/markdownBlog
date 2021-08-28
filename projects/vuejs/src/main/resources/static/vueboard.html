@@ -1,9 +1,13 @@
+<!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="/style.css" />
 	<title>title</title>
 	 <script type="text/x-template" id="modal-template">
@@ -16,13 +20,11 @@
                   default header
                 </slot>
               </div>
-
               <div class="modal-body">
                 <slot name="body">
                   default body
                 </slot>
               </div>
-
               <div class="modal-footer">
                 <slot name="footer">
                   <button class="modal-default-button" @click="$emit('close')">
@@ -38,116 +40,63 @@
 </head>
 
 <body>
-	<h2>Vue.js Board</h2>
 	<div id="board">
-		<table>
+		<h2>Vue.js Board</h2>
+		<table class="table">
 			<thead>
 				<th>글번호</th>
 				<th>제목</th>
 				<th>작성자</th>
 				<th>내용</th>
-				<th>삭제</th>
 			</thead>
 			<tbody>
 				<tr v-if="!boardlist">
 					<td>게시글이 없습니다.</td>
 				</tr>
 				<tr v-for="board in boardlist">
-					<td>
-						<span v-text="board.boardno"></span>
-					</td>
-					<td>
-						<span v-on:click="retrieve(board.boardno)" class="title" v-text="board.title"></span>
-					</td>
-					<td>
-						<span v-text="board.writer"></span>
-					</td>
-					<td>
-						<span v-text="board.content"></span>
-					</td>
-					<td>
-						<button v-on:click.prevent="remove(board.boardno)">삭제</button>
-					</td>
+					<td v-text="board.boardNo"></td>
+					<td class="title" v-on:click="retrieve(board.boardNo)" v-text="board.title ? board.title : 'untitled'"></td>
+					<td v-text="board.writer"></td>
+					<td v-text="board.content"></td>
 				</tr>
 			</tbody>
 		</table>
+		<button class="btn btn-success" id="show-modal" @click="create()">작성</button>
 		<modal v-if="showModal" @close="showModal = false">
-			<h3 slot="header">게시글 조회</h3>
+			<h3 slot="header" v-text="'게시글 '+menu[status]"></h3>
 			<div slot="body">
-				<form>
-					<input hidden v-model="board.boardno" name="boardno"></input><br/>
-					제목 <input :disabled="!isEditing" v-model="board.title" name="title"></input><br/>
-					작가 <input :disabled="!isEditing" v-model="board.writer" name="writer"></input><br/>
-					내용 <input :disabled="!isEditing" v-model="board.content" name="content"></input>
-					<button v-on:click.prevent="isEditing=true" v-if="!isEditing">수정</button>
-					<button v-else>저장</button>
-				</form>
+				<input hidden v-model="board.boardNo"></input>
+				제목 <input :disabled="status=='view'" v-model="board.title"></input><br/>
+				작가 <input :disabled="status=='view'" v-model="board.writer"></input><br/>
+				내용 <input :disabled="status=='view'" v-model="board.content"></input>
+				<button class="btn btn-info" v-if="status=='view'" v-on:click.prevent="status='edit'" >수정</button>
+				<button class="btn btn-success" v-else v-on:click.prevent="save" :disabled="!board.title||!board.writer||!board.content">저장</button>
+				<button class="btn btn-danger" v-if="status!='new'" v-on:click.prevent="remove(board.boardNo)">삭제</button>
 			</div>
 		</modal>
-	</div>
-	<br/>
-	<div id="regform">
-	  <button id="show-modal" @click="showModal = true">작성</button>
-      <!-- use the modal component, pass in the prop -->
-      <modal v-if="showModal" @close="showModal = false">
-        <h3 slot="header">게시글 작성</h3>
-      	<div slot="body">
-			<form v-on:submit.prevent="create">
-				<label>제목
-					<input type="text" name="title" v-model="title">
-				</label><br/>
-				<label>작성자
-					<input type="text" name="writer" v-model="writer">
-				</label><br/>
-				<label>내용
-				<input type="text" name="content" v-model="content">
-				</label>
-				<button>등록</button>
-			</form>
-      	</div>
-      </modal>
 	</div>
 <script>
 	Vue.component("modal", {
 	    template: "#modal-template"
 	  });
-	
-	let regform = new Vue({
-		el:'#regform',
-		data : {
-			title:''
-			,writer:''
-			,content:''
-			,showModal: false
-		},
-		methods:{
-			create: function(){
-				$.ajax({
-					url : '/restapi/board'
-					,data : {
-						title : regform.title
-						,writer : regform.writer
-						,content : regform.content
-					}
-					,method : 'POST'
-				}).done(function(data){
-					regform.title = '';
-					regform.writer = '';
-					regform.content = '';
-					regform.showModal = false;
-					board.load();
-				})
-			}
-		}
-	})
 
 	let board = new Vue({
 		el: '#board',
 		data: {
 			boardlist : []
-			,board : {}
+			,menu : {
+				new : '작성'
+				,edit : '수정'
+				,view : '조회'
+			}
+			,board : {
+				boardNo : ''
+				,title : ''
+				,writer : ''
+				,content : ''
+			}
 			,showModal : false
-			,isEditing : false
+			,status : ''
 		},
 		mounted : function(){
 			this.load()
@@ -160,29 +109,50 @@
 					board.boardlist = data.payload;
 				})
 			},
-			remove : function(boardno){
+			remove : function(boardNo){
+				this.showModal=false;
 				$.ajax({
 					url : '/restapi/board'
 					,method : 'post'
 					,data : {
-						boardno : boardno
+						boardNo : boardNo
 						,_method : 'delete'
 					}
 				}).done(function(data){
 					board.load();
 				})
 			},
-			retrieve : function(boardno){
+			retrieve : function(boardNo){
 				this.showModal=true;
+				this.status='view';
+				let that = this;
 				$.ajax({
-					url : '/restapi/board/'+boardno
+					url : '/restapi/board/'+boardNo
 				}).done(function(data){
-					board.board = data.payload;
+					that.board = data.payload;
 				})
 			},
-			editMode : function(){
-				alert('hi')
-			}
+			create : function(){
+				this.board = {};
+				this.showModal=true;
+				this.status='new';
+			},
+			save : function(){
+				let that = this;
+				$.ajax({
+					url : '/restapi/board'
+					,data : {
+						boardNo : that.status=='new' ? '' : that.board.boardNo
+						,title : that.board.title
+						,writer : that.board.writer
+						,content : that.board.content
+					}
+					,method : 'POST'
+				}).done(function(data){
+					that.showModal = false;
+					board.load();
+				})
+			},
 		}
 	})
 </script>
