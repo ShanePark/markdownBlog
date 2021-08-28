@@ -50,14 +50,14 @@
 				<th>내용</th>
 			</thead>
 			<tbody>
-				<tr v-if="!boardlist">
+				<tr v-if="!boardList">
 					<td>게시글이 없습니다.</td>
 				</tr>
-				<tr v-for="board in boardlist">
-					<td v-text="board.boardNo"></td>
-					<td class="title" v-on:click="retrieve(board.boardNo)" v-text="board.title ? board.title : 'untitled'"></td>
-					<td v-text="board.writer"></td>
-					<td v-text="board.content"></td>
+				<tr v-for="b in boardList">
+					<td v-text="b.boardNo"></td>
+					<td class="title" v-on:click="retrieve(b.boardNo)" v-text="b.title ? b.title : 'untitled'"></td>
+					<td v-text="b.writer"></td>
+					<td v-text="b.content"></td>
 				</tr>
 			</tbody>
 		</table>
@@ -67,7 +67,7 @@
 			<div slot="body">
 				<input hidden v-model="board.boardNo"></input>
 				제목 <input :disabled="status=='view'" v-model="board.title"></input><br/>
-				작가 <input :disabled="status=='view'" v-model="board.writer"></input><br/>
+				작성자 <input :disabled="status=='view'" v-model="board.writer"></input><br/>
 				내용 <input :disabled="status=='view'" v-model="board.content"></input>
 				<button class="btn btn-info" v-if="status=='view'" v-on:click.prevent="status='edit'" >수정</button>
 				<button class="btn btn-success" v-else v-on:click.prevent="save" :disabled="!board.title||!board.writer||!board.content">저장</button>
@@ -83,7 +83,7 @@
 	let board = new Vue({
 		el: '#board',
 		data: {
-			boardlist : []
+			boardList : []
 			,menu : {
 				new : '작성'
 				,edit : '수정'
@@ -106,7 +106,7 @@
 				$.ajax({
 					url : '/restapi/board'
 				}).done(function(data){
-					board.boardlist = data.payload;
+					board.boardList = data.payload;
 				})
 			},
 			remove : function(boardNo){
