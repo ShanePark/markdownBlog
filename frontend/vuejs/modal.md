@@ -349,3 +349,9 @@ BootStrap Modal을 사용하는게 더 쉽긴 하겠지만 Vue.js 를 이용해�
 해당 프로젝트의 코드는 https://github.com/Shane-Park/markdownBlog/tree/master/projects/vuejs 에서 모두 확인 하실 수 있습니다. 수고하셨습니다.
 
 ​	
+
+### 이어지는 글
+
+[Vue.js 사용 하기 4 ) PostgreSQL로 간단 게시판 작성 해보기 - 조회 및 수정 기능 추가](https://shanepark.tistory.com/217)
+
+​	

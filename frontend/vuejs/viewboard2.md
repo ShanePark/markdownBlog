@@ -506,3 +506,8 @@
 Vue.js 의 기본적인 사용 방법에 익숙 해 지면 조금 더 복잡한 기능들을 하나 둘 씩 더 사용 해 보도록 하겠습니다.
 
 이것으로 Vue.js로 게시판 만들기 시리즈를 마치겠습니다. 수고하셨습니다.
+
+​	
+
+해당 프로젝트의 코드는 https://github.com/Shane-Park/markdownBlog/tree/master/projects/vuejs 에서 모두 확인 하실 수 있습니다. 수고하셨습니다.
+
