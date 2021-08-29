@@ -28,6 +28,7 @@
 .tetris .col.magenta { background-color:magenta; border-color:magenta; }
 .tetris .col.lightblue { background-color:lightblue; border-color:lightblue; }
 .tetris .preview .col { width:16px; height: 16px; }
+.score {float : right; margin-right:20px;}
 
 /*
 .tetris .board { transition: all ease 0.5s; }
@@ -51,6 +52,10 @@
   <div class="preview grid">
   </div>
   <div class="board grid">
+  </div>
+  <div class="score">
+    <p>점수</p>
+    <span>0</span>
   </div>
 </div>
 
@@ -108,6 +113,7 @@ function Tetris($div, width, height) {
   var shape; // 현재 블록에서 회전된 모양
   var x; // 블록의 현재 위치
   var y;
+  var score = 0;
 
   init();
 
@@ -279,7 +285,25 @@ function Tetris($div, width, height) {
   function fixBlock($board, shape, color, x, y) {
     drawBlock($board, shape, x, y, 'fixed ' + color);
 
-    // TODO 완성된 라인을 삭제해야 한다.
+    var rows = $('.board .row');
+    var delRows = 0;
+    $.each(rows, function(i, row){
+
+      var cols = row.querySelectorAll('.fixed');
+      // 한줄 채웠을 경우
+      if(cols.length == 10){
+        // 해당 줄 삭제
+        rows.eq(i).remove();
+        addRow($board, width);
+        // 점수 올리기
+        delRows++;
+      }
+    })
+
+    score += delRows==1? 40 : delRows==2? 100 :delRows==3? 300 : delRows==4? 1200 : 0;
+
+    $('.score span').text(score);
+
   }
 
   var timer;
