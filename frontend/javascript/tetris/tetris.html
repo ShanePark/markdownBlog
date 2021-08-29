@@ -54,8 +54,14 @@
   <div class="board grid">
   </div>
   <div class="score">
-    <p>점수</p>
-    <span>0</span>
+    <div class="level">
+      <p>레벨</p>
+      <span>0</span>
+    </div>
+    <div class="point">
+      <p>점수</p>
+      <span>0</span>
+    </div>
   </div>
 </div>
 
@@ -114,6 +120,7 @@ function Tetris($div, width, height) {
   var x; // 블록의 현재 위치
   var y;
   var score = 0;
+  var level = 0;
 
   init();
 
@@ -302,7 +309,10 @@ function Tetris($div, width, height) {
 
     score += delRows==1? 40 : delRows==2? 100 :delRows==3? 300 : delRows==4? 1200 : 0;
 
-    $('.score span').text(score);
+    // 점수에 따른 난이도 향상
+    level = Math.floor(Math.min(score/100, 9));
+    $('.score .level span').text(level);
+    $('.score .point span').text(score);
 
   }
 
@@ -333,7 +343,7 @@ function Tetris($div, width, height) {
 
   function timerFunc() {
     tick++
-    if (tick % 10 == 0)
+    if (tick % (10-level) == 0)
       moveDown();
 /*
     if (tick % 10 == 0) {
