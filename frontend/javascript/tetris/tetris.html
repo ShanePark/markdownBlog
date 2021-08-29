@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>TETRIS</title>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<style type="text/css">
+.tetris { position:relative;
+  width: 500px; height:500px;
+  background-color: darkgray; float:left; margin:10px; }
+.tetris .grid { }
+.tetris .preview { position:absolute; top: 10px; left: 10px; }
+.tetris .board { position:absolute; top: 10px; left: 100px; }
+.tetris .row { overflow:auto; } /* https://www.w3schools.com/howto/howto_css_clearfix.asp */
+.tetris .col { width:20px; height:20px;
+  border:2px outset darkgray;
+  background-color: black; float:left;
+/* border-radius:10px; */ }
+.tetris .col.red { background-color:red; border-color:red; }
+.tetris .col.green { background-color:green; border-color:green; }
+.tetris .col.blue { background-color:blue; border-color:blue; }
+.tetris .col.yellow { background-color:yellow; border-color:yellow; }
+.tetris .col.cyan { background-color:cyan; border-color:cyan; }
+.tetris .col.brown { background-color:brown; border-color:brown; }
+.tetris .col.gray { background-color:gray; border-color:gray; }
+.tetris .col.magenta { background-color:magenta; border-color:magenta; }
+.tetris .col.lightblue { background-color:lightblue; border-color:lightblue; }
+.tetris .preview .col { width:16px; height: 16px; }
+
+/*
+.tetris .board { transition: all ease 0.5s; }
+.tetris .board.left { transform: rotate(-10deg); }
+.tetris .board.right { transform: rotate(10deg); }
+*/
+
+</style>
+
+</head>
+<body>
+<!--
+<div id="tetris2" class="tetris">
+  <div class="preview grid">
+  </div>
+  <div class="board grid">
+  </div>
+</div>
+-->
+<div id="tetris1" class="tetris">
+  <div class="preview grid">
+  </div>
+  <div class="board grid">
+  </div>
+</div>
+
+
+<script type="text/javascript">
+$(function() {
+var BLOCK = [
+  // I
+  { color: 'lightblue',
+    shapes: [[[0,-1],[0,0],[0,1],[0,2]],
+	           [[-1,0],[0,0],[1,0],[2,0]]]
+  },
+  // L
+  { color: 'green',
+    shapes: [[[0,-1],[0,0],[0,1],[1,1]],
+             [[-1,0],[0,0],[1,0],[-1,1]],
+             [[-1,-1],[0,-1],[0,0],[0,1]],
+             [[-1,0],[0,0],[1,0],[1,-1]]]
+  },
+
+  { color: 'red',
+    shapes: [[[0,-1],[0,0],[0,1],[-1,1]],
+             [[-1,0],[0,0],[1,0],[-1,-1]],
+             [[1,-1],[0,-1],[0,0],[0,1]],
+             [[-1,0],[0,0],[1,0],[1,1]]]
+  },
+
+  { color: 'yellow',
+    shapes: [[[0,-1],[0,0],[0,1],[1,0]],
+             [[-1,0],[0,0],[1,0],[0,1]],
+             [[0,-1],[0,0],[0,1],[-1,0]],
+             [[-1,0],[0,0],[1,0],[0,-1]]]
+  },
+
+  { color: 'blue',
+    shapes: [[[0,0],[1,0],[0,1],[1,1]]]
+  },
+
+  { color: 'magenta',
+    shapes: [[[0,-1],[0,0],[1,0],[1,1]],
+             [[-1,1],[0,0],[0,1],[1,0]]]
+  },
+
+  { color: 'cyan',
+    shapes: [[[0,0],[1,0],[1,-1],[0,1]],
+             [[-1,0],[0,0],[0,1],[1,1]]]
+  }
+];
+
+function Tetris($div, width, height) {
+  var $preview = $div.find('.preview');
+  var $board = $div.find('.board');
+
+  var block; // 현재 블록 { color, shapes: [] }
+  var shape; // 현재 블록에서 회전된 모양
+  var x; // 블록의 현재 위치
+  var y;
+
+  init();
+
+  function init() {
+    $preview.empty();
+    for (var k = 0; k < 4; k++) {
+      addRow($preview, 4);
+    }
+
+    $board.empty();
+    for (var k = 0; k < height; k++) {
+      addRow($board, width);
+    }
+  }
+
+  function addRow($grid, width) {
+    var $row = $('<div class="row"></div>');
+    for (var k = 0; k < width; k++) {
+      $row.append('<div class="col"></div>');
+    }
+    $grid.prepend($row);
+  }
+
+  function getCell($grid, x, y) {
+    if (x < 0 || y < 0) return;
+    var $rows = $grid.find('div.row');
+    var $row = $rows.eq(y);
+    if (!$row.length) return;
+    var $cells = $row.find('div.col');
+    var $cell = $cells.eq(x);
+    if (!$cell.length) return;
+    return $cell;
+  }
+
+  // 블록을 그린다. 충돌을 체크하지 않는다
+  function drawBlock($grid, shape, x, y, color) {
+    for (var k = 0; k < shape.length; k++) {
+      var $cell = getCell($grid, x + shape[k][0], y + shape[k][1]);
+      if (!$cell) continue;
+      if (color) {
+        $cell.addClass(color);
+      } else {
+        // resst
+        $cell.attr('class', 'col');
+      }
+    }
+  }
+
+  //drawBlock
+
+  var queue = []; // 다음 블록
+
+  // 큐에 [블록번호,회전된모양번호] 를 추가한다
+  function enqueue() {
+    var b = Math.floor(Math.random() * BLOCK.length);
+    var r = Math.floor(Math.random() * BLOCK[b].shapes.length);
+    var next = [b, r];
+    queue.push(next);
+    return next;
+  }
+
+  // 다음 블록을 준비한다
+  function nextBlock() {
+    var next;
+
+    if (queue.length == 0) {
+      // 처음 시작시에는 큐가 비어 있으므로 하나를 채운다.
+      enqueue();
+      next = queue.shift();
+    } else {
+      // 기존 미리보기를 삭제한다
+      next = queue.shift();
+      drawBlock($preview, BLOCK[next[0]].shapes[next[1]], 1, 1);
+    }
+
+    // 다음 블록 준비
+    block = BLOCK[next[0]];
+    shape = next[1];
+    x = Math.floor(width / 2);
+    y = 0;
+
+    // 다음에 나올 블록을 큐에 준비하고 미리보기를 그린다
+    next = enqueue();
+    drawBlock($preview, BLOCK[next[0]].shapes[next[1]], 1, 1, BLOCK[next[0]].color);
+  }
+
+  // 블록이 x,y 위치에 그려질 수 있는지 확인한다
+  function checkBlock($grid, shape, x, y) {
+    for (var k = 0; k < shape.length; k++) {
+      // 위로 벗어나는 경우는 문제없음
+      if (y + shape[k][1] < 0) continue;
+
+      var $cell = getCell($grid, x + shape[k][0], y + shape[k][1]);
+      // 판을 벗어나는 경우
+      if (!$cell) return false;
+
+      // 고정된 블록이 있는 경우
+      if ($cell.hasClass('fixed')) return false;
+    }
+
+    return true;
+  }
+
+  // 현재 위치에서 dx,dy만큼 이동. 이동할 수 없다면 false 를 반환한다
+  function moveBlock($board, shape, dx, dy, color) {
+    if (!checkBlock($board, shape, x + dx, y + dy)) {
+      // 이동 불가
+      return false;
+    }
+    // 기존 블록을 지우고 새로운 위치에 블록을 그린다
+    drawBlock($board, shape, x, y);
+    x += dx;
+    y += dy;
+    drawBlock($board, shape, x, y, color);
+    return true;
+  }
+
+  // 다음 블록을 화면에 표시하고 종료 체크
+  function nextBlockAndCheck() {
+    nextBlock();
+    // 처음 나오는 블록은 무조건 그린다
+    drawBlock($board, block.shapes[shape], x, y, block.color);
+    // 현재 위치가 충돌한다면 종료
+    if (!checkBlock($board, block.shapes[shape], x, y)) {
+      gameover();
+    }
+  }
+
+  function moveLeft() {
+    moveBlock($board, block.shapes[shape], -1, 0, block.color);
+  }
+  function moveRight() {
+    moveBlock($board, block.shapes[shape], 1, 0, block.color);
+  }
+  function moveDown() {
+    var down = moveBlock($board, block.shapes[shape], 0, 1, block.color);
+    if (!down) {
+      fixBlock($board, block.shapes[shape], block.color, x, y);
+      nextBlockAndCheck();
+    }
+  }
+  function drop() {
+    // 현재 위치의 블록을 지운다
+    drawBlock($board, block.shapes[shape], x, y);
+    var dy = y;
+    // 최대한 내려간다
+    while (checkBlock($board, block.shapes[shape], x, dy + 1))
+      dy++;
+
+    // 고정한다
+    fixBlock($board, block.shapes[shape], block.color, x, dy);
+    nextBlockAndCheck();
+  }
+  function rotate() {
+    var next = (shape + 1) % block.shapes.length;
+    // 현재 위치에서 회전된 블록을 그릴 수 있다면
+    if (!checkBlock($board, block.shapes[next], x, y)) {
+      // 회전 불가
+      return false;
+    }
+    // 기존 블록을 지우고 회전된 블록을 그린다
+    drawBlock($board, block.shapes[shape], x, y);
+    shape = next;
+    drawBlock($board, block.shapes[shape], x, y, block.color);
+    return true;
+  }
+
+  // 블록을 고정
+  function fixBlock($board, shape, color, x, y) {
+    drawBlock($board, shape, x, y, 'fixed ' + color);
+
+    // TODO 완성된 라인을 삭제해야 한다.
+  }
+
+  var timer;
+  var tick; // 게임 시작으로부터 얼마의 시간이 지났는가?
+  var started = false;
+
+  // 게임 종료
+  function gameover() {
+    clearInterval(timer);
+    // alert 부터 띄우면 화면이 업데이트 되지 않는다
+    setTimeout(function() {
+      alert('Game Over');
+    }, 0);
+    started = false;
+  }
+
+  // 게임 시작
+  function start() {
+    if (started) return;
+
+    init();
+    nextBlockAndCheck();
+    tick = 0;
+    timer = setInterval(timerFunc, 100);
+    started = true;
+  }
+
+  function timerFunc() {
+    tick++
+    if (tick % 10 == 0)
+      moveDown();
+/*
+    if (tick % 10 == 0) {
+      if ($board.hasClass('left')) {
+        $board.removeClass('left');
+        $board.addClass('right');
+      } else {
+        $board.removeClass('right');
+        $board.addClass('left');
+      }
+    }
+*/
+  }
+
+  return {
+    started: function() { return started; },
+    moveDown: moveDown,
+    moveLeft: moveLeft,
+    moveRight: moveRight,
+    rotate: rotate,
+    drop: drop,
+    start: start
+  };
+}
+
+var tetris1 = new Tetris($('#tetris1'), 10, 20);
+//var tetris2 = new Tetris($('#tetris2'), 10, 20);
+
+$(window).on('keydown', function(e) {
+  var controlled = false;
+  switch (e.keyCode) {
+  case 37: // left
+    tetris1.moveLeft();
+    controlled = true;
+    break;
+  case 38: // rotate
+    tetris1.rotate();
+    controlled = true;
+    break;
+  case 39: // right
+    tetris1.moveRight();
+    controlled = true;
+    break;
+  case 40: // down
+    tetris1.moveDown();
+    controlled = true;
+    break;
+  case 32: // drop
+    if (!tetris1.started())
+      tetris1.start();
+    else
+      tetris1.drop();
+    controlled = true;
+    break;
+/*
+  case 65: // left
+    tetris2.moveLeft();
+    controlled = true;
+    break;
+  case 87: // rotate
+    tetris2.rotate();
+    controlled = true;
+    break;
+  case 68: // right
+    tetris2.moveRight();
+    controlled = true;
+    break;
+  case 83: // down
+    if (!tetris2.started())
+      tetris2.start();
+    else
+      tetris2.moveDown();
+    controlled = true;
+    break;
+*/
+  }
+  if (controlled)
+    e.preventDefault();
+  console.log('keydown', e.keyCode);
+});
+//tetris.start();
+});
+</script>
+
+</body>
+</html>
