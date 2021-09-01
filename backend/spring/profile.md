@@ -1,4 +1,4 @@
-# SpringBoot ) Application.properties 혹은 .yml 프로필 별로 따로 사용하기
+# SpringBoot ) Application.properties 혹은 .yml 프로필 별로 따로 사용하기 (Eclipse, IntelliJ IDEA)
 
 
 
@@ -15,6 +15,12 @@
 
 
 ## 그럼 이제 새로 만든 프로필로 어플리케이션을 실행하도록 설정하는 방법을 알아보겠습니다.
+
+
+
+## 1. Eclipse(STS) 에서의 설정 입니다.
+
+
 
 ### 1. 해당 프로젝트를 우클릭 하고 - properties를 들어갑니다.
 
@@ -59,6 +65,30 @@
 ![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830374.png)
 
 이렇게 The following profiles are **active : dev** 로 나오는 것을 확인 할 수 있습니다.
+
+
+
+## 2. 이번에는  IntelliJ IDEA 에서의 설정 입니다.
+
+​	
+
+![image-20210902085016491](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/image-20210902085016491.png)
+
+우측 상단에 Edit Configurations.. 라는 드랍박스 메뉴를 클릭 합니다.
+
+​	
+
+![image-20210902085041400](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/image-20210902085041400.png)
+
+Active profiles를 적는 란이 바로 있네요. 거기에 그냥 dev 를 써주면 끝 입니다. Eclipse 보다 간단하네요.
+
+​	
+
+![image-20210902085109736](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/image-20210902085109736.png)
+
+​	
+
+간단하게 바로 문제 없이 작동이 됩니다.
 
 
 
