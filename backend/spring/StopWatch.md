@@ -1,4 +1,4 @@
-# Spring StopWatch.class
+# Spring StopWatch.class 활용하기
 
 ​	
 
@@ -16,6 +16,8 @@ extends Object
 > This class is normally used to verify performance during proof-of-concept work and in development, rather than as part of production applications.
 >
 > As of Spring Framework 5.2, running time is tracked and reported in nanoseconds.
+
+​	
 
 ### Spring의 StopWatch 클래스는 여러개 작업의 시간을 측정해주며, 총 소요시간과 각각의 이름붙인 작업들에 소요된 시간을 표시해줍니다. System.nanoTime() 의 사용을 감추고 어플리케이션 코드의 가독성을 높일 뿐만 아니라 계산 오류의 가능성도 줄여줍니다. 
 
