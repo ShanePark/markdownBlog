@@ -325,7 +325,7 @@ mybatis.mapper-locations=classpath:mappers/*.xml
 
 pom.xml 에서 ojdbc를 8 에서 10으로 변경합니다.
 
-```xml
+```
 		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc10 -->
 		<dependency>
 		    <groupId>com.oracle.database.jdbc</groupId>
@@ -362,7 +362,7 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 ​		
 
-```xml
+```apl
 		<dependency>
 		    <groupId>com.oracle.database.security</groupId>
 		    <artifactId>oraclepki</artifactId>
@@ -377,7 +377,6 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 		    <groupId>com.oracle.database.security</groupId>
 		    <artifactId>osdt_core</artifactId>
 		</dependency>
-		<dependency>
 ```
 
 ​	
@@ -408,7 +407,7 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 ### pom.xml
 
-```xml
+```
 # datasource
 spring.datasource.url=jdbc:oracle:thin:@shane_high?TNS_ADMIN=/Users/shane/documents/Wallet_shane
 spring.datasource.username=admin
@@ -426,7 +425,7 @@ mybatis.mapper-locations=classpath:mappers/*.xml
 
 ### application.properties
 
-```properties
+```
 # datasource
 spring.datasource.url=jdbc:oracle:thin:@shane_high?TNS_ADMIN=/Users/shane/documents/Wallet_shane
 spring.datasource.username=admin
