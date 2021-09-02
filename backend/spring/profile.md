@@ -66,7 +66,9 @@
 
 이렇게 The following profiles are **active : dev** 로 나오는 것을 확인 할 수 있습니다.
 
+​	
 
+​	
 
 ## 2. 이번에는  IntelliJ IDEA 에서의 설정 입니다.
 
