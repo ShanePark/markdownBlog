@@ -18,7 +18,7 @@ vi
 
 다만, windows에 설치한 vim Editor는 , vi 를 입력하면 실행이 되지 않습니다.
 
-
+​	
 
 ```bash
 vim
@@ -130,7 +130,7 @@ get-help ExecutionPolicy
 
 Get과 Set 명령을 사용 할 수 있네요. 
 
-
+​	
 
 ### 일단 Get 으로 지금의 Policy를 확인 해 보겠습니다.	
 
@@ -170,9 +170,9 @@ Set-ExecutionPolicy remoteSigned
 
 ​	
 
-관리자 권한으로 Terminal을 새로 실행 해 줍니다.	
+### 관리자 권한으로 Terminal을 새로 실행 해 줍니다.	
 
-우클릭 -> 자세히 - > 관리자 권한으로 실행 하면 됩니다.
+> 우클릭 -> 자세히 - > 관리자 권한으로 실행 하면 됩니다.
 
 ![image-20210903134140167](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134140167.png)
 
@@ -202,7 +202,7 @@ Set-ExecutionPolicy remoteSigned
 
 ![image-20210903134456087](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134456087.png)
 
-vim 에디터가 실행 됩니다 ! m 하나 덜 쳐보겠다고 참 힘든 길 저와 함께 걷는다고 수고 많으셨습니다!
+vim 에디터가 실행 됩니다 ! m 하나 덜 치는게 쉽지 않았네요. 힘든 길 저와 함께 걷는다고 수고 많으셨습니다!
 
 ​	
 
