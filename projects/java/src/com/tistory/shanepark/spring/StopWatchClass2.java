@@ -1,4 +1,4 @@
-package com.tistory.shanepark.lambda.spring;
+package com.tistory.shanepark.spring;
 
 import org.springframework.util.StopWatch;
 
