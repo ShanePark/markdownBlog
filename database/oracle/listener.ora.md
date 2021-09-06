@@ -4,21 +4,23 @@
 
 ### 방금 까지만 해도 잘 되던 Oracle Dabase가 재부팅 이후에 갑자기 안됩니다.
 
-딱히 건든 게 없는데 정말 멘붕이 옵니다. 하나씩 이유를 찾아 해결 해 보도록 합시다.
+딱히 건든 게 없는 것 같은데 정말 멘붕이 옵니다. 하나씩 이유를 찾아 해결 해 보도록 합시다.
 
-​		
+​				
+
+일단 리스너의 상태를 확인 해 봅니다. 
 
 ```
 lsnrctl status
 ```
 
+​	
 
+![image-20210906214022328](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/listener.ora.assets/image-20210906214022328.png)
 
-![image-20210906214022328](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/listener.ora.assets/image-20210906214022328.png)![image-20210906214022328]()
+에러가 세개나 나옵니다.
 
-일단 리스너의 상태를 확인 해 봅니다. 에러가 세개나 나옵니다.
-
-​		
+​			
 
 ```
 TNS-12541: TNS:no listener
@@ -33,7 +35,7 @@ TNS-12541: TNS:no listener
 
 HOST 정보를 변경 해야 합니다.
 
-​			
+​				
 
 ### listener.ora 파일을 찾습니다.
 
