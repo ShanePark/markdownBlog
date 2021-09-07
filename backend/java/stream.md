@@ -74,7 +74,7 @@ public class Stream01 {
 }
 ```
 
-이롷개 stream을 이용 해 작성할 수 있습니다.
+이런식으로 작성할 수 있습니다.
 
 ​	
 
@@ -94,7 +94,7 @@ public class Stream01 {
 }
 ```
 
-이렇게 하면 단 한줄로도 순회하며 출력하는 코드를 작성 할 수 있습니다.
+또한 이렇게 하면 단 한줄로도 순회하며 출력하는 코드를 작성 할 수 있습니다.
 
 ![image-20210905212522547](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905212522547.png)
 
