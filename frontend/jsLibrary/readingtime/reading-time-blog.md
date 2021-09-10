@@ -1,4 +1,4 @@
-# reading-time.js 블로그에 적용시키기
+# 블로그에 포스팅 읽는데 걸리는 시간 표시해주기 by reading-time.js
 
 > https://shanepark.tistory.com/224 에 이어지는 글 입니다.
 

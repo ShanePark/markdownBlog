@@ -152,6 +152,16 @@ p img:hover{
 	#tt-body-page .article-view img {
     background: none !important;
 	}
+	.article-view table thead tr {
+		color : none !important;
+	}
+	#tt-body-page .article-view table tr {
+		background-color : inherit !important;
+		color : inherit !important;
+	}
+	#tt-body-page .article-view table tr:nth-child(2n) {
+		background-color: #222 !important;
+	}
 
 }
 /* End Of DarkMode */
@@ -2964,6 +2974,11 @@ html {
     position: relative;
 }
 
+.article-header .box-info .eta {
+	  margin-left: 20px;
+    font-size: 1.5em;
+}
+
 .article-header .box-info .date:before {
     content: '';
     position: absolute;
@@ -4746,6 +4761,5 @@ html {
     max-width: 1020px;
     margin: 30px auto
 }
-
 
 

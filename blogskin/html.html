@@ -30,6 +30,7 @@
   <script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
   <script src="//t1.daumcdn.net/tistory_admin/assets/skin/common/vh-check.min.js"></script>
   <script src="./images/common.js" defer></script>
+	<script src="./images/readingtime.js" defer></script>
   <script> (function () { var test = vhCheck();}()); </script>
 	<!-- Github markdown css -->
 	<link rel="stylesheet" href="./images/github-markdown.css">
@@ -222,6 +223,7 @@
                         <div class="box-info">
                           <span class="writer">[##_article_rep_author_##]</span>
                           <span class="date">[##_article_rep_date_##]</span>
+													<span class="eta"></span>
                         </div>
                       </div>
                     </div>
@@ -1120,6 +1122,7 @@
 	<div class="modalBox">
 	</div>
 </div>
+<!-- 이미지 모달 끝 -->
 <script>
 $(function(){
 // 	이미지 클릭시 해당 이미지 모달
@@ -1133,8 +1136,17 @@ $(function(){
 	$(".modal").click(function (e) {
     $(".modal").toggle();
   });
-});
-							</script>
-<!-- 이미지 모달 끝 -->
+// reading-time.js 발동
+	$('.article-view').readingTime({
+		readingTimeAsNumber: false,
+		readingTimeTarget: $('.eta'),
+		wordsPerMinute: 250,
+		round: true,
+		prependTimeString: '📚 읽는시간 : ',
+		lang: 'kr'
+	});
+})
+</script>
+
 </body>
 </html>
