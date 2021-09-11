@@ -517,6 +517,7 @@ public class Stream08Collect2 {
 
     }
 }
+
 ```
 
 ​	
