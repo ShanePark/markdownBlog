@@ -62,7 +62,7 @@ Preferences -> Keymap 에 가서 Fix doc comment를 찾습니다.
 
 OK 를 눌러 저장 후 테스트 해 봅니다.
 
-![Sep-11-2021 09-09-23](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/javadoc.assets/Sep-11-2021 09-09-23.gif)	
+![Sep-11-2021 09-09-23](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/javadoc.assets/ggif.gif)	
 
 ​	아주 마음에 듭니다 !  이상입니다.
 
