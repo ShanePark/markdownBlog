@@ -1,6 +1,16 @@
 @charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
+/* font */
+@font-face {
+	src : url("images/SDSamliphopangcheTTFBasic.ttf");
+	font-family : "samlip-basic"
+}
+@font-face {
+	src : url("images/SDSamliphopangcheTTFOutline.ttf");
+	font-family : "samlip-outline"
+}
+
 /* image modal */
 .modal {
 	display: none;
@@ -885,9 +895,10 @@ html {
 }
 
 .header .link_logo {
+	font-family: "samlip-basic";
     display: block;
     max-width: 220px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
     color: #333;
     text-decoration: none;
@@ -1581,7 +1592,7 @@ html {
 /* area-main */
 .area-main {
     width: 100%;
-    max-width: 640px;
+    max-width: 750px;
 }
 
 /* ----- media query - mobile ----- */
@@ -1668,9 +1679,10 @@ html {
 }
 
 .area-aside .box-profile .text-profile {
+		font-family: "samlip-outline";
     max-width: 210px;
     margin: 0 auto 36px auto;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.54;
     color: #777;
 }
@@ -2148,7 +2160,7 @@ html {
     content: '〈';
     position: absolute;
     top: -3px;
-    left: 60px;
+    left: 0px;
     width: 30px;
     height: 24px;
     background-color: transparent;
@@ -2160,7 +2172,7 @@ html {
     content: '〉';
     position: absolute;
     top: -3px;
-    right: 60px;
+    right: 0px;
     width: 34px;
     height: 24px;
     background-color: transparent;
@@ -2590,8 +2602,9 @@ html {
 
 .article-type- .title,
 .article-type-thumbnail .title {
+	font-family: "samlip-basic";
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.67;
 }
@@ -2938,12 +2951,14 @@ html {
 }
 
 .article-header .box-meta .category {
+		font-family: "samlip-basic";
     margin-bottom: 12px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .article-header .title-article {
+	font-family: "samlip-outline";
     display: block;
     width: 100%;
     max-width: 760px;
@@ -2975,6 +2990,7 @@ html {
 }
 
 .article-header .box-info .eta {
+	font-family: "samlip-basic";
 	  margin-left: 20px;
     font-size: 1.5em;
 }
@@ -4761,5 +4777,6 @@ html {
     max-width: 1020px;
     margin: 30px auto
 }
+
 
 
