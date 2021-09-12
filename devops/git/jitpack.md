@@ -1,4 +1,4 @@
-# 나만의 라이브러리 만들고 jitPack통해 Maven/Gradle 배포해 사용하기 
+# 나만의 라이브러리 만들어 jitPack으로 배포하고 Maven/Gradle 에서 사용하기
 
 ​	
 

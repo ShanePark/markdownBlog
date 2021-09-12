@@ -127,7 +127,7 @@ p img:hover{
 		filter: invert(100%) !important;
 	}
 	.area-aside .box-profile{
-		border: 1px solid dimgrey !important;
+		border: 2px solid dimgrey !important;
 	}
 	.title-search span
 	, .box-calendar .cal_click
@@ -1664,17 +1664,19 @@ html {
 }
 
 .area-aside .box-profile {
+	border-radius : 40px / 40px;
     position: relative;
     margin-bottom: 43px;
     border: 1px solid #e8e8e8;
     border-bottom: 2px solid #333;
     text-align: center;
+		padding-top : 40px;
+		padding-bottom: 40px;
 }
 
 .area-aside .box-profile .img-profile {
     width: 140px;
     height: 140px;
-    margin: 49px 0 14px 0;
     border-radius: 140px;
 }
 
@@ -1682,7 +1684,7 @@ html {
 		font-family: "samlip-outline";
     max-width: 210px;
     margin: 0 auto 36px auto;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.54;
     color: #777;
 }
@@ -1782,7 +1784,6 @@ html {
 .area-aside .box-category {
     margin-bottom: 40px;
     padding-bottom: 33px;
-    border-bottom: 1px solid #e8e8e8;
 }
 
 .area-aside .box-category .tt_category a {
@@ -1812,7 +1813,6 @@ html {
     font-size: 14px;
     font-weight: 500;
     color: #333;
-    text-decoration: underline;
 }
 
 .area-aside .box-category .tt_category .category_list .link_sub_item.selected,
@@ -2415,10 +2415,6 @@ html {
     border-radius: 2px;
 }
 
-.article-type-common:hover .title {
-    text-decoration: underline;
-}
-
 .box-cover-title {
     display: flex;
     justify-content: space-between;
@@ -2942,7 +2938,7 @@ html {
     position: absolute;
     bottom: 56px;
     width: 100%;
-    max-width: 780px;
+    max-width: 950px;
     z-index: 2;
 }
 
@@ -2961,14 +2957,11 @@ html {
 	font-family: "samlip-outline";
     display: block;
     width: 100%;
-    max-width: 760px;
     margin: 0 0 33px 0;
     font-size: 48px;
     font-weight: 400;
     line-height: 1.4;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     white-space: normal;

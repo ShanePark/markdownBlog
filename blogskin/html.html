@@ -228,7 +228,8 @@
                       </div>
                     </div>
                   </div>
-
+									<!-- TOC 영역 -->
+									<div class="Toc"></div>
                   <!-- 에디터 영역 -->
                   <div class="article-view">
                     [##_article_rep_desc_##]
@@ -284,12 +285,7 @@
                       <!-- // article-related -->
                     </s_article_related>
 
-                    <!-- article-reply -->
-                    <div class="article-reply">
-
-                      <div class="box-total">
-                        <a href="#rp" onclick="[##_article_rep_rp_link_##]">댓글 <span><s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count></span></a>
-                      </div>
+                    <!-- article-reply -->                     
 
                       <s_rp>
                         <!-- area-reply -->
@@ -306,13 +302,7 @@
                                     </div>
                                     <p class="text">[##_rp_rep_desc_##]</p>
                                     <a href="#" class="link-comment" onclick="[##_rp_rep_onclick_reply_##]">답글</a>
-                                    <div class="box-modify">
-                                      <button type="button" class="button-modify"><span class="blind">더보기</span></button>
-                                      <ul class="list-modify">
-                                        <li><a href="[##_rp_rep_link_##]">댓글주소</a></li>
-                                        <li><a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a></li>
-                                      </ul>
-                                    </div>
+
                                   </div>
 
                                   <s_rp2_container>
@@ -327,13 +317,7 @@
                                               <span class="date">[##_rp_rep_date_##]</span>
                                             </div>
                                             <p class="text">[##_rp_rep_desc_##]</p>
-                                            <div class="box-modify">
-                                              <button type="button" class="button-modify"><span class="blind">더보기</span></button>
-                                              <ul class="list-modify">
-                                                <li><a href="[##_rp_rep_link_##]" class="link-address">댓글주소</a></li>
-                                                <li><a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a></li>
-                                              </ul>
-                                            </div>
+                                         
                                           </div>
                                         </li>
                                       </s_rp2_rep>
@@ -344,6 +328,14 @@
                               </s_rp_rep>
                             </ul>
                           </s_rp_container>
+                    <div class="article-reply">
+											<script src="https://utteranc.es/client.js"
+        repo="Shane-Park/blog-comments"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>													
                         </div>
                         <!-- // area-reply -->
 
@@ -361,18 +353,7 @@
                                   </div>
                                 </s_rp_guest>
                               </s_rp_member>
-                              <div class="box-textarea">
-                                <textarea id="[##_rp_input_comment_##]" name="[##_rp_input_comment_##]" placeholder="내용을 입력해주세요."></textarea>
-                              </div>
-
-                              <div class="box-write">
-                                <label class="xe-label">
-                                  <input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret">
-                                  <span class="xe-input-helper"></span>
-                                  <span class="xe-label-text">비밀글</span>
-                                </label>
-                                <button type="button" class="btn_register" onclick="[##_rp_onclick_submit_##]">등록</button>
-                              </div>
+                             
 
                             </div>
                           </form>
@@ -869,36 +850,16 @@
 										 <br/><br/>
                     <button class="button-subscription btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="4356152" data-url="https://shanepark.tistory.com" data-device="web_pc">구독하기
                     </button>
-										<div class="box-sns">
-											<s_if_var_Profilefacebooklink>
-												<a href="//[##_var_Profilefacebooklink_##]" class="link-sns link-facebook">
-													<svg xmlns="//www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" class="svg">
-														<path fill="#B3B3B3" fill-rule="evenodd" d="M8 5v3H5v8H2V8H0V5h2V2a2 2 0 0 1 2-2h4v3H6a1 1 0 0 0-1 1v1h3z" />
-													</svg>
-												</a>
-											</s_if_var_Profilefacebooklink>
-											<s_if_var_Profileyoutubelink>
-												<a href="//[##_var_Profileyoutubelink_##]" class="link-sns link-youtube">
-													<svg xmlns="//www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" class="svg">
-														<path fill="#B3B3B3" fill-rule="evenodd" d="M4 0h8a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4zm3 4l3 2-3 2V4z" />
-													</svg>
-												</a>
-											</s_if_var_Profileyoutubelink>
-											<s_if_var_Profileinstalink>
-												<a href="//[##_var_Profileinstalink_##]" class="link-sns link-insta">
-													<svg xmlns="//www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="svg">
-														<path fill="#B3B3B3" fill-rule="evenodd" d="M4 0h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4zm0 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm4 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm4-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-													</svg>
-												</a>
-											</s_if_var_Profileinstalink>
-											<s_if_var_Profiletwitterlink>
-												<a href="//[##_var_Profiletwitterlink_##]" class="link-sns link-twitter">
-													<svg xmlns="//www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" class="svg">
-														<path fill="#B3B3B3" fill-rule="evenodd" d="M14.476 3.059S14.825 13 5.333 13A10.044 10.044 0 0 1 0 11.471a7.423 7.423 0 0 0 3.81-1.529 3.091 3.091 0 0 1-2.286-1.529h1.524A8.616 8.616 0 0 1 0 4.588h1.524S.45 4.075.762.764a8.438 8.438 0 0 0 6.095 3.059.766.766 0 0 0 .762-.765S7.646 0 11.429 0a4.071 4.071 0 0 1 2.285.765L16 0l-1.524 1.529H16l-1.524 1.53z" />
-													</svg>
-												</a>
-											</s_if_var_Profiletwitterlink>
-										</div>
+<!-- 방문자 표시 -->									
+		<div class="box-visit">
+				<h3 class="title-sidebar"><span class="blind">방문자수</span>Total</h3>
+                  <p class="text-total">[##_count_total_##]</p>
+                  <ul>
+                    <li class="item-visit">Today : [##_count_today_##]</li>
+                    <li class="item-visit">Yesterday : [##_count_yesterday_##]</li>
+                  </ul>
+    </div>
+<!-- 방문자 표시 끝 -->										
 									</div>
 								</div>
               </s_sidebar_element>
@@ -1051,15 +1012,7 @@
               </s_sidebar_element>
 
               <s_sidebar_element>
-                <!-- 방문자수 -->
-                <div class="box-visit">
-                  <h3 class="title-sidebar"><span class="blind">방문자수</span>Total</h3>
-                  <p class="text-total">[##_count_total_##]</p>
-                  <ul>
-                    <li class="item-visit">Today : [##_count_today_##]</li>
-                    <li class="item-visit">Yesterday : [##_count_yesterday_##]</li>
-                  </ul>
-                </div>
+               
               </s_sidebar_element>
             </s_sidebar>
 
@@ -1124,7 +1077,8 @@
 </div>
 <!-- 이미지 모달 끝 -->
 <script>
-$(function(){
+
+$(function(){									 
 // 	이미지 클릭시 해당 이미지 모달
 	$("p img").click(function(){
 		let img = new Image();
