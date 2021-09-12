@@ -17,7 +17,18 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 	<dependencies>
+		<dependency>
+		    <groupId>com.github.Shane-Park</groupId>
+		    <artifactId>shaneutils</artifactId>
+		    <version>f1e2f92941</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
