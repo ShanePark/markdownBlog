@@ -54,9 +54,9 @@
 
 간단한 jar를 만들 것 이기 때문에 일반 자바 프로젝트를 생성하면 됩니다. 혹은 다른 기존의 프로젝트들에 의존 하며 빌드 관리를 편하게 하려면 gradle이나 maven으로 만들어도 되겠습니다. 저는 maven으로 프로젝트를 만들었는데요, 처음에 괜히 스프링부트로 만들었다가  한참을 고생했습니다. 일반 프로젝트로 만들어야 합니다.
 
-![Screenshot 2021-09-12 at 12.09.50 PM](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/Screenshot 2021-09-12 at 12.09.50 PM.png)
+![Screenshot 2021-09-12 at 12.09.50 PM](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/50.png)
 
-![Screenshot 2021-09-12 at 12.11.32 PM](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/Screenshot 2021-09-12 at 12.11.32 PM.png)
+![Screenshot 2021-09-12 at 12.11.32 PM](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/32.png)
 
 ​		
 
