@@ -6,11 +6,11 @@
 
 ## Docker 에러 
 
-요즘 컴퓨터를 켤 때마다 docker가 실행되며 에러가 나는데 정말 불편합니다. wsl2를 위해 설치한 Ubuntu 혹은 Docker에 문제가 있는데, wsl2 는 계속 문제가 없었기 때문에 얼마전 업데이트가 된 Docker에서 문제가 발생했을 확률이 크다고 생각합니다.
+요즘 컴퓨터를 켤 때마다 docker가 실행되며 에러가 나는데 정말 불편합니다. wsl2를 위해 설치한 Ubuntu 혹은 Docker에 문제가 있는데, wsl2 는 계속 문제가 없었기 때문에 얼마전 업데이트가 된 Docker에서 문제가 발생했을 확률이 크다고 생각 했습니다.
 
 ​	
 
-![image-20210914083619042](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914083619042.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914091052614.png)
 
 발생하는 에러의 내용은 아래와 같습니다.
 
@@ -32,7 +32,9 @@
 
 ​		
 
-그래서 간단하게 시작 버튼을 누르고 검색에 CMD 를 입력 해 명령 프롬프트를 찾습니다. 관리자 권한으로 실행을 합니다.
+그래서 간단하게 서비스 재시작 만으로 일단 문제를 해결 할 수 있습니다.
+
+시작 버튼을 누르고 검색에 CMD 를 입력 해 명령 프롬프트를 찾습니다. 관리자 권한으로 실행을 합니다.
 
 ![image-20210914084014483](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914084014483.png)
 
@@ -69,16 +71,17 @@ net start lxssmanager
 
 ![image-20210914085708986](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914085708986.png)
 
-마침 또 Docker가 새로운 update가 나와서 업데이트를 해 보려 합니다.
+마침 또 Docker가 새로운 update가 나와서 업데이트를 해 보았습니다만, 업데이트 후에도 증상이 계속 같았습니다.
 
-Docker 업데이트 후에도 계속 같은 증상이 나온다면
-
-​	
+​		
 
 ![image-20210914085533769](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914085533769.png)
 
 ![image-20210914085555061](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914085555061.png)
 
-Ubuntu 앱을 한번 초기화 해 볼 계획 입니다. 일단 당장 Docker를 사용하지 못하면 불편함이 커지기 때문에 임기응변으로 임시 조치를 한 후 차근차근 원인을 찾아보겠습니다.
+​	
 
-혹시 같은 증상이 발생 한 분들은 급한대로 이렇게 해결해서 사용 하시다가 혹시 저보다 먼저 해결책이 찾아지면 공유해주세요. 감사합니다.
+그래서 Ubuntu 앱을 한번 초기화 해 보았습니다. 그 후로는 당장 에러가 발생하지 않는데 아마 설정값 등 뭔가 꼬인게 있었지 않았을 까 싶습니다. 그래도 완전히 해결되었는지는 좀 더 두고 봐야 할 것 같습니다.
+
+Ubuntu 앱을 초기화 하면 기존의 셋팅이 조금 달라 질 수 있으니 신중하게 결정하세요.
+
