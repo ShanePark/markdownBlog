@@ -83,5 +83,26 @@ net start lxssmanager
 
 그래서 Ubuntu 앱을 한번 초기화 해 보았습니다. 그 후로는 당장 에러가 발생하지 않는데 아마 설정값 등 뭔가 꼬인게 있었지 않았을 까 싶습니다. 그래도 완전히 해결되었는지는 좀 더 두고 봐야 할 것 같습니다.
 
-Ubuntu 앱을 초기화 하면 기존의 셋팅이 삭제되어 새로 세팅해야 하기 때문에 신중하게 결정하셔야 합니다.
+​	
 
+Ubuntu 앱을 새로 설치 하면 기존의 셋팅이 삭제되어 새로 세팅해야 하기 때문에 신중하게 결정하셔야 합니다. 일단 wsl에 배포를 다시 등록해 주고, --set-default, -s Ubuntu 명령어로 기본 wsl 배포로 다시 설정해 주셔야 합니다. 또한 docker 이미지가 꼬일 확률이 있어서 새로 이미지를 빌드 해야 할 수도 있습니다. docker volume 자체는 windows에서
+
+```
+\\wsl$\docker-desktop-data\version-pack-data\community\docker\volumes\docker-compose-dev_db
+```
+
+이런식으로 hidden network share 에서 접근 할 수 있으며 
+
+​	
+
+물리적인 저장 위치는 아래와 같습니다.
+
+```
+C:\Users\(사용자이름)\AppData\Local\Docker\wsl\data\ext4.vhdx
+```
+
+​	
+
+그래서 Ubuntu 를 새로 설치한다고 데이터가 날라가진 않으니 너무 걱정하지 않으셔도 되지만 해당 사항들을 해결 할 수 없는 분들은 한동안 lxssmanager 로 임시 대응을 하셔야 합니다.
+
+​	
