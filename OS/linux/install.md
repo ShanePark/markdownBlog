@@ -112,5 +112,22 @@ bcdedit /set safeboot minimal
 
 
 
+안전모드
 
 
+
+![image-20210916010535623](install.assets/image-20210916010535623.png)
+
+
+
+![image-20210916010626995](install.assets/image-20210916010626995.png)
+
+
+
+```
+bcdedit /deletevalue safeboot
+```
+
+
+
+![image-20210916010700691](install.assets/image-20210916010700691.png)
