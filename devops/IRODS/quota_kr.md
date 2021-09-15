@@ -4,7 +4,7 @@
 
 ​	
 
-## core.re 파일에서 설정을 변경합니다.
+## 1. core.re 설정변경
 
 ​	
 
@@ -49,6 +49,10 @@ vi /etc/irods/core.re
 ![image-20210915175353639](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915175353639.png)
 
 ​	
+
+## 2. 변경사항 확인
+
+## 		
 
 ### iRODS 에 설정된 Quota의 목록들을 확인해봅니다.
 
