@@ -52,7 +52,7 @@ vi /etc/irods/core.re
 
 ## 2. 변경사항 확인
 
-## 		
+
 
 ### iRODS 에 설정된 Quota의 목록들을 확인해봅니다.
 
