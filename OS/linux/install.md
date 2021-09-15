@@ -88,3 +88,29 @@ diskmgmt.msc
 
 
 
+
+
+### Switch Windows 10 from RAID/IDE to AHCI
+
+
+
+
+
+![image-20210916005719257](install.assets/image-20210916005719257.png)
+
+
+
+
+
+```
+bcdedit /set safeboot minimal
+```
+
+​	
+
+![image-20210916010245843](install.assets/image-20210916010245843.png)
+
+
+
+
+
