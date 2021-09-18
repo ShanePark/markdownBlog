@@ -99,6 +99,28 @@ Ubuntu 에서 한글 입력을 할 수 있도록 설정을 해 보도록 하겠�
 
 ​	![5](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/korean.assets/5-1952020.png)
 
+​		
+
+다만 이렇게 지정 해 둔 경우 Alt_R 의 기능이 살아 있기 때문에 타자를 치면서 한/영 변환을 하다가 특정 키가 작동해서 불편 할 수가 있습니다.
+
+만약 Hangul 키가 없어 오른쪽 Alt 를 이용 해야 할 경우에는 우측 Alt 키를 아이에 Hangul 키로 바인딩 하는 것을 추천드립니다.
+
+```shell
+$ sudo vi /usr/share/X11/xkb/symbols/altwin
+```
+
+이렇게 altwin 파일을 켜서
+
+​	
+
+![image-20210919004635375](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/korean.assets/image-20210919004635375.png)	
+
+​	6번 라인의 key <RALT> 에 해당하는 symbols 부분을  symbols[Group1] = [Hangul] }; 로 변경 해 주시면 됩니다.
+
+대신 이 파일을 수정 한 경우에는 재부팅을 한번 해야 적용이 됩니다.
+
+​		
+
 ​	
 
 ![6](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/korean.assets/6-1952039.png)
