@@ -94,15 +94,17 @@ Updates and other software 에 대한 설정인데요. 필요한 software 들을
 
 세번째 옵션으로 쭉 진행 해 보겠습니다.
 
+미리 만들어 둔 공간을 이제 partition으로 할당 해 줍니다. free space 가 있는 것을 확인 한 뒤 + 를 누릅니다.
+
 ![IMG_3206](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu-install.assets/IMG_3206.jpeg)
 
-미리 만들어 둔 공간을 이제 partition으로 할당 해 줍니다. Logigal / Beginning of this space 로 설정 하고 Mount point는 루트(/) 로 파티션을 생성 했습니다.
+ Logigal / Beginning of this space 로 설정 하고 Mount point는 루트(/) 로 파티션을 생성 했습니다.
 
 ​	
 
 ![IMG_3207](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu-install.assets/IMG_3207.jpeg)
 
-그러고 이제 방금 만든 Mount point / 의 파티션은 Forat? 에 v 체크를 해 주고요, 제일 위에 있는 /dev/드라이브이름 을 선택해 Install Now 버튼을 클릭 합니다.
+그러고 이제 방금 만든 Mount point / 의 파티션은 Format에 v 체크를 해 주고요, 제일 위에 있는 /dev/드라이브이름 을 선택해 Install Now 버튼을 클릭 합니다.
 
 ​	
 
@@ -114,9 +116,15 @@ Updates and other software 에 대한 설정인데요. 필요한 software 들을
 
 ![IMG_3231](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu-install.assets/IMG_3231.jpeg)
 
-시간대는  Seoul로 설정 해 주고 컴퓨터 이름과 유저 이름을 설정하는 화면도 나오는데 본인에 맞게 설정 해 줍니다.
+시간대는  Seoul로 설정 해 주고 
 
 ​	
+
+컴퓨터 이름과 유저 이름을 설정하는 화면도 나오는데 본인에 맞게 설정 해 줍니다.
+
+![IMG_3238](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu-install.assets/IMG_3238.jpeg)
+
+​		
 
 ![IMG_3232](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu-install.assets/IMG_3232.jpeg)
 
