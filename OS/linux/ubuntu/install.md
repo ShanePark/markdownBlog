@@ -6,7 +6,7 @@
 
 https://ubuntu.com/download/desktop
 
-![image-20210917194545200](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210917194545200.png)
+![image-20210917194545200](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210917194545200.png)
 
 위의 공식 홈페이지에서 다운 받을 수 있습니다.
 
@@ -18,7 +18,7 @@ https://ubuntu.com/download/desktop
 
 http://mirror.kakao.com/ubuntu-releases/20.04/
 
-![image-20210916083806146](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916083806146.png)
+![image-20210916083806146](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916083806146.png)
 
 
 
@@ -30,7 +30,7 @@ Ubuntu 설치 iso 이미지를 다운 받는동안 가만히 기다리지 않고
 
 https://rufus.ie/en/
 
-![image-20210916083730471](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916083730471.png)
+![image-20210916083730471](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916083730471.png)
 
 
 
@@ -38,19 +38,19 @@ https://rufus.ie/en/
 
 다운받은 Rufus를 실행 하면 다음과 같은 화면이 나옵니다. "장치" 에서 우분투 설치 USB를 만들 장치를 선택 합니다.
 
-![image-20210916083841197](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916083841197.png)
+![image-20210916083841197](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916083841197.png)
 
 ​	
 
 이제 위에서 다운받은 이미지 선택을 해줍니다.
 
-![image-20210916083906106](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916083906106.png)
+![image-20210916083906106](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916083906106.png)
 
 ​	
 
 부트 선택 에 이미지가 선택이 된 것을 확인 합니다.
 
-![image-20210916083925405](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916083925405.png)
+![image-20210916083925405](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916083925405.png)
 
 ​	
 
@@ -60,19 +60,19 @@ https://rufus.ie/en/
 
 ISOHybrid 이미지가 감지 되어 ISO 혹은 DD 이미지 모드로 쓸 수 있다고 하는데, ISO 이미지 모드 사용을 권장 한다고 합니다. 바로 OK 를 선택합니다.
 
-![image-20210916083954050](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916083954050.png)
+![image-20210916083954050](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916083954050.png)
 
 
 
 ​	필요한 파일을 다운 받는다고 하니 "예"를 눌러줍니다.
 
-![image-20210916084003021](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084003021.png)
+![image-20210916084003021](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084003021.png)
 
 ​	
 
 ​	이제 설치 USB를 만듭니다. 포맷을 진행 하기 때문에 백업할 데이터가 있다면 미리 해줘야 합니다.
 
-![image-20210916084015885](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084015885.png)
+![image-20210916084015885](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084015885.png)
 
 이제 확인 버튼을 클릭 하면 쓰기 작업이 시작되며 꽤 오랜 시간이 걸립니다. 저는 3분 가량 걸렸습니다.
 
@@ -88,37 +88,37 @@ ISOHybrid 이미지가 감지 되어 ISO 혹은 DD 이미지 모드로 쓸 수 �
 
 제어판에 들어가서
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084256538.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084256538.png)
 
 ​	
 
 전원 및 절전 메뉴에 들어갑니다. 	
 
-![image-20210916084317997](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084317997.png)
+![image-20210916084317997](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084317997.png)
 
 
 
 그리고 우측의 추가 전원 설정에 들어가면 아래와 같은 화면이 나옵니다. 전원 단추 작동 설정을 클릭합니다.
 
-![image-20210916084337268](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084337268.png)
+![image-20210916084337268](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084337268.png)
 
 ​	
 
 여기에서 "빠른 시작 켜기(권장)" 을 꺼 줘야 합니다. 위쪽에 파랗게 써있는 **현재 사용할 수 없는 설정 변경** 버튼을 클릭합니다.
 
-![image-20210916084410018](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084410018.png)
+![image-20210916084410018](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084410018.png)
 
 ​	
 
 빠른 시작 켜기 체크를 해제해줍니다.
 
-![image-20210916084422302](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084422302.png)
+![image-20210916084422302](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084422302.png)
 
 ​	
 
 ## 파티션 나누기
 
-![image-20210916084434504](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084434504.png)
+![image-20210916084434504](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084434504.png)
 
 USB 쓰기 작업이 모두 끝났습니다. 저는 3분 11초 걸렸네요.
 
@@ -126,7 +126,7 @@ USB 쓰기 작업이 모두 끝났습니다. 저는 3분 11초 걸렸네요.
 
 USB를 확인해보니 이런식으로 설치 관련 파일들이 들어가 있습니다.
 
-![image-20210916084502992](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084502992.png)
+![image-20210916084502992](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084502992.png)
 
 ​	
 
@@ -140,7 +140,7 @@ diskmgmt.msc
 
 를 입력합니다.
 
-![image-20210916084545536](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084545536.png)
+![image-20210916084545536](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084545536.png)
 
 ​	
 
@@ -148,7 +148,7 @@ diskmgmt.msc
 
 여기에서 본인이 원하시는 대로 디스크를 나누시면 됩니다. 저는 총 500GB의 용량을 Windows와 Ubuntu 에 각각 절반씩 할당 해 두었지만 Ubuntu에 개발환경이 준비되는 대로 Windows의 할당량을 서서히 줄일 예정입니다. 용량을 할당 까지 하면 안되고, 미할당 상태로 두었다가 Ubuntu 설치할 때에 할당해줍니다.
 
-![image-20210916084602661](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916084602661.png)
+![image-20210916084602661](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916084602661.png)
 
 ​	
 
@@ -162,7 +162,7 @@ Windows 를 사용하지 않을 예정이거나 포맷 해버릴 것 이라면 �
 
 CMD를 관리자 권한으로 실행 합니다.
 
-![image-20210916005719257](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916005719257.png)
+![image-20210916005719257](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916005719257.png)
 
 ​	
 
@@ -174,7 +174,7 @@ bcdedit /set safeboot minimal
 
 ​		
 
-![image-20210916010245843](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916010245843.png)
+![image-20210916010245843](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916010245843.png)
 
 
 
@@ -184,13 +184,13 @@ bcdedit /set safeboot minimal
 
 ​			
 
-![image-20210916010535623](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916010535623.png)
+![image-20210916010535623](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916010535623.png)
 
 ​	
 
 아까처럼 CMD 를 관리자 권한으로 실행 합니다.
 
-![image-20210916010626995](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916010626995.png)
+![image-20210916010626995](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916010626995.png)
 
 
 
@@ -200,7 +200,7 @@ bcdedit /set safeboot minimal
 bcdedit /deletevalue safeboot
 ```
 
-![image-20210916010700691](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/install.assets/image-20210916010700691.png)
+![image-20210916010700691](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210916010700691.png)
 
 ​	
 

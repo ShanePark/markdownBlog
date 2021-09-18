@@ -10,7 +10,7 @@ rerefence
 
 GNONE은 Ubuntu 20.04의 기본 데스크탑 환경 입니다. 처음에 여러분이 Ubuntu 를 띄웠을때는 스크린의 왼쪽에 Dock이 떠 있습니다. Windows 나 Mac 사용자들에게는 익숙하지 않은 화면 인데요. 지금부터 Dock을 커스터마이징 해 보도록 하겠습니다.
 
-![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/1.png)
+![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/1.png)
 
 ​	
 
@@ -32,7 +32,7 @@ GNONE은 Ubuntu 20.04의 기본 데스크탑 환경 입니다. 처음에 여러�
 $ sudo apt install dconf-editor
 ```
 
-​			![2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/2.png)
+​			![2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/2.png)
 
 설치가 완료 되었습니다.
 
@@ -40,19 +40,19 @@ $ sudo apt install dconf-editor
 
 이제 어플리케이션 목록에서 dconf Editor를 사용 할 수 있습니다. 실행 해 주세요.	
 
-![3](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/3.png)	
+![3](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/3.png)	
 
 ​	
 
 무시무시한 경고가 나옵니다. 잘못 사용할 경우 application을 망가뜨릴 수 있으니 꼭 유념 해 주세요.
 
-![4](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/4.png)
+![4](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/4.png)
 
 ​		
 
 처음 실행했을 때의 모습은 아래와 같습니다.
 
-![5](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/5.png)
+![5](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/5.png)
 
 ​	
 
@@ -66,13 +66,13 @@ org > gnome > shell > extensions > dash-to-dock
 
 그러면 아래와 같은 화면을 확인 할 수 있습니다.
 
-![6](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/6.png)
+![6](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/6.png)
 
 ​	
 
 여기에서 extend-height 를 찾아 비활성화 시켜줘 보겠습니다.
 
-![7](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/7.png)
+![7](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/7.png)
 
 보이는 것 처럼 dock 이 한 가운데로 이동 하였습니다 !
 
@@ -84,7 +84,7 @@ org > gnome > shell > extensions > dash-to-dock
 $ gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 ```
 
-![8](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/8.png)
+![8](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/8.png)
 
 ​	
 
@@ -94,7 +94,7 @@ $ gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 $ gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true
 ```
 
-​	![9](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/9.png)
+​	![9](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/9.png)
 
 보이는 것 처럼 실행되고 있는 아이콘들은 배경색이 회색으로 표시되었습니다.
 
@@ -104,7 +104,7 @@ $ gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true
 
 아래처럼 실수로 사이즈를 100 으로 지정 했는데 기본 사이즈로 변경 하고 싶을 때가 있을 수 있습니다.
 
-![10](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/10.png)
+![10](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/10.png)
 
 ​	
 
@@ -114,7 +114,7 @@ $ gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true
 $ gsettings reset org.gnome.shell.extensions.dash-to-dock dash-max-icon-size
 ```
 
-![11](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dock.assets/11.png)	
+![11](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntudock.assets/11.png)	
 
 ​	
 

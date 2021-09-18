@@ -16,7 +16,7 @@ reference
 
 https://linux-hardware.org/?id=usb:27c6-5395&hwid=401e4e7bdfc4
 
-![image-20210918183843289](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/image-20210918183843289.png)
+![image-20210918183843289](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/image-20210918183843289.png)
 
 ​	
 
@@ -24,7 +24,7 @@ Detect가 되니 가능성이 있네요. 지금부터 해보겠습니다.
 
 ​	
 
-![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/1.png)
+![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/1.png)
 
 일단 Settings의 Users에 가면 지문인식 설정을 할 수 없는게 확인 됩니다.
 
@@ -32,7 +32,7 @@ Detect가 되니 가능성이 있네요. 지금부터 해보겠습니다.
 
 일단 fprintd가 없다면 설치를 해줍니다. 저는 이미 있었네요.
 
-![2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/2.png)
+![2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/2.png)
 
 ​	
 
@@ -63,7 +63,7 @@ sudo apt install -y \
 
 열심히 필요한 패키지들이 설치 됩니다.
 
-![Screenshot from 2021-09-18 19-56-11](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/3.png)
+![Screenshot from 2021-09-18 19-56-11](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/3.png)
 
 설치를 마쳤으니 이제 확인 해 보겠습니다.
 
@@ -71,7 +71,7 @@ sudo apt install -y \
 
 Setting- Users에 다시 들어가봅니다.
 
-![Screenshot from 2021-09-18 19-56-41](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/4.png)
+![Screenshot from 2021-09-18 19-56-41](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/4.png)
 
 ​	
 
@@ -83,25 +83,25 @@ Ringerprint Login에 Disabled > 된 것을 클릭 합니다.
 
 이제 Scan new fingerprint 버튼을 선택 합니다.
 
-![Screenshot from 2021-09-18 19-57-58](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/5.png)
+![Screenshot from 2021-09-18 19-57-58](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/5.png)
 
 ​		
 
 이제 등록하고자 하는 손가락을 선택 하구요
 
-![Screenshot from 2021-09-18 19-58-10](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/6.png)
+![Screenshot from 2021-09-18 19-58-10](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/6.png)
 
 ​	
 
 지문 리더에 손가락을 올리라고 하네요. 손가락을 한번씩 여러번 올리면 점점 게이지가 찹니다.	
 
-![Screenshot from 2021-09-18 19-58-29](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/7.png)
+![Screenshot from 2021-09-18 19-58-29](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/7.png)
 
 ​	
 
 총 열번 정도 손가락을 떼었다 붙였다 하면 등록이 완료됩니다.
 
-![Screenshot from 2021-09-18 19-58-56](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/8.png)
+![Screenshot from 2021-09-18 19-58-56](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/8.png)
 
 이제 화면을 잠시 잠궈보겠습니다.
 
@@ -109,7 +109,7 @@ Ringerprint Login에 Disabled > 된 것을 클릭 합니다.
 
 이제는 비밀번호를 입력 하거나 지문을 입력하라는 메시지가 나오네요.	
 
-![IMG_3239](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/IMG_3239.jpeg)
+![IMG_3239](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/IMG_3239.jpeg)
 
 ​	
 
@@ -117,7 +117,7 @@ Ringerprint Login에 Disabled > 된 것을 클릭 합니다.
 
 ​	
 
-![IMG_3241](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/dell-finger.assets/IMG_3241.gif)
+![IMG_3241](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/IMG_3241.gif)
 
 ​	
 
