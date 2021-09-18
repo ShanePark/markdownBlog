@@ -206,3 +206,7 @@ bcdedit /deletevalue safeboot
 
 이로써 Windows 에서의 멀티부팅을 위한 모든 설정과 Ubuntu 설치 USB 만들기를 마쳤습니다.
 
+Ubuntu 설치 과정은 아래 글에서 이어집니다.
+
+[Ubuntu 20.04LTS 설치하기](https://shanepark.tistory.com/230)
+

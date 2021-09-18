@@ -128,7 +128,7 @@ Updates and other software 에 대한 설정인데요. 필요한 software 들을
 
 ​	
 
-![Screenshot from 2021-09-18 15-22-35](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu-install.assets/Screenshot from 2021-09-18 15-22-35.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu-install.assets/sc.png)
 
 ​	
 
