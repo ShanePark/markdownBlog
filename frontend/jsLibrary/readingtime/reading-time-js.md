@@ -134,6 +134,10 @@ article을 잘 분석 해서 3분짜리라고 알려줍니다. 제 기준에선 
 
 한국어를 추가 했으니 제가 편집한 버전으로 새로 불러 오겠습니다.
 
+제가 편집 한 reading-time.js 는 아래 링크에서 다운 받을 수 있습니다.
+
+https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/readingtime.js
+
 ![image-20210910214810168](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910214810168.png)
 
 같은 폴더에 readingtime.js 과 style.css 파일을 넣고
