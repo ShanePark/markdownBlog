@@ -37,6 +37,7 @@ Detect가 되니 가능성이 있네요. 지금부터 해보겠습니다.
 ​	
 
 ```shell
+# 1. 처음엔 이쪽 명령을 실행
 echo "
 deb http://dell.archive.canonical.com/updates/ focal-dell public
 deb http://dell.archive.canonical.com/updates/ focal-oem public
@@ -44,11 +45,11 @@ deb http://dell.archive.canonical.com/updates/ focal-somerville public
 deb http://dell.archive.canonical.com/updates/ focal-somerville-melisa public" | \
 sudo tee -a /etc/apt/sources.list.d/focal-dell.list
 
-# Add the Dell repository key (F9FDA6BED73CDC22) to apt
+# 2. Add the Dell repository key (F9FDA6BED73CDC22) to apt
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22
 sudo apt update
 
-# Install fingerprint reader packages
+# 3. Install fingerprint reader packages
 sudo apt install -y \
     oem-somerville-melisa-meta \
     oem-somerville-meta \
@@ -56,7 +57,7 @@ sudo apt install -y \
     tlp-config
 ```
 
-이제 위의 명령어를 세번에 걸쳐 실행 합니다.
+이제 위의 명령어들을 위에서부터 세번에 걸쳐 나눠 실행 합니다.
 
 ​	
 
