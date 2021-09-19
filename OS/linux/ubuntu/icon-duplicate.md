@@ -1,4 +1,4 @@
-# Ubuntu ) 실행시 Dock에 아이콘 현상 중복 해결
+# Ubuntu ) 실행시 Dock에 아이콘 중복현상 해결
 
 ​		
 

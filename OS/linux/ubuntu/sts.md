@@ -1,4 +1,4 @@
-# Ubuntu) STS4 (Spring Tools Suite 4 for Elipse) 설치하고 바로 가기 만들기
+# Ubuntu) STS4 (Spring Tools Suite 4 for Eclipse) 설치하고 바로 가기 만들기
 
 ​		
 
