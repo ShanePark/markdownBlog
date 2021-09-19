@@ -2,7 +2,7 @@
 
 ​	
 
-![Empowering App Development for Developers | Docker](/home/shane/Documents/git/markdownBlog/OS/linux/ubuntu/docker.assets/docker_facebook_share.png)
+![Empowering App Development for Developers | Docker](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/docker.assets/docker_facebook_share.png)
 
 Docker는 Windows 에서 Ubuntu 로 넘어오게 된 가장 큰 계기입니다. Docker를 사용하면 정말 편하게 격리된 컨테이너들을 구성해 가상화의 장점을 살릴 수 있습니다. 사실상 업계 표준인 만큼 접근성이 높으며 사용에 굉장히 편리합니다. 관련 레퍼런스도 어렵지 않게 찾아 볼 수 있으며 사용자들이 작성해 둔 패키지/이미지들이 넘쳐나기 때문에 뭔가를 정말 간단하게 할 수 있습니다. 윈도우즈에서도 WSL2(Windows Subsystem for Linux)를 이용해 사용은 가능 했지만 메모리나 안정성 문제로 불편함이 있었습니다.
 
@@ -82,7 +82,7 @@ docker --version
 
 를 입력해서 버전을 확인 하거나
 
-![image-20210919181521058](/home/shane/Documents/git/markdownBlog/OS/linux/ubuntu/docker.assets/image-20210919181521058.png)
+![image-20210919181521058](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/docker.assets/image-20210919181521058.png)
 
 ​	혹은 hello-world 이미지를 실행 시켜 봅니다.
 
@@ -90,7 +90,7 @@ docker --version
  sudo docker run hello-world
 ```
 
-![image-20210919181654082](/home/shane/Documents/git/markdownBlog/OS/linux/ubuntu/docker.assets/image-20210919181654082.png)
+![image-20210919181654082](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/docker.assets/image-20210919181654082.png)
 
 ​			
 
