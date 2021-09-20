@@ -111,7 +111,7 @@ ssh shane@192.168.0.32
 
 해당 포트를 열고 나서는 외부 아이피로도 ssh 접속을 할 수 있습니다.
 
-![Screenshot from 2021-09-19 22-06-30](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/Screenshot from 2021-09-19 22-06-30.png)
+![Screenshot from 2021-09-19 22-06-30](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/22-06-30.png)
 
 ​	
 
