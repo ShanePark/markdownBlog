@@ -8,7 +8,7 @@ Apple Silicon arm64 방식의 Mac 에서는 적용되지 않습니다. 저도 m1
 
 > [Apple Silicon m1 맥북에서 Oracle Database 사용하기](https://shanepark.tistory.com/208)
 
-
+​	
 
 ## 서론	
 
@@ -32,7 +32,7 @@ docker run --name oracle11g -d -p 1521:1521 jaspeen/oracle-xe-11g
 
 ​	
 
-실행이 잘 되었느지 docker container의 상태를 확인 해 봅니다.		
+실행이 잘 되었는지 docker container의 상태를 확인 해 봅니다.		
 
 ```bash
 docker ps
@@ -107,4 +107,44 @@ password
 ​	
 
 공유기로 포트포워딩을 한다면 외부 아이피에서의 접속도 가능합니다. 생각보다 쉽기 때문에 오라클을 띄울때 굳이 힘들게 다운받아서 설치해서 하지 말고 (사실상 오라클 공식 루트로 11g 설치 파일을 구하긴 정말 어렵습니다) docker를 이용해서 띄우기를 정말 추천합니다.
+
+​	
+
+마지막으로 간단한 계정 생성 및 관리 관련 명령을 남기고 마치겠습니다.
+
+​	
+
+### 유저 생성 : CREATE USER [유저이름] IDENTIFIED BY [비밀번호];
+```
+CREATE USER shane IDENTIFIED BY 1234
+```
+### 권한부여 : GRANT [권한] TO [대상유저];
+```
+GRANT RESOURCE, CONNECT TO shane
+grant create view to shane
+```
+### 유저 목록
+```
+select * from sys.dba_users
+```
+### 유저 삭제하며 관련 테이블 모두 drop
+```
+drop user {유저아이디} cascade;
+```
+
+### 암호 기간 만료 비활성화
+```
+alter profile default limit password_life_time unlimited;
+```
+
+### 최대 접속 가능 process 조회 및 변경
+```
+show parameter processes;
+```
+
+```
+alter system
+set processes = 200 scope=spfile;
+```
+> 최대 접속 process 변경 후에는 DB를 종류한 후 다시 켜야 내용이 저장됩니다.
 
