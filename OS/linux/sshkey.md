@@ -89,7 +89,7 @@ $ vi authorized_keys
 ```json
 Host myserver
     HostName 222.123.123.123
-    Port 2022
+    Port 22
     User ubuntu
 ```
 
