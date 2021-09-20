@@ -1,6 +1,6 @@
 # docker-compose 이용해 ELK Stack 구축하기
 
-docker나 docker-compose가 아직 준비도어 있지 않다면 아래 글을 참고해서 먼저 설치 해 주세요.
+docker나 docker-compose가 아직 준비되어 있지 않다면 아래 글을 참고해서 먼저 설치 해 주세요.
 
 - [Ubuntu 20.04 LTS ) Docker 설치하기](https://shanepark.tistory.com/237)	
 
@@ -12,7 +12,7 @@ docker나 docker-compose가 아직 준비도어 있지 않다면 아래 글을 �
 
   
 
-## `저장소 클론
+## 저장소 클론
 
 아래의 저장소에서 docker-compose 설정을 클론하면 아주 쉽게 docker-compose 를 이용한 ELK STACK을 구축 할 수 있습니다.
 
