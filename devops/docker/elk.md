@@ -12,7 +12,7 @@ docker나 docker-compose가 아직 준비도어 있지 않다면 아래 글을 �
 
   
 
-## 저장소 클론
+## `저장소 클론
 
 아래의 저장소에서 docker-compose 설정을 클론하면 아주 쉽게 docker-compose 를 이용한 ELK STACK을 구축 할 수 있습니다.
 
@@ -20,7 +20,7 @@ docker나 docker-compose가 아직 준비도어 있지 않다면 아래 글을 �
 git clone https://github.com/deviantony/docker-elk.git
 ```
 
-## ![Screenshot from 2021-09-20 14-35-32](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/Screenshot from 2021-09-20 14-35-32.png)
+## ![Screenshot from 2021-09-20 14-35-32](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/14-35-32.png)
 
 
 
