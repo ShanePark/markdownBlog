@@ -123,3 +123,13 @@ $ gsettings reset org.gnome.shell.extensions.dash-to-dock dash-max-icon-size
 본 포스팅을 통해 어떻게 Ubuntu 20.04의 GNOME desktop 환경 설정을 하는지 알아 보았습니다. 기본 설정과 dconf-Editor의 추가적인 설정을 통해 dock panel을 여러분이 원하는대로 변경 할 수 있게 되셨습니다.
 
 고생하셨습니다. 간단하게 원하는 Dock 모양으로 만들어서 사용하세요 
+
+
+
+추가로 바탕화면에 있는 휴지통을 제거하고 싶으면
+
+```bash
+$ gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
+```
+
+마찬가지로 show-home 을 false 로 두면 홈 아이콘도 삭제 할 수 있습니다.
