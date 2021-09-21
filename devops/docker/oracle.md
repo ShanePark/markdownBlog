@@ -64,10 +64,10 @@ docker logs oracle11g
 
 이제 컨테이너에 접속을 해봅니다. 
 
-docker exec -it {컨테이너이름} bash 명령어르 컨테이너에 접속 할 수 있습니다.
+docker exec -it {컨테이너이름} bash 명령어를 컨테이너에 접속 할 수 있습니다.
 
 ```bash
-docker exec -it oracle11g bash
+sudo docker exec -it oracle11g bash
 ```
 
 ![image-20210920124719422](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920124719422.png)
