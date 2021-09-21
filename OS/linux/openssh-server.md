@@ -83,7 +83,7 @@ ssh shane@192.168.0.32
 
 ​	처음에 접속 할 때는 아래와 같이 한번 확인을 해 주는데요, yes를 입력 합니다.
 
-![1 (copy)](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/1 (copy).png)
+![1 ](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/1.png)
 
 ​	 	
 
@@ -91,11 +91,11 @@ ssh shane@192.168.0.32
 
 비밀번호를 입력 합니다.
 
-![2 (copy)](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/2 (copy).png)
+![2 ](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/2.png)
 
 ​			
 
-![3 (copy)](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/3 (copy).png)
+![3 ](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/3.png)
 
 정말로 접속이 되었습니다.
 
@@ -116,3 +116,9 @@ ssh shane@192.168.0.32
 ​	
 
 생각보다 어렵지 않았지만, SSH 접속이 가능해졌기 때문에 정말 많은 것을 할 수 있게 되었습니다.
+
+ssh 아이디@주소 를 입력해서 접속하는게 번거롭기 때문에 접속할 서버에 public key를 등록 해 두고 호스트의 .ssh/config 에 설정 파일을 저장해 아주 간단하게 ssh {name} 만으로 접속 하는 방법도 있습니다.
+
+해당 내용은 아래 포스팅을 참고해주세요.
+
+[SSH key 생성하고, 서버에 등록해서 비밀번호 없이 접속하기](https://shanepark.tistory.com/195)

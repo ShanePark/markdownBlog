@@ -2,7 +2,7 @@
 
 매번 SSH 접속 할 때 마다 비밀번호 입력하려면 매우 번거롭습니다. 이 때, 신뢰할 수 있는 컴퓨터라면 공개키를 등록 해서 비밀번호 없이 간편하게 접속 할 수 있습니다.
 
-아래와 같이 public key가 있다면 SSH Key 생성 과정은 건너 띌 수 있습니다. key 가 있으신 분은 SSH Key 등록하기 로 쭉쭉 스크롤 하시면 됩니다.
+아래와 같이 public key가 있다면 SSH Key 생성 과정은 건너 띌 수 있습니다. key 가 있으신 분은 SSH Key 등록하기 로 쭉쭉 스크롤 하시면 됩니다. Mac 이나 Linux 에서는 ~/.ssh 경로 입니다.
 
 ![](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810153821908.png)
 
@@ -14,7 +14,9 @@ ssh-keygen이 있다면 아래의 명령어를 입력해 간단하게 생성 할
 
 Git 을 설치하면서 ssh-keygen 이 딸려왔는지 아니면 wsl2를 설치하면서 왔는지 ssh-keygen이 있었는데 없다면 ssh-keygen을 먼저 설치 해 주셔야 합니다.
 
-WSL이 아직 없다면 [해당 링크](https://shanepark.tistory.com/187) 를 참고해서 먼저 설치해주세요.
+Windows 를 사용하는데 WSL이 아직 없다면 [해당 링크](https://shanepark.tistory.com/187) 를 참고해서 먼저 설치해주세요.
+
+MacOS / Linux 에서는 터미널에서 바로 하시면 됩니다.
 
 ```shell
 ssh-keygen -t rsa
@@ -62,7 +64,7 @@ chmod 755 ~/.ssh/authorized_keys
 
 scp를 사용해도 되고 vi를 이용해 붙여넣기를 해도 상관 없습니다.
 
-id_rsa.pub 에 있는 모든 내용을 복사해서
+Host의 ~/.ssh/id_rsa.pub 에 있는 모든 내용을 복사해서
 
 ![image-20210810154227911](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810154227911.png)
 
@@ -82,7 +84,13 @@ $ vi authorized_keys
 
 또한 SSH 접속을 할때 ubuntu@222.123.123.123 이런식으로 입력을 했다면, 아이피 주소를 외우기가 곤란 하기 때문에 매번 귀찮은 상황이 발생 했을 텐데요,
 
-사용자의 .ssh 폴더 내에 확장자가 없는 config 파일을 만들고
+사용자의 ~/.ssh 폴더 내에 확장자가 없는 config 파일을 만들고
+
+```bash
+vi ~/.ssh
+```
+
+
 
 ![image-20210810154550934](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810154550934.png)
 
@@ -91,6 +99,10 @@ Host myserver
     HostName 222.123.123.123
     Port 22
     User ubuntu
+Host myserver2
+    HostName 222.123.123.121
+    Port 22
+    User ubuntu2
 ```
 
 이런식으로 설정 파일을 저장 해 둔다면,
