@@ -1,5 +1,29 @@
 @charset "UTF-8";
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Buttons */
+#upBtn{
+	right: 20px;
+}
+#darkBtn{
+	right: 80px;
+}
+.btns{
+	padding-top:3px;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	font-size: 2em;
+	position: fixed;
+	opacity: 0.5;
+	text-align : center;
+	z-index: 1;
+	border: none;
+	bottom: 20px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 4px rgba(0, 0, 0, 0.2);
+}
+.btns:hover{
+	background-color:#666;
+}
 
 /* font */
 @font-face {
@@ -39,147 +63,195 @@ p img:hover{
 }
 /* image modal end */
 
-/* Dark Mode*/
-@media (prefers-color-scheme: dark){
-	html, body{
-		background-image: url("./images/darkmoon.jpg") !important;
-    background-size: cover !important;
-    background-attachment: fixed !important;
+/******************** Dark Mode***************/
+body {
+	transition: all 3s;
+}
+body.dark{
+		background-image: url("./images/darkmoon.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 		background-color : black;
+}
+.dark #footer{
+		border-top : none;
+}
+.dark .area-view img{
+	opacity: 0.9;
+}
+#tt-body-page,dark .main{
+	opacity : 0.9;
+}
+.dark #footer .box-site button{
+	display : none;
+}
+.dark .article-header{
+	background : none !important;
+}
+	.dark .area-reply .box-content .button-modify{
+		background: url(./images/moreSquare.svg) no-repeat;
+    background-size: 25px;
 	}
-	#footer{
-		border-top : none !important;
+	.dark .article-type- .thumbnail
+	, .dark .article-type-thumbnail .thumbnail{
+		opacity: 0.6;
 	}
-	#tt-body-page .main{
-		opacity : 0.9 !important;
+	.dark .area-reply .list-reply-comment{
+		background: none;
 	}
-	#footer .box-site button{
-		display : none !important;
+	.dark body
+	, .dark .area-write .box-write .xe-label > input[type="checkbox"] + .xe-input-helper
+, .dark .area-write .box-account input
+	, .dark .area-write .box-write .btn_register{
+		background-color: #222;
 	}
-	.article-header{
-		background : none !important;
+	.dark .area-write .box-textarea textarea {
+		background : content-box;
 	}
-	.area-reply .box-content .button-modify{
-		background: url(./images/moreSquare.svg) no-repeat !important;
-    background-size: 25px !important;
+	.dark .area-write .box-account input
+	, .dark .area-write .box-textarea textarea:hover{
+		border : 1px solid white;
 	}
-	.article-type- .thumbnail, .article-type-thumbnail .thumbnail{
-		display : none !important;
-	}
-	.area-reply .list-reply-comment{
-		background: none !important;
-	}
-	body, .area-write .box-write .xe-label > input[type="checkbox"] + .xe-input-helper, .area-write .box-account input, .area-write .box-write .btn_register{
-		background-color: #222 !important;
-	}
-	.area-write .box-textarea textarea {
-		background : content-box !important;
-	}
-	.area-write .box-account input
-	, .area-write .box-textarea textarea:hover{
-		border : 1px solid white !important;
-	}
-	.header_layer, .layer_post{
-		background : #000 !important;
+	.dark .header_layer
+, .dark .layer_post{
+		background : #000;
 		border: 1px solid grey;
     opacity: 0.8;
 	}
-	#tt-body-page .article-view h1, #tt-body-page .article-view h2{
-		border-bottom: 2px solid darkgrey !important;
+	#tt-body-page.dark .article-view h1
+  , #tt-body-page.dark .article-view h2{
+		border-bottom: 2px solid darkgrey;
 	}
-	.link-icon{
-		color : unset !important;
+	.dark .link-icon{
+		color : unset;
 	}
-	.link-icon :hover
-	, .area-aside .box-category .tt_category .category_list .link_sub_item:hover
-	, .area-aside .box-category .tt_category .link_tit:hover
-	, .area-aside .box-category .tt_category .category_list .link_item:hover
-	, .article-type-common .title:hover
-	, .area-aside .box-profile .button-subscription:hover
+	.dark .link-icon :hover
+	, .dark .area-aside .box-category .tt_category .category_list .link_sub_item:hover
+	, .dark .area-aside .box-category .tt_category .link_tit:hover
+	, .dark .area-aside .box-category .tt_category .category_list .link_item:hover
+	, .dark .article-type-common .title:hover
+	, .dark .area-aside .box-profile .button-subscription:hover
 	{
-		color : white !important;
+		color : white;
 	}
-	#tt-body-page .article-view hr{
-		background-color : grey !important;
+	#tt-body-page.dark .article-view hr{
+		background-color : grey;
 	}
-	html, body, .header .link_logo, .title, .link-category, .area-aside .title-sidebar, .area-aside .box-recent .list-recent .box-recent, .area-aside .box-recent .tab-recent li.on a,.area-aside .box-plugins .tab-sns li.on a, .area-aside .box-visit .text-total, .area-aside .box-profile .button-subscription, .area-aside .box-calendar .inner-calendar .cal_month a, .article-view h1, .article-view h2, .article-view h3, .article-view h4, .article-view ul li, .article-view p, .container_postbtn .postbtn_like, .article-header .inner-header, .box-no-search, .article-related .link-related strong,.article-reply .box-total a, #tt-body-page .article-view, .area-paging .link_num span, .area-write .box-write .xe-label .xe-label-text, .inner_header_layer .txt_id, .menu_toolbar .list_toolbar .link_list, .layer_post .btn_mark, .area-aside .box-category .tt_category .link_tit, .area-aside .box-category .tt_category .category_list .link_item{
-		color : darkgray !important;
+.dark html
+, .dark body
+, .dark .header .link_logo
+, .dark .title
+, .dark .link-category
+, .dark .area-aside .title-sidebar
+, .dark .area-aside .box-recent .list-recent .box-recent
+, .dark .area-aside .box-recent .tab-recent li.on a
+, .dark .area-aside .box-plugins .tab-sns li.on a
+, .dark .area-aside .box-visit .text-total
+, .dark .area-aside .box-profile .button-subscription
+, .dark .area-aside .box-calendar .inner-calendar .cal_month a, .article-view h1
+, .dark .article-view h2
+, .dark .article-view h3
+, .dark .article-view h4
+, .dark .article-view ul li
+, .dark .article-view p
+, .dark .container_postbtn .postbtn_like
+, .dark .article-header .inner-header
+, .dark .box-no-search
+, .dark .article-related .link-related strong
+, .dark .article-reply .box-total a
+, #tt-body-page.dark .article-view
+, .dark .area-paging .link_num span
+, .dark .area-write .box-write .xe-label .xe-label-text
+, .dark .inner_header_layer .txt_id
+, .dark .menu_toolbar .list_toolbar .link_list
+, .dark .layer_post .btn_mark
+, .dark .area-aside .box-category .tt_category .link_tit
+, .dark .area-aside .box-category .tt_category .category_list .link_item{
+		color : darkgray;
 	}
-	.title-search.title-border, .area-reply .list-reply-comment {
-		border-bottom: 1px solid grey !important;
+	.dark .title-search.title-border
+, .dark .area-reply .list-reply-comment {
+		border-bottom: 1px solid grey;
 	}
-	.header{
-		border-bottom : 1px solid black !important;
+#tt-body-page.dark:not(.wrap-drawer) .header{
+		border-bottom : 1px solid black;
 	}
-	.area-reply .list-reply-comment{
-		border-top : none !important;
+	.dark .area-reply .list-reply-comment{
+		border-top : none;
 	}
-	.util .search {
-		background-color: #111 !important;
+	.dark .util .search {
+		background-color: #111;
     padding: 3px;
     margin-top: 15px;
 	}
-	.util .search input{
-		border-bottom : none !important;
+	.dark .util .search input{
+		border-bottom : none;
 	}
-	.layer_post .btn_mark:hover
-	, .area-aside .box-profile .button-subscription:hover
+	.dark .layer_post .btn_mark:hover
+	, .dark .area-aside .box-profile .button-subscription:hover
 	{
-		background-color: #444 !important;
+		background-color: #444;
 	}
-	
-	.menu_toolbar .btn_menu_toolbar, figure[data-ke-type='opengraph'] div.og-image{
-		filter: invert(100%) !important;
+.dark .article-type-common .title
+, .dark .area-aside .box-profile .text-profile{
+	color: #999;	
+}
+	.dark .menu_toolbar .btn_menu_toolbar, .dark figure[data-ke-type='opengraph'] div.og-image{
+		filter: invert(100%);
 	}
-	.area-aside .box-profile{
-		border: 2px solid dimgrey !important;
+	.dark .area-aside .box-profile{
+		border: 2px solid dimgrey;
 	}
-	.title-search span
-	, .box-calendar .cal_click
-	, .article-reply .box-total span 
-	, .area-aside .box-category .tt_category .category_list .link_sub_item.selected, .area-aside .box-category .tt_category .category_list .link_item.selected
+	.dark .title-search span
+	, .dark .box-calendar .cal_click
+	, .dark .article-reply .box-total span 
+	, .dark .area-aside .box-category .tt_category .category_list .link_sub_item.selected
+	, .dark .area-aside .box-category .tt_category .category_list .link_item.selected
 	{
-		color : darkseagreen !important;
+		color : darkseagreen;
 	}
-	figure[data-ke-type='opengraph'] a, #tt-body-page figure[data-ke-type='opengraph'] a{
-		border: 1px solid dimgrey !important;
+	.dark figure[data-ke-type='opengraph'] a
+, #tt-body-page.dark figure[data-ke-type='opengraph'] a{
+		border: 1px solid dimgrey;
 	}
-	.article-view a:hover{
+	.dark .article-view a:hover{
 		opacity : 1;
 	}
-	#tt-body-page .article-view blockquote{
-		border-left: .25em solid grey !important;
+	#tt-body-page.dark .article-view blockquote{
+		border-left: .25em solid grey;
 	}
-	#tt-body-page .article-view .highlight pre, #tt-body-page .article-view pre {
+#tt-body-page.dark .article-view pre
+,#tt-body-page.dark .article-view .highlight pre{
 		filter: invert(100%) !important;
 		background-color : #ccc !important;		
 	}
- .paging-more, .article-page ul li:nth-child(2), .article-reply .box-total a, .area-reply .box-content .box-meta strong a{
+ .dark .paging-more
+, .dark .article-page ul li:nth-child(2)
+, .dark .article-reply .box-total a
+, .dark .area-reply .box-content .box-meta strong a{
 		color : ghostwhite !important;
 	}
-	#tt-body-page .article-view a:hover {
+	#tt-body-page.dark .article-view a:hover {
     text-decoration: none !important;
     color: #79abe4  !important;
 	}
-	#tt-body-page .article-view a{
+	#tt-body-page.dark .article-view a{
     color: #0366d6 !important;
 	}
-	#tt-body-page .article-view img {
+	#tt-body-page.dark .article-view img {
     background: none !important;
 	}
-	.article-view table thead tr {
+	.dark .article-view table thead tr {
 		color : none !important;
 	}
-	#tt-body-page .article-view table tr {
+	#tt-body-page.dark .article-view table tr {
 		background-color : inherit !important;
 		color : inherit !important;
 	}
-	#tt-body-page .article-view table tr:nth-child(2n) {
+	#tt-body-page.dark .article-view table tr:nth-child(2n) {
 		background-color: #222 !important;
 	}
-
-}
-/* End Of DarkMode */
+/******************** Dark Mode END ***************/
 	
 .link-icon{
 	color : black;
@@ -1673,10 +1745,10 @@ html {
     position: relative;
     margin-bottom: 43px;
     border: 1px solid #e8e8e8;
-    border-bottom: 2px solid #333;
     text-align: center;
 		padding-top : 40px;
 		padding-bottom: 40px;
+	  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 4px rgba(0, 0, 0, 0.2);
 }
 
 .area-aside .box-profile .img-profile {
@@ -1691,7 +1763,6 @@ html {
     margin: 0 auto 36px auto;
     font-size: 25px;
     line-height: 1.54;
-    color: #777;
 }
 
 .area-aside .box-profile .button-subscription {
@@ -1776,6 +1847,10 @@ html {
 
 .area-aside .box-profile-invert .button-subscription {
     color: #fff;
+}
+.area-aside .box-profile .button-subscription:hover {
+    background-color: #555;
+		color: white;
 }
 
 .area-aside .box-profile-invert .link-sns {
@@ -4775,5 +4850,8 @@ html {
     margin: 30px auto
 }
 
+.h_pointer:hover{
+	cursor: pointer;
+}
 
 

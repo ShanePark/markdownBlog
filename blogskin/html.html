@@ -34,11 +34,31 @@
   <script> (function () { var test = vhCheck();}()); </script>
 	<!-- Github markdown css -->
 	<link rel="stylesheet" href="./images/github-markdown.css">
+	<script>
+		const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+		const userPrefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+		let isDarkMode = localStorage.getItem("isDarkMode");
+		if(isDarkMode == null){
+			isDarkMode = userPrefersDark;
+		}else{
+			isDarkMode = (isDarkMode=='true');
+		}					
+	</script>
 </head>
 
 
 <body id="[##_body_id_##]" class="[##_var_headerslogundisplay_##] [##_var_headerbannerdisplay_##] [##_var_listmore_##] [##_var_listmoremobile_##] <s_if_var_headerbannerimage>use-banner-wrp</s_if_var_headerbannerimage> <s_if_var_headersloguntitle>use-slogan-wrp</s_if_var_headersloguntitle> use-menu-[##_var_topnav_##]-wrp">
-
+<script>
+	if(isDarkMode){
+		$('body').addClass('dark');
+	}
+</script>	
+<button id="darkBtn" class="btns h_pointer">
+	<i class="far fa-moon"></i>
+</button>
+<button id="upBtn" class="btns h_pointer">
+	<i class="fas fa-arrow-up"></i>
+</button>
   <s_t3>
     <!-- 사이드바 서랍형일때 wrap-right / wrap-drawer -->
     <div id="wrap" class="wrap-[##_var_sidebartype_##]">
@@ -981,7 +1001,10 @@
 <!-- google translate end -->
 															
 <script>
-$(function(){									 
+if(isDarkMode==true){
+	setDark();																								
+}													
+$(function(){
 // 	이미지 클릭시 해당 이미지 모달
 	$("p img").click(function(){
 		let img = new Image();
@@ -1002,7 +1025,28 @@ $(function(){
 		prependTimeString: '📚 읽는시간 : ',
 		lang: 'kr'
 	});
+// TOP 버튼 
+	$('#upBtn').on('click', function(){
+			window.scrollTo({top:0, behavior:'smooth'});
+	})
+// 							
+// darkMode 토글
+	$('#darkBtn').on('click', function(){
+		isDarkMode = !isDarkMode
+		if(isDarkMode){
+			setDark();	
+			localStorage.setItem("isDarkMode", true);
+		}else{
+			$('body').removeClass('dark');			
+			$('#tt-body-page').removeClass('dark');
+			localStorage.setItem("isDarkMode", false);
+		}
+	})					
 })
+function setDark(){
+	$('body').addClass('dark');
+	$('#tt-body-page').addClass('dark');																			 
+}
 </script>
 
 </body>
