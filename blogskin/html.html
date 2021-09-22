@@ -224,6 +224,7 @@
                           <span class="writer">[##_article_rep_author_##]</span>
                           <span class="date">[##_article_rep_date_##]</span>
 													<span class="eta"></span>
+													<!-- google translate -->
 													<div id="google_translate_element"></div>
                         </div>
                       </div>
@@ -891,119 +892,7 @@
                 </div>
               </s_sidebar_element>
 
-              <s_sidebar_element>
-                <!-- 최근글과 인기글-->
-                <div class="box-recent">
-                  <h3 class="title-sidebar blind">최근글과 인기글</h3>
-                  <ul class="tab-recent">
-                    <li class="tab-button recent_button on"><a class="tab-button" href="#" onclick="return false;">최근글</a></li>
-                    <li class="tab-button sidebar_button"><a class="tab-button" href="#" onclick="return false;">인기글</a></li>
-                  </ul>
-                  <ul class="list-recent">
-                    <s_rctps_rep>
-                      <li>
-                        <a href="[##_rctps_rep_link_##]" class="link-recent">
-                          <s_rctps_rep_thumbnail>
-                            <p class="thumbnail" style="background-image:url('[##_rctps_rep_thumbnail_##]')"></p>
-                          </s_rctps_rep_thumbnail>
-                          <div class="box-recent">
-                            <strong>[##_rctps_rep_title_##]</strong>
-                            <span>[##_rctps_rep_date_##]</span>
-                          </div>
-                        </a>
-                      </li>
-                    </s_rctps_rep>
-                  </ul>
-
-                  <ul class="list-recent list-tab" style="display: none">
-                    <s_rctps_popular_rep>
-                      <li>
-                        <a href="[##_rctps_rep_link_##]" class="link-recent">
-                          <s_rctps_rep_thumbnail>
-                            <p class="thumbnail" style="background-image:url('[##_rctps_rep_thumbnail_##]')"></p>
-                          </s_rctps_rep_thumbnail>
-                          <div class="box-recent">
-                            <strong>[##_rctps_rep_title_##]</strong>
-                            <span>[##_rctps_rep_date_##]</span>
-                          </div>
-                        </a>
-                      </li>
-                    </s_rctps_popular_rep>
-                  </ul>
-                </div>
-              </s_sidebar_element>
-              <!-- // 최근글과 인기글 -->
-
-              <s_sidebar_element>
-                <!-- 최근댓글 -->
-                <div class="box-reply">
-                  <h3 class="title-sidebar">최근댓글</h3>
-                  <ul class="list-sidebar">
-                    <s_rctrp_rep>
-                      <li>
-                        <a href="[##_rctrp_rep_link_##]" class="link-sidebar">
-                          <strong>[##_rctrp_rep_desc_##]</strong>
-                          <p>[##_rctrp_rep_name_##]</p>
-                        </a>
-                      </li>
-                    </s_rctrp_rep>
-                  </ul>
-                </div>
-              </s_sidebar_element>
-
-              <s_sidebar_element>
-                <!-- 공지사항 -->
-                <s_rct_notice>
-                  <div class="box-notice">
-                    <h3 class="title-sidebar">공지사항</h3>
-                    <ul class="list-sidebar">
-                      <s_rct_notice_rep>
-                        <li><a href="[##_notice_rep_link_##]" class="link-sidebar">[##_notice_rep_title_##]</a></li>
-                      </s_rct_notice_rep>
-                    </ul>
-                  </div>
-                </s_rct_notice>
-              </s_sidebar_element>
-
-              <s_sidebar_element>
-                <!-- 페이스북 트위터 플러그인 -->
-                <div class="box-plugins">
-                  <h3 class="title-sidebar blind">페이스북 트위터 플러그인</h3>
-                  <ul class="tab-sns">
-                    <li class="tab-button item-facebook on"><a class="tab-button" href="#" onclick="return false;">Facebook</a></li>
-                    <li class="tab-button item-twitter"><a class="tab-button" href="#" onclick="return false;">Twitter</a></li>
-                  </ul>
-
-                  <div class="plugin-facebook">
-                    <div id="fb-root"></div>
-                      <script>(function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = '//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2&appId=360877073936113&autoLogAppEvents=1';
-                        fjs.parentNode.insertBefore(js, fjs);
-                      }(document, 'script', 'facebook-jssdk'));</script>
-                    <div class="fb-page" data-href="[##_var_facebookurl_##]" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="[##_var_facebookurl_##]" class="fb-xfbml-parse-ignore"><a href="[##_var_facebookurl_##]"></a></blockquote>
-                    </div>
-                  </div>
-
-                  <div class="plugin-twitter" style="display: none;">
-                    <a class="twitter-timeline" href="[##_var_twitterurl_##]"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                  </div>
-                </div>
-              </s_sidebar_element>
-
-              <s_sidebar_element>
-                <!-- 글 보관함 -->
-                <div class="box-archive">
-                  <h3 class="title-sidebar">Archives</h3>
-                  <ul class="list-sidebar">
-                    <s_archive_rep>
-                      <li><a href="[##_archive_rep_link_##]" class="link-sidebar">[##_archive_rep_date_##]</a></li>
-                    </s_archive_rep>
-                  </ul>
-                </div>
-              </s_sidebar_element>
+              <s_sidebar_element>																							
 
               <s_sidebar_element>
                 <!-- 달력 모듈-->
@@ -1082,11 +971,13 @@
 											 
 <!-- script 시작 -->			
 											 
-<!-- google translate -->													
+<!-- google translate -->					
+<!--
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 	function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages : 'en,ja,ko,es,zh-CN,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
 </script>
+-->
 <!-- google translate end -->
 															
 <script>

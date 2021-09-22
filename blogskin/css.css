@@ -11,6 +11,11 @@
 	font-family : "samlip-outline"
 }
 
+/* google translate */
+.goog-te-gadget-simple{
+	margin-left : 20px;
+}
+
 /* image modal */
 .modal {
 	display: none;
@@ -1783,7 +1788,6 @@ html {
 
 .area-aside .box-category {
     margin-bottom: 40px;
-    padding-bottom: 33px;
 }
 
 .area-aside .box-category .tt_category a {
@@ -2969,6 +2973,7 @@ html {
 }
 
 .article-header .box-info {
+		display: flex;
     font-size: 13px;
     line-height: 1.54;
     opacity: .7;
@@ -3879,7 +3884,6 @@ html {
     margin-bottom: 6px;
     font-size: 16px;
     line-height: 1.75;
-    color: rgba(0, 0, 0, 0.87);
     word-break: break-all;
 }
 
