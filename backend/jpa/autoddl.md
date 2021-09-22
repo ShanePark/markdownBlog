@@ -1,4 +1,4 @@
-# 데이터베이스 스키마 자동 생성
+# JPA) 데이터베이스 스키마 자동 생성
 
 >  참고 강의 : 우아한 형제들 김영한 팀장님 https://www.inflearn.com/course/ORM-JPA-Basic/dashboard	
 
