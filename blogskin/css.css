@@ -6,9 +6,9 @@
 }
 #darkBtn{
 	right: 80px;
+	filter: invert(100%);
 }
 .btns{
-	padding-top:3px;
 	width:50px;
 	height:50px;
 	border-radius:50%;
@@ -21,8 +21,12 @@
 	bottom: 20px;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 4px rgba(0, 0, 0, 0.2);
 }
+.dark .btns{
+	opacity: 0.4;
+	box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.2)
+}
 .btns:hover{
-	background-color:#666;
+	background-color:#fff;
 }
 
 /* font */
@@ -63,15 +67,19 @@ p img:hover{
 }
 /* image modal end */
 
-/******************** Dark Mode***************/
-body {
-	transition: all 3s;
-}
 body.dark{
 		background-image: url("./images/darkmoon.jpg");
     background-size: cover;
     background-attachment: fixed;
 		background-color : black;
+}
+
+/******************** Dark Mode***************/
+body {
+	transition: all 0.4s;
+}
+.dark #darkBtn {
+	filter : none;
 }
 .dark #footer{
 		border-top : none;
@@ -120,6 +128,7 @@ body.dark{
 	}
 	#tt-body-page.dark .article-view h1
   , #tt-body-page.dark .article-view h2{
+		color: grey;
 		border-bottom: 2px solid darkgrey;
 	}
 	.dark .link-icon{
@@ -173,8 +182,8 @@ body.dark{
 , .dark .area-reply .list-reply-comment {
 		border-bottom: 1px solid grey;
 	}
-#tt-body-page.dark:not(.wrap-drawer) .header{
-		border-bottom : 1px solid black;
+.dark .header{
+		border-bottom : none !important;
 	}
 	.dark .area-reply .list-reply-comment{
 		border-top : none;
