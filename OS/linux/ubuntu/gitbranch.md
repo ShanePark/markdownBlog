@@ -63,7 +63,7 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 ​	
 
-이제 변경사항을 적용 시켜 주어야 하는데요. .bashrc 파일을 Terminal을 켤 때 불러오는 파일 이기 때문에 터미널을 보통은 껐다 켜야 적용이 됩니다. 하지만 아래와 같이 입력해서 ~/.bashrc 파일을 한번 읽어 주면
+이제 변경사항을 적용 시켜 주어야 하는데요. .bashrc 파일은 Terminal을 켤 때 불러오는 파일 이기 때문에 보통은 터미널을 껐다 다시 켜야 적용이 됩니다. 하지만 아래와 같이 입력해서 ~/.bashrc 파일을 한번 읽어 주면
 
 ```bash
 source ~/.bashrc
@@ -71,7 +71,7 @@ source ~/.bashrc
 
 ​	
 
-굳이 껐다 켜지 않아도 바로 적용이 되는 것을 확인 할 수 있습니다. 저는 중간에 공백을 너무 많이 넣어서 띄어쓰기가 4개나 들어 갔었네요. 
+굳이 껐다 켜지 않아도 바로 적용이 되는 것을 확인 할 수 있습니다. 저는 중간에 공백을 너무 많이 넣어서 띄어쓰기가 4개나 들어 갔었네요. 마지막에도 모양이 불편해 (main)과 $ 사이를 하나 더 띄웠는데요, 위에있는 코드블럭은 개선된 사항이니 안심하고 붙여 넣으시면 됩니다.
 
 ![image-20210924205441494](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924205441494.png)	
 
@@ -85,7 +85,7 @@ git checkout -b test
 
 ​		
 
-그러면 이제 brach 이름이 test 로 바뀐게 바로 확인이 됩니다. 헷갈일 일이 없겠네요!
+이제는 brach 이름이 test 로 바뀐게 바로 확인이 됩니다. 더이상 헷갈일 일이 없겠네요!
 
 ![image-20210924205933111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924205933111.png)
 
