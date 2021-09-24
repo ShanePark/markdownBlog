@@ -18,7 +18,7 @@
 	text-align : center;
 	z-index: 1;
 	border: none;
-	bottom: 20px;
+	bottom: 60px;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 4px rgba(0, 0, 0, 0.2);
 }
 .dark .btns{
