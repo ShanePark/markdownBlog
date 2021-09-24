@@ -16,7 +16,7 @@ Github Desktop의 완성도는 꽤나 괜찮은 편입니다. TypeScript로 작�
 
 > 심지어는 Microsoft에 인수된게 무색하게 발빠르게 Apple M1 칩셋에 대응도 했습니다. https://github.com/shiftkey/desktop/ Linux 버전의 Fork도 있어서 한번 테스트 해 보려 합니다.
 
-이렇게 빠르게 치고 올라온 뒤에는 Github Desktop이 완전한 Open Source 라는 강점이 있습니다. 반면 atlassian의 Source tree의 경우에는 1년이 다 지나가는 아직까지도 배터리 이슈를 해결하지 못해 도태되어 하는 느낌 입니다.
+이렇게 빠르게 치고 올라온 배경에는 Github Desktop이 완전한 Open Source 라는 강점이 있습니다. 반면 atlassian의 Source tree의 경우에는 1년이 다 지나가는 아직까지도 배터리 이슈를 해결하지 못해 도태되어 가는 느낌입니다.
 
 ​	
 
@@ -34,7 +34,7 @@ Github Desktop의 완성도는 꽤나 괜찮은 편입니다. TypeScript로 작�
 
 ​	
 
-그래서 아이디와 비밀번호를 입력 한다고 해도 되질 않습니다. 
+그래서 아이디와 비밀번호를 입력 한다고 해도 fetch가 되지는 않습니다. 
 
 ![image-20210924235602403](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924235602403.png)
 
@@ -286,4 +286,10 @@ GItlab도 Github 에서 한 것 처럼 Repository 찾아가서, Clone 버튼 누
 
 ​	
 
-이렇게 Git SSH 등록을 해 보았습니다. 로그인 토큰을 만들어서 접속 하는 방법도 있지만 번거롭기도 하고 로그인 할 때도 번거로운데 git credential helper store 를 쓰면 되기는 하지만.. SSH가 제일 편하고 한번 등록 해 두면 정말 잘 이용할 수 있고 좋은 듯 합니다. 특히 Source tree는 비밀번호 잘못 입력했다가는 잘못된 비밀번호를 저장해버리고 다시 묻지 않는 정말 귀찮은 상황이 벌어지기 떄문에 [Sourcetree 에서 잘못된 비밀번호로 저장소 접근 안될때 해결방법](https://shanepark.tistory.com/214) 더욱 SSH를 쓰는 편이 좋아 보입니다.
+이렇게 Git SSH 등록을 해 보았습니다. 로그인 토큰을 만들어서 접속 하는 방법도 있지만 번거롭기도 하고 로그인 할 때도 매번 귀찮은데.. git credential helper store 를 쓰면 되기는 하지만.. 
+
+SSH가 제일 편하고 한번 등록 해 두면 정말 잘 이용할 수 있고 좋은 듯 합니다. 특히 Source tree는 비밀번호 잘못 입력했다가는 잘못된 비밀번호를 저장해버리고 다시 묻지 않는 정말 귀찮은 상황이 벌어지기 떄문에 [Sourcetree 에서 잘못된 비밀번호로 저장소 접근 안될때 해결방법](https://shanepark.tistory.com/214) 더욱 SSH를 쓰는 편이 좋아 보입니다.
+
+​	
+
+수고하셨습니다.
