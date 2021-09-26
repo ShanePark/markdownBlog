@@ -89,6 +89,17 @@ git checkout -b test
 
 ![image-20210924205933111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924205933111.png)
 
+​	완성입니다.
+
 ​		
 
-이상입니다.
+## oh my zsh
+
+![ohmy](https://raw.githubusercontent.com/Shane-Park/markdownBlog/OS/linux/ubuntu/gitbranch.assets/ohmy.png)
+
+마지막으로 Git branch 이름이 표기되는 것에서 끝나지 않고, oh-my-zsh를 설치 해서 사용한다면 전체적인 Terminal 사용이 정말 쾌적해집니다. 특히나 Git branch 표시도  깔끔하게 되니 관심있는 분은 아래 링크를 확인 해 주세요.
+
+[Ubuntu에 oh-my-zsh 설치](https://shanepark.tistory.com/248)
+
+
+
