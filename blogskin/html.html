@@ -357,7 +357,7 @@
 	<script src="https://utteranc.es/client.js"
         repo="Shane-Park/markdownBlog"
         issue-term="pathname"
-        theme="preferred-color-scheme"
+        theme= "github-light"
         crossorigin="anonymous"
         async>
 </script>
@@ -1047,12 +1047,23 @@ $(function(){
 })
 function setDark(){
 	$('body').addClass('dark');
-	$('#tt-body-page').addClass('dark');																			$('.la-cloud-moon').removeClass('la-cloud-moon').addClass('la-sun');
+	$('#tt-body-page').addClass('dark');
+	$('.la-cloud-moon').removeClass('la-cloud-moon').addClass('la-sun');
+	setTimeout(function(){
+		let utte = $('.utterances iframe');
+		let utteSrc = utte.attr('src');
+		let newSrc = utteSrc.replace("github-light", "github-dark");
+		utte.attr("src", newSrc)
+	}, 200);
 }
 function setNonDark(){
 	$('body').removeClass('dark');																			 
   $('#tt-body-page').removeClass('dark');
-	$('.la-sun').removeClass('la-sun').addClass('la-cloud-moon');																 
+	$('.la-sun').removeClass('la-sun').addClass('la-cloud-moon');			
+		let utte = $('.utterances iframe');
+		let utteSrc = utte.attr('src');
+		let newSrc = utteSrc.replace("github-dark", "github-light");
+		utte.attr("src", newSrc)
 }
 </script>
 
