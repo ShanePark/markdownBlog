@@ -33,15 +33,19 @@ Cookie는 브라우저마다 최대 갯수와 최대 사이즈가 미묘하게 �
 
 
 
+​	
+
 ### 호환성이 별로 아니야 ?
 
 ![image-20210928212804959](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/webstorage.assets/image-20210928212804959.png)
 
 ![image-20210928212901102](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/webstorage.assets/image-20210928212901102.png)
 
-localStorage와 sessionStorage 모두 Internet Explorer 에서도 지원 해 주는 기능 입니다. 익스플로러도 된다구요!
+localStorage와 sessionStorage 모두 Internet Explorer 에서도 지원 해 주는 기능 입니다. 
 
-​	
+우리가 알고 있는 익스플로러에서도 됩니다. 정말로요.
+
+​		
 
 ### Incognito mode 에서는? 
 
@@ -57,7 +61,7 @@ localStorage와 sessionStorage 모두 Internet Explorer 에서도 지원 해 주
 
 ![image-20210928214358502](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/webstorage.assets/image-20210928214358502.png)
 
-브라우저별로 실제 저장되는 장소를 조금씩 다릅니다. 게다가 FireFox, Chrome는 C 라이브러리에 포함된 SQLite라는 관계형 데이터베이스 시스템으로 데이터를 저장하니 위에서 일종의 **데이터베이스**라고 말했던것도 완전 근거가 없진 않았습니다.
+브라우저별로 실제 저장되는 장소는 조금씩 다릅니다. 대부분 유저의 profile 폴더에 저장되는데요. FireFox, Chrome는 C 라이브러리에 포함된 SQLite라는 관계형 데이터베이스 시스템으로 데이터를 저장하니 위에서 일종의 **데이터베이스**라고 말했던것도 완전 근거가 없진 않았습니다.
 
 ​		
 
@@ -146,7 +150,15 @@ document.getElementById("result").innerHTML = localStorage.getItem("name");
 
 ## 실제 사용 예시
 
-저는 블로그에 다크모드를 적용 하며 localStorage를 사용 했습니다. 원래는 사용자의 다크모드 설정값을 읽어와서 다크모드를 보여줄지 아니면 라이트모드를 보여줄지를 단순하게 설정 해왔었는데요. 제가 우분투를 쓰기 시작하면서 브라우저가 리눅스의 기본 다크모드 설정은 읽어오지 못한다는 것을 알게 되었고, 그래서 다크모드를 사용자가 선택할 수 있게끔 했습니다. 다크모드 / 라이트모드로 전환시 해당 설정에 대한 기록을 localStorage에 저장 해 두고, 제 블로그에 방문 할 때 사용자의 localStorage에서 darkMode 설정에 대한 localStorage 값을 불러 오고, 그게 없을 때에는 기본적으로 사용자의 OS에서 설정한 다크모드 설정 값을 불러오도록 구현해 두었습니다. 
+​	
+
+저는 블로그에 다크모드를 적용 하며 localStorage를 사용 했습니다. 
+
+원래는 사용자의 다크모드 설정값을 읽어와서 다크모드를 보여줄지 아니면 라이트모드를 보여줄지를 단순하게 설정 해왔었는데요. 제가 우분투를 쓰기 시작하면서 브라우저가 리눅스의 기본 다크모드 설정은 읽어오지 못한다는 것을 알게 되었고, 그래서 다크모드를 사용자가 선택할 수 있게끔 했습니다. 
+
+다크모드 / 라이트모드로 전환시 해당 설정에 대한 기록을 localStorage에 저장 해 두고, 제 블로그에 방문 할 때 사용자의 localStorage에서 darkMode 설정에 대한 localStorage 값을 불러 오고, 그게 없을 때에는 기본적으로 사용자의 OS에서 설정한 다크모드 설정 값을 불러오도록 구현해 두었습니다. 
+
+​	
 
 ```javascript
 let isDarkMode = localStorage.getItem("isDarkMode");
