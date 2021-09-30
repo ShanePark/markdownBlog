@@ -14,13 +14,13 @@ Ubuntu를 사용하다 보면 ssh 접속을 이용해 굉장히 편하게 사용
 
 Sharing 을 검색 해서 실행 합니다.
 
-![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/1.png)
+![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/1.png)
 
 ​	
 
 여기에서 Screen Sharing 이 보이는 분도 안보이는 분도 있을 겁니다. 저도 집에 있는 ubuntu 중에 처음 할 때는 있어서 기본으로 있는 줄알았는데 두번째 컴퓨터의 셋팅을 할 때 보니 처음에 없더라고요.
 
-![2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/2.png)
+![2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/2.png)
 
 ​	
 
@@ -40,19 +40,19 @@ sudo apt update
 sudo apt install vino
 ```
 
-이제 vino를 설치 해 줍니다. vino는 GNOME desktop 환경의 VCN server 입니다. 지금은 gnome-remote-desktop 을 권장하는 차원에서 기본으로 설치되어 있지 않은 듯 합니다만 Client건 Server건 어디에도 최소한의 설치로 빠르게 원격 접속 환경을 구축을 하려면 제가 지금 포스팅 하는 내용대로 하시면 됩니다. 정말 간단하게 할 수 있어요.
+이제 vino를 설치 해 줍니다. vino는 GNOME desktop 환경의 vnc server 입니다. 지금은 gnome-remote-desktop 을 권장하는 차원에서 기본으로 설치되어 있지 않은 듯 합니다만 Client건 Server건 어디에도 최소한의 설치로 빠르게 원격 접속 환경을 구축을 하려면 제가 지금 포스팅 하는 내용대로 하시면 됩니다. 정말 간단하게 할 수 있어요.
 
 ​	
 
 vino는 493 kB 밖에 안되어서 정말 금방 설치 할 수 있습니다.	
 
-![3](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/3.png)
+![3](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/3.png)
 
 ​	
 
 설치 후에 다시 Sharing에 들어가 보면
 
-![4](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/4.png)
+![4](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/4.png)
 
 이제는 Screen Sharing을 볼 수 있습니다.
 
@@ -62,7 +62,7 @@ vino는 493 kB 밖에 안되어서 정말 금방 설치 할 수 있습니다.
 
 또한 New connection must ask for access가 기본 설정으로 되어 있는데요, 그럴 경우에는 해당 서버에서 클라이언트의 접속 요청에 승낙을 해야 만 원격조정을 할 수 있기 때문에 아래의 Require a password 를 눌러서 비밀번호를 정해 줍니다. 그러면 따로 허락을 구하지 않고 접속 할 수 있습니다.
 
-![5](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/5.png)
+![5](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/5.png)
 
 ​	
 
@@ -74,11 +74,11 @@ vino는 493 kB 밖에 안되어서 정말 금방 설치 할 수 있습니다.
 $ sudo apt-get install dconf-editor
 ```
 
-![6](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/6.png)
+![6](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/6.png)
 
 ​		
 
-dconfEditor를 켜고  /org/gnome/desktop/remote-access/require-encryption 에 찾아가 설정을 off로 변경해줍니다.![7](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/7.png)
+dconfEditor를 켜고  /org/gnome/desktop/remote-access/require-encryption 에 찾아가 설정을 off로 변경해줍니다.![7](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/7.png)
 
 ​	
 
@@ -90,33 +90,33 @@ dconfEditor를 켜고  /org/gnome/desktop/remote-access/require-encryption 에 �
 
 ### 1. MacOS 에서 접속
 
-맥북에서는 기본적으로 VCN 뷰어가 내장이 되어 있기 때문에 따로 프로그램을 설치 하지 않아도 됩니다.
+맥북에서는 기본적으로 vnc 뷰어가 내장이 되어 있기 때문에 따로 프로그램을 설치 하지 않아도 됩니다.
 
 Command+K 를 입력하거나 상단 메뉴바의 GO(이동) > Connect to Server..(서버에 연결)을 누릅니다.
 
-![Screenshot 2021-09-22 at 5.47.36 PM](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/Screenshot 2021-09-22 at 5.47.36 PM.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/36.png)
 
 ​	
 
-그리고는 vcn://주소 를 입력합니다. 당연히 내부 아이피도 이용 가능하고, Port Forwarding을 해 두었다면 외부 아이피로도 접속이 가능합니다. ipTime 공유기를 사용한다면 192.168.0.1에서 Advanced Setup > NAT/Routing > Port Forwarding 에서 변경 할 수 있으며 VCN은 5900번 포트를 사용합니다.
+그리고는 vnc://주소 를 입력합니다. 당연히 내부 아이피도 이용 가능하고, Port Forwarding을 해 두었다면 외부 아이피로도 접속이 가능합니다. ipTime 공유기를 사용한다면 192.168.0.1에서 Advanced Setup > NAT/Routing > Port Forwarding 에서 변경 할 수 있으며 vnc은 5900번 포트를 사용합니다.
 
-![image-20210922174940764](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/image-20210922174940764.png)
+![image-20210922174940764](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/image-20210922174940764.png)
 
 ​	
 
 이제 정말 접속 해 봅니다.
 
-![image-20210922174906671](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/image-20210922174906671.png)
+![image-20210922174906671](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/image-20210922174906671.png)
 
 ​	비밀번호를 입력 하라고 합니다.
 
-![image-20210922175039200](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/image-20210922175039200.png)
+![image-20210922175039200](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/image-20210922175039200.png)
 
 ​	
 
 그래서 비밀번호를 잘 입력 하면 .. 해당 컴퓨터로 접속이 됩니다.
 
-![image-20210922175143018](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/image-20210922175143018.png)
+![image-20210922175143018](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/image-20210922175143018.png)
 
 ​	
 
@@ -130,37 +130,37 @@ sudo apt install remmina
 
 
 
-![8](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/8.png)
+![8](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/8.png)
 
 ​	
 
 아마 보통의 경우는 설치가 되어 있을 거에요. 실행 해 줍니다.
 
-![9](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/9.png)
+![9](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/9.png)
 
 ​	
 
 처음 실행 하면 아래와 같은 모습인데요
 
-![10](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/10.png)
+![10](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/10.png)
 
 ​	
 
 RDP 를 VNC 로 변경 한 후 접속할 아이피 주소를 입력 합니다.
 
-![11](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/11.png)
+![11](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/11.png)
 
 ​	
 
 그러면 비밀번호를 입력 하라고 나옵니다. 비밀번호를 입력 하면..
 
-![12](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/12.png)
+![12](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/12.png)
 
 ​	
 
 역시 바로 쉽게 접속이 됩니다.
 
-![13](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vcn.assets/13.png)
+![13](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/13.png)
 
 ​	
 
@@ -170,12 +170,12 @@ Windows 는 아쉽게도 내장된 VNC 프로그램이 없습니다. VNC 뷰어�
 
 https://www.realvnc.com/en/connect/download/vnc/
 
-위의 링크에서 Windows 용 VCN 뷰어를 다운받아서 하시면 됩니다. googledp vcn viewer를 검색했을 때 가장 위에 나오기 때문에 신뢰 할 수 있는 소프트 웨어 인 듯 합니다.
+위의 링크에서 Windows 용 vnc 뷰어를 다운받아서 하시면 됩니다. googledp vnc viewer를 검색했을 때 가장 위에 나오기 때문에 신뢰 할 수 있는 소프트 웨어 인 듯 합니다.
 
 제가 Windows 디바이스가 없어서 스크린샷은 생략 하도록 하겠습니다.
 
 ​	
 
-지금까지 Ubuntu의 vcn 접속에 대해 알아보았습니다. 
+지금까지 Ubuntu의 vnc 접속에 대해 알아보았습니다. 
 
 생각보다 설치할 게 없었으며 특히 Mac에서 Ubuntu 로의 접속은 너무나도 간단하고 편리 했습니다. 이상입니다.
