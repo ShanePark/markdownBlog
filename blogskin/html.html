@@ -38,11 +38,9 @@
 	<!-- Github markdown css -->
 	<link rel="stylesheet" href="./images/github-markdown.css">
 	<script>
-		const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-		const userPrefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
 		let isDarkMode = localStorage.getItem("isDarkMode");
 		if(isDarkMode == null){
-			isDarkMode = userPrefersDark;
+			isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 		}else{
 			isDarkMode = (isDarkMode=='true');
 		}					
@@ -1054,7 +1052,7 @@ function setDark(){
 		let utteSrc = utte.attr('src');
 		let newSrc = utteSrc.replace("github-light", "github-dark");
 		utte.attr("src", newSrc)
-	}, 200);
+	}, 300);
 }
 function setNonDark(){
 	$('body').removeClass('dark');																			 
