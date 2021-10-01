@@ -1,8 +1,10 @@
 # 개발자를 위한 Ubuntu 초기 설정 하기	
 
-​	
-
 ![How To Install Ubuntu Linux inside Windows - Techi Signals](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/Install-Ubuntu-Linux.jpg)	
+
+> 꾸준히 업데이트 되는 글 입니다. 최근 업데이트 : 2021-10-01
+
+​	
 
 [개발자를 위한 Mac 초기 설정 하기](https://shanepark.tistory.com/167) 포스팅을 작성한지 두달이 조금 넘었습니다. Mac을 처음 구입하시는 분들이 처음에 세팅을 한번에 하기 위해 방문을 많이 해주시다 보니 보통 매일 블로그 내 인기 글 3등 안에는 항상 들어가는 포스팅 인데, 다른 분들에게는 도움이 얼마나 되는 지 잘 몰라도 적어도 저에게는 처음부터 세팅을 다시 해야하거나 다른 분들의 세팅을 도와 줄때마다 다시 찾아보게 되어 스스로 큰 도움이 되고 있습니다. 처음 Ubuntu 를 설치 하며 어려움을 겪었었고, 후에도 집에서 개인 서버로 사용하던 윈도우 노트북도 윈도우를 아에 밀어버리고 우분투로 바꿔 보고, 또 스스로도 잘못 건들었다가 다시 설치하는 등 시행착오를 몇 번 겪다 보니 정리를 해 두는게 좋다는 생각이 들어 하나 둘 씩 정리하기 시작했습니다. 
 
@@ -24,19 +26,63 @@
 
 ## Dock 커스터마이징
 
-> 저는 키보드 설정 후에는 보통 dock을 입맛에 맞게 설정합니다. 아래 글을 참고해주세요.
+> 저는 키보드 설정 후에는 보통 dock을 입맛에 맞게 설정합니다. 아래 글을 참고해주세요. 테마를 아이에 macOS 처럼 바꾸고 싶다면 해당 글은 건너 뛰고, 아래의 MacOS 테마 입히기를 하시면 됩니다.
 
 [Ubuntu 20.04 Mac OS 처럼 Dock 가운데 위치하게 변경하기](https://shanepark.tistory.com/233)
 
+​	
+
+## MacOS 테마 입히기
+
+![ubuntu](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/ubuntu.png)
+
+개인적으로 macOS의 환경을 좋아해서 macOS 처럼 만들어두고 사용하고 있습니다. 아래 링크를 따라하면 어렵지 않게 가능합니다.
+
+[Ubuntu MacOS 처럼 만들기 GTK Themes](https://shanepark.tistory.com/251)
+
 ​		
 
-## 비프음 끄기
+## * 비프음 끄기
 
 회사에서는 노트북 볼륨을 꺼 두고 써서 몰랐는데, 우분투에서의 비프음이 굉장히 거슬리더라고요. 해당 비프음도 꺼줍니다.
 
 [Ubuntu Terminal에서 백스페이스/방향키 누를때 삐 하는 비프음 안나게 하기](https://shanepark.tistory.com/234)
 
-​		
+​	
+
+## 상단 바 없애기
+
+모니터가 크고 해상도가 넓으면 크게 상관 없겠지만 공간 활용을 최대한 하기 위해 상단 bar와 하단 dock을 모두 없애고 사용 하고 있습니다. 필요하시면 하시면 됩니다.
+
+일단 Gnome-tweaks 가 없다면 먼저 설치 해 주어야 합니다.
+
+```bash
+$ sudo apt install gnome-tweaks
+```
+
+그러고 나서 topbar를 없앨 수 있는 extention을 설치 해 줍니다.
+
+```bash
+sudo apt install gnome-shell-extension-autohidetopbar
+```
+
+그러고 나서 재부팅을 하고 나서 Tweaks 를 실행해주면 아래와 같이 Extentions 에 hide top bar 옵션이 추가 된 것이 확인 됩니다.
+
+![image-20211001144534045](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211001144534045.png)
+
+이 설정을 켜주면 이제 상단이 밀릴때 상단 바가 안으로 들어가는데요,
+
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/autohide-top-panel.gif)
+
+> ref : https://fostips.com/auto-hide-top-panel-debian-ubuntu-fedora/
+
+평소에 숨어있다가 마우스를 올릴 때만 나오게 하려면 아래와 같이 설정 하면 됩니다.
+
+![image-20211001145441964](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211001145441964.png)
+
+가장 위에 있는 Show Panel when mouse approaches edge of the screen 옵션을 켜주고 가장 아래의 Intellihide 에 있는 두개의 옵션을 꺼주면 됩니다.
+
+​					
 
 ## * JDK 설치 
 
@@ -64,9 +110,13 @@ $ sudo apt-get install openjdk-8-jdk
 
 ![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/gk-product-2.png)
 
-SourceTree의 경우 Linux 버전이 없어 GitKraken 이 대안으로는 가장 괜찮아 보였습니다.
+~~SourceTree의 경우 Linux 버전이 없어 GitKraken 이 대안으로는 가장 괜찮아 보였습니다. 물론 CUI 를 사용하는게 기능이 훨씬 강력하기는 하지만 Git의 진입 장벽을 생각할 때 GUI 를 거치지 않기는 쉽지 않습니다.~~
 
-물론 CUI 를 사용하는게 기능이 훨씬 강력하기는 하지만 Git의 진입 장벽을 생각할 때 GUI 를 거치지 않기는 쉽지 않습니다.
+> GitKraken이 사실상 유료기 때문에 더이상 추천하지 않습니다.  SSH 방식으로 저장소를 클론 하고 Github Desktop을 사용하시는 것을 권장합니다. Github Desktop의 설치는 아래 링크를 확인 해 주세요.
+
+[Ubuntu 20.04 우분투 Github Desktop 설치하기](https://shanepark.tistory.com/252)	
+
+그래도 GitKraken을 설치하고 싶다면
 
 **snap**
 
@@ -243,8 +293,8 @@ set hlsearch " 검색 단어 하이라이트
 set number "Line Number 표시
 set cindent "자동 들여쓰기
 set autoindent
-set ts=4 " Tab 너비(보여줄때)
-set sts=4 " Tab 너비(작성할때)
+set ts=2 " Tab 너비(보여줄때)
+set sts=2 " Tab 너비(작성할때)
 set shiftwidth=4 " 자동 인덴트 너비
 set showmatch "짝이 되는 괄호 하이라이트
 ```
