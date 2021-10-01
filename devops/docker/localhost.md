@@ -172,9 +172,48 @@ curl host.docker.internal:8080
 
 아주 간단하죠. 환경에 따라 변할 걱정도 할 필요가 없습니다.
 
+​	
+
+### 그럼 docker-compose 에서는 ?
+
+docker로 localhost를 바라 볼 상황이야 여러경우 있겠지만 저는 웹서버를 docker에서 띄우고, 나머지 개발중인 여러개의 어플리케이션들은 로컬에서 띄운 상황입니다. docker-compose 에서는 웹 서버인 nginx를 비롯해 데이터베이스나 검색엔진, 세션db, FTP 서버 등 여러가지를 한번에 관리 하고 있는데요. 
+
+docker-compose.yml 과 같은 폴더에 있는 conf/**nginx.conf** 파일의 일부 입니다.
+
+```conf
+  server {
+  	listen 80 default;
+    server_name localhost;
+
+	# 인증 어플리케이션
+    location /auth/ {
+      proxy_pass http://host.docker.internal:8081/auth/;
+    }
+	
+	# 메인 어플리케이션
+    location /main/ {
+      proxy_pass http://host.docker.internal:8082/main/;
+    }
+}
+
+
+```
+
+이처럼 proxy_pass 에서 로컬에 띄워 둔 어플리케이션을 바라 보기 위해 host.docker.internal:포트번호 를 사용했습니다. Windows 에서 docker를 띄울 때는 상관 없지만 Linux 환경의 docker에서는 docker-compose.yml 에서
+
+```yaml
+nginx:
+	extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+```
+
+이런식으로 해당 컨테이너에게 extra_hosts 에 대해 알려 주어야 합니다.
+
+그렇지 않으면 아래의 에러를 뿜어냅니다.
+
+nginx: [emerg] host not found in upstream "host.docker.internal" in /etc/nginx/nginx.conf:77
+
+​	
+
 이상입니다.
-
-
-
-
-
