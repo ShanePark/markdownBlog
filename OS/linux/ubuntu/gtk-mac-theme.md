@@ -18,7 +18,11 @@ Ubuntu GNOME의 GTK 테마를 유저들이 워낙 기가막히게 만들어 뒀�
 
 ​	
 
-## Ubuntu를 MacOS 처럼 만들기	
+## Ubuntu를 MacOS 처럼 만들기
+
+글 시작에 앞서 제가 세팅 완료 후 사용중인 환경을 보여드리겠습니다. 얼핏 보면 누가봐도 MacOS 라고 생각할텐데, 우분투 환경 입니다.	
+
+![ubuntu](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/ubuntu.png)
 
 ​	
 
