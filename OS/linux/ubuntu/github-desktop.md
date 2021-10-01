@@ -2,17 +2,21 @@
 
 ​	
 
-아래 사진은 우분투에 MacOS 테마를 설치 해 두어서 Mac 처럼 보이긴 하지만 Ubuntu 입니다. 
+해당 사진은 우분투에 MacOS 테마를 설치 해 두어서 Mac 처럼 보이긴 하지만 Ubuntu 가 맞습니다.
 
-> 해당 테마에 관심이 있으신 분은 [Ubuntu MacOS 처럼 만들기 GTK Themes](https://shanepark.tistory.com/251) 포스팅을 참고해주세요.
+> 해당 테마에 관심이 있으신 분은 [Ubuntu MacOS 처럼 만들기 GTK Themes](https://shanepark.tistory.com/251) 포스팅을 참고해주세요.	
 
-![image-20211001150250111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20211001150250111.png)
+​	
 
 ​	
 
 Windows나 MacOS에서는 소스트리가 Git GUI로 흔하게 사용됩니다. 아쉽게도 Linux에서는 사용 할 수 없는데요, 최근에는 m1 맥북이 나왔지만 소스트리가 적절히 대응을 해주지 못하고 있어 많이 아쉽기도 합니다. 심지어 Github Desktop의 치고나오는 속도가 상당해서 조만간 소스트리를 앞질러 줄 수 있지 않을까 기대하고 있습니다. Git Kraken, Smartgit 등은 다 유료인게 부담스러워서 쓸 수 없었고 Git-cola가 그나마 무료길래 한동안 사용했었는데 기능이 너무 제한적입니다. 한참을 고민 하다가 Github Desktop을 설치 해 보았는데 Windows/ MacOS 에서 사용했을 때와 기본 기능들은 100% 일치하게 사용 할 수 있습니다. 
 
-Github Desktop이 순수 오픈소스입니다. 그래서 개발속도도 굉장히 빠르고 거의 매주 새로운 기능이 추가 되고 있습니다. 심지어 친절한 한 개발자가 fork 해서 Linux용으로 만들어 준 덕분에 리눅스에서도 사용 할 수 있게 되었습니다. GitLab CE 등 사설 저장소를 사용할때도 ssh 접속을 하면 인증도 문제가 없기 때문에 사실상 이거 하나면 더이상 다른 Git GUI를 알아볼 필요가 없습니다.
+​	
+
+![image-20211001150250111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20211001150250111-16330696617131.png)
+
+Github Desktop은 순수 오픈소스입니다. 그래서 개발속도도 굉장히 빠르고 거의 매주 새로운 기능이 추가 되고 있습니다. 심지어 친절한 한 개발자가 fork 해서 Linux용으로 만들어 준 덕분에 리눅스에서도 사용 할 수 있게 되었습니다. GitLab CE 등 사설 저장소를 사용할때도 ssh 접속을 하면 인증도 문제가 없기 때문에 사실상 이거 하나면 더이상 다른 Git GUI를 알아볼 필요가 없습니다.
 
 > Git SSH 접속에 대해선 [Github / Gitlab SSH 공개 키 등록하기](https://shanepark.tistory.com/247) 글을 참고해주세요.
 
