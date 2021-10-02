@@ -352,7 +352,15 @@ implementation 'com.github.Shane-Park:shaneutils:Tag'
 
 를 추가 해 줍니다. Tag 의 경우에는 릴리즈 태그가 따로 없다면 master-SNAPSHOT 으로 하시면 됩니다. 특정 커밋을 참조하고 싶으면 jitpack.io 에서 Version 에 있던 10자리 문장을 복사해서 Tag 란에 넣으면 됩니다.
 
-​		
+예시
+
+```groovy
+implementation 'com.github.Shane-Park:shaneutils:83fc899d41'
+```
+
+​	
+
+​			
 
 이제 빌드를 새로 해줍니다.
 
@@ -369,6 +377,7 @@ pom.xml 파일을 엽니다.
 		    <id>jitpack.io</id>
 		    <url>https://jitpack.io</url>
 		</repository>
+
 ```
 
 ```xml
@@ -377,6 +386,7 @@ pom.xml 파일을 엽니다.
 	    <artifactId>shaneutils</artifactId>
 	    <version>-SNAPSHOT</version>
 	</dependency>
+
 ```
 
 ![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912113254188.png)
