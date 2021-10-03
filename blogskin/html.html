@@ -54,12 +54,19 @@
 		$('body').addClass('dark');
 	}
 </script>	
-<button id="darkBtn" class="btns h_pointer">
-	<i class="las la-cloud-moon"></i>
-</button>
-<button id="upBtn" class="btns h_pointer">
-	<i class="fas fa-arrow-up"></i>
-</button>
+<div id="dark-toggle-group">
+	<div id="upBtn">
+		<button class="h_pointer">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>	
+	<div id="darkBtn">
+		<button class="h_pointer">
+			<i class="las la-cloud-moon"></i>
+		</button>
+	</div>
+</div>
+
   <s_t3>
     <!-- 사이드바 서랍형일때 wrap-right / wrap-drawer -->
     <div id="wrap" class="wrap-[##_var_sidebartype_##]">
@@ -872,8 +879,10 @@
 											<i class="fab fa-instagram"></i></i></a>
 										<a href="mailto:psh40963@naver.com" class="link-icon" target='_blank'><i class="far fa-envelope"></i></a>
 										 <br/><br/>
+<!-- 						
                     <button class="button-subscription btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="4356152" data-url="https://shanepark.tistory.com" data-device="web_pc">구독하기
                     </button>
+-->										
 <!-- 방문자 표시 -->									
 		<div class="box-visit">
 				<h3 class="title-sidebar"><span class="blind">방문자수</span>Total</h3>
@@ -1027,12 +1036,12 @@ $(function(){
 		lang: 'kr'
 	});
 // TOP 버튼 
-	$('#upBtn').on('click', function(){
+	$('#upBtn button').on('click', function(){
 			window.scrollTo({top:0, behavior:'smooth'});
 	})
-// 							
+// 					
 // darkMode 토글
-	$('#darkBtn').on('click', function(){
+	$('#darkBtn button').on('click', function(){
 		isDarkMode = !isDarkMode
 		if(isDarkMode){
 			setDark();	
@@ -1041,27 +1050,40 @@ $(function(){
 			setNonDark();
 			localStorage.setItem("isDarkMode", false);
 		}
-	})					
-})
+	})				
+// 스크롤 top버튼 숨기고 보이기
+	$(window).scroll(function() { 
+		if ($(this).scrollTop() > 350) { 
+			$('#upBtn').fadeIn(); 
+		} else { 
+			$('#upBtn').fadeOut(); 
+		} 
+	});
+})																		
+																		
 function setDark(){
 	$('body').addClass('dark');
 	$('#tt-body-page').addClass('dark');
 	$('.la-cloud-moon').removeClass('la-cloud-moon').addClass('la-sun');
 	setTimeout(function(){
 		let utte = $('.utterances iframe');
-		let utteSrc = utte.attr('src');
-		let newSrc = utteSrc.replace("github-light", "github-dark");
-		utte.attr("src", newSrc)
-	}, 300);
+		let utteSrc = utte.attr('src');															
+		if(utteSrc) {
+		  let newSrc = utteSrc.replace("github-light", "github-dark");
+		  utte.attr("src", newSrc)
+		}								 
+		}, 300);															 
 }
-function setNonDark(){
+function setNonDark() {
 	$('body').removeClass('dark');																			 
   $('#tt-body-page').removeClass('dark');
 	$('.la-sun').removeClass('la-sun').addClass('la-cloud-moon');			
 		let utte = $('.utterances iframe');
-		let utteSrc = utte.attr('src');
-		let newSrc = utteSrc.replace("github-dark", "github-light");
-		utte.attr("src", newSrc)
+		let utteSrc = utte.attr('src');								 
+		if(utteSrc) { 
+			let newSrc = utteSrc.replace("github-dark", "github-light");
+			utte.attr("src", newSrc);					 
+		}								 
 }
 </script>
 
