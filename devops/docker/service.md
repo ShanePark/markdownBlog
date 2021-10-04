@@ -155,7 +155,13 @@ sudo vi /etc/crontab
 
 ​	
 
-이제 내일 자고 일어나 docker container들의 러닝 타임을 체크해보면 정말 새벽4시에 잘 재부팅이 되었는지 확인 할 수 있겠습니다.
+이제 다음날 자고 일어나 docker container들의 러닝 타임을 체크해보면 정말 새벽4시에 잘 재부팅이 되었는지 확인 할 수 있겠습니다.
+
+![image-20211004164116437](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211004164116437.png)
+
+그리고 계획 한 대로 다음날 오후 4시 40분에 확인을 해 보니 container status 에 Up 13hours 라고 나옵니다. 정상적으로 새벽 4 시에 한번 꺼졌다 켜진게 확실 하네요.
+
+​		
 
 서버가 켜둔지 오래 지날때마다 조금씩 느려지는 문제로 고민이 많았는데 일단 임시방편으로는 해결이 될 것 같습니다. 그래도 더 좋은 해결책을 계속해서 찾아 보도록 하겠습니다.
 
