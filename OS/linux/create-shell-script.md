@@ -123,5 +123,21 @@ alias mdblog='bash /bin/mdblog.sh'
 
 shell script 를 잘 다룰 수 있게 되면 정말 많은 명령들을 손쉽게 실행 할 수 있기 때문에 앞으로 많이 사용 하기 위해 노력 해야겠습니다.
 
+​		
 
+## 추가로 Mac을 사용한다면
+
+zsh
+
+```
+$ ~/.zshrc
+```
+
+bash
+
+```
+$ ~/.bash_profile
+```
+
+파일을 수정하시면 alias를 등록 할 수 있습니다.
 
