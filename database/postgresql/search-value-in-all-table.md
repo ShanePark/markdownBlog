@@ -10,9 +10,13 @@ How to search a specific value in all tables (PostgreSQL)?
 
 특정 값을 검색 할 때, 모든 테이블에서 찾아봐야 할 경우가 종종 있습니다. 
 
-이번에 특정 데이터의 완전 삭제 기능을 구현하고 있었는데 모든 테이블을 FK로 연결한 건 아니라서 관련된 데이터들이 모두 삭제 되었는지가 확실하지 않았습니다. FK 와 cascade 를 활용해서 싹 다 지워버리면 편하기야 하겠지만 의도치 않은 사이드이펙트가 나올 수도 있으며 특정 데이터를 삭제 할 경우 관련된 데이터를 무작정 제거하는게 아닌 다른 비즈니스 로직을 수행할 수도 있고, 실제로 데이터를 지우지 않는 경우도 있겠지만 클라이언트의 요구사항은 다양하기 때문에 한가지 방법만을 고집 할 수는 없습니다.   비관계형 데이터베이스까지 커버해야 할 경우마저 있기 때문에 간단하지 않습니다. Guava의 Event Bus를  사용해 비즈니스 로직과 후 처리 로직을 분리하는 아주 좋은 방법을 쓰면 Open-Closed Principle을 따르는 깔끔한 코드를 작성 할 수도 있습니다.
+이번에 특정 데이터의 완전 삭제 기능을 구현하고 있었는데 모든 테이블을 FK로 연결한 건 아니라서 관련된 데이터들이 모두 삭제 되었는지가 확실하지 않았습니다. 
 
-​		
+FK 와 cascade 를 활용해서 싹 다 지워버리면 편하기야 하겠지만 의도치 않은 사이드이펙트가 나올 수도 있습니다.  특정 데이터를 삭제 할 경우 관련된 데이터를 무작정 제거하는게 아닌 다른 비즈니스 로직을 수행해야 하는 경우도 있을 수 있고, 실제로 데이터를 지우지 않고 상태만 변경해야 할 경우도 있습니다. 
+
+클라이언트의 요구사항은 다양하기 때문에 한가지 방법만을 고집 할 수는 없습니다.   비관계형 데이터베이스까지 커버해야 할 경우마저 있네요. Guava의 Event Bus를  사용해 비즈니스 로직과 후 처리 로직을 분리하는 아주 좋은 방법을 쓰면 Open-Closed Principle을 따르는 깔끔한 코드를 작성 할 수도 있습니다.
+
+​			
 
 모든 데이터 베이스를 한번에 뒤지는 방법에는 두가지 방법이 있습니다.
 
@@ -42,6 +46,7 @@ $ pg_dump --data-only --column-inserts -U postgres your-db-name > a.tmp
 $ grep country_code a.tmp
 INSERT INTO countries (iso_country_code, iso_country_name) VALUES ('US', 'United  States');
 INSERT INTO countries (iso_country_code, iso_country_name) VALUES ('GB', 'United Kingdom');
+
 ```
 
 ​		
@@ -91,7 +96,11 @@ $$ language plpgsql;
 
 ```
 
-사용법
+​	
+
+## 사용법
+
+​	
 
 - public schema의 모든 테이블에서 조회하기: 
 
@@ -103,7 +112,10 @@ select * from search_columns('foobar');
  public     | s2        | relname    | (7,29)
  public     | w         | body       | (0,2)
 (3 rows)
+
 ```
+
+​	
 
 - 특정 테이블에서 조회하기: 
 
@@ -113,7 +125,10 @@ select * from search_columns('foobar');
 ------------+-----------+------------+---------
  public     | w         | body       | (0,2)
 (1 row)
+
 ```
+
+​	
 
 - 특정 테이블 집합에서 조회하기: 
 
@@ -124,7 +139,10 @@ select * from search_columns('foobar', array(select table_name::name from inform
  public     | s2        | relname    | (7,29)
  public     | s3        | usename    | (0,11)
 (2 rows)
+
 ```
+
+​	
 
 - Get a result row with the corresponding base table and and ctid
 
@@ -133,9 +151,12 @@ select * from public.w where ctid='(0,2)';
  title |  body  |         tsv         
 -------+--------+---------------------
  toto  | foobar | 'foobar':2 'toto':1
+ 
 ```
 
 ​	
+
+​		
 
 ## 그 외 다양한 활용
 
@@ -143,20 +164,21 @@ select * from public.w where ctid='(0,2)';
 
   `SELECT ctid FROM %I.%I WHERE cast(%I as text)=%L`
 
-  이렇게 바뀔 수도 있습니다:
+  > 이렇게 바뀔 수도 있습니다:
 
   `SELECT ctid FROM %I.%I WHERE cast(%I as text) ~ %L`
 
 - 민감하지 않은 비교를 위해서는 이렇게 쓸 수도 있습니다: 
 
   `SELECT ctid FROM %I.%I WHERE lower(cast(%I as text)) = lower(%L)`
-  
 
 
 
 ​	
 
 ## 활용 예
+
+​	
 
 ```sql
 select * from search_columns('23fb9d28-3976-4b87-9545-403c45f8b8c8');
@@ -166,8 +188,10 @@ select * from search_columns('23fb9d28-3976-4b87-9545-403c45f8b8c8');
 
 특정 UUID 를 검색 한다면, 관련된 모든 데이터를 전체 테이블에서 찾아줍니다.
 
-![peek](/home/shane/Documents/git/markdownBlog/database/postgresql/search-value-in-all-table.assets/peek.gif)
+![peek](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/postgresql/search-value-in-all-table.assets/peek.gif)
 
-모든 테이블을 다 찾기 때문에 데이터베이스의 크기가 클때 검색 시간은 꽤 걸리지만 그래도 덤핑해서 검색하거나 한 테이블씩 모두 찾을 때에 비해서는 훨씬 효율적입니다. 테이블명, 컬럼명, rowctid가 모두 나오기 때문에 한눈에 쉽게 알아볼 수 있습니다.
+모든 테이블을 다 찾기 때문에 데이터베이스의 크기가 클때 검색 시간은 꽤 걸리지만 그래도 덤핑해서 검색하거나 한 테이블씩 모두 찾을 때에 비해서는 훨씬 효율적입니다. 
+
+테이블명, 컬럼명, rowctid가 모두 나오기 때문에 한눈에 쉽게 알아볼 수 있습니다. 이상입니다.
 
 ​	
