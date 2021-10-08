@@ -150,6 +150,7 @@ pinch:
     command: "xdotool keydown ctrl click 4 keyup ctrl" # Zoom in
   out:
     command: "xdotool keydown ctrl click 5 keyup ctrl" # Zoom out
+    
 ```
 
 손가락 3개, 4개로 하는 제스처와 손가락 두개 집기로 확대, 축소 하는 제스처기본 설정입니다.
@@ -174,7 +175,7 @@ pinch:
 
 ​	
 
-손가락 3개로 드래그하기 (Fusuma 버전 2 이상)
+손가락 3개로 드래그해서 창 움직이기 (Fusuma 버전 2 이상)
 
 ```
 swipe:
@@ -187,6 +188,7 @@ swipe:
       accel: 2
     end:
       command: xdotool mouseup 1
+      
 ```
 
 ​	
@@ -200,6 +202,7 @@ swipe:
       command: "xdotool key alt+Right" # History forward
     right:
       command: "xdotool key alt+Left" # History back
+      
 ```
 
 손가락 2개는 swipe가 되지 않습니다. 2: 로 하면 작동을 하지 않더군요..
@@ -229,6 +232,7 @@ swipe:
       command: "xdotool key ctrl+alt+Down" # Switch to next workspace
     right:
       command: "xdotool key ctrl+alt+Up" # Switch to previous workspace
+      
 ```
 
 Mac에서는 정말 많이 사용하죠. 
@@ -323,7 +327,9 @@ interval:
 
 ## 매직트랙패드2
 
-매직 트랙패드 2를 연결하면 사용 할 수 있을까요? 한번 연결을 해 보았습니다. 연결해서 fusuma를 사용하니 자동으로 드라이버를 잡아 주었고, 
+매직 트랙패드 2를 리눅스에 연결 해서 사용 할 수 있을까요? 
+
+한번 연결을 해 보았습니다. 연결해서 fusuma를 사용하니 자동으로 드라이버를 잡아 주었고, 
 
 ```
 fusuma -l
@@ -333,11 +339,13 @@ fusuma -l
 
 ![image-20211008232352778](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008232352778.png)
 
-​	
+그리고 사용을 해보니, 맥북에서 사용할 때와 굉장히 흡사하게 사용 할 수 있었습니다.
+
+​				
 
 ## 데몬에서 실행
 
-항상 터미널을 켜 둘수는 없으니 데몬에서 켜는게 좋겠네요.  
+항상 터미널을 켜두기에는 거슬리니 데몬에서 켜는게 좋겠네요.  
 
 ```bash
 fusuma -d 
