@@ -10,7 +10,7 @@ Monterey는 Apple이 WWDC21에서 발표한 macOS Big Sur의 차기 버전입니
 
 ​	
 
-![image-20211009095609326](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009095609326.png)
+![image-20211009095609326](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009095609326.png)
 
 > https://en.wikipedia.org/wiki/MacOS_Monterey#Release_history
 
@@ -110,13 +110,13 @@ https://beta.apple.com/sp/ko/betaprogram/welcome?locale=ko
 
 사이트에 방문하면
 
-![image-20211009093214526](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009093214526.png)	
+![image-20211009093214526](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009093214526.png)	
 
 제일 먼저 로그인을 해 주어야 하는데요. 로그인은 그냥 애플 계정으로 하시면 됩니다.
 
 ​		
 
-![image-20211009093248186](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009093248186.png)
+![image-20211009093248186](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009093248186.png)
 
 처음 가입하면 약관에 동의해야 합니다.
 
@@ -124,13 +124,13 @@ https://beta.apple.com/sp/ko/betaprogram/welcome?locale=ko
 
 저희는 macOS Monterey를 설치합니다, 선택해줍니다.
 
-![image-20211009093324876](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009093324876.png)	
+![image-20211009093324876](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009093324876.png)	
 
 시작하기에 있는 `Mac을 등록 하십시오` 를 클릭 합니다.
 
 ​	
 
-![image-20211009093534996](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009093534996.png)
+![image-20211009093534996](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009093534996.png)
 
 기기 등록 절차에 대해 나옵니다. Mac 백업하기는 아무래도 특별한 사정이 없다면 반드시 하는게 좋습니다. 필수는 아니지만 강력이 권장하는데는 이유가 있습니다. **베타 소프트 웨어**를 설치하고 있다는걸 명심하세요.
 
@@ -138,13 +138,13 @@ https://beta.apple.com/sp/ko/betaprogram/welcome?locale=ko
 
 Time Machine 백업에 시간이 제법 소요되니 제일 먼저 해줍니다. Spotlight (Cmd + Space) 를 켜서 Time Machine 이라고 입력 하면 바로 나옵니다. 저는 Alfred 를 사용중이긴 하지만 Spotlight 에서도 똑같습니다.
 
-![image-20211009102134287](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009102134287.png)
+![image-20211009102134287](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009102134287.png)
 
 백업 데이터를 저장할 외장하드나 외장 SSD를 미리 연결 해둡니다.
 
 ​		
 
-![image-20211009093443690](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009093443690.png)
+![image-20211009093443690](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009093443690.png)
 
 Time Machine을 켜면 간단한 설정만 하면 자동으로 백업을 시작합니다.
 
@@ -154,17 +154,17 @@ Time Machine을 켜면 간단한 설정만 하면 자동으로 백업을 시작�
 
 다음 순서인 Mac 등록하기를 진행합니다. macOS 공개 베타 액세스 유틸리티 다운로드를 클릭해서 다운 받습니다.
 
-![image-20211009093547511](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009093547511.png)
+![image-20211009093547511](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009093547511.png)
 
 ​		
 
 그러고는 다운 받은 파일을 실행 해줍니다.
 
-![image-20211009093700281](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009093700281.png)
+![image-20211009093700281](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009093700281.png)
 
 ​	
 
-![image-20211009093745098](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009093745098.png)
+![image-20211009093745098](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009093745098.png)
 
 Time Machine 백업이 없다고 경고를 합니다만 백업 중이기 때문에 크게 신경 쓰지 않아도 됩니다.
 
@@ -172,19 +172,19 @@ Time Machine 백업이 없다고 경고를 합니다만 백업 중이기 때문�
 
 지금 설치하는건 OS가 아니고 Public Beta Access 유틸리티 입니다.
 
-![image-20211009093818753](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009093818753.png)
+![image-20211009093818753](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009093818753.png)
 
 Continue를 계속 눌러줍니다. 
 
 ​	
 
-![image-20211009093840036](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009093840036.png)
+![image-20211009093840036](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009093840036.png)
 
 총 211 KB의 용량을 사용한다고 나오며 Install 버튼이 나옵니다.
 
 ​		
 
-![image-20211009094027758](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009094027758.png)	
+![image-20211009094027758](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009094027758.png)	
 
 > 설치가 완료되었습니다.
 
@@ -192,13 +192,13 @@ Continue를 계속 눌러줍니다.
 
 이제 설치 후에는 자동으로 Feedback Assitant가 실행됩니다. 베타 사용을 하면서 개선 사항들을 바로바로 Apple에 보낼 수 있습니다. 우리 나라 기업들도 참 본받았으면 하는 내용이고 부럽기도 하네요. 전에 네이버에 한번 피드백을 주고 싶었는데 그 과정에 경악해서 그 때 이후로 다시는 피드백하지 않습니다. 반면 쿠팡은 확실히 피드백 창구가 잘 열려있더라고요. 피드백에 대한 답변도 확실합니다.
 
-![image-20211009094004022](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009094004022.png)
+![image-20211009094004022](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009094004022.png)
 
 ​	
 
 그러고 바로 또 하나의 창이 뜹니다. 
 
-![image-20211009094053586](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009094053586.png)
+![image-20211009094053586](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009094053586.png)
 
 >  macOS Monterey beta를 설치할 준비가 되었네요.
 
@@ -206,7 +206,7 @@ Continue를 계속 눌러줍니다.
 
 하지만 아직 Time Machine 백업이 끝나지 않은 상황 인데요..
 
-![image-20211009094226403](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009094226403.png)
+![image-20211009094226403](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009094226403.png)
 
 ​		
 
@@ -214,13 +214,13 @@ Continue를 계속 눌러줍니다.
 
 ​	
 
-![image-20211009094630062](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009094630062.png)
+![image-20211009094630062](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009094630062.png)
 
 혹시 다운로드가 먼저 끝나서 타임머신 백업이 제대로 이루어 지지 못할까 걱정은 하지 않으셔도 됩니다. 다운로드가 끝난다고 해서 자동으로 바로 install이 되지는 않습니다.
 
 ​		
 
-![image-20211009102918713](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009102918713.png)
+![image-20211009102918713](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009102918713.png)
 
 타임머신 백업이 끝났습니다.
 
@@ -230,33 +230,54 @@ Continue를 계속 눌러줍니다.
 
 ​	
 
-![image-20211009102944555](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009102944555.png)
+![image-20211009102944555](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009102944555.png)
 
 ​	Continue를 누르고 몇 가지 약관에 동의 하고
 
 ​	
 
-![image-20211009103032990](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009103032990.png)
+![image-20211009103032990](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009103032990.png)
 
 설치할 드라이브를 선택 해 줍니다.
 
 ​	
 
-![image-20211009103102400](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009103102400.png)
+![image-20211009103102400](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009103102400.png)
 
 그러면 설치가 시작 되는데요 m1 맥북에어 기준으로 10:30 AM 에 시작 했는데요.
 
 ​		
 
-![](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009103917808.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009103917808.png)
 
 8분이 지난 10:38 AM애 확인 하니 1분이 남았다고 나옵니다. 처음에 한시간 걸린다고 나왔다고 너무 겁먹지 않아도 됩니다.
 
 ​		
 
-![image-20211009104232938](/Users/shane/Documents/GitHub/markdownBlog/OS/mac/Monterey.assets/image-20211009104232938.png)
+![image-20211009104232938](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009104232938.png)
 
-딱 10분이 걸렸습니다.
+딱 10분이 걸리고, Restart 버튼이 나왔네요.
+
+​		
+
+![image-20211009110629482](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009110629482.png)	
+
+이후 재부팅 하며 설치는 총 20분 가량 소요되어 전체 설치에는 30분이 걸렸습니다.
+
+막상 부팅 되고 나니 외관상으로는 큰 차이가 없어보여 업데이트가 된게 맞나 싶기도 합니다.
 
 ​	
 
+![image-20211009130016688](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009130016688.png)
+
+이제 설정에 들어가보면 Private Relay가 생겼습니다.
+
+​		
+
+![image-20211009130251074](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009130251074.png)
+
+설정을 켜고 Safari로 브라우징을 해보니 ip도 vpn을 사용하는 것 처럼 숨겨집니다. 다른 브라우저를 켤 때는 적용이 안되고 Safari를 할 때만 되더라고요. 다만 항상 켜두기에는 ping이 높아지고 다운로드 속도가 느려지기 때문에 필요할 때만 사용하는게 좋겠습니다.
+
+​	
+
+그 외에도 많은 새로운 기능들을 둘러보는 재미가 있습니다. 딱히 베타버전의 불편함은 아직까지 느끼지 못했습니다. 이상입니다.
