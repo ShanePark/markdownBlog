@@ -67,3 +67,6 @@
 .title:hover{
   cursor : pointer;
 }
+[v-cloak] {
+  display: none !important;
+}

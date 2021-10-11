@@ -42,7 +42,7 @@
 <body>
 	<div id="board">
 		<h2>Vue.js Board</h2>
-		<table class="table">
+		<table class="table" v-if="boardList.length > 0">
 			<thead>
 				<th>글번호</th>
 				<th>제목</th>
@@ -60,8 +60,10 @@
 					<td v-text="b.content"></td>
 				</tr>
 			</tbody>
+			<tfoot>
+				<button class="btn btn-success" id="show-modal" @click="create()">작성</button>
+			</tfoot>
 		</table>
-		<button class="btn btn-success" id="show-modal" @click="create()">작성</button>
 		<modal v-if="showModal" @close="showModal = false">
 			<h3 slot="header" v-text="'게시글 '+menu[status]"></h3>
 			<div slot="body">
