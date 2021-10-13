@@ -15,6 +15,7 @@
 
   gtag('config', 'G-78XZFQGFTN');
 </script>
+	<!-- adSense -->
 	<script data-ad-client="ca-pub-8627654774354950" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<meta name="naver-site-verification" content="0c22e3f03cba99c563fc4f90743e8699d2f4979c" />
 	<meta name="google-site-verification" content="M8x4poE68Fuinu22Y8TqYML-sgvjPZq9ihSN-JR7a5g" />
@@ -34,6 +35,7 @@
   <script src="//t1.daumcdn.net/tistory_admin/assets/skin/common/vh-check.min.js"></script>
   <script src="./images/common.js" defer></script>
 	<script src="./images/readingtime.js" defer></script>
+	<script src="./images/moment-with-locales.min.js" defer></script>
   <script> (function () { var test = vhCheck();}()); </script>
 	<!-- Github markdown css -->
 	<link rel="stylesheet" href="./images/github-markdown.css">
@@ -54,20 +56,18 @@
 		$('body').addClass('dark');
 	}
 </script>	
-<div id="dark-toggle-group">
 	<div id="upBtn">
 		<button class="h_pointer">
 			<i class="fas fa-arrow-up"></i>
 		</button>
-	</div>	
-	<div id="darkBtn">
-		<button class="h_pointer">
-			<i class="las la-cloud-moon"></i>
-		</button>
 	</div>
-</div>
-
+	
+	<!-- dark toggle -->
+	<div class="wrapper">
+		<input type="checkbox" name="checkbox" class="switch">
+	</div>
   <s_t3>
+		
     <!-- 사이드바 서랍형일때 wrap-right / wrap-drawer -->
     <div id="wrap" class="wrap-[##_var_sidebartype_##]">
 
@@ -95,7 +95,6 @@
 							<input class="searchInput" type="text" name="search" value="" placeholder="Search..." onkeypress="if (event.keyCode == 13) { requestSearch('.util.use-top .searchInput') }"/>
 							</div>
 						</div>
-
 
           </div>
 
@@ -249,9 +248,13 @@
                         <p class="category">[##_article_rep_category_##]</p>
                         <h2 class="title-article">[##_article_rep_title_##]</h2>
                         <div class="box-info">
-                          <span class="writer">[##_article_rep_author_##]</span>
-                          <span class="date">[##_article_rep_date_##]</span>
-													<span class="eta"></span>
+													<!--
+                          <span class="writer">[##_article_rep_author_##]
+</span>
+-->
+                          📝 작성 :&nbsp;<span class="date">[##_article_rep_date_year_##].[##_article_rep_date_month_##].[##_article_rep_date_day_##]</span>
+													&emsp;⏱ 수정 :&nbsp;<span id="mod_date"></span>
+													&emsp;<span class="eta"></span>
 													<!-- google translate -->
 													<div id="google_translate_element"></div>
                         </div>
@@ -269,7 +272,7 @@
                   <div class="article-footer">
 
                     <s_tag_label>
-                      <!-- article-tag -->
+                      <!-- article-tag --> <!--
                       <div class="article-tag">
                         <h3 class="title-footer">Tag</h3>
                         <div class="box-tag">[##_tag_label_rep_##]</div>
@@ -373,7 +376,7 @@
                         <s_rp_input_form>
                           <!-- reply_write -->
                           <form method="post">
-                            <div class="area-write">
+                            <div class="area-write" hidden>
                               <s_rp_member>
                                 <s_rp_guest>
                                   <div class="box-account">
@@ -1010,11 +1013,14 @@
 -->
 <!-- google translate end -->
 															
-<script>
-if(isDarkMode==true){
-	setDark();																								
-}													
+<script>												
 $(function(){
+// 최종 수정일 표기
+	let lastModified = getModifiedDate();			
+	moment.locale('ko');
+	if(lastModified) {
+		$('#mod_date').text(moment(lastModified).fromNow());
+ 	}																			
 // 	이미지 클릭시 해당 이미지 모달
 	$("p img").click(function(){
 		let img = new Image();
@@ -1030,7 +1036,7 @@ $(function(){
 	$('.article-view').readingTime({
 		readingTimeAsNumber: false,
 		readingTimeTarget: $('.eta'),
-		wordsPerMinute: 200,
+		wordsPerMinute: 140,
 		round: true,
 		prependTimeString: '📚 읽는시간 : ',
 		lang: 'kr'
@@ -1041,16 +1047,17 @@ $(function(){
 	})
 // 					
 // darkMode 토글
-	$('#darkBtn button').on('click', function(){
-		isDarkMode = !isDarkMode
+	$('.wrapper .switch').on('change', function(){
+		let isDarkMode = $(this).is(":checked");
 		if(isDarkMode){
 			setDark();	
 			localStorage.setItem("isDarkMode", true);
 		}else{
 			setNonDark();
 			localStorage.setItem("isDarkMode", false);
-		}
-	})				
+		}																					
+	})
+																			 
 // 스크롤 top버튼 숨기고 보이기
 	$(window).scroll(function() { 
 		if ($(this).scrollTop() > 350) { 
@@ -1059,12 +1066,16 @@ $(function(){
 			$('#upBtn').fadeOut(); 
 		} 
 	});
+// 다크모드 적용																			 
+ if(isDarkMode==true){
+	setDark();																								
+}		
 })																		
 																		
 function setDark(){
 	$('body').addClass('dark');
 	$('#tt-body-page').addClass('dark');
-	$('.la-cloud-moon').removeClass('la-cloud-moon').addClass('la-sun');
+	$('.wrapper .switch').prop("checked", true);	
 	setTimeout(function(){
 		let utte = $('.utterances iframe');
 		let utteSrc = utte.attr('src');															
@@ -1077,7 +1088,7 @@ function setDark(){
 function setNonDark() {
 	$('body').removeClass('dark');																			 
   $('#tt-body-page').removeClass('dark');
-	$('.la-sun').removeClass('la-sun').addClass('la-cloud-moon');			
+	$('.wrapper .switch').prop("checked", false);	
 		let utte = $('.utterances iframe');
 		let utteSrc = utte.attr('src');								 
 		if(utteSrc) { 
@@ -1085,6 +1096,21 @@ function setNonDark() {
 			utte.attr("src", newSrc);					 
 		}								 
 }
+function getModifiedDate(){ 
+    let metaTags = document.getElementsByTagName( "META" ); 
+    for (let i = 0; i < metaTags.length; i++ ) { 
+        let property = metaTags[i].getAttribute( "property" ); 
+        if ( property == "article:modified_time" ){
+            let contentValue = metaTags[i].getAttribute( "content" );  
+            let array = contentValue.split( "T" ); 
+            let date = array[ 0 ].replace( /\-/g , "/" ); 
+            let time = array[ 1 ].split( "+" )[ 0 ]; 
+
+            return new Date( date + " " + time ); 
+        } 
+    }
+    return null;
+}										 
 </script>
 
 </body>
