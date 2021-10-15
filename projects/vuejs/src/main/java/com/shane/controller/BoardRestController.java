@@ -17,46 +17,49 @@ import com.shane.model.Result;
 import com.shane.repositories.BoardRepository;
 import com.shane.service.BoardService;
 
-@RestController
-@RequestMapping(value="restapi/board")
-public class BoardRestController {
-	
-	private static final org.apache.logging.log4j.Logger logger = LogManager.getLogger(BoardRestController.class);
+import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
-	@Autowired
-	BoardRepository repository;
-	
-	@Autowired
-	BoardService boardService;
-	
-	@GetMapping
-	public Result retrieveBoardList() {
-		Result result = boardService.retrieveBoardList();
-		return result;
-	}
-	
-	@GetMapping("/{boardNo}")
-	public Result retrieveBoard(@PathVariable Integer boardNo) {
-		Result result = boardService.retrieveBoard(boardNo);
-		return result;
-	}
-	
-	@PostMapping
-	public Result createBoard(@ModelAttribute Board board) {
-		Result result = boardService.createBoard(board);
-		return result;
-	}
-	
-	@PutMapping
-	public Result updateBoard(@ModelAttribute Board board) {
-		Result result = boardService.updateBoard(board);
-		return result;
-	}
-	
-	@DeleteMapping
-	public Result deleteBoard(@RequestParam int boardNo) {
-		Result result = boardService.deleteBoard(boardNo);
-		return result;
-	}
-	
+@RestController
+@RequestMapping(value = "restapi/board")
+public class BoardRestController {
+
+    private static final org.apache.logging.log4j.Logger logger = LogManager.getLogger(BoardRestController.class);
+
+    @Autowired
+    BoardRepository repository;
+
+    @Autowired
+    BoardService boardService;
+
+    @GetMapping
+    public Result retrieveBoardList() {
+        Result result = boardService.retrieveBoardList();
+        return result;
+    }
+
+    @GetMapping("/{boardNo}")
+    public Result retrieveBoard(@PathVariable Integer boardNo) {
+        Result result = boardService.retrieveBoard(boardNo);
+        return result;
+    }
+
+    @PostMapping
+    public Result createBoard(@ModelAttribute Board board) {
+        Result result = boardService.createBoard(board);
+        return result;
+    }
+
+    @PutMapping
+    public Result updateBoard(@ModelAttribute Board board) {
+        Result result = boardService.updateBoard(board);
+        return result;
+    }
+
+    @DeleteMapping
+    public Result deleteBoard(@RequestParam int boardNo) {
+        Result result = boardService.deleteBoard(boardNo);
+        return result;
+    }
+
 }
