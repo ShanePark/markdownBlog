@@ -147,3 +147,7 @@ Updates and other software 에 대한 설정인데요. 필요한 software 들을
 이제 컴퓨터를 처음 켤 때 Ubuntu 를 선택해서 Ubuntu 로 부팅 할 수도 있으며, 아래 쪽의 Windows Boot Manager를 선택해 윈도우로 부팅 할 수도 있습니다. 혹시 Windows 시스템이 locker로 암호화 되어 있다면 Ubuntu에서 실행이 안될 수 있는데 그때는 당황하지 말고 BIOS 에 진입해서 Windows Boot Manager의 부팅우선순위를 제일 위로 올린 후에 정상적으로 Windows 로 접속 해서 , C 드라이브의 bitLocker를 해지 해 주면 됩니다. 후에는 다시 Windows Boot Manager의 우선순위를 아래로 내리면 됩니다.
 
 ​	
+
+설치를 잘 마치셨다면 
+
+[개발자를 위한 Ubuntu 초기 설정 하기](https://shanepark.tistory.com/242) 포스팅을 확인해서 초기 설정을 해 주시면 됩니다.
