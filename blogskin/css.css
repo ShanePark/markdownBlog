@@ -6,7 +6,6 @@
 		bottom: 25px;
 		right: 175px;
 		position: fixed;
-		display: flex;
 		z-index: 9;
 }
 #upBtn button{
@@ -89,7 +88,7 @@
     max-width: 95%;
 }
 p img:hover{
-	cursor: -webkit-zoom-in;
+	cursor: zoom-in;
 }
 /* image modal end */
 
@@ -262,8 +261,11 @@ body {
 	}
 #tt-body-page.dark .article-view pre
 ,#tt-body-page.dark .article-view .highlight pre{
-		filter: invert(100%) !important;
-		background-color : #ccc !important;		
+		filter: invert(100%);
+		background-color : #ccc;		
+	}
+	#tt-body-page.dark .article-view p code {
+		background-color:  #333;
 	}
  .dark .paging-more
 , .dark .article-page ul li:nth-child(2)
