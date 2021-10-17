@@ -240,6 +240,7 @@ body {
 	}
 	.dark .area-aside .box-profile{
 		border: 2px solid dimgrey;
+    box-shadow: 0 5px 10px rgb(127 127 127 / 10%), 0 6px 4px rgb(127 127 127 / 20%);
 	}
 	.dark .title-search span
 	, .dark .box-calendar .cal_click
@@ -293,7 +294,6 @@ body {
 	#tt-body-page.dark .article-view table tr:nth-child(2n) {
 		background-color: #222 !important;
 	}
-
 /******************** Dark Mode END ***************/
 	
 .link-icon{
@@ -4920,7 +4920,7 @@ background-image:url("./images/night.png");
 background-size: cover;
 background-repeat: no-repeat;
 border-radius: 25px;
-box-shadow: inset 0px 0px 2px rgba(255,255,255,.7);
+box-shadow: 0 10px 20px rgb(0 0 0 / 20%), 0 6px 4px rgb(0 0 0 / 20%);
 transition: background-image .7s ease-in-out;
 outline: none;
 cursor: pointer;
@@ -5066,5 +5066,4 @@ box-shadow: 0px 0px 10px #f5deb4,
     filter: blur(0px);
 }
 }
-
 
