@@ -122,4 +122,4 @@ kill 명령어는 옵션 없이 사용하면 기본적으로 kill -TERM 혹은 k
 
 혹시 MacOS 를 사용하신다면, ss 명령어가 없기 때문에 `lsof -i:8080` 를 사용하시면 됩니다.
 
-![image-20211017214426199](https://raw.githubusercontent.com/Shane-Park/markdownBlog/OS/linux/findPidByPort.assets/image-20211017214426199.png)
+![image-20211017214426199](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211017214426199.png)
