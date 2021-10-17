@@ -116,6 +116,10 @@ kill 명령어는 옵션 없이 사용하면 기본적으로 kill -TERM 혹은 k
 
 반면에 kill -9 옵션은 프로세스를 종료하는 거칠고 안전하지 않은 방법 입니다. 컴퓨터로 치면 그냥 전원 코드를 뽑아버리는 것과 같고, 데이터의 손상을 야기 할 수 있습니다. 하지만 kill 명령어로 종료가 되지 않을때는 kill -9 옵션을 고려해보세요.
 
-​		
+​			
 
 이상으로 특정 포트를 점유중인 프로세스를 종료시키는 방법에 대해 알아보았습니다.
+
+혹시 MacOS 를 사용하신다면, ss 명령어가 없기 때문에 `lsof -i:8080` 를 사용하시면 됩니다.
+
+![image-20211017214426199](https://raw.githubusercontent.com/Shane-Park/markdownBlog/OS/linux/findPidByPort.assets/image-20211017214426199.png)
