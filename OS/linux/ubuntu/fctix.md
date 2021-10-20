@@ -1,4 +1,4 @@
-# Ubuntu 20.04 fctix입력기 설치해 intelliJ 한글입력 해결하기
+# Ubuntu 20.04) fctix입력기 설치해 intelliJ 한글입력 해결하기
 
 ​		
 
@@ -10,7 +10,7 @@
 
 ![image-20211020093734578](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020093734578.png)
 
-​	
+
 
 해결을 위해 더이상 iBus 입력기를 사용하지 않고 fctix 입력기로 변경 해 보겠습니다.
 
