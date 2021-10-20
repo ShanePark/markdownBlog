@@ -83,9 +83,9 @@ sudo apt-get install fcitx-config-gtk
 
 Global Config에서 Trigger 설정 (한/영 전환 키)
 
-![image-20211020090138573](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020090138573.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020132717132.png)
 
-Hangul 로 변경 해 주면 됩니다.
+Hangul 로 변경 해 주면 됩니다. Extra key for trigger input Method는 다른 한/영 전환 키가 필요하면 추가합니다.
 
 ​		
 
@@ -169,7 +169,36 @@ Trigger Key for Quick Phrase 는 `;` 에서 `None` 으로 변경하고, Do not s
 
 그러면 이제 더이상 그 짜증나던 팝업이 뜨지 않습니다.
 
-​		
+​			
 
-이제야 해방이네요 ! 이상입니다.
+수고하셨습니다. 
 
+​	
+
+## UIM-Byeoru
+
+intelliJ 에서 입력할 때 좌측 하단에 뭔가 뜨던게 거슬려서 uim 입력기도 사용 해 보았습니다.
+
+```zsh
+sudo apt install uim uim-byeoru
+```
+
+​	
+
+벼루를 사용하시려면, 위에서의 설정과 비슷하지만 키보드 입력기를 UIM 으로 변경하고 (재부팅)
+
+![image-20211020131508944](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020131508944.png)
+
+​	 
+
+Input Method 를 실행 해서 default IM을  Byeoru 로 설정하고, Input method toggle을 "hangul" 로, Byeoru key bindings 1 에서 맨 위 두개를 "hangul" 로 변경 해 주시면 됩니다.
+
+![image-20211020131435379](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020131435379.png)
+
+혹시 한영 전환이 잘 안되는 것 같으면 우측 하단의 입력기 창 에서 A 를 누르고 "한글글자" 로 변경해 주면 됩니다. 
+
+![image-20211020131600787](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020131600787.png)
+
+​	
+
+개인적으로 아직까지는 fctix가 가장 낫습니다.
