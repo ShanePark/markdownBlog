@@ -145,5 +145,31 @@ fcitx -r
 
 이제 한영키를 전환 할 때 따로 팝업이 뜨지 않습니다.
 
-이상입니다.
+​		
+
+## Fctix ; 입력시 팝업
+
+하지만 문제를 또 하나 발견했습니다. 한글 상태에서 ; 입력시에 
+
+![image-20211020114350420](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020114350420.png)
+
+자꾸 이런게 뜨는데 아주 짜증 지대로 입니다.
+
+​	
+
+![image-20211020114421040](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020114421040.png)
+
+Configuratiuon 에서 Addon 에 들어가 Quickphrase를 찾습니다. Configure를 누르고
+
+​	
+
+![image-20211020114600214](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020114600214.png)
+
+Trigger Key for Quick Phrase 는 `;` 에서 `None` 으로 변경하고, Do not show spell hint 를 체크합니다.
+
+그러면 이제 더이상 그 짜증나던 팝업이 뜨지 않습니다.
+
+​		
+
+이제야 해방이네요 ! 이상입니다.
 
