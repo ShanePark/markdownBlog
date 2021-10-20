@@ -183,13 +183,23 @@ STS 4 를 설치할 경우 아래의 글을 참고해주세요.
 
 [Ubuntu) STS4 (Spring Tools Suite 4 for Elipse) 설치하고 바로 가기 만들기](https://shanepark.tistory.com/236)
 
-IntelliJ IDEA를 사용한다면 저는 snap 으로 설치 했습니다.
+IntelliJ IDEA를 사용한다면 저는 처음에는 snap 으로 설치 했습니다.
 
 ```shell
 sudo snap install intellij-idea-ultimate --classic
 ```
 
-​	
+그런데 snap으로 설치하면 사용할때 이상하게도 로딩도 너무 느리고 사용하기가 불편 하더라고요.
+
+![image-20211021084558418](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211021084558418.png)
+
+그래서 삭제 뒤 위에 안내된 것 처럼 공식 홈페이지에 나온 방법 대로 설치 해서 사용하니 MacOS에서 경험했던 훌륭한 속도 그대로  잘 사용 하고 있습니다.
+
+IntelliJ IDEA 다운로드 링크도 첨부 해 둡니다. 아래의 그림을 클릭하시면 이동합니다.
+
+[![image-20211021084925005](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211021084925005.png)]((https://www.jetbrains.com/idea/download/#section=linux))
+
+​		
 
 ## * Kolourpaint
 
