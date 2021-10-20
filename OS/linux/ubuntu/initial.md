@@ -2,7 +2,7 @@
 
 ![How To Install Ubuntu Linux inside Windows - Techi Signals](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/Install-Ubuntu-Linux.jpg)	
 
-> 꾸준히 업데이트 되는 글 입니다. 최근 업데이트 : 2021-10-01
+> 꾸준히 업데이트 되는 글 입니다. 위의 수정 일자를 확인해주세요.
 
 ​	
 
@@ -195,9 +195,11 @@ sudo snap install intellij-idea-ultimate --classic
 
 그래서 삭제 뒤 위에 안내된 것 처럼 공식 홈페이지에 나온 방법 대로 설치 해서 사용하니 MacOS에서 경험했던 훌륭한 속도 그대로  잘 사용 하고 있습니다.
 
-IntelliJ IDEA 다운로드 링크도 첨부 해 둡니다. 아래의 그림을 클릭하시면 이동합니다.
+IntelliJ IDEA 다운로드 링크도 첨부 해 둡니다.
 
-[![image-20211021084925005](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211021084925005.png)]((https://www.jetbrains.com/idea/download/#section=linux))
+![image-20211021084925005](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211021084925005.png)
+
+> https://www.jetbrains.com/idea/download/#section=linux
 
 ​		
 
