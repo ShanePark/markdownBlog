@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class SimpleRegex {
 
     public static void main(String[] args) {
-        regexPass("abcde1A!", 5, true, true, true);
+        regexPass("AAAAA1", 6, true, true, true);
     }
 
     private static boolean regexPass(String password, int lengthPolicy, boolean numberPolicy, boolean specialCharacterPolicy,
@@ -27,7 +27,7 @@ public class SimpleRegex {
         }
 
         // 특수 문자 포함 여부 검증
-        if (numberPolicy) {
+        if (specialCharacterPolicy) {
             String pattern = ".*[!@#$%^&*?_-].*";
             if (!Pattern.matches(pattern, password)) {
                 System.out.println("특수문자 검증 실패");
