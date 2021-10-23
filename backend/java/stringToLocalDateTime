@@ -1,0 +1,82 @@
+# JAVA) String을 LocalDateTime 으로 변환하기
+
+API 호출을 하던 중에 JSON 형식으로 받아 온 시간 데이터를 JAVA에서 LocalDateTime 형식으로 받아야 하는 일이 있었습니다.
+
+이럴때는 간단하게 DateTimeFormatter를 이용하면 어떤 형식의 날짜 데이터도 LocalDateTime으로 변환 할 수 있습니다.
+
+​	
+
+일단 제가 parsing 해야 하는 문자열은 아래와 같습니다.
+
+```
+"2021-11-05 13:47:13.248";
+```
+
+​	
+
+흔하다면 흔한 형식 중에 하나지만 시간값은 어떤 형식으로 올 지 확인 하기 전까진 알기 힘듭니다. 시간 형식이 정확하게 규격화 되어서 한가지만 쓰면 참 좋을텐데 말이죠.. 자바스크립트에서는 moment.js 라이브러리를 자주 쓰게 되더라고요.
+
+​	
+
+![image-20211022142254060](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142254060.png)
+
+일단 code assist 를 받아보니 ofPattern 메서드로 패턴 형식만 받거나 혹은 Locale 정보를 같이 받더라구요. Locale 까지 넣진 않을거라 String 만 넣어서 사용 해 보겠습니다.
+
+​	
+
+```java
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
+```
+
+second 옆의 milliseconds 를 어떻게 표현해야 할지 몰라 찾아보니 SSS 형식으로 표현합니다. 
+
+다들 아시겠지만
+
+- yyyy 연도
+- MM 월
+- dd 일
+- HH 시간
+- mm 분
+- ss 초
+- SSS 밀리초
+
+
+
+​	
+
+입니다. 문자열에 표현 되어 있는 시간 표현식을 확인 하고 parsing 해낼 패턴을 알려줍니다.
+
+​	
+
+![image-20211022142620913](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142620913.png)
+
+이번에는 parse를 해낼 차례입니다. 처음에는 DateTimeFormatter를 사용하지 않고 그냥 String만 넣어서 parsing을 시도 해 보았었는데요, 
+
+​	
+
+![image-20211022142721414](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142721414.png)
+
+이렇게 `Text '2021-11-05 13:47:13.248' could not be parsed at index 10` 에러가 발생하여 파싱을 해내지 못했습니다. 
+
+​	
+
+![image-20211022142806982](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142806982.png)
+
+그래서 메서드를 확인 해 보니 `2007-12-03T10:15:30` 형식의 문자열만 parse 할 수 있더라고요. 뭐, 처음 파싱에 실패하면 여러가지 차선의 방법으로 순서대로 파싱을 시도 해 보는 방법이 있을 수 있겠지만 그러다가는 사용자가 의도하지 않은 엉뚱한 시간 데이터를 반환하는 일말의 가능성이 생기기 때문에 애초에 그런 문제를 피하고자 예외 처리를 해 버리고, 그 외의 경우에는 사용자가 정확하게 Format을 기입하게끔 해 둔 듯 합니다.
+
+​	
+
+```java
+String str = "2021-11-05 13:47:13.248";
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
+LocalDateTime dateTime = LocalDateTime.parse(str, formatter);
+System.out.println(dateTime);
+```
+
+만들어둔 formatter 형식을 parameter로 사용 해서 만들어줍니다.
+
+​	
+
+![image-20211022143105991](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022143105991.png)
+
+그러면 이제 정확하게 parsing을 해 내어 LocalDateTime 객체로 변환이 됩니다. 이상입니다.
