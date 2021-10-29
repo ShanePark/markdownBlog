@@ -43,6 +43,11 @@
 .dark #upBtn button{
 	box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.2)
 }
+/* code font */
+#tt-body-page .article-view table.hljs-ln td.hljs-ln-line, #tt-body-page .article-view table th {
+	font-family: JetBrainsMonoLight;
+	font-size: 12px;
+}
 
 /* font */
 @font-face {
@@ -52,6 +57,14 @@
 @font-face {
 	src : url("images/SDSamliphopangcheTTFOutline.ttf");
 	font-family : "samlip-outline"
+}
+@font-face {
+	src : url("images/JetBrainsMono-Regular.woff2");
+	font-family : "JetBrainsMono"
+}
+@font-face {
+	src : url("images/JetBrainsMono-Light.woff2");
+	font-family : "JetBrainsMonoLight"
 }
 @font-face {
 	src : url("images/MaruBuri-Regular.ttf");
@@ -5078,9 +5091,10 @@ box-shadow: 0px 0px 10px #f5deb4,
 }
 #tt-body-page .article-view table td.hljs-ln-line.hljs-ln-numbers {
 	border-right: 1px solid #dfe2e5;
+	text-align: right;
 }
 #tt-body-page.dark .article-view table td.hljs-ln-line.hljs-ln-numbers {
-	border-right: 1px solid #999;
+	border-right: none;
 }
 #tt-body-page .article-view table.hljs-ln tr {
 	background: none;
