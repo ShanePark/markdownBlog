@@ -353,7 +353,21 @@ cat ~/.ssh/id_rsa.pub
 sudo snap install vlc
 ```
 
-​			
+​	
+
+## Fusuma 설치
+
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/img.gif)
+
+데스크탑이 아닌 노트북 사용자 라던가, 혹은 별도의 터치패드를 연결해서 사용한다면 터치 제스처를 다양하게 사용해 MacOS 만큼 생산성을 높일 수 있는 fusuma 라는 어플리케이션이 있습니다.
+
+내용이 다소 간단하지만은 않아서 따로 포스팅을 작성 하였습니다. 아래 링크를 참고해주세요.
+
+[Ubuntu) 터치패드 및 트랙패드 활용하기 Fusuma](https://shanepark.tistory.com/257)
+
+​				
+
+## The end
 
 앞으로도 초기 설정에 더 필요한 내용이 있다고 생각될 때는 본 글을 꾸준히 업데이트 하도록 하겠습니다.
 
