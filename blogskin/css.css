@@ -91,18 +91,21 @@
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.8);
 }
-.modalBox {
-    position: relative;
-    text-align: center;
-    top: 2.5%;
-    left: 2.5%;
-    position: sticky;
-	  overflow: scroll;
-    max-height: 95%;
-    max-width: 95%;
-}
 p img:hover{
 	cursor: zoom-in;
+}
+.modalBox img{
+	  position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+		max-block-size: -webkit-fill-available;
 }
 /* image modal end */
 
@@ -177,7 +180,7 @@ body {
 	#tt-body-page.dark .article-view h1
   , #tt-body-page.dark .article-view h2{
 		color: grey;
-		border-bottom: 2px solid darkgrey;
+		border-bottom: 2px solid #333;
 	}
 	.dark .link-icon{
 		color : #ccc;
@@ -275,7 +278,7 @@ body {
 		opacity : 1;
 	}
 	#tt-body-page.dark .article-view blockquote{
-		border-left: .25em solid grey;
+		border-left: .25em solid #333;
 	}
 	#tt-body-page.dark .article-view p code {
 		background-color:  #333;
@@ -5788,7 +5791,8 @@ box-shadow: 0px 0px 10px #f5deb4,
 }
 
 #tt-body-page .article-view h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
+	margin-bottom: 50px;
 }
 
 #tt-body-page .article-view h3 {
@@ -6164,3 +6168,4 @@ Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
 .hljs-link {
   text-decoration: underline;
 }
+
