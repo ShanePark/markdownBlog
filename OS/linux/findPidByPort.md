@@ -1,4 +1,4 @@
-# Linux) 특정 port 사용중인 프로세서 찾아 죽이기
+# Linux) 특정 port 사용중인 프로세스 찾아 죽이기
 
 ​		
 
@@ -36,7 +36,7 @@ PID 22706 에서 해당 포트를 사용중인게 확인됩니다. 또한 Proces
 
 ## System Monitor로 프로세스 종료하기
 
-System Monitor를 통해 해당 PID의 프로세서를 찾고
+System Monitor를 통해 해당 PID의 프로세스를 찾고
 
 ![image-20211014101003289](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014101003289.png)
 
