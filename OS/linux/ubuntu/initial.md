@@ -134,7 +134,7 @@ sudo dpkg -i gitkraken-amd64.deb
 
 ​		
 
-# Apple Music  & Spotify
+## Apple Music  & Spotify
 
 ![green and white logo illustration](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/photo-1611339555312-e607c8352fd7ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80)
 
@@ -239,7 +239,7 @@ sudo snap install dbeaver-ce
 
 ​			
 
-## SSH 접속 허용
+## * SSH 접속 허용
 
 ![text](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/photo-1629654297299-c8506221ca97ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80)
 
@@ -249,7 +249,7 @@ sudo snap install dbeaver-ce
 
 ​		
 
-## vim 편집기 설치
+## * vim 편집기 설치
 
 Ubuntu 환경에서 기본 설치되어있는 vim을 이용해보니 방향키를 누를 때 이상한 문자가 입력 된다던가 하는 불편함이 있었습니다. 그래서 기본으로 설치되어 있는게 향상된 vim이 아닌가 싶어 -version을 입력 해 보니
 
@@ -366,6 +366,16 @@ sudo snap install vlc
 [Ubuntu) 터치패드 및 트랙패드 활용하기 Fusuma](https://shanepark.tistory.com/257)
 
 ​				
+
+## Notion 설치
+
+![image-20211027092241360](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211027092241360.png)
+
+Notion에서 공식 우분투용 프로그램을 지원하지는 않지만, 감사하게도 개발자들이 힘을 모아 만든 Lotion 프로젝트 덕에 Notion을 native 앱으로 사용 할 수 있습니다. Notion 사용자라면, 아래의 링크에서 설치 방법을 확인 해 주세요.
+
+[Ubuntu) notion App 설치](https://shanepark.tistory.com/265)
+
+​	
 
 ## The end
 
