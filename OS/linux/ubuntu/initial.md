@@ -4,17 +4,17 @@
 
 > 꾸준히 업데이트 되는 글 입니다. 위의 수정 일자를 확인해주세요.
 
-​	
+<br><br>
 
 [개발자를 위한 Mac 초기 설정 하기](https://shanepark.tistory.com/167) 포스팅을 작성한지 두달이 조금 넘었습니다. Mac을 처음 구입하시는 분들이 처음에 세팅을 한번에 하기 위해 방문을 많이 해주시다 보니 보통 매일 블로그 내 인기 글 3등 안에는 항상 들어가는 포스팅 인데, 다른 분들에게는 도움이 얼마나 되는 지 잘 몰라도 적어도 저에게는 처음부터 세팅을 다시 해야하거나 다른 분들의 세팅을 도와 줄때마다 다시 찾아보게 되어 스스로 큰 도움이 되고 있습니다. 처음 Ubuntu 를 설치 하며 어려움을 겪었었고, 후에도 집에서 개인 서버로 사용하던 윈도우 노트북도 윈도우를 아에 밀어버리고 우분투로 바꿔 보고, 또 스스로도 잘못 건들었다가 다시 설치하는 등 시행착오를 몇 번 겪다 보니 정리를 해 두는게 좋다는 생각이 들어 하나 둘 씩 정리하기 시작했습니다. 
 
-​	
+<br><br>
 
 아래의 내용 중 본인에게 필요한 내용만 순서에 맞춰 설치하시면 됩니다.
 
 >  필수에 가깝다고 생각이 드는 항목들은 따로 앞에 * 표시를 해 두었습니다.
 
-​			
+<br><br>
 
 ## * 한글 키보드 입력 설정
 
@@ -22,7 +22,7 @@
 
 [Ubuntu 20.04 키보드 한글 입력 설정 하기](https://shanepark.tistory.com/231)
 
-​	
+<br><br>
 
 ## Dock 커스터마이징
 
@@ -30,7 +30,7 @@
 
 [Ubuntu 20.04 Mac OS 처럼 Dock 가운데 위치하게 변경하기](https://shanepark.tistory.com/233)
 
-​	
+<br><br>
 
 ## MacOS 테마 입히기
 
@@ -40,7 +40,7 @@
 
 [Ubuntu MacOS 처럼 만들기 GTK Themes](https://shanepark.tistory.com/251)
 
-​		
+<br><br>
 
 ## * 비프음 끄기
 
@@ -48,7 +48,7 @@
 
 [Ubuntu Terminal에서 백스페이스/방향키 누를때 삐 하는 비프음 안나게 하기](https://shanepark.tistory.com/234)
 
-​	
+<br><br>
 
 ## 상단 바 없애기
 
@@ -82,7 +82,7 @@ sudo apt install gnome-shell-extension-autohidetopbar
 
 가장 위에 있는 Show Panel when mouse approaches edge of the screen 옵션을 켜주고 가장 아래의 Intellihide 에 있는 두개의 옵션을 꺼주면 됩니다.
 
-​					
+<br><br>
 
 ## * JDK 설치 
 
@@ -94,7 +94,7 @@ sudo apt install gnome-shell-extension-autohidetopbar
 $ sudo apt-get install openjdk-8-jdk
 ```
 
-​	
+<br><br>
 
 ## 노트북 지문인식 등록
 
@@ -104,7 +104,7 @@ $ sudo apt-get install openjdk-8-jdk
 
 [Ubuntu 20.04 Dell XPS 노트북 지문인식 로그인하기](https://shanepark.tistory.com/232)
 
-​	
+<br><br>
 
 ## GitKraken
 
@@ -132,7 +132,7 @@ sudo dpkg -i gitkraken-amd64.deb
 
 ```
 
-​		
+<br><br>
 
 ## Apple Music  & Spotify
 
@@ -159,7 +159,7 @@ sudo apt-get update && sudo apt-get install spotify-client
 
 ```
 
-​	
+<br><br>
 
 ## Postman
 
@@ -173,7 +173,39 @@ API 테스트를 편하게 할 수 있습니다.
 sudo snap install postman
 ```
 
-​	
+ 사실 snap으로 설치하는게 쉽기는 하지만, 개인적으로 어떤 어플이든 작동이 굉장히 느려져서 현재는 snap으로 설치된 모든 어플들을 다 수동으로 설치해 사용하고 있습니다. 수동으로 설치하신다면..
+
+1. 일단 먼저 https://www.postman.com/downloads/ 에서 다운받습니다. Linux 64-bit를 받으면 되겠네요.
+
+   ![image-20211105155753299](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211105155753299.png)
+
+2. 다운받은 파일을 opt 폴더에 압축 해제합니다.
+
+   ```zsh
+   sudo tar -zxvf  ./Postman-linux-x86_64-8.12.5.tar.gz -C /opt/
+   ```
+
+3. 바로 가기 파일을 생성 해 줍니다.
+
+   ```zsh
+   vi ~/.local/share/applications/Postman.desktop
+   ```
+
+4. Postman.desktop 에는 아래의 내용을 넣습니다.
+
+   ```properties
+   [Desktop Entry]
+   Encoding=UTF-8
+   Name=Postman
+   Exec=/opt/Postman/app/Postman %U
+   Icon=/opt/Postman/app/resources/app/assets/icon.png
+   Terminal=false
+   Type=Application
+   Categories=Development;
+   
+   ```
+
+<br><br>
 
 ## IntelliJ IDEA 혹은 Eclipse
 
@@ -201,7 +233,7 @@ IntelliJ IDEA 다운로드 링크도 첨부 해 둡니다.
 
 > https://www.jetbrains.com/idea/download/#section=linux
 
-​		
+<br><br>
 
 ## * Kolourpaint
 
@@ -213,7 +245,7 @@ Linux 에서의  Microsoft Paint (그림판) 입니다. 간단한 이미지 편�
  $ sudo apt-get install kolourpaint4
 ```
 
-​	
+<br><br>
 
 ## Docker
 
@@ -225,7 +257,7 @@ Windows 에서 Ubuntu 로 넘어오게 된 가장 큰 계기입니다. Docker를
 
 [Ubuntu 20.04 LTS ) Docker 설치하기](https://shanepark.tistory.com/237)
 
-​	
+<br><br>
 
 ## * DBeaver
 
@@ -237,7 +269,7 @@ Windows 에서 Ubuntu 로 넘어오게 된 가장 큰 계기입니다. Docker를
 sudo snap install dbeaver-ce
 ```
 
-​			
+<br><br>
 
 ## * SSH 접속 허용
 
@@ -247,7 +279,7 @@ sudo snap install dbeaver-ce
 
 [Ubuntu 20.04 LTS ) SSH 접속 허용하기](https://shanepark.tistory.com/239)
 
-​		
+<br><br>
 
 ## * vim 편집기 설치
 
@@ -257,7 +289,7 @@ Ubuntu 환경에서 기본 설치되어있는 vim을 이용해보니 방향키�
 
 Vi IMproved 라고 나오긴 했습니다. 방향키야 hjkl를 사용하면 된다지만 백스페이스 라던가 몇가지 불편한 점이 있어서 새로 설치를 해 보려고 합니다.
 
-​		
+<br><br>
 
 바로 설치를 해 보겠습니다.
 
@@ -275,13 +307,11 @@ sudo apt-get install vim
 
 ![image-20210920093946034](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20210920093946034.png)
 
-​		
-
-vi test.txt 입력해서 새로 편집기를 띄워 보니 백스페이스, 방향키 등이 의도한 대로 잘 동작이 됩니다.
+<br><br>vi test.txt 입력해서 새로 편집기를 띄워 보니 백스페이스, 방향키 등이 의도한 대로 잘 동작이 됩니다.
 
 ![image-20210920094102444](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20210920094102444.png)	
 
-​		
+<br><br>
 
 이제 vim을 설치했으니 몇가지 설정을 해 두는게 좋습니다.
 
@@ -313,7 +343,7 @@ set showmatch "짝이 되는 괄호 하이라이트
 
 간단하게 이정도 설정만 저장 해 두고 쓰면서 필요할 때 더 추가합니다.
 
-​	
+<br><br>
 
 ## * SSH key 생성하기	
 
@@ -339,7 +369,7 @@ cat ~/.ssh/id_rsa.pub
 
 > [SSH key 생성하고, 서버에 등록해서 비밀번호 없이 접속하기](https://shanepark.tistory.com/195?category=1222202) 
 
-​	
+<br><br>
 
 ## VLC Media Player
 
@@ -353,7 +383,7 @@ cat ~/.ssh/id_rsa.pub
 sudo snap install vlc
 ```
 
-​	
+<br><br>
 
 ## Fusuma 설치
 
@@ -365,7 +395,7 @@ sudo snap install vlc
 
 [Ubuntu) 터치패드 및 트랙패드 활용하기 Fusuma](https://shanepark.tistory.com/257)
 
-​				
+<br><br>
 
 ## Notion 설치
 
@@ -375,7 +405,65 @@ Notion에서 공식 우분투용 프로그램을 지원하지는 않지만, 감�
 
 [Ubuntu) notion App 설치](https://shanepark.tistory.com/265)
 
-​	
+<br><br>
+
+## Typora
+
+![image-20211105163432374](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211105163432374.png)
+
+마크다운 에디터로 Typora를 사용하고 있습니다.
+
+ 여러가지 마크다운 에디터를 사용 해 봤지만, 블로그 글을 작성하는데는 Typora가 가장 좋았습니다.
+
+일단 공식 사이트에서 안내하는 방법은 아래와 같습니다.
+
+```zsh
+# or use
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+
+# add Typora's repository
+sudo add-apt-repository 'deb https://typora.io/linux ./'
+sudo apt-get update
+
+# install typora
+sudo apt-get install typora
+
+```
+
+<br><br>
+
+하지만 제가 다운로드를 시도 해보니 key가 만료되어서 저장소에 접속이 되지 않았습니다.
+
+![image-20211105163031170](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211105163031170.png)
+
+> https://typora.io/#linux
+
+그래도 다행히도 download binary file 링크가 있어서 binary file을 다운 받아 설치 할 수 있었습니다. apt-get을 위와 같이 먼저 시도 해 보시고 안된다면 binary file을 다운 받아서 설치 하시면 됩니다.
+
+다운로드 링크 : https://typora.io/linux/Typora-linux-x64.tar.gz
+
+해당 파일을 다운 받으면 bin이라는 이름의 폴더가 생깁니다. 그 아래에  `Typora-linux-x64` 폴더가 있는데요, 해당 폴더를 `/opt` 경로에 풀어 주었습니다.
+
+그러고는 아래와 같이 바로가기를 생성 해 주었습니다.
+
+```zsh
+vi ~/.local/share/applications/Typora.desktop
+```
+
+```properties
+  1 [Desktop Entry]
+  2 Encoding=UTF-8
+  3 Name=Typora
+  4 Exec=/opt/Typora-linux-x64/Typora %U
+  5 Icon=/opt/Typora-linux-x64/resources/assets/icon/icon_128x128.png
+  6 Terminal=false
+  7 Type=Application
+  8 Categories=Development;
+
+```
+
+<br><br>
 
 ## The end
 
