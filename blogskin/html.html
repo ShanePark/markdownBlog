@@ -1030,7 +1030,7 @@ $(function(){
 		$('#mod_date').text(moment(lastModified).fromNow());
  	}																			
 // 	이미지 클릭시 해당 이미지 모달
-	$("p img").click(function(){
+	$(".article-view p img").click(function(){
 		let img = new Image();
 		img.src = $(this).attr("src")
 		$('.modalBox').html(img);

@@ -91,7 +91,7 @@
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.8);
 }
-p img:hover{
+.article-view p img:hover{
 	cursor: zoom-in;
 }
 .modalBox img{
