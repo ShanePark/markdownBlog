@@ -144,10 +144,7 @@ body {
 .dark #footer .box-site button{
 	display : none;
 }
-.dark .article-header{
-	background : none !important;
-}
-	.dark .area-reply .box-content .button-modify{
+.dark .area-reply .box-content .button-modify{
 		background: url(./images/moreSquare.svg) no-repeat;
     background-size: 25px;
 	}
@@ -779,7 +776,7 @@ html {
 }
 
 #tt-body-page .main {
-    padding-top: 470px;
+    padding-top: 300px;
 }
 
 #tt-body-page .area-view img{
@@ -3047,11 +3044,10 @@ html {
     top: 0;
     left: 50%;
     width: 100vw;
-    height: 400px;
+    height: 300px;
     margin-left: -50vw;
     padding: 0 20px;
-    background-size: cover;
-    background-position: 50% 50%;
+    background: none !important;
 }
 
 .article-header:before {
@@ -3061,14 +3057,12 @@ html {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
 .article-header .inner-header {
     max-width: 1020px;
     margin: 0 auto;
-    color: #fff;
 }
 
 .article-header .box-meta {
@@ -3095,13 +3089,14 @@ html {
     display: block;
     width: 100%;
     margin: 0 0 33px 0;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 400;
     overflow: hidden;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     white-space: normal;
     word-break: keep-all;
+	margin-left: 10px
 }
 
 .article-header .box-info {
@@ -4731,7 +4726,7 @@ html {
 
 
 #tt-body-category.use-category-banner #container {
-	margin-top:400px;
+	margin-top:300px;
 }
 
 .use-category-banner .category-banner-wrp{
@@ -6174,6 +6169,34 @@ Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
 * tocbot.css
 *
 ******************************/
+/* my custom toc*/
+@media screen and (min-width: 1501px) {
+	.js-toc {
+	position: fixed;
+	top: 120px;
+	max-width: 200px;
+	left: 20px;
+	z-index: 9;
+}
+}
+
+@media screen and (max-width: 1500px) {
+	.js-toc {
+			position: fixed;
+			top: 0;
+			right: -100%;
+			width: calc(100% - 104px);
+			max-width: 380px;
+			height: 100%;
+			padding: 0 24px;
+			border-left: 1px
+	 solid #efefef;
+			background: #fff;
+			overflow-x: hidden;
+			overflow-y: auto;
+			z-index: 20;
+	}	
+}
 
 .toc {
     overflow-y: auto
