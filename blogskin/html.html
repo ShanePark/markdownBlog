@@ -3,7 +3,8 @@
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-78XZFQGFTN"></script>
-	
+	<!-- toc bot -->
+	<script src="./images/tocbot.min.js"></script>
 	<!-- highlight.js -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
@@ -267,7 +268,7 @@
                     </div>
                   </div>
 									<!-- TOC 영역 -->
-									<div class="Toc"></div>
+									<div class="js-toc toc"></div>
                   <!-- 에디터 영역 -->
                   <div class="article-view">
                     [##_article_rep_desc_##]
@@ -1010,7 +1011,41 @@ document.querySelector(".article-reply").append(script);
 <!-- 이미지 모달 끝 -->
 											 
 											 
-<!-- script 시작 -->			
+<!-- script 시작 -->		
+											 
+<!-- toc bot -->
+<script>
+function makeIds () { // eslint-disable-line
+  var content = document.querySelector('.article-view')
+  var headings = content.querySelectorAll('h1, h2, h3, h4, h5, h6, h7')
+  var headingMap = {}
+
+  Array.prototype.forEach.call(headings, function (heading) {
+    var id = heading.id
+      ? heading.id
+      : heading.textContent.trim().toLowerCase()
+        .split(' ').join('-').replace(/[!@#$%^&*():]/ig, '').replace(/\//ig, '-')
+    headingMap[id] = !isNaN(headingMap[id]) ? ++headingMap[id] : 0
+    if (headingMap[id]) {
+      heading.id = id + '-' + headingMap[id]
+    } else {
+      heading.id = id
+    }
+  })
+}
+makeIds();											 
+											 
+tocbot.init({
+  // Where to render the table of contents.
+  tocSelector: '.js-toc',
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.article-view',
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3',
+  // For headings inside relative or absolute positioned containers within content.
+  hasInnerContainers: true,
+});			
+</script>		 
 											 
 <!-- google translate -->					
 <!--
