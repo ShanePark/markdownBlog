@@ -4,7 +4,7 @@
 #upBtn {
 	display: none;
 		bottom: 25px;
-		right: 175px;
+		left: 175px;
 		position: fixed;
 		z-index: 9;
 }
@@ -4911,7 +4911,7 @@ html {
 .wrapper{
 	display: flex;
 	bottom: 0px;
-	right: -30px;
+	left: 90px;
 	position: fixed;
 	opacity: 0.7;
 	z-index: 11;
@@ -6170,17 +6170,17 @@ Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
 *
 ******************************/
 /* my custom toc*/
-@media screen and (min-width: 1501px) {
+@media screen and (min-width: 1551px) {
 	.js-toc {
 	position: fixed;
-	top: 120px;
-	max-width: 200px;
+	top: 40%;
+	max-width: 250px;
 	left: 20px;
 	z-index: 9;
 }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1550px) {
 	.js-toc {
 			position: fixed;
 			top: 0;
@@ -6266,4 +6266,5 @@ a.toc-link:hover {
 .is-active-link::before {
     background-color: #54BC4B
 }
+
 
