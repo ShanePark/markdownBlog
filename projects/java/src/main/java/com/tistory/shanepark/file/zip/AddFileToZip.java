@@ -6,9 +6,10 @@ import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
 public class AddFileToZip {
+    final static String folder = "/Users/shane/Downloads/fileTest";
+
     public static void main(String[] args) {
-        String folder = "/home/shane/Downloads/fileTest";
-        File file = new File(folder, "주민번호.docx");
+        File file = new File(folder, "new.txt");
         File zipFile = new File(folder, "압축파일.zip");
         byte[] buf = new byte[4096];
 
@@ -54,11 +55,14 @@ public class AddFileToZip {
             while ((len = in.read(buf)) > 0) {
                 out.write(buf, 0, len);
             }
+            System.out.println("파일 추가 완료");
 
         } catch (IOException e) {
-
+            System.out.println("파일 생성 실패");
         } finally {
-            tempFile.delete();
+            if (tempFile.delete()) {
+                System.out.println("임시 파일 제거 완료");
+            }
         }
 
     }

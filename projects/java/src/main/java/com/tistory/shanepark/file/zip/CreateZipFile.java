@@ -7,14 +7,17 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public class CreateZipFile {
+    final static String folder = "/Users/shane/Downloads/fileTest";
+
     public static void main(String[] args) throws IOException {
-        String folder = "/home/shane/Downloads/fileTest";
-        File file1 = new File(folder, "전화번호패턴.txt");
-        File file2 = new File(folder, "주민등록패턴.txt");
-        File file3 = new File(folder, "주민번호.docx");
+        File file1 = new File(folder, "1.txt");
+        File file2 = new File(folder, "2.txt");
+        File file3 = new File(folder, "3.txt");
+
         List<File> files = new ArrayList<>();
         files.add(file1);
         files.add(file2);
+        files.add(file3);
 
         File zipFile = new File(folder, "압축파일.zip");
         byte[] buf = new byte[4096];
@@ -36,6 +39,7 @@ public class CreateZipFile {
 
             }
         }
+        System.out.println("압축 파일 생성 성공");
 
     }
 }
