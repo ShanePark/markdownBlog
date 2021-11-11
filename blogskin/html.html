@@ -253,7 +253,7 @@
                     <div class="inner-header">
                       <div class="box-meta">
                         <p class="category">[##_article_rep_category_##]</p>
-                        <h2 class="title-article">[##_article_rep_title_##]</h2>
+                        <h1 class="title-article">[##_article_rep_title_##]</h1>
                         <div class="box-info">
 													<!--
                           <span class="writer">[##_article_rep_author_##]
@@ -286,7 +286,7 @@
                     </s_tag_label>
 
                     <div class="article-page">
-                      <h3 class="title-footer">'[##_article_rep_category_##]'의 다른글</h3>
+                      <p class="title-footer">'[##_article_rep_category_##]'의 다른글</p>
                       <ul>
                         <li>
                           <s_article_prev>
@@ -305,7 +305,7 @@
                     <s_article_related>
                       <!-- article-related -->
                       <div class="article-related">
-                        <h3 class="title-footer">관련글</h3>
+                        <p class="title-footer">관련글</p>
                         <ul class="list-related">
                           <s_article_related_rep>
                             <li class="item-related">
@@ -1038,7 +1038,7 @@ tocbot.init({
   // Where to render the table of contents.
   tocSelector: '.js-toc',
   // Where to grab the headings to build the table of contents.
-  contentSelector: '.article-view',
+  contentSelector: '.area-view',
   // Which headings to grab inside of the contentSelector element.
   headingSelector: 'h1, h2, h3',
   // For headings inside relative or absolute positioned containers within content.

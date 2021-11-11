@@ -4,7 +4,7 @@
 #upBtn {
 	display: none;
 		bottom: 25px;
-		left: 175px;
+		right: 175px;
 		position: fixed;
 		z-index: 9;
 }
@@ -66,14 +66,6 @@
 @font-face {
 	src : url("images/JetBrainsMono-Light.woff2");
 	font-family : "JetBrainsMonoLight"
-}
-@font-face {
-	src : url("images/MaruBuri-Regular.ttf");
-	font-family : "MaruBuri-Regular"
-}
-@font-face {
-	src : url("images/NanumGothic-Regular");
-	font-family : "NanumGothic-Regular"
 }
 /* google translate */
 .goog-te-gadget-simple{
@@ -4911,7 +4903,7 @@ html {
 .wrapper{
 	display: flex;
 	bottom: 0px;
-	left: 90px;
+	right: -30px;
 	position: fixed;
 	opacity: 0.7;
 	z-index: 11;
@@ -6265,6 +6257,17 @@ a.toc-link:hover {
 
 .is-active-link::before {
     background-color: #54BC4B
+}
+
+.toc-link.node-name--H1 {
+	  font-size: large;
+    font-family: 'samlip-outline';
+}
+.toc-link.node-name--H1.is-active-link{
+	font-weight: normal;
+}
+.toc-link.node-name--H3 {
+	font-size: smaller;
 }
 
 
