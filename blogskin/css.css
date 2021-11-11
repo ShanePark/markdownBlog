@@ -3967,15 +3967,6 @@ html {
     line-height: 1.33;
 }
 
-.article-view blockquote {
-    margin: 0;
-    padding-left: 19px;
-    border-left: 1px solid;
-    font-size: 16px;
-    line-height: 1.75;
-    color: rgba(0, 0, 0, 0.54);
-}
-
 .article-view ul,
 .article-view ol {
     margin: 0;
@@ -5337,7 +5328,7 @@ box-shadow: 0px 0px 10px #f5deb4,
 }
 
 #tt-body-page .article-view blockquote {
-  margin: 0;
+    margin-left: 19px;
 }
 
 #tt-body-page .article-view ol,
@@ -5717,7 +5708,6 @@ box-shadow: 0px 0px 10px #f5deb4,
   text-decoration: none;
 }
 
-#tt-body-page .article-view blockquote,
 #tt-body-page .article-view details,
 #tt-body-page .article-view dl,
 #tt-body-page .article-view ol,
@@ -5752,7 +5742,7 @@ box-shadow: 0px 0px 10px #f5deb4,
 }
 
 #tt-body-page .article-view blockquote>:last-child {
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 
 #tt-body-page .article-view h1,
@@ -5774,12 +5764,12 @@ box-shadow: 0px 0px 10px #f5deb4,
 #tt-body-page .article-view h1,
 #tt-body-page .article-view h2 {
   padding-bottom: .3em;
-  border-bottom: 1px solid #eaecef;
 }
 
 #tt-body-page .article-view h2 {
   font-size: 1.8em;
 	margin-bottom: 50px;
+	font-family: 'samlip-outline';
 }
 
 #tt-body-page .article-view h3 {
@@ -6269,5 +6259,4 @@ a.toc-link:hover {
 .toc-link.node-name--H3 {
 	font-size: smaller;
 }
-
 
