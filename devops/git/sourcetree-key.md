@@ -2,6 +2,8 @@
 
 ​		
 
+## 원인
+
 소스트리에서는 한번 입력된 비밀번호가 잘못 되어도 절대 다시 입력하라고 하지 않고, 계속해서 비밀번호가 틀렸다는 메시지만 주구 장창 띄웁니다. 심지어 8월 13일 부로 Github에서는 password authentication을 공식적으로 제거하고는 personal access token 만을 사용하도록 정책을 변경 했는데요. 이미 오래전 부터 경고해왔기 때문에 갑작스러운 일은 아닙니다.
 
 ​	
@@ -24,19 +26,11 @@ remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
 fatal: Authentication failed for 'https://github.com/Shane-Park/programmers.git/'
 ```
 
-​	
+​		
 
-## 목차
+## 해결
 
-- 1. Personal Access Token 발급받기
-
-- 2. Sourcetree에 저장된 비밀번호 제거하기
-
-  
-
-  ​	
-
-## 1. Personal Access Token 발급받기
+### Personal Access Token 발급
 
 >  Github 이나 Gitlab등 모두 Token 을 발급받아 로그인 하는 방식을 지원하고 있습니다. Github을 예를 들어 함께 해 보겠습니다. Gitlab도 사용 방법은 비슷 했습니다.
 
@@ -90,7 +84,7 @@ Note에 토큰 이름을 편하게 지정 합니다.
 
 ​	
 
-## 2. Sourcetree에 저장된 비밀번호 제거하기
+### Sourcetree에 저장된 비밀번호 제거
 
 아래의 경로에 있는 파일을 찾아 삭제해줍니다. 해당 파일이 소스트리가 비밀번호를 저장해두는 파일입니다.
 
