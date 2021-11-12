@@ -34,7 +34,7 @@ public class AddFileToZipFunction {
                 if (file.getName().equals(name)) {
                     notInFiles = false;
                     log.warn("이미 파일이 압축파일 내에 존재함. {}", file.getName());
-                    return;
+                    break;
                 }
                 if (notInFiles) {
                     out.putNextEntry(new ZipEntry(name));
