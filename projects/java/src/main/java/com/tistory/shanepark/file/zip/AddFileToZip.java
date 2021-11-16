@@ -6,7 +6,7 @@ import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
 public class AddFileToZip {
-    final static String folder = "/Users/shane/Downloads/fileTest";
+    final static String folder = System.getProperty("user.home") + "/Downloads/fileTest";
 
     public static void main(String[] args) {
         File file = new File(folder, "new.txt");

@@ -7,7 +7,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public class CreateZipFile {
-    final static String folder = "/Users/shane/Downloads/fileTest";
+    final static String folder = System.getProperty("user.home") + "/Downloads/fileTest";
 
     public static void main(String[] args) throws IOException {
         File file1 = new File(folder, "1.txt");

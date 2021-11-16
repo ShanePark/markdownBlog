@@ -1,4 +1,4 @@
-package com.tistory.shanepark.localDateTime;
+package com.tistory.shanepark.time.localDateTime;
 
 import org.springframework.util.Assert;
 
