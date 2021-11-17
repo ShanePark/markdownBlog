@@ -6,5 +6,6 @@ import java.time.LocalDateTime;
 public class TimestampTest {
     public static void main(String[] args) {
         System.out.println(Timestamp.valueOf(LocalDateTime.now()));
+        System.out.println(LocalDateTime.now());
     }
 }
