@@ -128,5 +128,15 @@ docker-compose version 1.29.2, build 5becea4c
 
 ​		
 
-Windows 나 Mac 에서는 Docker Desktop 이라는 GUI Tool 이 따로 존재하지만, Linux 환경에서는 없어서 굳이 GUI 환경을 사용 하려면 서드파티 어플리케이션을 이용해야 하는 것 같습니다.
+### sudo 없이 docker 명령어 실행
+
+docker 명령어를 쓸 때마다 sudo 를 입력하기 번거로워서 유저그룹을 추가하는 방법을 따로 포스팅 해 두었습니다.
+
+docker를 쓴다면 사실상 꼭 설정해야 한다고 생각하니, 아래 글을 클릭해서 따라 설정 해 주세요.
+
+> [Linux, sudo 없이 명령어 실행하기 (예:docker)](https://shanepark.tistory.com/250)
+
+### 마치며
+
+Windows 나 Mac 에서는 Docker Desktop 이라는 GUI Tool 이 따로 존재하지만, Linux 환경에서는 없어서 굳이 GUI 환경을 사용 하려면 다른 서드파티 어플리케이션을 이용해야 하는 것 같습니다. 하지만 docker를 사용하며 GUI가 필요한 일은 딱히 없습니다.
 

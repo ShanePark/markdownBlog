@@ -82,15 +82,15 @@ Settings -> Privacy -> ScreenLock에서
 
 Blank Screen Delay를 Never로, Automatic Screen Lock을 체크 해제 합니다.
 
-![a](https://raw.githubusercontent.com/Shane-Park/markdownBlog/main/OS/linux/ubuntu/initial.assets/a.png)
+![a](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/a.png)
 
-![b](https://raw.githubusercontent.com/Shane-Park/markdownBlog/main/OS/linux/ubuntu/initial.assets/b.png)
+![b](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/b.png)
 
-![c](https://raw.githubusercontent.com/Shane-Park/markdownBlog/main/OS/linux/ubuntu/initial.assets/c.png)
+![c](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/c.png)
 
 ### 시스템 종료 단축키 만들기
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/main/OS/linux/ubuntu/initial.assets/img.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/img.png)
 
 저는 종료할 때 윈도우의 Alt+F4 같은 간단한 종료 단축키가 필요한데 우분투에는 마땅히 없더라고요.
 
@@ -238,7 +238,7 @@ Windows 에서 Ubuntu 로 넘어오게 된 가장 큰 계기입니다. Docker를
 
 모든 데이터베이스를 한가지 클라이언트 만으로 관리 할 수 있으니 정말 편리합니다.
 
-![image-20211123221145003](https://raw.githubusercontent.com/Shane-Park/markdownBlog/main/OS/linux/ubuntu/initial.assets/image-20211123221145003.png)
+![image-20211123221145003](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211123221145003.png)
 
 > https://dbeaver.io/download/
 
@@ -404,7 +404,7 @@ FireFox가 정말 좋긴 하지만, 개발할때 Chrome이 없으면 곤란합�
 
 ### Visual Studio Code
 
-![image-20211123223857894](https://raw.githubusercontent.com/Shane-Park/markdownBlog/main/OS/linux/ubuntu/initial.assets/image-20211123223857894.png)
+![image-20211123223857894](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211123223857894.png)
 
 간단히 메모장 용도로 사용하기에도 훌륭할 만큼 가볍습니다. `.deb` 파일을 다운 받아서 설치 하시면 쉽습니다.
 
@@ -416,7 +416,7 @@ sudo dpkg -i 파일명.deb
 
 ### Albert
 
-![Untitled](https://raw.githubusercontent.com/Shane-Park/markdownBlog/main/OS/linux/ubuntu/initial.assets/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/Untitled.png)
 
 MacOS에서의 Alfred를 정확히 따라하는 Albert 입니다. 이름부터가 노리고 지은걸 알 수 있습니다.
 
@@ -430,7 +430,7 @@ MacOS에서의 Alfred를 정확히 따라하는 Albert 입니다. 이름부터�
 curl "https://build.opensuse.org/projects/home:manuelschneid3r/public_key" | sudo apt-key add -
 ```
 
-![Untitled](https://raw.githubusercontent.com/Shane-Park/markdownBlog/main/OS/linux/ubuntu/initial.assets/Untitled-7674177.png)
+![Untitled](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/Untitled-7674177.png)
 
 아래는 Ubuntu 20.04 기준의 설치 방법 입니다.
 
@@ -446,7 +446,7 @@ sudo apt install albert
 
 > https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert
 
-![Untitled2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/main/OS/linux/ubuntu/initial.assets/Untitled2.png)
+![Untitled2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/Untitled2.png)
 
 설치 된 후엔, 그냥 검색하면 아무것도 나오지 않기 때문에 Applications 를 체크 해야 합니다. 위에선 Files를 체크 했지만 FIles를 체크 하면 굉장히 불편하기 때문에 Applications랑 Calculator만 체크 하고 사용하시길 권장 합니다.
 
