@@ -90,8 +90,8 @@
 	  position: fixed;
     top: 50%;
     left: 50%;
-    width: auto;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
@@ -99,19 +99,34 @@
     transform: translate(-50%,-50%);
 		max-block-size: -webkit-fill-available;
 }
+.modalBox img:hover{
+	cursor: pointer;
+}
 /* image modal end */
 
 #tt-body-page .article-view blockquote p{
 	font-size:0.9em;
 }
 /******************** Dark Mode***************/
+/* 다크모드 전환시 transition */
+body {
+	transition: all 0.4s;
+}
 body.dark{
 		background-image: url("./images/darkmoon.jpg");
     background-size: cover;
     background-attachment: fixed;
 		background-color : black;
 }
-
+#tt-body-page.dark .article-view h1{
+	color: grey;
+}
+#tt-body-page.dark .article-view h2{
+	color: #ccc;
+}
+#tt-body-page.dark .article-view h3{
+	color: #ccc;
+}
 .dark #chartdiv{
 	filter: invert(100%);
 }
@@ -124,9 +139,7 @@ body.dark{
 #tt-body-page.dark .article-view blockquote p{
 	font-weight: 500;
 }
-body {
-	transition: all 0.4s;
-}
+
 .dark #footer{
 		border-top : none;
 }
@@ -180,10 +193,6 @@ body {
 		background : #000;
 		border: 1px solid grey;
     opacity: 0.8;
-	}
-	#tt-body-page.dark .article-view h1
-  , #tt-body-page.dark .article-view h2{
-		color: grey;
 	}
 	.dark .link-icon{
 		color : #ccc;
@@ -3100,7 +3109,7 @@ html {
     -webkit-box-orient: vertical;
     white-space: normal;
     word-break: keep-all;
-		padding-left: 15px
+		padding-left: 5px
 }
 
 .article-header .box-info {
@@ -5779,7 +5788,7 @@ box-shadow: 0px 0px 10px #f5deb4,
 }
 
 #tt-body-page .article-view h2 {
-  font-size: 1.9em;
+  font-size: 2em;
 	margin-bottom: 40px;
 	margin-top: 80px;
 	font-weight: normal;
@@ -5787,7 +5796,7 @@ box-shadow: 0px 0px 10px #f5deb4,
 }
 
 #tt-body-page .article-view h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 	margin-top: 50px;
 	font-family: 'samlip-basic';
 	font-weight: normal;
@@ -6092,75 +6101,117 @@ box-shadow: 0px 0px 10px #f5deb4,
 }
 
 /* highlight.js css
-Atom One Dark With support for ReasonML by Gidi Morris, based off work by Daniel Gamage
-Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
-*/
+/*
+ * Visual Studio 2015 dark style
+ * Author: Nicolas LLOBERA <nllobera@gmail.com>
+ */
+
 .hljs {
-  color: #abb2bf;
-  background: #282c34;
+  background: #1E1E1E;
+  color: #DCDCDC;
 }
-.hljs-keyword, .hljs-operator {
-  color: #F92672;
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol,
+.hljs-name {
+  color: #569CD6;
 }
-.hljs-pattern-match {
-  color: #F92672;
+.hljs-link {
+  color: #569CD6;
+  text-decoration: underline;
 }
-.hljs-pattern-match .hljs-constructor {
-  color: #61aeee;
+
+.hljs-built_in,
+.hljs-type {
+  color: #4EC9B0;
 }
-.hljs-function {
-  color: #61aeee;
+
+.hljs-number,
+.hljs-class {
+  color: #B8D7A3;
 }
-.hljs-function .hljs-params {
-  color: #A6E22E;
+
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: #D69D85;
 }
-.hljs-function .hljs-params .hljs-typing {
-  color: #FD971F;
+
+.hljs-regexp,
+.hljs-template-tag {
+  color: #9A5334;
 }
-.hljs-module-access .hljs-module {
-  color: #7e57c2;
+
+.hljs-subst,
+.hljs-function,
+.hljs-title,
+.hljs-params,
+.hljs-formula {
+  color: #DCDCDC;
 }
-.hljs-constructor {
-  color: #e2b93d;
-}
-.hljs-constructor .hljs-string {
-  color: #9CCC65;
-}
-.hljs-comment, .hljs-quote {
-  color: #b18eb1;
+
+.hljs-comment,
+.hljs-quote {
+  color: #57A64A;
   font-style: italic;
 }
-.hljs-doctag, .hljs-formula {
-  color: #c678dd;
+
+.hljs-doctag {
+  color: #608B4E;
 }
-.hljs-section, .hljs-name, .hljs-selector-tag, .hljs-deletion, .hljs-subst {
-  color: #e06c75;
+
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+
+.hljs-tag {
+  color: #9B9B9B;
 }
-.hljs-literal {
-  color: #56b6c2;
+
+.hljs-variable,
+.hljs-template-variable {
+  color: #BD63C5;
 }
-.hljs-string, .hljs-regexp, .hljs-addition, .hljs-attribute, .hljs-meta .hljs-string {
-  color: #98c379;
+
+.hljs-attr,
+.hljs-attribute {
+  color: #9CDCFE;
 }
-.hljs-built_in,
-.hljs-title.class_,
-.hljs-class .hljs-title {
-  color: #e6c07b;
+
+.hljs-section {
+  color: gold;
 }
-.hljs-attr, .hljs-variable, .hljs-template-variable, .hljs-type, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-number {
-  color: #d19a66;
-}
-.hljs-symbol, .hljs-bullet, .hljs-link, .hljs-meta, .hljs-selector-id, .hljs-title {
-  color: #61aeee;
-}
+
 .hljs-emphasis {
   font-style: italic;
 }
+
 .hljs-strong {
   font-weight: bold;
 }
-.hljs-link {
-  text-decoration: underline;
+
+/*.hljs-code {
+  font-family:'Monospace';
+}*/
+
+.hljs-bullet,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #D7BA7D;
+}
+
+.hljs-addition {
+  background-color: #144212;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-deletion {
+  background-color: #600;
+  display: inline-block;
+  width: 100%;
 }
 
 /******************************

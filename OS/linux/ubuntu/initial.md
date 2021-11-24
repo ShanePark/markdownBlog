@@ -1,4 +1,4 @@
-# 개발자의 Ubuntu 초기 필수 설치와 설정	
+# 개발자를 위한 Ubuntu 필수 설치와 설정	
 
 ![How To Install Ubuntu Linux inside Windows - Techi Signals](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/Install-Ubuntu-Linux.jpg)	
 
