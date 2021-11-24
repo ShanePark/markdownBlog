@@ -74,6 +74,22 @@ cat ~/.ssh/id_rsa.pub
 
 > [Ubuntu 20.04 LTS ) SSH 접속 허용하기](https://shanepark.tistory.com/239)
 
+### open 명령어로 nautilus 실행
+
+아래의 명령어로 터미널에서 현재 작업중인 폴더를 탐색 할 수 있는데요
+
+```zsh
+nautilus .
+```
+
+nautilus 를 항상 입력하는건 귀찮으니 open 명령어로 alias를 지정 해 줍니다.
+
+아래의 내용을 zsh 사용중이라면 `~/.zshrc`에 bash라면 `~/.bashrc`에 등록 해 줍니다.
+
+```zsh
+alias open="nautilus"
+```
+
 ### 자동 잠금 방지
 
 기본적인 설정으로 몇 분 동안 사용하지 않으면 잠금이 되어 버리는데, 사무실에서 사용할 땐 불편 할 수 있으니 설정을 풀어놓고 사용하는 편 입니다.
@@ -464,7 +480,9 @@ sudo apt install albert
 
 설치 된 후엔, 그냥 검색하면 아무것도 나오지 않기 때문에 Applications 를 체크 해야 합니다. 위에선 Files를 체크 했지만 FIles를 체크 하면 굉장히 불편하기 때문에 Applications랑 Calculator만 체크 하고 사용하시길 권장 합니다.
 
-General 에서 단축키로도 `Alt + Space`를 설정 해서 MacOS에서 Spotlight나 Alfred 쓰듯 사용 하면 됩니다.
+![image-20211124155400697](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211124155400697.png)
+
+General 설정에서 단축키로도 `Alt + Space`를 설정 해서 MacOS에서 Spotlight나 Alfred 쓰듯 사용 하면 됩니다. `Autostart on log`을 반드시 체크 해주세요. 그렇지 않으면 컴퓨터를 새로 켤 때 마다 일일히 Albert를 실행 해 주어야 합니다.
 
 ### Typora
 
