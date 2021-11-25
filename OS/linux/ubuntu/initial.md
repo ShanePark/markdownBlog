@@ -202,6 +202,36 @@ set showmatch "짝이 되는 괄호 하이라이트
 $ sudo apt-get install openjdk-8-jdk
 ```
 
+### LibreOffice
+
+Linux의 Microsoft Office 입니다. 무료로 사용 할 수 있습니다.
+
+![image-20211125144106550](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211125144106550.png)
+
+> https://www.libreoffice.org/download/download/
+
+위의 링크에서 원하는 버전을 다운 받습니다.
+
+다운을 받은 후에는 압축을 풀어 줍니다.
+
+```zsh
+tar -xvf LibreOffice_7.2.2_Linux_x86-64_deb.tar.gz
+```
+
+![image-20211125144209993](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211125144209993.png)
+
+압축이 풀렸으면 DEBS 내의 모든 `.deb`파일을 설치 해 줍니다.
+
+```zsh
+sudo dpkg -i *.deb
+```
+
+![image-20211125144336873](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211125144336873.png)
+
+잠시 기다리면 모든 설치가 완료됩니다.
+
+![image-20211125144421314](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211125144421314.png)
+
 ### zsh와 oh-my-zsh
 
 bash 보다는 zsh가 많이 쓰이는 추세입니다.
