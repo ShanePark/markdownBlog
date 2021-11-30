@@ -127,6 +127,9 @@ body.dark{
 #tt-body-page.dark .article-view h3{
 	color: #ccc;
 }
+#tt-body-page.dark .article-view strong {
+    color: #ddd;
+}
 .dark #chartdiv{
 	filter: invert(100%);
 }
@@ -322,7 +325,7 @@ body.dark{
 	
 .link-icon{
 	color : black;
-	font-size : 2.0em;
+	font-size : 2.5em;
 }
 
 .clearfix{
