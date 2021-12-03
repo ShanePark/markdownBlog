@@ -112,7 +112,7 @@ Blank Screen Delay를 Never로, Automatic Screen Lock을 체크 해제 합니다
 
 ![c](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/c.png)
 
-### Ctrl+Alt+Up/Down 키바인딩 삭제
+### Ctrl+Alt+방향키 키바인딩 삭제
 
 워크스페이스간 이동은 `Super+PageUp/PageDown`이 이미 배정이 되어 있는데요, 추가로 Ctrl+Alt+방향키가 배정되어있는 바람에 이클립스라도 쓰는 날엔 라인 복사를 할 수 없어서 불편합니다. 텐키리스 키보드에서 PageUp/Down은 다 붙어 있으니, 굳이  Ctrl+Alt를 사용하는 단축키로 남겨 둘 필요도 없고, 저는 맥북에서도 데스크톱 전환을 컨트롤+방향키로 하다 보니 해당 키바인딩은 꼭 삭제 합니다.
 
@@ -125,6 +125,17 @@ Blank Screen Delay를 Never로, Automatic Screen Lock을 체크 해제 합니다
 ![image-20211124090435799](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211124090435799.png)
 
 Use default value를 해제 한 후에, `, '<Control><Alt>Down'` 를 통째로 지우고 Apply 를 하면 됩니다. Up, Down 모두 번갈아 가며 지워 줍니다. 그러고 나면 Ctrl+Alt+방향키를 눌러도 workspace 전환이 되지는 않습니다. 자유롭게 해당 단축키를 다른 필요한 곳에 할당 해서 사용 할 수 있습니다.
+
+마찬가지로 좌,우도 없애줘야 하는데요, intelliJ IDEA 에서 해당 키를 `Navigate back / forward`로 사용하고 있기 때문입니다.
+
+위에서 처럼 눈으로 보며 삭제 할 수 있지만, 사실 아래의 명령어로 간단하게 없앨 수 있습니다.
+
+```zsh
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "[]"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "[]"
+```
+
+
 
 ### 시스템 종료 단축키 만들기
 
