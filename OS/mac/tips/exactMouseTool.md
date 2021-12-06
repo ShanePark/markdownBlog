@@ -1,6 +1,6 @@
 # MacOS) 마우스 가속 기능 끄기
 
-![image-20211206210849682](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206210849682.png)
+![image-20211206210849682](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206210849682.png)
 
 ## Intro
 
@@ -12,7 +12,7 @@
 
 이때, SteelSeries 에서 만든 ExactMouse Tool을 사용하면, 스틸시리즈의 마우스가 아닌 다른 마우스를 사용한다고 해도 상관 없이 마우스 가속을 끌 수 있습니다. 저는 로지택의 G304 마우스가 너무 마음에 들어서, 윈도우, 맥북, 리눅스 각각 한대씩 흰색, 파랑색, 보라색 세가지를 구입해서 사용하고 있습니다.
 
-![6c9d3647-df54-4d8a-9088-b544cefe47cf](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/6c9d3647-df54-4d8a-9088-b544cefe47cf.jpeg)
+![6c9d3647-df54-4d8a-9088-b544cefe47cf](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/6c9d3647-df54-4d8a-9088-b544cefe47cf.jpeg)
 
 > 평소 게임할 시간이 없어서 즐겨 하지는 못하는 편 이지만, 마우스 가속을 껐을때의 효과를 확인 하려고 리그오브 레전드와 스타크래프트를 한판씩 해 보았는데, 확실히 괜찮습니다. 오히려 키보드가  매직키보드라서 문제가 되었습니다.
 >
@@ -22,7 +22,7 @@
 
 바로 다운 받아 보겠습니다.
 
-![image-20211206211137482](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206211137482.png)
+![image-20211206211137482](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206211137482.png)
 
 >  https://steelseries.com/engine
 
@@ -30,7 +30,7 @@
 
 스크롤을 맨 아래까지 내려보면 `Miscellaneous`가 있습니다. 한국말로는 기타 등등 혹은 잡다한 것들이라는 뜻 입니다.
 
-![image-20211206211239289](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206211239289.png)
+![image-20211206211239289](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206211239289.png)
 
 그 중 제일 아래에 ExactMous Tool 이 보입니다. Download를 눌러 다운 받습니다.
 
@@ -42,41 +42,41 @@
 
 ### 설치
 
-![image-20211206211446109](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206211446109.png)
+![image-20211206211446109](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206211446109.png)
 
 677KB로 용량도 굉장히 작습니다. 더블클릭 해서 설치 해 줍니다.
 
-![image-20211206211512560](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206211512560.png)
+![image-20211206211512560](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206211512560.png)
 
 > Agree를 누르고
 
-![image-20211206211559027](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206211559027.png)
+![image-20211206211559027](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206211559027.png)
 
 Applications로 끌어 넣으면 끝 입니다.
 
 ### 실행
 
-![image-20211206211631085](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206211631085.png)
+![image-20211206211631085](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206211631085.png)
 
 > 설치가 완료 되었으면, Cmd + 스페이스바 를 눌러 SteelSeries ExactMouse Tool을 실행 해 줍니다.
 
-![image-20211206212659759](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206212659759.png)
+![image-20211206212659759](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206212659759.png)
 
 > 에러 발생.
 
 저처럼 인터넷에서 내려 받은 파일이기 때문에 뭐 실행이 안된다 나오는 경우에는, 아래처럼 Preferences -> Security & Privacy 에 가면 General에 해당 앱을 차단했다는 메시지가 남아 있습니다. 거기서 `Open anyway`를 눌러 실행 해 주시면 됩니다.
 
-![image-20211206212741766](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206212741766.png)
+![image-20211206212741766](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206212741766.png)
 
 > Open Anyway를 클릭
 
-![image-20211206212801356](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206212801356.png)
+![image-20211206212801356](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206212801356.png)
 
 > Open을 클릭
 
 실행 됩니다.
 
-![image-20211206212831560](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206212831560.png)
+![image-20211206212831560](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206212831560.png)
 
 그러면 이제 위에 SteelSeries ExactMouse가 실행이 됩니다. Start on Log On에 체크를 해 주면 컴퓨터를 켤 때마다 자동으로 실행 됩니다. Always On도 켜줍니다.
 
@@ -84,16 +84,16 @@ Applications로 끌어 넣으면 끝 입니다.
 
 이제 변경된 감도에 맞춰서 마우스 감도를 변경 해주면 됩니다.
 
-![image-20211206212947168](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206212947168.png)
+![image-20211206212947168](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206212947168.png)
 
 > Mouse Tracking speed를 변경 하거나
 
-![image-20211206213007468](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206213007468.png)
+![image-20211206213007468](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206213007468.png)
 
 > 저는 Logitec G HUB를 사용하고 있어서 여기에서 변경을 해 주었습니다.
 
 Logitec G HUB가 참 좋은게, 마우스에 여러가지 커맨드를 넣을 수 있어서, G-Shift 키를 지정 해 두고, 네손가락으로 화면 끌어 옮기던 것을 G-Shift+마우스 뒤로가기/앞으로 가기 키로 설정 해 두고, 그 외에 자주 쓰는 개발 툴들도 지정 해 두고 사용 하고 있습니다.
 
-![image-20211206213049744](https://raw.githubusercontent.com/Shane-Park/mdblog/main/OS/mac/tips/exactMouseTool.assets/image-20211206213049744.png)
+![image-20211206213049744](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206213049744.png)
 
 이상으로 맥북에서 마우스 가속 끄는 방법에 대해 알아보았습니다.
