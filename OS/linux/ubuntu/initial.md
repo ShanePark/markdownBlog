@@ -116,11 +116,15 @@ Blank Screen Delay를 Never로, Automatic Screen Lock을 체크 해제 합니다
 
 워크스페이스간 이동은 `Super+PageUp/PageDown`이 이미 배정이 되어 있는데요, 추가로 Ctrl+Alt+방향키가 배정되어있는 바람에 이클립스라도 쓰는 날엔 라인 복사를 할 수 없어서 불편합니다. 텐키리스 키보드에서 PageUp/Down은 다 붙어 있으니, 굳이  Ctrl+Alt를 사용하는 단축키로 남겨 둘 필요도 없고, 저는 맥북에서도 데스크톱 전환을 컨트롤+방향키로 하다 보니 해당 키바인딩은 꼭 삭제 합니다.
 
-- dconf Editor 를 켜고 org.gonme.desktop.wm.keybindings에 가서
+- dconf Editor 를 켜고 org.gnome.desktop.wm.keybindings에 가서
+
+![image-20211208095711980](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/OS/linux/ubuntu/initial.assets/image-20211208095711980.png)
+
+switch-to-workspace 를 검색합니다.
 
 ![image-20211124090259043](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211124090259043.png)
 
-위에 보이는 것 처럼 switch-to-workspace 를 검색해서 up과 down에 있는 모든 내용을 
+위에 보이는 것 처럼 up과 down에 있는 모든 내용을 
 
 ![image-20211124090435799](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211124090435799.png)
 
