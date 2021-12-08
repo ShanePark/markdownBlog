@@ -118,7 +118,7 @@ Blank Screen Delay를 Never로, Automatic Screen Lock을 체크 해제 합니다
 
 - dconf Editor 를 켜고 org.gnome.desktop.wm.keybindings에 가서
 
-![image-20211208095711980](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/OS/linux/ubuntu/initial.assets/image-20211208095711980.png)
+![image-20211208095711980](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/initial.assets/image-20211208095711980.png)
 
 switch-to-workspace 를 검색합니다.
 
