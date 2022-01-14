@@ -5934,7 +5934,7 @@ box-shadow: 0px 0px 10px #f5deb4,
   font-size: 85%;
   line-height: 1.45;
   border-radius: 3px;
-	background-color: #222;
+	background-color: #222 !important;
 }
 
 #tt-body-page .article-view pre code {
@@ -6336,4 +6336,7 @@ a.toc-link:hover {
 
 div#chartdiv {
     margin-left: 5px;
+}
+#tt-body-page blockquote[data-ke-style="style1"] {
+	background: none !important;
 }

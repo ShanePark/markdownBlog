@@ -1,6 +1,4 @@
-# Spring 에서 페블 템플릿 Pebble template 사용하기 1 ) 기본 사용
-
-​	
+# Spring 에서 페블 템플릿 Pebble template 사용하기 1 ) 기본 사용	
 
 ## Pebble Template이란 ?
 
@@ -8,13 +6,11 @@
 
 > Pebble은 PHP의 유명 템플릿 엔진인 Twig 에서 영감을 받았으며 Python Jinja의 Template Engine 문법과 유사한 Java 템플릿 엔진 입니다. template을 상속 하는 기능과 읽기 쉬운 문법이 특징인 서버사이드 템플릿 엔진 입니다.
 
-##  
+## 기본 사용
 
-### 첫 글에서는 간단하게 https://pebbletemplates.io 의 Basic Usage를 하나씩 따라해보겠습니다.
+>  첫 글에서는 간단하게 https://pebbletemplates.io 의 Basic Usage를 하나씩 따라해보겠습니다.	
 
-​	
-
-1. ### dependency 를 추가합니다
+### 1. dependency 추가
 
 ![image-20210812230724671](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812230724671.png)
 
@@ -36,51 +32,45 @@
 compile "io.pebbletemplates:pebble:3.1.5"
 ```
 
-​	
+### 2. WEB-INF 폴더에 base.html 파일 생성
 
-2. ### WEB-INF 폴더에 base.html 파일을 만들으라고 합니다.
+![image-20210812231324182](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812231324182.png)
 
-   ​	
 
-   ![image-20210812231324182](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812231324182.png)
 
-   
+저는 프로젝트 패키지 구조를 아래와 같이 생성 했습니다.
 
-   저는 프로젝트 패키지 구조를 아래와 같이 생성 했습니다.
+![image-20210812231428853](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812231428853.png)
 
-   ![image-20210812231428853](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812231428853.png)
 
-   
 
-   > 저는 SpringBoot로 프로젝트를 생성해서 WEB-INF 폴더가 따로 있지는 않아 resources/templates 폴더에 생성했습니다.
+> 저는 SpringBoot로 프로젝트를 생성해서 WEB-INF 폴더가 따로 있지는 않아 resources/templates 폴더에 생성했습니다.
 
-   
 
-   base.html
 
-   ```html
-   <html>
-   <head>
-   	<title>{% block title %}My Website{% endblock %}</title>
-   </head>
-   <body>
-   	<div id="content">
-   		{% block content %}{% endblock %}
-   	</div>
-   	<div id="footer">
-   		{% block footer %}
-   			Copyright 2021
-   		{% endblock %}
-   	</div>
-   </body>
-   </html>
-   ```
+base.html
 
-   
+```html
+<html>
+<head>
+	<title>{% block title %}My Website{% endblock %}</title>
+</head>
+<body>
+	<div id="content">
+		{% block content %}{% endblock %}
+	</div>
+	<div id="footer">
+		{% block footer %}
+			Copyright 2021
+		{% endblock %}
+	</div>
+</body>
+</html>
+```
 
-### 3. base.html 을 상속하는 home.html 파일을 생성합니다.
 
-​	
+
+### 3. base.html 을 상속하는 home.html 파일을 생성	
 
 ![image-20210812231731732](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812231731732.png)
 
@@ -97,7 +87,7 @@ compile "io.pebbletemplates:pebble:3.1.5"
 
 ​	
 
-### 4. template을 컴파일 해 렌더링 해봅니다.
+### 4. template을 컴파일 해 렌더링
 
 ![image-20210812231952548](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812231952548.png)
 
@@ -146,21 +136,17 @@ public class PebbleController {
 
 
 
-### 5. 결과물은 아래와 같습니다.
+## 결과물
 
 ![image-20210812232057794](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812232057794.png)
 
-
-
 정말 이렇게 되었는지 확인 해 보도록 하겠습니다.
 
-
+<br><br>
 
 일단 서버를 실행 하고 
 
 ![image-20210812232124276](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812232124276.png)
-
-
 
 실행 한 서버로 접속 해 봅니다. 저는 application.properties에
 
@@ -172,9 +158,7 @@ server.port = 8081
 
 ![image-20210812232154433](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812232154433.png)
 
-잘 렌더링 되어서 보여주는 것을 확인 할 수 있습니다.
-
-
+> 잘 렌더링 되어서 보여주는 것을 확인 할 수 있습니다.
 
 우클릭을 해서 페이지 소스보기를 해보면
 
@@ -182,15 +166,10 @@ server.port = 8081
 
 ![image-20210812232424466](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812232424466.png)
 
-
-
-깔끔하게 의도한 대로 렌더링 되어있는 것을 확인 할 수 있습니다.
-
-
+>  깔끔하게 의도한 대로 렌더링 되어있는 것을 확인 할 수 있습니다.
 
 다음번에는 Spring Boot에 PebbleViewResolver를 선언하고 PebbleEngine이나 Loader도 커스터마이징 해 보도록 하겠습니다.
 
 다음글에서는 Spring Boot 프로젝트에서 PebbleViewResolver를 활용해 보고, 문법도 알아보겠습니다.
-
 
 

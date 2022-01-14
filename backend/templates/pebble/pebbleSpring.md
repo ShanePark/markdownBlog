@@ -1,20 +1,16 @@
 # Spring 에서 페블 템플릿 Pebble template 사용하기 2 ) Spring boot 프로젝트에서 사용하기
 
+>  https://shanepark.tistory.com/197 글에 이어지는 내용입니다.	
+>
+> 본 포스팅은 https://pebbletemplates.io/wiki/guide/spring-boot-integration/ 를 토대로 작성되었습니다.
 
+## 프로젝트 생성
 
-https://shanepark.tistory.com/197 글에 이어지는 내용입니다.	
-
-본 포스팅은 https://pebbletemplates.io/wiki/guide/spring-boot-integration/ 를 토대로 작성되었습니다.
-
-​	
-
-## 일단 스프링 부트 프로젝트를 생성 합니다.
+일단 스프링 부트 프로젝트를 생성 합니다.
 
 ![image-20210814110046712](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110046712.png)
 
 > Spring Starter를 이용하면 쉽게 생성 할 수 있습니다
-
-​	
 
 ![image-20210814110327294](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110327294.png)
 
@@ -26,13 +22,11 @@ https://shanepark.tistory.com/197 글에 이어지는 내용입니다.
 
 > 간단하게 Sprinig Web만 추가해서 생성하겠습니다.
 
-​	
+
 
 Finish 를 눌러 프로젝트를 생성 합니다.
 
-
-
-## Dependency를 추가해 줍니다.
+## Dependency 추가
 
 ### Maven
 
@@ -50,13 +44,11 @@ Finish 를 눌러 프로젝트를 생성 합니다.
 compile "io.pebbletemplates:pebble-spring-boot-starter:3.1.5"
 ```
 
-
-
-### 이렇게 dependency 에 추가하는 것 만으로 충분하다고 설명되어 있습니다. 
-
 ![image-20210814111833538](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814111833538.png)
 
-### 자동 설정에 포함된 내용들은
+> 이렇게 dependency 에 추가하는 것 만으로 충분하다고 설명되어 있습니다. 
+
+자동 설정에 포함된 내용들은
 
 - Loader가 클래스 패스의 /templates/ 폴더 안에 있는 .pebble 템플릿 파일들을 pick 함
 - 이전의 loader로 구성된 Pebble 엔진
@@ -69,9 +61,9 @@ compile "io.pebbletemplates:pebble-spring-boot-starter:3.1.5"
 
 ![image-20210814114238572](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814114238572.png)
 
-​	
+### 외부 설정 옵션
 
-### application.properties 에 정의 할 수 있는 스프링 부트 외부 설정에 관한 내용입니다. 모두 pebble. 으로 시작합니다.
+application.properties 에 정의 할 수 있는 스프링 부트 외부 설정에 관한 내용입니다. 모두 pebble. 으로 시작합니다.
 
 - pebble.prefix : MVC 뷰 네임의 prefix를 설정합니다. 기본 값은 /templates/ 입니다.
 - pebble.suffix : 마찬가지로 mvc view name 뒤에 붙을 suffix를 설정합니다. 기본값은 .pebble 입니다.
@@ -86,13 +78,15 @@ compile "io.pebbletemplates:pebble-spring-boot-starter:3.1.5"
 
 
 
-## 이제 이전 글에서 했던 것과 똑같이 html 파일들과 controller를 추가해 보겠습니다.
+## 템플릿 작성
+
+이제 이전 글에서 했던 것과 똑같이 html 파일들과 controller를 추가해 보겠습니다.
 
 ![image-20210814121906389](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814121906389.png)
 
 
 
-### PebbleController.java
+**PebbleController.java**
 
 ```java
 package com.shane;
@@ -134,7 +128,7 @@ public class PebbleController {
 
 ​	
 
-### base.html
+**base.html**
 
 ```html
 <html>
@@ -151,7 +145,7 @@ public class PebbleController {
 
 
 
-### home.html
+**home.html**
 
 ```html
 {% extends "./base.html" %}
@@ -170,11 +164,11 @@ public class PebbleController {
 
 ![image-20210814122024959](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814122024959.png)
 
-## 이번엔 Pebble의 ViewResolver를 이용 해 보겠습니다.
+## ViewResolver
+
+이번엔 Pebble의 ViewResolver를 이용 해 보겠습니다.
 
 아직 특별히 설정을 바꾸진 않겠지만, html 파일이 변경 될때마다 새로 고침을 하기는 귀찮으니 cache 설정을 변경하도록 하겠습니다.
-
-
 
 applcation.yml 에 아래 내용을 추가합니다.
 
@@ -183,17 +177,13 @@ pebble:
   cache : false
 ```
 
-
-
 .properties 파일을 사용 한다면 아래와 같겠네요
 
 ```properties
 pebble.cache = false
 ```
 
-
-
-### 일단 새로운 컨트롤러를 하나 만들어줍니다.
+일단 새로운 컨트롤러를 하나 만들어줍니다.
 
 ```java
 package com.shane;
@@ -230,17 +220,15 @@ public class PebbleModelController {
 
 
 
-### 궁금해서 열어보니 PebbleViewResolver는 아래와 같이 작성 되어 있습니다.
+궁금해서 열어보니 PebbleViewResolver는 아래와 같이 작성 되어 있습니다.
 
 ![image-20210814142123818](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142123818.png)
-
-
 
 이제 템플릿을 만들어보겠습니다. 설정을 따로 바꾸지 않았기 떄문에 .pebble 확장자로 만들어 줘야 합니다.
 
 
 
-### base.pebble
+**base.pebble**
 
 ```html
 <html>
@@ -255,13 +243,9 @@ public class PebbleModelController {
 </html>
 ```
 
+> 사실 base.html 파일과 내용이 같은데요, 확장자를 .pebble로 변경해 줬습니다.
 
-
-사실 base.html 파일과 내용이 같은데요, 확장자를 .pebble로 변경해 줬습니다.
-
-
-
-### springhome.pebble
+**springhome.pebble**
 
 ```html
 {% extends "./base" %}
@@ -278,11 +262,9 @@ public class PebbleModelController {
 
 extneds 에 ./base 라고 써있지만, default 설정에 의해 자동으로 ./base.pebble 파일을 찾습니다.
 
-
+ 
 
 이제 서버를 실행해서 localhost:8080/model로 접속 해 보겠습니다.
-
-
 
 ![image-20210814142424292](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142424292.png)
 
@@ -294,31 +276,25 @@ extneds 에 ./base 라고 써있지만, default 설정에 의해 자동으로 ./
 
 
 
-## 이번에는 .pebble 대신 .html을 사용하기 위해 설정을 변경해보도록 하겠습니다.
+### html 확장자 사용
 
+이번에는 .pebble 대신 .html을 사용하기 위해 설정을 변경해보도록 하겠습니다.
 
-
-### application.yml에 아래 suffix 내용을 추가해 줍니다.
+application.yml에 아래 suffix 내용을 추가해 줍니다.
 
 ![image-20210814142851741](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142851741.png)
 
-### application.properties 라면
+`.properties` 파일이라면 아래 처럼 작성 하면 됩니다.
 
 ```properties
 pebble.suffix = .html
 ```
 
-내용이 한줄 더 추가 되어야 겠네요.
-
-
-
 그러면 이제 .pebble 생생했던 파일들은 삭제하고, base.html과 home.html을 사용할 수 있습니다.
-
-
 
 대신 home.html 에서 extends "./base.html" 로 되어있던 거에서 .html 내용을 제거해줘야합니다. 자동으로 붙기 떄문에.
 
-### base.html
+**base.html**
 
 ```html
 <html>
@@ -333,9 +309,7 @@ pebble.suffix = .html
 </html>
 ```
 
-
-
-### home.html
+**home.html**
 
 ```html
 {% extends "./base" %}
@@ -348,9 +322,7 @@ pebble.suffix = .html
 {% endblock %}
 ```
 
-
-
-### PebbleModelController.java
+**PebbleModelController.java**
 
 ```java
 package com.shane;
@@ -383,23 +355,19 @@ public class PebbleModelController {
 }
 ```
 
-이제 이렇게 하면 /templates/ Pebble View Resolver가 폴더에서 home.html 파일을 찾습니다. 그러고 home.html 파일은 동일 폴더 내의 base.html 파일을 찾아 상속 하고 스스로의 내용을 붙여서 렌더링 해 줍니다.
-
-​	
+이제 이렇게 하면 /templates/ Pebble View Resolver가 폴더에서 home.html 파일을 찾습니다. 그러고 home.html 파일은 동일 폴더 내의 base.html 파일을 찾아 상속 하고 스스로의 내용을 붙여서 렌더링 해 줍니다.	
 
 ![image-20210814143418732](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814143418732.png)
 
 
 
-문제없이 잘 출력되는 것이 확인됩니다.
+> 문제없이 잘 출력되는 것이 확인됩니다.
 
+## Pebble Template 기능
 
+>  몇가지 Pebble Template의 기능들을 테스트 해 보겠습니다.
 
-## 몇가지 Pebble Template의 기능들을 테스트 해 보겠습니다.
-
-
-
-### 테스트를 위해 PebbleModelController에 GetMapping을 하나 추가하겠습니다.
+테스트를 위해 PebbleModelController에 GetMapping을 하나 추가하겠습니다.
 
 ```java
 	@GetMapping(value = "/test")
@@ -409,9 +377,7 @@ public class PebbleModelController {
 	}
 ```
 
-
-
-### text.html
+text.html
 
 ```html
 {% extends "./base" %}
@@ -425,17 +391,13 @@ public class PebbleModelController {
 {% endblock %}
 ```
 
-
-
 response 데이터를 활용 할 수 있습니다.
 
 ![image-20210814144119448](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814144119448.png)
 
 
 
-## 반복문을 사용해보겠습니다
-
-​	
+### 반복문
 
 ```java
 	@GetMapping(value = "/test")
@@ -448,9 +410,7 @@ response 데이터를 활용 할 수 있습니다.
 
 arr 이라는 이름으로 배열을 model에 담았는데요.
 
-
-
-### text.html
+**text.html**
 
 ```html
 {% extends "./base" %}
@@ -476,9 +436,9 @@ arr 이라는 이름으로 배열을 model에 담았는데요.
 
 
 
-## 조건문도 사용해보겠습니다.
+### 조건문
 
-### text.html
+**text.html**
 
 ```html
 {% extends "./base" %}
@@ -510,7 +470,7 @@ arr이 있으면 위에서 처럼 데이터를 출력해주고, 없으면 데이
 
 > if 문에 의해 데이터가 없을때는 해당 하는 화면을 출력 해 주는것이 확인 됩니다.
 
-
+### 그 외
 
 ![image-20210814151854676](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814151854676.png)
 
@@ -571,7 +531,9 @@ contains 도 잘 작동합니다.
 
 
 
-## 마지막으로 verbatim에 대해 알아보겠습니다.
+### verbatim
+
+마지막으로 verbatim에 대해 알아보겠습니다.
 
 ![image-20210814152741896](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814152741896.png)
 
@@ -625,7 +587,7 @@ vebatim 블럭 안에 위에서 사용한 코드를 똑같이 넣어보겠습니
 
 그러면 해당 블럭 안의 내용들은 있는 그대로 넘어갑니다. HTML의 pre 태그 같은 느낌이네요.
 
-
+## 마치며
 
 서버사이드 템플릿 엔진으로 매력적인  Pebble Template 이었습니다.
 
