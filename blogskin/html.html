@@ -1117,7 +1117,13 @@ $(function(){
 // 다크모드 적용																			 
  if(isDarkMode==true){
 	setDark();																								
-}		
+	}
+// a link 클릭시 페이지 이동하지 않고 새 창으로 이동하도록 이벤트 흡수
+	$(document).on('click', '#tt-body-page .article-view a', function(){
+		event.preventDefault();
+		window.open(this.getAttribute("href"), '_blank').focus();
+	})
+																			 
 })																		
 																		
 function setDark(){
