@@ -1,6 +1,12 @@
 # 자주 사용하는 리눅스 기본 명령어 모음
 
-​	
+## Intro
+
+리눅스에서 자주 사용하는 기본 명령어들을 모아 보았습니다.
+
+리눅스 명령어야 굉장히 많지만 금방 모두 익히기는 쉽지 않습니다. 하지만 기본 명령어들을 충분히 익힌 상태라면 리눅스를 사용하는 데에 큰 어려움을 겪지 않으며 자주 사용하지 않는 명령어들은 필요 할 때 마다 찾아 쓰다보면 익숙해 질 것이라 생각합니다.
+
+## Linux Commands
 
 ### ls (List Segments)
 
@@ -11,9 +17,7 @@
 
 ![image-20210811091048650](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/linux_commands.assets/image-20210811091048650.png)
 
-> 위의 사진에서 처럼 보이지 않던 폴더들이  (.으로 시작하는 폴더들은 hidden 입니다) ls -al 명령어에서는 보여줍니다.
-
-​		
+> 위의 사진에서 처럼 보이지 않던 폴더들이  (.으로 시작하는 폴더들은 hidden 입니다) ls -al 명령어에서는 보여줍니다		
 
 ### cd(Change Directory)
 
@@ -36,7 +40,7 @@
 
   
 
-### cd(Copy), mv(Move)
+### cp(Copy), mv(Move)
 
 > 파일을 복사 / 이동 하는 명령어 입니다.
 
@@ -133,7 +137,15 @@ grep if .profile
 
 ![image-20210811094824271](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/linux_commands.assets/image-20210811094824271.png)
 
-​	
+원하는 경로에서 특정 문자열을 포함한 파일들을 검색 하고 싶다면
+
+```zsh
+grep -r '자주 사용하는 리눅스 기본 명령어 모음' .
+```
+
+처럼 검색 할 수 있습니다.
+
+![image-20220207121837810](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/linux_commands.assets/image-20220207121837810.png)
 
 ### | (Pipe line)
 
@@ -166,31 +178,23 @@ ps -ef | grep tomcat
 
 ps -ef의 결과에서 tomcat 이라는 단어를 검색 해 보았습니다.
 
-​	
-
 ### free
 
 > 메모리 상태를 확인하는 명령어 입니다. -h (Human Readable) 옵션과 함께 사용합니다.
 
 ![image-20210811095508478](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/linux_commands.assets/image-20210811095508478.png)
 
-
-
-df (Disk Free)
+### df (Disk Free)
 
 > 디스크 사용량을 확인합니다. 이 역시 -h 옵션과 함께 사용합니다. 특정 디렉터리를 기준으로 하려면 du 명령어를 사용 하면 됩니다.
 
 ![image-20210811095614191](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/linux_commands.assets/image-20210811095614191.png)
-
-​	
 
 ### wget / curl
 
 > wget은 특정 url의 파일을 다운로드 받을때, curl은 웹 요청을 할 때 사용 할 수 있습니다.
 
 서버를 띄웠는데 외부에서 접속이 안될 때 curl 로 localhost에 신호를 보내서 응답을 정상적으로 받는다면, 방화벽 등의 문제로 범위를 좁힐 수 있습니다.
-
-​	
 
 ### scp (SecureCopy)
 
@@ -203,8 +207,6 @@ df (Disk Free)
 반대의 경우로 원격지에서 파일을 로컬로 가져올 수도 있습니다
 
 > scp {아이디@원격지서버주소}:{원본위치} {받는위치}
-
-​	
 
 ### systemctl
 
