@@ -35,7 +35,10 @@ public class EqualsHashcode {
 
         @Override
         public boolean equals(Object o) {
+            if (!(o instanceof MyPair)) return false;
+
             MyPair p = (MyPair) o;
+
             if (p.num1 == num1 && p.num2 == num2) {
                 return true;
             } else if (p.num1 == num2 && p.num2 == num1) {
