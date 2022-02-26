@@ -1,10 +1,9 @@
 # Spring StopWatch.class 활용하기
 
-​	
+## Intro
 
 ```
-public class StopWatch
-extends Object
+public class StopWatch extends Object
 ```
 
 > Simple stop watch, allowing for timing of a number of tasks, exposing total running time and running time for each named task.
@@ -17,23 +16,21 @@ extends Object
 >
 > As of Spring Framework 5.2, running time is tracked and reported in nanoseconds.
 
-​	
-
-### Spring의 StopWatch 클래스는 여러개 작업의 시간을 측정해주며, 총 소요시간과 각각의 이름붙인 작업들에 소요된 시간을 표시해줍니다. System.nanoTime() 의 사용을 감추고 어플리케이션 코드의 가독성을 높일 뿐만 아니라 계산 오류의 가능성도 줄여줍니다. 
+Spring의 StopWatch 클래스는 여러개 작업의 시간을 측정해주며, 총 소요시간과 각각의 이름붙인 작업들에 소요된 시간을 표시해줍니다. System.nanoTime() 의 사용을 감추고 어플리케이션 코드의 가독성을 높일 뿐만 아니라 계산 오류의 가능성도 줄여줍니다. 
 
 > Thread-safe 로 디자인 되지 않았으며 동기화를 사용하지 않습니다.
 
 Spring Framework 5.2 부터 러닝타임을 nano-second로 측정 한다고 하네요. 지금까지 매번 개발 하면서 특정 소요 시간을 측정 하려면 지금의 시간을 저장할 변수를 생성 하고, 지금 시간을 기록 하고, 작업 후에는 그때의 시간에서 저장해 둔 시간을 빼고 그 소요 시간을 구해 내곤 했었는데요. 코드가 엄청 지저분해 지고 귀찮기도 한 문제가 있었습니다. 그 문제를 깔끔하게 해결해 주는 클래스 입니다.
 
-​		
+
 
 공식 문서는 아래의 내용을 참고하시면 됩니다. 해당 포스팅도 아래 문서를 토대로 작성 하였습니다.
 
-https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/StopWatch.html
+> https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/StopWatch.html
 
-​			
+## 예시 코드		
 
-### 아주 간단한 예시 코드를 한번 작성 해 보겠습니다.
+아주 간단한 예시 코드를 한번 작성 해 보겠습니다.
 
 ```java
 package com.tistory.shanepark.lambda.spring;
@@ -87,9 +84,9 @@ StopWatch 객체를 생성 하고,  start() 메서드를 호출 해 준 다음�
 
 45개의 피보나치 수열을 계산하는데 총 3.82 초의 시간이 걸렸네요.
 
-​		
+## 추가 사용법
 
-### StopWatch 클래스의 기본 사용 용도를 알았으니 조금 더 자세히 알아 보겠습니다.
+StopWatch 클래스의 기본 사용 용도를 알았으니 조금 더 자세히 알아 보겠습니다.
 
 StopWatch 클래스의 코드를 까 보니 소스코드가 200여줄 정도 밖에 안 될 정도로 매우 간단합니다. 
 
@@ -97,17 +94,11 @@ StopWatch 클래스의 코드를 까 보니 소스코드가 200여줄 정도 밖
 
 위에 나온 것 처럼 IntelliJ 에서 .class 를 토대로 역 컴파일 한 코드라고는 하지만 코드를 보니 정말 작동 시간 측정 용도로만 작성 된 클래스 입니다.
 
-​	
-
 ### Constructors (생성자)
 
 ![image-20210831212753401](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831212753401.png)
 
-​			
-
 생성자로는 id를 parameter로 받는 생성자 하나와 기본 생성자. 이렇게 총 2개가 있네요.
-
-​	
 
 ### Methods
 
@@ -117,7 +108,7 @@ intelliJ IDEA에서 코드 어시스트를 받아 보니 이만큼의 메서드�
 
 일단 생성 할 때 id 를 넣어서 생성도 해보고, start 할 때 taskName 도 넣어서 테스트 해볼 만한 코드를 작성 해 보겠습니다.
 
-​		
+### 예시 코드2		
 
 ```java
 package com.tistory.shanepark.lambda.spring;
