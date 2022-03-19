@@ -1,54 +1,41 @@
-​	
+# 수업 내용 깃허브에 올려 동기화하기
 
-<h1>수업 내용 깃허브에 올려 동기화하기</h1>
+## Intro
 
-> 본 문서는 markdown 문법 으로 작성되었습니다.
-> 	
+안녕하세요. 처음 국비학원에 다닐 때 단순히 학원에서 작업하던 내용을 집에서도 이어서 하고 싶다는 생각 하나로 Git을 시도 해 보았고 처음에는 정말 너무 어려웠고 제대로 사용하지도 못했었는데 이때의 도전이 많은 도움이 되어 이후 팀원들과 조별 프로젝트를 할 때에도 그 후 회사에 들어갔을 때도 아무런 부담 없이 Git을 사용 하게 되는 계기가 되었습니다. 
 
-| <span id="content" style="font-size:2em">Contents</span>     |
-| :----------------------------------------------------------- |
-| [1. github 가입하기](#index1)                                |
-| [2. Repository (저장소) 만들기](#index2)                     |
-| [3. Sourcetree 다운로드 및 설치](#index3)                    |
-| [4. Sourcetree를 사용해 내 프로젝트를 Repository에 업로드 (동기화, Commit &amp; push) 하기](#index4) |
-| [5. 새로운 컴퓨터에 기존 Repository 에서 프로젝트를 받아오기 (동기화, Pull)](#index5) |
-| [6. 수정된 코드를 저장소에 반영하기 ( Commit &amp; push )](#index6) |
-|                                                              |
+물론 이 글은 현업에서 사용하는 수준에 도다르기까지는 무리가 있지만 제가 처음 Git을 접했을 때의 눈높이에서 작성된 글이기 때문에 어렵지 않게 따라 할 수 있으며 함께 학원에 다니던 많은 친구들을 Git에 입문시킨 글이기 때문에 그때 그 글 그대로 내용을 수정하지 않고 보기좋게만 조금씩 가다듬어 글을 이어가고 있습니다.
 
-​	
+비록 초보자를 위한 글이지만 많은 분들이 Git에 조금 더 쉽게 한발 내딛을 수 있는 작은 도움이 되었으면 합니다.
 
-<a style="font-size:2em" href="#content" class="index" id="index1">1. Github 가입하기</a>
+## 1. Github 가입하기
 
-어렵지 않습니다.
+가입은 전혀 어렵지 않습니다.
 
 >[github.com/](https://github.com/)
 
 
 위 주소에 들어가서 편안하게 회원 가입 하시면 됩니다.
 
-아이디도 나중에 마음에 안들면 바꿀 수 있지만, 저도 바꿔봤는데 몇가지 불편한 점이 한동안 따라다니기 때문에 처음에 신중하게 아이디를 만드시길 추천합니다.
+아이디도 나중에 마음에 안들면 바꿀 수 있지만, 저도 바꿔봤는데 몇가지 불편한 점이 한동안 따라다니기 때문에 처음부터 신중하게 아이디를 만드시길 추천합니다.
 
-​	
-
-​	
-
-<a style="font-size:2em" href="#content" class="index" id="index2">2. 저장소 만들기</a>
+## 2. 저장소 만들기
 
 Repositories 메뉴에서 우측 상단의 New 를 눌러서 생성하시면됩니다.
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github1.png)
 
-저장소 이름을 쓰는데, 뭐 잘못쓴다고 큰일 나는건 아니니까 편한 대로 작성하시면 됩니다.
+> 저장소 이름을 쓰는데, 뭐 잘못쓴다고 큰일 나는건 아니니까 편한 대로 작성하시면 됩니다.
 
 ​	
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github2.png)
 
-다른 사람이 내 저장소를 못보게 하고 싶으면 Private 로 하시면 됩니다.
+>  다른 사람이 내 저장소를 못보게 하고 싶으면 Private 로 하시면 됩니다.
 
 하지만 꼭 숨겨야 할 이유가 아닌 이상은
 
-제 생각에 수업내용 기록하는 저장소 한개 정도는 Public 으로 두시는 것도 나쁘지 않다고 생각합니다.
+제 생각에 수업내용 기록하는 저장소 정도는 Public 으로 두시는게 괜찮다고 생각합니다.
 
 ​	
 
@@ -58,18 +45,9 @@ Repositories 메뉴에서 우측 상단의 New 를 눌러서 생성하시면됩�
 
 Github에서의 세팅은 이걸로 끝입니다.
 
-​	
-
-​	
-
-<a style="font-size:2em" href="#content" class="index" id="index3">3. 소스트리 다운로드</a>
-
+## 3. 소스트리 다운로드
 
 [www.sourcetreeapp.com/](https://www.sourcetreeapp.com/)
-
-Sourcetree | Free Git GUI for Mac and Windows
-
-A Git GUI that offers a visual representation of your repositories. Sourcetree is a free Git client for Windows and Mac.
 
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github4.png)
@@ -82,11 +60,9 @@ Windows 를 쓰시는 분이면 Download for Windows 를 선택해서 다운 받
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github5.png)
 
-소스트리를 사용하기 위해서는 Bitbucket 회원가입이 필요한데요, 나중에 이 Bitbucket 아이디와 Github 아이디를 혼동하지 않도록 조심하세요.
+소스트리를 사용하기 위해 Bitbucket 회원가입을 하라고 하는데요, 나중에 이 Bitbucket 아이디와 Github 아이디를 혼동하지 않도록 조심하세요. 가입 안하고도 다음 단계로 넘어 갈 수 있습니다.
 
-이메일 주소를 등록할때는 Github에 등록할 이메일과 같아야 나중에 소스트리에서 커밋했을때 초록불이 들어오지 않는 불상사를 예방할 수 있습니다.
-
-저도 커밋은 했는데 초록불이 들어오지 않아서 보니 소스트리에 등록한 이메일이 Github에 등록되지 않아서 다른 사용자로 인식했던 건데요, Github 에서 회원정보-이메일 등록을 통해 해결 할 수 있었습니다.
+Author 이름 및 이메일 주소를 등록할때는 Github에 등록할 이메일과 같아야 나중에 소스트리에서 커밋했을때 초록불이 들어오지 않는 불상사를 예방할 수 있습니다. 저도 커밋은 했는데 초록불이 들어오지 않아서 보니 소스트리에 등록한 이메일이 Github에 등록되지 않아서 다른 사용자로 인식했던 건데요, Github 에서 회원정보-이메일 등록을 통해 해결 할 수 있었습니다.
 
 ​	
 
@@ -94,23 +70,19 @@ Windows 를 쓰시는 분이면 Download for Windows 를 선택해서 다운 받
 
 본인의 아이디가 없다면 회원 가입을 하시면 등록 완료 하며 다음 화면으로 넘어 갈 수  있습니다.
 
-**Mercurial**도 같이 설치할지를 선택하는데, 해도 그만 안해도 그만입니다.
+**Mercurial**도 같이 설치할지를 선택하는데, 해도 그만 안해도 그만입니다. 전 안했습니다.
 
 ​	
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github7.png)
 
-SSH 키가 뭔지 모르신다면 그냥 '아니오'를 선택하시면 됩니다.
-
-본인이 SSH 키를 가지고 계신 분들은 등록 하시면 됩니다.
+SSH 키가 뭔지 모르신다면 그냥 '아니오'를 선택하시면 됩니다. 본인이 SSH 키를 가지고 계신 분들은 등록 하시면 됩니다.
 
 설치가 완료되었습니다.
 
 ​	
 
-​	
-
-<a style="font-size:2em" href="#content" class="index" id="index4">4\. Sourcetree를 사용해 내 프로젝트를 Repository에 업로드 (동기화, Commit & push) 하기</a>
+## 4\. Sourcetree를 사용해 내 프로젝트를 Repository에 업로드 (동기화, Commit & push) 하기
 
 ​	
 
@@ -151,13 +123,13 @@ OAuth 를 이용하면 아이디 비번 치지 않고도 크롬에 로그인 되
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github13.png)
 
-1. ### Github에 동기화시키고자 하는 폴더의 이름을 변경합니다.
+1. Github에 동기화시키고자 하는 폴더의 이름을 변경합니다.
 
    ​	
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github14.png)
 
-2) ### 새로만들기 - 폴더를 한 뒤 새 폴더를 만들어줍니다. 이름은 해당 폴더의 원래 이름으로 합니다.
+2) 새로만들기 - 폴더를 한 뒤 새 폴더를 만들어줍니다. 이름은 해당 폴더의 원래 이름으로 합니다.
 
 그러면 내가 동기화 하고자 하는 폴더 명을 가진 빈 폴더가 생성됩니다.
 
@@ -165,7 +137,7 @@ OAuth 를 이용하면 아이디 비번 치지 않고도 크롬에 로그인 되
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github15.png)
 
-3. ### 다시 Sourcetree로 돌아와, 내가 동기화 하고자 하는 저장소를 선택해 Clone 버튼을 누릅니다.
+3. 다시 Sourcetree로 돌아와, 내가 동기화 하고자 하는 저장소를 선택해 Clone 버튼을 누릅니다.
 
    ​	
 
@@ -173,13 +145,13 @@ OAuth 를 이용하면 아이디 비번 치지 않고도 크롬에 로그인 되
 
 그러면 여기에서 첫줄에는 자동으로 내가 동기화 하고자 하는 저장소의 주소가 들어가게됩니다.
 
-4. ### 두번째 줄은 수정이 필요합니다. Browse 를 눌러 동기화 하고자 하는 폴더를 찾아줍니다.
+4. 두번째 줄은 수정이 필요합니다. Browse 를 눌러 동기화 하고자 하는 폴더를 찾아줍니다.
 
    ​	
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github17.png)
 
-5) ### 여기에서 BasicJava Copy 를누르는 실수를 하지 않도록 하세요. 어차피 아래꺼 눌러도 동기화가 되지 않습니다. Clone 할때는 빈 폴더만 선택 할 수 있습니다. 그리고 그게 BaiscJava Copy로 동기화 하고자 하는 폴더를 피신시킨 이유입니다.
+5) 여기에서 BasicJava Copy 를누르는 실수를 하지 않도록 하세요. 어차피 아래꺼 눌러도 동기화가 되지 않습니다. Clone 할때는 빈 폴더만 선택 할 수 있습니다. 그리고 그게 BaiscJava Copy로 동기화 하고자 하는 폴더를 피신시킨 이유입니다.
 
 본인이 동기화 하고자 하는 폴더명을 선택하고 '폴더 선택'을 눌러줍니다.
 
@@ -199,7 +171,7 @@ Clone 버튼을 누릅니다.
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github19.png)
 
-6) ### 아무일도 일어나지 않은 것 같지만, 모든 일이 끝났습니다.
+6) 아무일도 일어나지 않은 것 같지만, 모든 일이 끝났습니다.
 
 Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되었고, 이제 해당 폴더에 피신시켰던 파일들만 다시 이동해주면 됩니다.
 
@@ -207,7 +179,7 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github20.png)
 
-7. ### 다시 Copy 폴더로 돌아와, 모든 파일들을 제자리로 돌려주시면 됩니다.
+7. 다시 Copy 폴더로 돌아와, 모든 파일들을 제자리로 돌려주시면 됩니다.
 
    ​	
 
@@ -225,7 +197,7 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github23.png)
 
-### 8). 잘라내기로 가져왔다면 BasicJava Copy에 혹시 못가져온 파일은 없는지 우클릭-속성 으로 정보를 조회합니다.
+8). 잘라내기로 가져왔다면 BasicJava Copy에 혹시 못가져온 파일은 없는지 우클릭-속성 으로 정보를 조회합니다.
 
 못가져온 파일이 있다면 숨긴 항목을 못 가져왔을 확률이 크니, 
 
@@ -239,7 +211,7 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github25.png)
 
-9) ### Copy 폴더마저 지우고 나면, 이제 폴더는 말끔하게 이전의 상태로 정리가 완료되었습니다.
+9) Copy 폴더마저 지우고 나면, 이제 폴더는 말끔하게 이전의 상태로 정리가 완료되었습니다.
 
 이제 SourceTree로 돌아가보겠습니다.
 
@@ -249,13 +221,13 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 파일 상태에 보면 새로 등록된 파일들이 잔뜩 있는걸 확인 할 수 있습니다.
 
-### 10 ) Stage All 을 눌러 모두 등록 해 줍니다.
+10 ) Stage All 을 눌러 모두 등록 해 줍니다.
 
 ​	
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github27.png)
 
-11. ### 맨 아래 에 있는 Push changes immediately to 를 체크해줍니다.
+11. 맨 아래 에 있는 Push changes immediately to 를 체크해줍니다.
 
     ​	
 
@@ -271,7 +243,7 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 
 
-12) ### 이제 깃허브 아이디 , 비번을 쓰라는 화면과 뭔가 선택하는 체크박스가 나옵니다.
+12) 이제 깃허브 아이디 , 비번을 쓰라는 화면과 뭔가 선택하는 체크박스가 나옵니다.
 
 \- 깃허브 아이디, 비번 쓰실때 신중하게 정확하게 쓰셔야 합니다. 처음에 팀원분 Github 알려드릴때 이거 잘못 타이밍 했다가 해결하는데 꽤나 애 먹은 적이 있습니다. 
 
@@ -285,13 +257,13 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github29.png)
 
-### 13 . 커밋이 완료되었습니다 ! Nothing to commit.
+13 . 커밋이 완료되었습니다 ! Nothing to commit.
 
 ​	
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github30.png)
 
-14. ### 깃허브에서 본인 저장소에 들어가보시면  업로드 된 내용을 확인 하실 수 있습니다.
+14. 깃허브에서 본인 저장소에 들어가보시면  업로드 된 내용을 확인 하실 수 있습니다.
 
 
 
@@ -301,7 +273,7 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ​	
 
-<a style="font-size:2em" href="#content" class="index" id="index5">5\. 새로운 컴퓨터에서 기존 Repository 에서 프로젝트를 받아오기 (동기화, Pull)</a>
+## 5\. 새로운 컴퓨터에서 기존 Repository 에서 프로젝트를 받아오기 (동기화, Pull)
 
 
 
@@ -317,7 +289,7 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github32.png)
 
-### 1 ) 새폴더 만들기를 합니다.  저는 1.BasicJava 라는 이름으로 만들었습니다.
+1 ) 새폴더 만들기를 합니다.  저는 1.BasicJava 라는 이름으로 만들었습니다.
 
 저장소에서 파일들을 가져올 폴더를 만들어 줍니다. 
 
@@ -329,11 +301,11 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github34.png)
 
-### 2 ) 새로운 컴퓨터에 소스트리 다운로드 하고 로그인 합니다.
+2 ) 새로운 컴퓨터에 소스트리 다운로드 하고 로그인 합니다.
 
 ​	
 
-### 3 ) 소스트리에서 Remote-  Github 아이디 로그인 - 저장소 선택 - Clone 눌러줍니다. 
+3 ) 소스트리에서 Remote-  Github 아이디 로그인 - 저장소 선택 - Clone 눌러줍니다. 
 
 위에 5) 번에서 했던 내용과 아에 똑같습니다.    
 clone 버튼을 바로 누르지 마세요! 
@@ -342,13 +314,13 @@ clone 버튼을 바로 누르지 마세요!
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github35.png)
 
-### 4 ) Clone 바로 누르지 마세요! 두번째에 있는  Browse 버튼 눌러서, 
+4 ) Clone 바로 누르지 마세요! 두번째에 있는  Browse 버튼 눌러서, 
 
 ​	
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github36.png)
 
-5. ### 방금 만든 폴더 찾아서 폴더 선택 해 줍니다.
+5. 방금 만든 폴더 찾아서 폴더 선택 해 줍니다.
 
    ​	
 
@@ -366,13 +338,13 @@ Clone 누르면 끝입니다.
 
 ![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github39.png)
 
-### 6 . 폴더에 들어가보면 잘 동기화 된 것을 확인 할 수 있습니다.
+6 . 폴더에 들어가보면 잘 동기화 된 것을 확인 할 수 있습니다.
 
 ​	
 
 ​	
 
-<a style="font-size:2em" href="#content" class="index" id="index6">6\. 수정된 코드를 저장소에 반영하기 (Commit & push)]</a>
+## 6\. 수정된 코드를 저장소에 반영하기 (Commit & push)]
 
 ​	
 
@@ -439,22 +411,19 @@ Pull 버튼을 누르면 무난하게 해당 컴퓨터에도 수정 내용을 �
 
 한단계 본인이 더 성장하는 좋은 기회라고 긍정적으로 생각하고 싸워 승리하시면 됩니다.
 
-workspace를 통째로 커밋하고, pull 하는 경우에는 장단점이 있습니다.
+Eclipse workspace를 통째로 커밋하고, pull 하는 경우에는 장단점이 있습니다.
 
 장점 : 환경설정 한 내용이 모두 그대로 따라와서 새로 환경설정 할 필요가 없다.
 
-단점 : metadata 파일이 무지막지 하게 변경되어서 커밋 할때마다 나도 모르는 수많은 파일들이 함께 commit 된다.
+단점 : metadata 파일이 무지막지 하게 변경되어서 커밋 할때마다 나도 모르는 수많은 파일들이 함께 commit 된다. 온갖 파일이 모두 커밋되니 정확한 코드 변경 내용을 추적하기가 어렵다.
 
-workspace 통째로 커밋해서 사용하시다가 , 나중에 좀 익숙해지면 프로젝트만 받아오고 수정 하시는게 좋습니다. 
+처음에는 workspace 통째로 커밋해서 사용하시다가 , 나중에 좀 익숙해지면 프로젝트만 받아오고 수정 하시는게 좋습니다. 
 
-저는 이걸 깨닫기 까지 무려 7주가 걸렸습니다. metaData들의 conflict에 지칠때쯤 이 길로 오시면 되고 그때까지는 workspace 통째로 커밋하셔도 push 와 pull 만 잊지 않는다면 잘 사용하실수 있습니다.
+저는 이걸 깨닫기 까지 무려 7주간 metaData들의 conflict에 지치다가 gitignore를 알게 되었습니다. 처음에는 너무 어려우면workspace 통째로 커밋하셔도 push 와 pull 만 잊지 않는다면 충돌 없이 사용하실수 있습니다. 그래도 결국 gitignore를 하긴 해야합니다.
 
 긴글 본다고 고생하셨습니다!
 
 
 
-나중에 Git에 익숙해지신다면 git innit 명령어를 이용해 쉽게 할 수 있는 내용이지만 초보자 입장에서 차근 차근 따라하며 최대한 이해하기 쉽게 작성 해 보았습니다.
+나중에 Git에 익숙해지신다면 git innit 명령어를 이용해 쉽게 할 수 있는 내용이지만 초보자 입장에서 차근 차근 따라하며 최대한 이해하기 쉽게 작성 해 보았습니다. 앞으로의 오랜 GIt과의 여정에 도움이 되셨으면 합니다.
 
-
-
-><a style="font-size:1.5em" href="#content" class="index">처음으로 돌아가기</a>
