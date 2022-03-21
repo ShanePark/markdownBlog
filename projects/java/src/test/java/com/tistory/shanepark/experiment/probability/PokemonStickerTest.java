@@ -35,7 +35,7 @@ class PokemonStickerTest {
             Set<Integer> pokeDex = new HashSet<>();
             int cnt = 0;
             while (pokeDex.size() < 151) {
-                pokeDex.add(buyPokemon() % 151);
+                pokeDex.add((buyPokemon()-1) % 151);
                 cnt++;
             }
             result.add(cnt);
