@@ -131,4 +131,6 @@ $ sudo vi /usr/share/X11/xkb/symbols/altwin
 
 드디어 한글이 잘 입력됩니다 ! 한글 입력하는것부터가 만만치 않습니다.
 
- 수고하셨습니다.
+수고하셨습니다. 추가로 우분투 첫 설치 후 빼먹은 설정이 없도록 아래의 글을 확인 해 주세요!
+
+> [개발자를 위한 Ubuntu 모든 필수 설치와 설정](https://shanepark.tistory.com/242)
