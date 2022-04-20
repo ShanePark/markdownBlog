@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Scroll Bar */
 body::-webkit-scrollbar {
 	width: 30px;
@@ -22,6 +21,11 @@ body.dark::-webkit-scrollbar-thumb {
 body.dark::-webkit-scrollbar-track {
 	background-color: #111;
 	box-shadow: inset 0px 0px 5px black;
+}
+
+/* Hide subscribe botton when following*/
+button.btn_menu_toolbar.btn_subscription.following.\#subscribe{
+	display: none;
 }
 
 /* Dark Toggle Buttons */
@@ -4086,7 +4090,6 @@ html {
 }
 
 .article-view a {
-    display: inline-block;
     color: #3d62ce;
 }
 
@@ -4951,6 +4954,7 @@ html {
 }
 .wrapper:hover{
 	opacity: 0.8;
+	transition: .8s;
 }
 .switch{
 position: relative;
