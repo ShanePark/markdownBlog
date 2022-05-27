@@ -7,27 +7,28 @@
     <!-- toc bot -->
     <script src="./images/tocbot.min.js"></script>
     <!-- highlight.js -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+    <script src="./images/highlight.min.js"></script>
+    <script src="./images/highlightjs-line-numbers.min.js"></script>
+		<script src="./images/highlightjs-copy.min.js"></script>
+		<link rel="stylesheet" href="./images/highlightjs-copy.min.css">
     <script>
         hljs.initLineNumbersOnLoad();
-        hljs.initHighlightingOnLoad();
+        hljs.highlightAll();
+				hljs.addPlugin(new CopyButtonPlugin());
     </script>
     <!-- font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- line awesome -->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./images/line-awesome.min.css">
+		<!-- adSense -->
     <script>
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
         gtag('config', 'G-78XZFQGFTN');
     </script>
-    <!-- adSense -->
     <script data-ad-client="ca-pub-8627654774354950" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta name="naver-site-verification" content="0c22e3f03cba99c563fc4f90743e8699d2f4979c" />
     <meta name="google-site-verification" content="M8x4poE68Fuinu22Y8TqYML-sgvjPZq9ihSN-JR7a5g" />
@@ -52,8 +53,6 @@
         (function() {
             var test = vhCheck();
         }());
-    </script>
-    <script>
         let isDarkMode = localStorage.getItem("isDarkMode");
         if (isDarkMode == null) {
             isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -62,7 +61,6 @@
         }
     </script>
 </head>
-
 
 <body id="[##_body_id_##]" class="[##_var_headerslogundisplay_##] [##_var_headerbannerdisplay_##] [##_var_listmore_##] [##_var_listmoremobile_##] <s_if_var_headerbannerimage>use-banner-wrp</s_if_var_headerbannerimage> <s_if_var_headersloguntitle>use-slogan-wrp</s_if_var_headersloguntitle> use-menu-[##_var_topnav_##]-wrp">
     <script>

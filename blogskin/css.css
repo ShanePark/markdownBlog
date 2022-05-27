@@ -5616,7 +5616,7 @@ html {
 #tt-body-page .article-view table {
     display: block;
     width: 100%;
-    overflow: auto;
+    overflow-x: scroll;
 }
 #tt-body-page .article-view table th {
     font-weight: 600;
@@ -5671,7 +5671,6 @@ html {
 #tt-body-page .article-view .highlight pre,
 #tt-body-page .article-view pre {
     padding: 10px;
-    overflow: auto;
     font-size: 85%;
     line-height: 1.45;
     border-radius: 3px;
