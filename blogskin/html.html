@@ -12,7 +12,9 @@
 		<script src="./images/highlightjs-copy.min.js"></script>
 		<link rel="stylesheet" href="./images/highlightjs-copy.min.css">
     <script>
-        hljs.initLineNumbersOnLoad();
+        hljs.initLineNumbersOnLoad({
+					singleLine: true
+				});
         hljs.highlightAll();
 				hljs.addPlugin(new CopyButtonPlugin());
     </script>
@@ -1063,24 +1065,24 @@ tocbot.init({
 															
 <script>												
 $(function(){
-// 최종 수정일 표기
+// show last modified date
 	let lastModified = getModifiedDate();			
 	moment.locale('ko');
 	if(lastModified) {
 		$('#mod_date').text(moment(lastModified).fromNow());
  	}																			
-// 	이미지 클릭시 해당 이미지 모달
+// 	image modal
 	$(".article-view p img").click(function(){
 		let img = new Image();
 		img.src = $(this).attr("src")
 		$('.modalBox').html(img);
 		$(".modal").show();
 	});
-// 모달 클릭할때 이미지 닫음
+// Close image modal when click it
 	$(".modal").click(function (e) {
     $(".modal").toggle();
   });
-// reading-time.js 발동
+// reading-time.js activate
 	$('.article-view').readingTime({
 		readingTimeAsNumber: false,
 		readingTimeTarget: $('.eta'),
@@ -1089,12 +1091,12 @@ $(function(){
 		prependTimeString: '📚 읽는시간 : ',
 		lang: 'kr'
 	});
-// TOP 버튼 
+// TOP button 
 	$('#upBtn button').on('click', function(){
 			window.scrollTo({top:0, behavior:'smooth'});
 	})
 // 					
-// darkMode 토글
+// darkMode toggle
 	$('.wrapper .switch').on('change', function(){
 		let isDarkMode = $(this).is(":checked");
 		let utte = $('.utterances iframe');
@@ -1114,7 +1116,7 @@ $(function(){
 		}																
 	})
 																			 
-// 스크롤 top버튼 숨기고 보이기
+// Scroll top Button
 	$(window).scroll(function() { 
 		if ($(this).scrollTop() > 350) { 
 			$('#upBtn').fadeIn(); 
@@ -1122,7 +1124,7 @@ $(function(){
 			$('#upBtn').fadeOut(); 
 		} 
 	});
-// 다크모드 적용																			 
+// set Darkmode																		 
  if(isDarkMode==true){
 	setDark();																								
 	}
@@ -1159,8 +1161,10 @@ function getModifiedDate(){
         } 
     }
     return null;
-}										 
+}			
+	
 </script>
+
 
 </body>
 </html>

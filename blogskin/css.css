@@ -5616,7 +5616,7 @@ html {
 #tt-body-page .article-view table {
     display: block;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 #tt-body-page .article-view table th {
     font-weight: 600;
