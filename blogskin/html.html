@@ -15,6 +15,7 @@
         hljs.initLineNumbersOnLoad({
 					singleLine: true
 				});
+				hljs.configure({languages:[]});
         hljs.highlightAll();
 				hljs.addPlugin(new CopyButtonPlugin());
     </script>
@@ -1162,9 +1163,32 @@ function getModifiedDate(){
     }
     return null;
 }			
+
+<!--code block top-bar-->
+	$(function(){		
+	setTimeout(() => {
+		$(".hljs").parent().each(function() {
+			var code = this.dataset.keLanguage;
+			var $labelDiv = $("<div class='codelang'>");
+			var classes = $(this).find('code').attr('class').split(' ');
+			var language='';
+			for(var i=0; i<classes.length; i++) {
+				if(classes[i].startsWith('language-')) {
+					language = classes[i].substring(9);
+					if(language == 'undefined') {
+						language = '';
+					}
+					break;
+				}
+			}
+			$labelDiv.html('<span>'+language+'</span>');
+			var $codeLabel = $('<div class="codeLabel">').append('<div class="traffic-light"><img src="./images/traffic.png"/></div>').append($labelDiv);
+			$(this).before($codeLabel);
+			
+		}, 1000)})
+	})
 	
 </script>
-
 
 </body>
 </html>

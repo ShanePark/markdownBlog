@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
 /* Scroll Bar */
-
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 30px;
 }
-
+::-webkit-scrollbar-track {
+  background-color: #222
+}
+::-webkit-scrollbar-thumb {
+  background-color: #444;
+	border-radius: 5px;
+}
 
 /* for current profile pic */
 
@@ -5673,7 +5678,7 @@ html {
     padding: 10px;
     font-size: 85%;
     line-height: 1.45;
-    border-radius: 3px;
+    border-radius: 0px 0px 5px 5px;
     background-color: #222 !important;
 }
 #tt-body-page .article-view pre code {
@@ -6021,4 +6026,36 @@ div#chartdiv {
 #tt-body-page blockquote[data-ke-style="style1"] {
     background: none !important;
     text-align: left !important;
+}
+
+/******************************
+*
+* code block - topbar
+*
+******************************/
+.codeLabel {
+	background: #2c2c2c;
+	border-radius: 5px 5px 0px 0px;
+}
+.codelang {
+	color: white;
+	text-align: right;
+	margin-right: 15px;
+	height: 2em;
+	padding-top: 5px;
+}
+.codelang span{
+  font-family: 'JetBrainsMonoLight';
+	font-weight: 600;
+}
+.codeLabel .traffic-light{
+	width: 80px;
+	height: 2em;
+	float: left;
+}
+#tt-body-page .article-view .codeLabel .traffic-light img{
+	margin-top: 8px !important;
+	margin-left: 8px !important;
+	width: 70% !important;
+	background: none;
 }
