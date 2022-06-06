@@ -8,7 +8,7 @@
   background-color: #222
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #444;
+  background: linear-gradient(#444, #1b1b1b);
 	border-radius: 5px;
 }
 
@@ -115,12 +115,12 @@ button.btn_menu_toolbar.btn_subscription.following.\#subscribe {
 /* font */
 
 @font-face {
-    src: url("images/SDSamliphopangcheTTFBasic.ttf");
+    src: url("images/SDSamliphopangcheBasic.woff2");
     font-family: "samlip-basic"
 }
 
 @font-face {
-    src: url("images/SDSamliphopangcheTTFOutline.ttf");
+    src: url("images/SDSamliphopangcheOutline.woff2");
     font-family: "samlip-outline"
 }
 
@@ -133,7 +133,6 @@ button.btn_menu_toolbar.btn_subscription.following.\#subscribe {
     src: url("images/JetBrainsMono-Light.woff2");
     font-family: "JetBrainsMonoLight"
 }
-
 
 /* google translate */
 
@@ -5680,6 +5679,8 @@ html {
     line-height: 1.45;
     border-radius: 0px 0px 5px 5px;
     background-color: #222 !important;
+		box-shadow: 0 0px 10px rgb(0 0 0 / 20%), 0 6px 4px rgb(0 0 0 / 20%);
+		margin-top: -1px /* remove unexpected gap on Safari */
 }
 #tt-body-page .article-view pre code {
     display: inline;
@@ -6034,19 +6035,21 @@ div#chartdiv {
 *
 ******************************/
 .codeLabel {
-	background: #2c2c2c;
+	background: linear-gradient(#2c2c2c, #1b1b1b);
 	border-radius: 5px 5px 0px 0px;
+	height: 2.3em;
 }
 .codelang {
-	color: white;
 	text-align: right;
 	margin-right: 15px;
 	height: 2em;
-	padding-top: 5px;
+	padding-top: 6px;
 }
 .codelang span{
   font-family: 'JetBrainsMonoLight';
 	font-weight: 600;
+	font-size: 15px;
+	color: snow;
 }
 .codeLabel .traffic-light{
 	width: 80px;
@@ -6054,8 +6057,12 @@ div#chartdiv {
 	float: left;
 }
 #tt-body-page .article-view .codeLabel .traffic-light img{
-	margin-top: 8px !important;
-	margin-left: 8px !important;
+	margin-top: 10px !important;
+	margin-left: 15px !important;
 	width: 70% !important;
 	background: none;
+}
+
+.hljs-copy-button:hover {
+    cursor: pointer;
 }
