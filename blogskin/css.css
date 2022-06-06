@@ -5677,7 +5677,7 @@ html {
     padding: 10px;
     font-size: 85%;
     line-height: 1.45;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 15px 15px;
     background-color: #222 !important;
 		box-shadow: 0 0px 10px rgb(0 0 0 / 20%), 0 6px 4px rgb(0 0 0 / 20%);
 		margin-top: -1px /* remove unexpected gap on Safari */
@@ -6036,11 +6036,10 @@ div#chartdiv {
 ******************************/
 .codeLabel {
 	background: linear-gradient(#2c2c2c, #1b1b1b);
-	border-radius: 5px 5px 0px 0px;
+	border-radius: 15px 15px 0px 0px;
 	height: 2.3em;
 }
 .codelang {
-	text-align: right;
 	margin-right: 15px;
 	height: 2em;
 	padding-top: 6px;
@@ -6050,6 +6049,14 @@ div#chartdiv {
 	font-weight: 600;
 	font-size: 15px;
 	color: snow;
+}
+.codelang span.language {
+	float: right;
+	color: lightgray;
+}
+.codelang span.filename {
+	padding-left: 10px;
+	font-size: 14px;
 }
 .codeLabel .traffic-light{
 	width: 80px;

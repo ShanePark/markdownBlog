@@ -1168,6 +1168,7 @@ function getModifiedDate(){
 	$(function(){		
 	setTimeout(() => {
 		$(".hljs").parent().each(function() {
+			var prevText = $(this).prev().text();
 			var code = this.dataset.keLanguage;
 			var $labelDiv = $("<div class='codelang'>");
 			var classes = $(this).find('code').attr('class').split(' ');
@@ -1181,7 +1182,12 @@ function getModifiedDate(){
 					break;
 				}
 			}
-			$labelDiv.html('<span>'+language+'</span>');
+			var fileName = ''
+			if(language && prevText && prevText.endsWith("()") || prevText.toUpperCase().endsWith("."+language.toUpperCase())) {
+				fileName = prevText;
+				$(this).prev().remove();
+			}
+			$labelDiv.html('<span class="filename">'+fileName+'</span><span class="language">'+language+'</span>');
 			var $codeLabel = $('<div class="codeLabel">').append('<div class="traffic-light"><img src="./images/traffic.png"/></div>').append($labelDiv);
 			$(this).before($codeLabel);
 			
