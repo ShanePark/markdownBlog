@@ -17,7 +17,7 @@ Ruby와 Git 으로 개발된 MacOS용 패키지 매니저입니다.
 
 Homebrew 설치하기에 보면 명령어가 친절하게 써있습니다. 복사합니다. 아래에 똑같이 써두었습니다. 
 
-```zsh
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
@@ -82,7 +82,7 @@ brew -- version 을 입력해봤는데, brew 명령어가 아직 먹히지 않�
 `Warning: /opt/homebrew/bin is not in your PATH`에 나와 있듯이, 아직 PATH 에 등록이 되지 않아서 그렇습니다.
 vim 에디터에 들어가서 수정해주면 되지만, 아래 한줄 입력으로 더 간단하게 등록할 수 있습니다.
 
-```zsh
+```bash
 echo 'export PATH=/opt/homebrew/bin:$PATH' >> ~/.zshrc
 ```
 
@@ -123,7 +123,7 @@ brew update 로 업데이트도 가능합니다.
 
 예시로 alfred 를 brew에서 설치해보겠습니다.
 
-```zsh
+```bash
 brew search alfred
 ```
 
@@ -131,7 +131,7 @@ brew search alfred
 
 검색해보니 Casks로 존재합니다. Casks가 아니면 brew install alfred 만 입력하면 되지만, Casks이기 때문에 --cask 옵션을 붙여야 했었는데, 요즘 brew는 cask 옵션을 붙이지 않아도 되긴 하는 것 같더라고요.
 
-```zsh
+```bash
 brew install --cask alfred
 ```
 

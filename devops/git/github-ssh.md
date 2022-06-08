@@ -148,7 +148,7 @@ rm -rf programmers
 
 이번에는 SSH로 클론 해줍니다. 
 
-```sh
+```bash
 git clone git@github.com:Shane-Park/programmers.git
 ```
 
@@ -184,7 +184,7 @@ gitlab 에서도 User Settings > SSH Keys 에 들어가면 키를 등록 할 수
 
 아까처럼 cat으로 공개키를 읽어 와 등록 해 줍니다.
 
-```sh
+```bash
 cat ~/.ssh/id_rsa.pub
 ```
 
@@ -194,7 +194,7 @@ cat ~/.ssh/id_rsa.pub
 
 성공적으로 키를 등록 했는데요, 아직은 아무리 접속을 시도 해도 아래와 같은 에러가 나옵니다. 22번 포트가 막혀 있습니다.
 
-```sh
+```bash
 port 22: Connection refused
 ```
 
@@ -202,7 +202,7 @@ port 22: Connection refused
 
 그러면 이제 포트 번호를 명시해서 접속을 해야 하는데요. company 에는 회사 주소가 들어가면 됩니다.
 
-```sh
+```bash
 ssh shane@gitlab.company.co.kr:31922
 ```
 

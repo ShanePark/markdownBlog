@@ -42,7 +42,7 @@
 
 이제 아래의 명령어를 연달아 입력 합니다.
 
-```shell
+```bash
 net stop lxssmanager
 net start lxssmanager
 ```

@@ -52,7 +52,7 @@ tar -zxvf spring-tool-suite-4-4.12.0.RELEASE-e4.21.0-linux.gtk.x86_64.tar.gz
 
 Downloads 보다는 적당한 위치에 놓는게 좋으니 lib 폴더로 이동시키겠습니다.
 
-```shell
+```bash
 sudo mv sts-4.12.0.RELEASE/ /lib
 ```
 

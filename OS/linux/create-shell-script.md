@@ -46,7 +46,7 @@ vi mdblog.sh
 
   
 
-  ```shell
+  ```bash
   echo "https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/"
   
   ```

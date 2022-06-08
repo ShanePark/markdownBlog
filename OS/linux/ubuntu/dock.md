@@ -28,7 +28,7 @@ GNONE은 Ubuntu 20.04의 기본 데스크탑 환경 입니다. 처음에 여러�
 
 아래의 명령어를 입력해 dconf-editor를 설치 해 줍니다.
 
-```shell
+```bash
 $ sudo apt install dconf-editor
 ```
 

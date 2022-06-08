@@ -115,7 +115,7 @@ Korean만 있으면 한/영이 내부에서 전환됩니다.
 
 그래서 만약 저처럼 Hangul 키가 없어 오른쪽 Alt 를 이용 해야 할 경우에는 우측 Alt 키를 아이에 Hangul 키로 바인딩 하는 것을 추천드립니다.
 
-```shell
+```bash
 $ sudo vi /usr/share/X11/xkb/symbols/altwin
 ```
 

@@ -64,7 +64,7 @@ App Store에서 불안전한 속도로 다운 받는것보다 개인적으로는
 
 터미널에 아래와 같이 입력해 봅니다.
 
-```shell
+```bash
 gcc --version
 ```
 
@@ -74,7 +74,7 @@ gcc --version
 
 혹시 CLT가 설치 되어 있지 않으면
 
-```shell
+```bash
 xcode-select --install
 ```
 

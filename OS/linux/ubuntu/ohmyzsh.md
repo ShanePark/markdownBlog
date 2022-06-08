@@ -38,7 +38,7 @@ ohmyzsh 에서는 5.0.8 버전 이상을 권장합니다.
 
 위에서 bash가 제안해 준 방법으로 zsh를 설치 해 줍니다.
 
-```sh
+```bash
 sudo apt install zsh
 ```
 
@@ -78,7 +78,7 @@ reboot
 
 재부팅 후에는 뭐..
 
-```sh
+```bash
 echo $SHELL
 ```
 
@@ -98,7 +98,7 @@ ohmyzsh wiki를 참고해 설치과정을 따라가 보겠습니다.
 
 curl, wget, fetch 어떤 방법을 사용해도 설치 할 수 있습니다. 저는 curl을 이용하겠습니다.
 
-```sh
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -138,7 +138,7 @@ source ~/.zshrc
 
 폰트가 깨지네요. powerline fonts를 설치하면 해결됩니다.
 
-```sh
+```bash
 sudo apt-get install fonts-powerline
 ```
 
@@ -192,7 +192,7 @@ Select를 눌러 선택해주면 폰트가 바로 적용됩니다. 맥북에서 
 
 이번에는 컴퓨터 이름을 감추어 보겠습니다. 너무 쓸데없는 텍스트가 길 필요가 없습니다.
 
-```sh
+```bash
 vi ~/.zshrc
 ```
 

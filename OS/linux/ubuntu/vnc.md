@@ -28,7 +28,7 @@ Sharing 을 검색 해서 실행 합니다.
 
 Screen sharing이 이미 보인다면 아래로 쭉 내리시면 됩니다.
 
-```sh
+```bash
 sudo apt update
 ```
 
@@ -36,7 +36,7 @@ sudo apt update
 
 ​	
 
-```sh
+```bash
 sudo apt install vino
 ```
 
@@ -70,7 +70,7 @@ vino는 493 kB 밖에 안되어서 정말 금방 설치 할 수 있습니다.
 
 혹시 아직  dconf Editor가 없는 분들은 설치 해주세요.
 
-```sh
+```bash
 $ sudo apt-get install dconf-editor
 ```
 
@@ -124,7 +124,7 @@ Command+K 를 입력하거나 상단 메뉴바의 GO(이동) > Connect to Server
 
 Ubuntu 에서는 내장 패키지인 리미너 원격 데스트탑 클라이언트를 사용 하는데요, 혹시 없다면 설치해줍니다.
 
-```sh
+```bash
 sudo apt install remmina
 ```
 

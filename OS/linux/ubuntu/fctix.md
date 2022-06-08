@@ -18,7 +18,7 @@
 
 ## fcitx 한글 입력기 설치
 
-```zsh
+```bash
 sudo apt-get update
 sudo apt-get install fcitx-hangul
 ```
@@ -61,7 +61,7 @@ fcitx-config-gtk 가 없다는 에러가 뜹니다.
 
 에러 메시지에서 알려주는 대로 pakcage를 설치해 줍니다.
 
-```zsh
+```bash
 sudo apt-get install fcitx-config-gtk
 ```
 
@@ -123,7 +123,7 @@ $ sudo vi /usr/share/X11/xkb/symbols/altwin
 
 해당 문제도 설정으로 간편하게 해결 할 수 있습니다.
 
-```zsh
+```bash
 gedit ~/.config/fcitx/config 
 ```
 
@@ -137,7 +137,7 @@ gedit ~/.config/fcitx/config
 
 저장 후에는 fcitx 를 재시작 해 줍니다.
 
-```zsh
+```bash
 fcitx -r
 ```
 
@@ -179,7 +179,7 @@ Trigger Key for Quick Phrase 는 `;` 에서 `None` 으로 변경하고, Do not s
 
 intelliJ 에서 입력할 때 좌측 하단에 뭔가 뜨던게 거슬려서 uim 입력기도 사용 해 보았습니다.
 
-```zsh
+```bash
 sudo apt install uim uim-byeoru
 ```
 

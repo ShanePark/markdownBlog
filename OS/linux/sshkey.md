@@ -20,7 +20,7 @@ Windows 를 사용하는데 WSL이 아직 없다면 [해당 링크](https://shan
 
 MacOS / Linux 에서는 터미널에서 바로 하시면 됩니다.
 
-```shell
+```bash
 ssh-keygen -t rsa
 ```
 
@@ -46,13 +46,13 @@ passphrase는 굳이 입력 하지 않아도 되며, 키를 저장할 경로도 
 
 SSH로 리눅스 서버에 접속해서
 
-```shell
+```bash
 $ mkdir ~/.ssh
 ```
 
 를 입력해 /.ssh 폴더가 없다면 .ssh 폴더를 만들어줍니다. 그러고는 아래와 같이 입력해서
 
-```shell
+```bash
 $ touch ~/.ssh/authorized_keys
 ```
 
@@ -72,7 +72,7 @@ Host의 ~/.ssh/id_rsa.pub 에 있는 모든 내용을 복사해서
 
 접속한 서버의 .ssh 폴더 내에 있는 authorized_keys 파일을 수정해 해당 내용을 모두 붙여 넣고 저장합니다.
 
-```shell
+```bash
 $ vi authorized_keys
 ```
 
@@ -109,7 +109,7 @@ Host myserver2
 
 이런식으로 설정 파일을 저장 해 둔다면,
 
-```she
+```bash
 $ ssh myserver
 ```
 

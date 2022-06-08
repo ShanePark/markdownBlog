@@ -36,7 +36,7 @@ Detect가 되니 가능성이 있네요. 지금부터 해보겠습니다.
 
 ​	
 
-```shell
+```bash
 # 1. 처음엔 이쪽 명령을 실행
 echo "
 deb http://dell.archive.canonical.com/updates/ focal-dell public
