@@ -21,8 +21,11 @@ import java.nio.file.StandardCopyOption;
 public class FileInputStreamTest {
 
     public static void main(String[] args) throws IOException {
-        final String ORIGINAL = "/home/shane/Downloads/test.jpg";
-        final String TARGET = "/home/shane/Downloads/targetFile.jpg";
+
+        final String HOME = System.getProperty("user.home");
+        final String ORIGINAL = HOME + "/Downloads/test.jpeg";
+        final String TARGET = HOME + "/Downloads/targetFile.jpeg";
+
         File file = new File(ORIGINAL);
         try (InputStream inputStream = Files.newInputStream(file.toPath())
         ) {
