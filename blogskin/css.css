@@ -6010,13 +6010,13 @@ a.toc-link:hover {
 }
 .toc-link.node-name--H1 {
     font-size: large;
-    font-family: 'samlip-outline';
+    text-shadow: 0 0 10px paleturquoise;
 }
 .toc-link.node-name--H1.is-active-link {
-    font-weight: normal;
+    font-weight: 500;
 }
 .dark .toc-link.node-name--H1.is-active-link {
-    font-weight: bold;
+    font-weight: 500;
 }
 .toc-link.node-name--H3 {
     font-size: smaller;
