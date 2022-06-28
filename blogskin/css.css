@@ -115,6 +115,11 @@ button.btn_menu_toolbar.btn_subscription.following.\#subscribe {
 /* font */
 
 @font-face {
+    src: url("images/Maplestory Light.woff2");
+    font-family: "maplestory"
+}
+
+@font-face {
     src: url("images/SDSamliphopangcheBasic.woff2");
     font-family: "samlip-basic"
 }
@@ -180,7 +185,7 @@ button.btn_menu_toolbar.btn_subscription.following.\#subscribe {
 /* image modal end */
 
 #tt-body-page .article-view blockquote p {
-    font-size: 0.9em;
+    font-size: 15px;
 }
 
 
@@ -354,6 +359,10 @@ dark .main {
 .dark .article-page .title-footer,
 .dark .article-type-common .link-category {
     color: darkgray;
+}
+
+.dark .area-aside .box-category .tt_category .category_list .link_sub_item {
+    color: #999;
 }
 
 .dark .title-search.title-border,
@@ -921,6 +930,7 @@ html {
 
 #tt-body-page .area-aside {
     margin-top: 0px;
+    font-family:'maplestory';
 }
 
 
@@ -2073,7 +2083,7 @@ html {
     margin-left: 22px;
     font-size: 13px;
     line-height: normal;
-    color: #999;
+    color: #666;
 }
 
 .area-aside .box-category .tt_category .category_list .link_sub_item:before {
@@ -5951,7 +5961,8 @@ html {
     }
 }
 .toc {
-    overflow-y: auto
+    overflow-y: auto;
+    font-family: 'maplestory';
 }
 .toc>.toc-list {
     overflow: hidden;

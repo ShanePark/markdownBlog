@@ -886,37 +886,30 @@
                     <aside class="area-aside">
                         <!-- sidebar 01 -->
                         <s_sidebar>
-
                             <s_sidebar_element>
                                 <!-- 프로필 -->
                                 <div class="box-profile <s_if_var_Profilebgimage>box-profile-invert</s_if_var_Profilebgimage>" style="background-image:url('<s_if_var_Profilebgimage>[##_var_Profilebgimage_##]</s_if_var_Profilebgimage>');">
+                                    <p class="text-profile">[##_desc_##]</p>
                                     <div class="inner-box">
-                                        <img src="[##_image_##]" class="img-profile" alt="프로필사진">
-                                        <p class="text-profile">[##_desc_##]</p>
                                         <a href="https://github.com/Shane-Park" target='_blank' class="link-icon">
 											<i class="fab fa-github"></i></a>
 										<a href="mailto:psh40963@naver.com" class="link-icon" target='_blank'><i class="far fa-envelope"></i></a>
-										 <br/><br/>
-<!-- 						
-                    <button class="button-subscription btn_menu_toolbar btn_subscription #subscribe" data-blog-id="4356152" data-url="https://shanepark.tistory.com" data-device="web_pc">구독하기
-                    </button>
--->										
-<!-- 방문자 표시 -->
-			
-		<div class="box-visit">
-				<h3 class="title-sidebar"><span class="blind">방문자수</span>Total</h3>
-                  <p class="text-total">[##_count_total_##]</p>
-                  <ul>
-                    <li class="item-visit">Today : [##_count_today_##]</li>
-                    <li class="item-visit">Yesterday : [##_count_yesterday_##]</li>
-                  </ul>
-    </div>
-[##_StatisticsGraph_##]																					
-<!-- 방문자 표시 끝 -->										
+										 <br/><br/>					
+                                        <!-- 방문자 표시 -->	
+                                        <div class="box-visit">
+                                                <h3 class="title-sidebar"><span class="blind">방문자수</span>Total</h3>
+                                                <p class="text-total">[##_count_total_##]</p>
+                                                <ul>
+                                                    <li class="item-visit">Today : [##_count_today_##]</li>
+                                                    <li class="item-visit">Yesterday : [##_count_yesterday_##]</li>
+                                                </ul>
+                                        </div>
+                                        [##_StatisticsGraph_##]																					
+                                        <!-- 방문자 표시 끝 -->										
 									</div>
 								</div>
-              </s_sidebar_element>
-            </s_sidebar>
+                             </s_sidebar_element>
+                        </s_sidebar>
 
             <!-- sidebar 02 -->
             <s_sidebar>
