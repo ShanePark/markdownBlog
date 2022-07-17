@@ -15,9 +15,9 @@ https://www.youtube.com/watch?v=rtmFCcjEgEw
 #### SOLID는 Robert. C. Martin (Uncle Bob 이라고 불립니다) 이 처음으로 제안했고, Michael Feathers에 의해 이름 붙여진 5대 원칙입니다. 
 
 ## <center> SOLID Principle </center>
-||||
+|Abbr|Full name|Explanation|
 |----|----|---|
-|SRP|[single Responsibility Principle](#one)|A class should have one, and only one reason to change| 
+|SRP|[single Responsibility Principle](#one)|A class should have one, and only one reason to change|
 |OCP|[Open Closed Princicle](#two)|You should be able to extend a classes behavior, without modifying it.|
 |LSP|[Liskov Substitution Princicle](#three)|Derived classes must be substitutable for their base classes.|
 |ISP|[Interface Segragation Princicle](#four)|Make fine grained interfaces that are client specific.|
@@ -138,7 +138,7 @@ SRP가 클래스의 단일 책임에 대한 내용이라면, ISP는 인터페이
 ​	
 
 - Able to change an implementation easily without altering the high level code.
-> 고수준 모듈을 변경함으로서 쉽게 구현을 변경할 수 있어야 합니다.
+> 고수준의 코드를 변경하지 않고도 쉽게 구현을 변경할 수 있어야 합니다.
 
 ​    	
 
