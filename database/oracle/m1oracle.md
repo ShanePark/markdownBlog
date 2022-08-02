@@ -1,6 +1,20 @@
 # Apple Silicon m1 맥북에서 Oracle Database 사용하기
 
+## @Deprecated
 
+2022년 8월 2일부로 해당 글을 Deprecated 처리 합니다.
+
+지금까지는 아래의 본문 내용처럼 오라클 클라우드를 활용 해서 쓰는 방법 밖에 없었는데, 이제는 Apple Silicon 환경에서도 도커에서 오라클을 띄우는 방법이 생겼습니다.
+
+본 글 대신 [M1 맥북 도커로 ORACLE DB 실행하기](https://shanepark.tistory.com/400) 링크를 참고 해서 오라클 데이터베이스를 띄우시면 됩니다.
+
+<br>
+
+<br>
+
+<br>
+
+기존의 글. ..
 
 ![image-20210821132153878](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/m1oracle.assets/image-20210821132153878.png)
 
