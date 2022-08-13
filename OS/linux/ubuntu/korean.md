@@ -131,6 +131,28 @@ $ sudo vi /usr/share/X11/xkb/symbols/altwin
 
 드디어 한글이 잘 입력됩니다 ! 한글 입력하는것부터가 만만치 않습니다.
 
-수고하셨습니다. 추가로 우분투 첫 설치 후 빼먹은 설정이 없도록 아래의 글을 확인 해 주세요!
+수고하셨습니다. 
+
+## 마치며
+
+Ubuntu를 처음 설치한다면 처음에는 iBus 키보드 설정만 하시면 되지만, 여러가지 소프트 웨어를 사용하시다 보면 한계를 느끼는 날이 곧 오게 됩니다.
+
+끝글자 오류가 나타나는 어플리케이션들도 있고, wine 에서는 한글 입력이 아에 되지도 않습니다. 일단 iBus를 쓰다가 불편함이 있을 때 다른 입력기를 찾아 보시면 되는데요, 제가 사용해본 한글 입력기들은 아래와 같습니다.
+
+- nimf
+- [tian](https://shanepark.tistory.com/293)
+- [fcitx](https://shanepark.tistory.com/262)
+- [kime](https://shanepark.tistory.com/318)
+
+ 지금은 KIME를 주력으로 사용하고 있고, 가장 만족합니다. Perfect 까지는 아니지만 Best 라고는 할 수 있을 것 같습니다.
+
+비교적 최근 우연히 찾은 레퍼런스 들인데, 처음 우분투를 접했을 때 부터 읽었다면 참 좋았을 거라고 생각되는 링크 들을 남기겠습니다.
+
+- [우아한 형제들 기술이사 권남님 블로그](https://kwonnam.pe.kr/wiki/linux/inputmethod#input_method_%EC%9E%85%EB%A0%A5%EA%B8%B0_%ED%95%9C%EA%B8%80)
+- [Dawoum wiki 한글입력기](https://dawoum.ddns.net/wiki/%ED%95%9C%EA%B8%80_%EC%9E%85%EB%A0%A5%EA%B8%B0)
+
+추가로 우분투 첫 설치 후 빼먹은 설정이 없도록 아래의 글을 확인 해 주세요!
 
 > [개발자를 위한 Ubuntu 모든 필수 설치와 설정](https://shanepark.tistory.com/242)
+
+이상입니다. 감사합니다.
