@@ -14,9 +14,11 @@
 
 ssh-keygen이 있다면 아래의 명령어를 입력해 간단하게 생성 할 수 있습니다.
 
-Git 을 설치하면서 ssh-keygen 이 딸려왔는지 아니면 wsl2를 설치하면서 왔는지 ssh-keygen이 있었는데 없다면 ssh-keygen을 먼저 설치 해 주셔야 합니다.
+저는 Git 을 설치하면서 ssh-keygen 이 딸려 왔는지 ssh-keygen이 있었는데 없다면 ssh-keygen을 먼저 설치 해 주셔야 합니다
 
-Windows 를 사용하는데 WSL이 아직 없다면 [해당 링크](https://shanepark.tistory.com/187) 를 참고해서 먼저 설치해주세요.
+Windows 를 사용하는데 Git 혹은 ssh-keygen이 아직 없는 상황이라면 아래의 링크로 들어가서 git을 설치 해 주세요.
+
+https://git-scm.com/downloads
 
 MacOS / Linux 에서는 터미널에서 바로 하시면 됩니다.
 
@@ -32,13 +34,9 @@ ssh-keygen -t rsa
 
 passphrase는 굳이 입력 하지 않아도 되며, 키를 저장할 경로도 특별한 이유가 없다면 바꾸지 않는 것이 좋습니다.
 
-
-
 그러면 .ssh 폴더 아래에 키가 생성됩니다.
 
 ![image-20210810153818487](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810153818487.png)
-
-
 
 ## 2.SSH Key 등록하기
 
@@ -50,23 +48,23 @@ SSH로 리눅스 서버에 접속해서
 $ mkdir ~/.ssh
 ```
 
-를 입력해 /.ssh 폴더가 없다면 .ssh 폴더를 만들어줍니다. 그러고는 아래와 같이 입력해서
+를 입력해 /.ssh 폴더가 없다면 .ssh 폴더를 만들어 줍니다. 그러고는 아래와 같이 입력해서
 
 ```bash
 $ touch ~/.ssh/authorized_keys
 ```
 
-authorized_keys 파일을 만들어주고 아래의 입력으로
+authorized_keys 파일을 만들어주고 아래와 같이 입력해서 읽기 쓰기 권한을 설정합니다.
 
 ```bash
 chmod 755 ~/.ssh/authorized_keys
 ```
 
-읽기 쓰기 권한을 설정합니다. 후에는 id_rsa.pub 의 내용을 authorized_keys 파일에 append 해줍니다.
+ 후에는 id_rsa.pub 의 내용을 authorized_keys 파일에 append 해 줍니다.
 
-scp를 사용해도 되고 vi를 이용해 붙여넣기를 해도 상관 없습니다.
+scp를 사용해도 되고 vi를 이용해 붙여 넣기를 해도 상관 없습니다.
 
-Host의 ~/.ssh/id_rsa.pub 에 있는 모든 내용을 복사해서
+Host의 `~/.ssh/id_rsa.pub` 에 있는 모든 내용을 복사해서
 
 ![image-20210810154227911](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810154227911.png)
 
@@ -76,11 +74,7 @@ Host의 ~/.ssh/id_rsa.pub 에 있는 모든 내용을 복사해서
 $ vi authorized_keys
 ```
 
-
-
 이제 SSH 접속을 해 보면 더이상 비밀번호를 요구하지 않습니다 !
-
-​	
 
 ## 3. SSH 접속정보 설정파일로 저장하기
 
@@ -96,7 +90,7 @@ vi ~/.ssh/config
 
 ![image-20210810154550934](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810154550934.png)
 
-```json
+```
 Host myserver
     HostName 222.123.123.123
     Port 22
@@ -110,13 +104,11 @@ Host myserver2
 이런식으로 설정 파일을 저장 해 둔다면,
 
 ```bash
-$ ssh myserver
+ssh myserver
 ```
 
 만 입력 하면 간단하게 미리 저장해둔 접속 정보로 SSH 접속을 할 수 있습니다.
 
 config에는 여러 개의 서버 접속 정보도 모두 입력 해 둘 수 있기 때문에 아주 간편합니다.
-
-
 
 이상입니다.
