@@ -22,7 +22,7 @@ sudo vi /etc/inputrc
 set bell-style off
 ```
 
-![image-20210918225634365](/home/shane/Documents/git/markdownBlog/OS/linux/ubuntu/bell-style.assets/image-20210918225634365.png)
+![image-20210918225634365](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/bell-style.assets/image-20210918225634365.png)
 
 ​	
 
@@ -36,13 +36,13 @@ set bell-style off
 
 dconf Editor를 실행 해 줍니다. 없다면 apt-get install dconf-editor 으로 설치 해 주세요.
 
-![image-20210918225947369](/home/shane/Documents/git/markdownBlog/OS/linux/ubuntu/bell-style.assets/image-20210918225947369.png)
+![image-20210918225947369](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/bell-style.assets/image-20210918225947369.png)
 
 ​	
 
 이제 org/gnome/desktop/sound 에 있는 event-sounds 설정을 꺼줍니다.
 
-![image-20210918230148375](/home/shane/Documents/git/markdownBlog/OS/linux/ubuntu/bell-style.assets/image-20210918230148375.png)
+![image-20210918230148375](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/bell-style.assets/image-20210918230148375.png)
 
 ​	
 
