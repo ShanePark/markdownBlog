@@ -311,11 +311,11 @@ dark .main {
     opacity: 0.8;
 }
 
-.dark .link-github {
+.dark .link-icon {
     color: #ccc;
 }
 
-.dark .link-github :hover,
+.dark .link-icon :hover,
 .dark .area-aside .box-category .tt_category .category_list .link_sub_item:hover,
 .dark .area-aside .box-category .tt_category .link_tit:hover,
 .dark .area-aside .box-category .tt_category .category_list .link_item:hover,
@@ -397,7 +397,7 @@ dark .main {
     filter: invert(100%);
 }
 
-.dark .area-aside .box-profile {
+.dark .area-aside .right-box {
     border: 2px solid dimgrey;
     box-shadow: 0 5px 10px rgb(127 127 127 / 10%), 0 6px 4px rgb(127 127 127 / 20%);
 }
@@ -463,7 +463,7 @@ dark .main {
 
 /******************** Dark Mode END ***************/
 
-.link-github {
+.link-icon {
     margin-left: 20px;
     color: black;
     font-size: 1em;
@@ -936,7 +936,7 @@ html {
 }
 
 #tt-body-page .main {
-    padding-top: 300px;
+    padding-top: 56px;
 }
 
 #tt-body-page .area-view img {
@@ -1959,7 +1959,7 @@ html {
 /* area-aside */
 
 .area-aside {
-    width: 300px;
+    min-width: 220px;
     /* box-profile */
     /* box-category */
     /* box-tag */
@@ -2014,14 +2014,9 @@ html {
 }
 
 .area-aside .box-profile {
-    border-radius: 40px / 40px;
     position: relative;
-    margin-bottom: 43px;
     border: 1px solid #e8e8e8;
     text-align: center;
-    padding-bottom: 40px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 4px rgba(0, 0, 0, 0.2);
-    width: 220px;
 }
 
 .area-aside .box-profile .img-profile {
@@ -2135,8 +2130,11 @@ html {
     fill: #fff !important;
 }
 
-.area-aside .box-category {
+.area-aside .right-box {
     margin-bottom: 40px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 20%), 0 6px 4px rgb(0 0 0 / 20%);
+    border-radius: 40px / 40px;
+    padding: 20px;
 }
 
 .area-aside .box-category .tt_category a {
@@ -2154,7 +2152,7 @@ html {
 .area-aside .box-category .tt_category .category_list .link_item {
     margin-bottom: 11px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.64;
     color: #777;
 }
@@ -3296,23 +3294,11 @@ html {
 /* article-header */
 
 .article-header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100vw;
-    height: 300px;
-    margin-left: -50vw;
-    padding: 0 20px;
     background: none !important;
 }
 
 .article-header:before {
     content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index: 1;
 }
 
@@ -3322,9 +3308,6 @@ html {
 }
 
 .article-header .box-meta {
-    position: absolute;
-    bottom: 56px;
-    width: 100%;
     max-width: 950px;
     z-index: 2;
 }

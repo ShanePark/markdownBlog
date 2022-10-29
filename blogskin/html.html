@@ -108,7 +108,7 @@
                 [##_title_##]
               </s_not_var_logoImage>
             </a>
-            <a href="https://github.com/Shane-Park" target='_blank' class="link-github">
+            <a href="https://github.com/Shane-Park" target='_blank' class="link-icon">
               <i class="fab fa-github"></i>
             </a>
           </h1>
@@ -939,13 +939,11 @@
 
   <!-- aside -->
   <aside class="area-aside">
-
-    <!-- sidebar 02 -->
     <s_sidebar>
       <s_sidebar_element>
         <s_if_var_sidebarcategoryuse>
           <!-- 카테고리 메뉴 -->
-          <div class="box-category box-category-2depth">
+          <div class="right-box box-category box-category-2depth">
             <nav>
               [##_category_list_##]
             </nav>
@@ -954,20 +952,18 @@
       </s_sidebar_element>
     </s_sidebar>
     <s_sidebar>
-      <!-- sidebar 01 -->
       <s_sidebar_element>
         <!-- 프로필 -->
-        <div class="box-profile <s_if_var_Profilebgimage>box-profile-invert</s_if_var_Profilebgimage>"
+        <div class="right-box box-profile <s_if_var_Profilebgimage>box-profile-invert</s_if_var_Profilebgimage>"
              style="background-image:url('<s_if_var_Profilebgimage>[##_var_Profilebgimage_##]</s_if_var_Profilebgimage>');">
           <div class="inner-box">
-            <br/><br/>
             <!-- 방문자 표시 -->
             <div class="box-visit">
-              <h3 class="title-sidebar"><span class="blind">방문자수</span>Total</h3>
-              <p class="text-total">[##_count_total_##]</p>
+              <p class="text-total">Visitors</p>
               <ul>
                 <li class="item-visit">Today : [##_count_today_##]</li>
                 <li class="item-visit">Yesterday : [##_count_yesterday_##]</li>
+                <li class="item-visit">Total : [##_count_total_##]</li>
               </ul>
             </div>
             [##_StatisticsGraph_##]
