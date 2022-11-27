@@ -12,6 +12,8 @@
 
 ## Docker 컨테이너 자동 실행
 
+### 서비스 등록
+
 스케줄러에 따라 재부팅을 한다고 했을 때, 컨테이너를 켜줘야 하는 것도 자동화를 해야 하기 때문에 아무래도 서비스로 등록 해 둘 필요성이 생겼습니다. 지금 해당 서버에서 사용하고 있는 컨테이너는 Elastic Search 와 오라클 서버 이렇게 두개가 있는데요, 차근차근 해 보도록 하겠습니다.
 
 ​		
@@ -92,7 +94,58 @@ sudo systemctl enable docker-elastic.service
 
 재시작 후에 서비스에 등록된 두 컨테이너들이 모두 시작 된 것을 확인 하실 수 있습니다.
 
-​	
+### 컨테이너 restart 옵션
+
+대신 `--restart=always` 옵션을 줘서 컨테이너를 실행 하는 방법도 있습니다.
+
+restart 옵션에는 몇가지가 있는데요
+
+- no: 기본 옵션입니다. 재시작 하지 않습니다.
+- always: 컨테이너가 멈추면 즉각 재시작 하고, 수동으로 컨테이너를 종료 할 수 있지만 도커 데몬이 재시작 할 때 다시 켜집니다.
+- on-failure: 컨테이너에 에러가 발생 한다면 재시작 합니다. 도커데몬 재시작 시에는 자동으로 실행되지 않습니다.
+- unless-stopped : always 와 비슷 하지만 수동으로 컨테이너를 종료했다면 재시작 하지 않습니다.
+
+일단 위에서 서비스로 등록 했다면 서비스에서 제외 해 줍니다.
+
+![image-20221127143036234](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127143036234.png)
+
+그러고 나서는 restart 옵션을 줘서 컨테이너를 시작해줘야하는데요, 이미 커테이너가 떠있기 때문에 update 명령으로 옵션을 업데이트 합니다.
+
+```bash
+docker update --restart=unless-stopped elastic
+docker update --restart=unless-stopped dutypark-db
+docker update --restart=unless-stopped PostgreSQL
+docker update --restart=unless-stopped oracle
+```
+
+![image-20221127143226627](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127143226627.png)
+
+>  모든 컨테이너의 재시작 옵션이 변경되었습니다.
+
+옵션이 잘 변경되었는지는 docker inspect 명령으로 확인 해 봅니다.
+
+```bash
+# 전체 설정 확인
+docker inspect elastic
+# RestartPolicy만 확인
+docker inspect elastic | grep -A 3 "RestartPolicy"
+```
+
+![image-20221127143927337](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127143927337.png)
+
+> RestartPolicy 설정이 잘 적용 되어 있습니다.
+
+이후 재 부팅을 해서 확인 하거나 도커 데몬을 껐다 켜면
+
+```bash
+sudo systemctl restart docker
+```
+
+![image-20221127144117562](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127144117562.png)
+
+컨테이너가 자동으로 실행되는 것이 확인 됩니다.
+
+서비스 등록보다는 훨씬 간편하고 확실한 방법입니다.
 
 ## 리눅스 스케줄러 등록
 
@@ -161,7 +214,7 @@ sudo vi /etc/crontab
 
 그리고 계획 한 대로 다음날 오후 4시 40분에 확인을 해 보니 container status 에 Up 13hours 라고 나옵니다. 정상적으로 새벽 4 시에 한번 꺼졌다 켜진게 확실 하네요.
 
-​		
+ 		
 
 서버가 켜둔지 오래 지날때마다 조금씩 느려지는 문제로 고민이 많았는데 일단 임시방편으로는 해결이 될 것 같습니다. 그래도 더 좋은 해결책을 계속해서 찾아 보도록 하겠습니다.
 
