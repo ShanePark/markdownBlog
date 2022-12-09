@@ -1,11 +1,5 @@
 # PostgreSQL) 모든 테이블에서 특정 값 찾기
 
-How to search a specific value in all tables (PostgreSQL)?
-
-> https://stackoverflow.com/questions/5350088/how-to-search-a-specific-value-in-all-tables-postgresql
-
-​	
-
 ## 모든 테이블 찾기
 
 특정 값을 검색 할 때, 모든 테이블에서 찾아봐야 할 경우가 종종 있습니다. 
@@ -55,7 +49,7 @@ INSERT INTO countries (iso_country_code, iso_country_name) VALUES ('GB', 'United
 
 개인적으로 이 함수를 정말 자주 호출해서 사용 하고 있습니다. 한번 추가해두면 함수만 호출해 사용하면 되기 때문에 간단합니다.
 
-```plsql
+```sql
 CREATE OR REPLACE FUNCTION search_columns(
     needle text,
     haystack_tables name[] default '{}',
@@ -104,7 +98,7 @@ $$ language plpgsql;
 
 - public schema의 모든 테이블에서 조회하기: 
 
-```
+```sql
 select * from search_columns('foobar');
  schemaname | tablename | columnname | rowctid 
 ------------+-----------+------------+---------
@@ -119,7 +113,7 @@ select * from search_columns('foobar');
 
 - 특정 테이블에서 조회하기: 
 
-```
+```sql
  select * from search_columns('foobar','{w}');
  schemaname | tablename | columnname | rowctid 
 ------------+-----------+------------+---------
@@ -132,7 +126,7 @@ select * from search_columns('foobar');
 
 - 특정 테이블 집합에서 조회하기: 
 
-```
+```sql
 select * from search_columns('foobar', array(select table_name::name from information_schema.tables where table_name like 's%'), array['public']);
  schemaname | tablename | columnname | rowctid 
 ------------+-----------+------------+---------
@@ -146,7 +140,7 @@ select * from search_columns('foobar', array(select table_name::name from inform
 
 - Get a result row with the corresponding base table and and ctid
 
-```
+```sql
 select * from public.w where ctid='(0,2)';
  title |  body  |         tsv         
 -------+--------+---------------------
@@ -194,4 +188,6 @@ select * from search_columns('23fb9d28-3976-4b87-9545-403c45f8b8c8');
 
 테이블명, 컬럼명, rowctid가 모두 나오기 때문에 한눈에 쉽게 알아볼 수 있습니다. 이상입니다.
 
-​	
+**References**
+
+- https://stackoverflow.com/questions/5350088/how-to-search-a-specific-value-in-all-tables-postgresql
