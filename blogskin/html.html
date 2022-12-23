@@ -988,7 +988,7 @@
       <div class="search">
 
         <input class="searchInput" type="text" name="search" value="" placeholder="검색내용을 입력하세요."
-               onkeypress="if (event.keyCode==1 3) { requestSearch( '.util.use-sidebar .searchInput') }">
+               onkeypress="if (event.keyCode==13) { requestSearch( '.util.use-sidebar .searchInput') }">
       </div>
     </div>
 
@@ -1103,17 +1103,41 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
         if (lastModified) {
             $('#mod_date').text(moment(lastModified).fromNow());
         }
-        // 	image modal
+        // image modal
         $(".article-view p img").click(function () {
             let img = new Image();
             img.src = $(this).attr("src")
             $('.modalBox').html(img);
             $(".modal").show();
+
+            const imgElement = document.querySelector('.modalBox img');
+            const modalBox = document.querySelector('.modalBox');
+            const viewHeight = modalBox.offsetHeight;
+            const viewWidth = modalBox.offsetWidth;
+            const imgHeight = imgElement.offsetHeight;
+            const imgWidth = imgElement.offsetWidth;
+            const topMargin = (viewHeight - imgHeight)/2;
+            const leftMargin = (viewWidth - imgWidth)/2;
+            imgElement.style.marginTop = topMargin + 'px';
+            imgElement.style.marginLeft = leftMargin + 'px';
         });
-        // Close image modal when click it
+
+        // Prevent scroll event on modal
+        const modal = document.querySelector('.modal');
+        modal.addEventListener('wheel', (event) => {
+          event.preventDefault();
+        });
+
+        // Close image modal when click it or esc
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') { // Esc key
+            $(".modal").hide();
+          }
+        });
         $(".modal").click(function (e) {
-            $(".modal").toggle();
+            $(".modal").hide();
         });
+
         // reading-time.js activate
         $('.article-view').readingTime({
             readingTimeAsNumber: false,
@@ -1123,11 +1147,12 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
             prependTimeString: '📚 읽는시간 : ',
             lang: 'kr'
         });
+
         // TOP button
         $('#upBtn button').on('click', function () {
             window.scrollTo({top: 0, behavior: 'smooth'});
         })
-        //
+
         // darkMode toggle
         $('.wrapper .switch').on('change', function () {
             let isDarkMode = $(this).is(":checked");

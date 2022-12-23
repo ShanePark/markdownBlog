@@ -109,7 +109,7 @@ button.btn_menu_toolbar.btn_subscription.following.\#subscribe {
 #tt-body-page .article-view table.hljs-ln td.hljs-ln-line,
 #tt-body-page .article-view table th {
     font-family: JetBrainsMonoLight;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -170,18 +170,15 @@ button.btn_menu_toolbar.btn_subscription.following.\#subscribe {
     cursor: zoom-in;
 }
 
+.modalBox {
+    height: 100%;
+}
+
 .modalBox img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    max-width: 100%;
-    max-height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    max-block-size: -webkit-fill-available;
+    max-width: 95%;
+    max-height: 95%;
+    min-width: 50%;
+    display: block;
 }
 
 .modalBox img:hover {
@@ -949,12 +946,6 @@ html {
 
 #tt-body-page .area-paging {
     display: block;
-}
-
-@media screen and (max-width: 1060px) {
-    #tt-body-page .main {
-        padding-top: 440px;
-    }
 }
 
 #tt-body-page .area-paging-more {
@@ -4230,7 +4221,7 @@ html {
 .article-view ul li {
     font-size: 16px;
     line-height: 24px;
-    color: rgba(0, 0, 0, 0.87);
+    color: #555;
     word-break: break-all;
 }
 
