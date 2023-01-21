@@ -146,6 +146,13 @@ button.btn_menu_toolbar.btn_subscription.following.\#subscribe {
     font-family: "Pretendard"
 }
 
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+
 /* google translate */
 
 .goog-te-gadget-simple {
@@ -932,10 +939,6 @@ html {
     display: none;
 }
 
-#tt-body-page .main {
-    padding-top: 56px;
-}
-
 #tt-body-page .area-view img {
     display: inline-block;
     max-width: 100% !important;
@@ -1172,7 +1175,6 @@ html {
 .header {
     position: relative;
     width: 100%;
-    border-bottom: 1px solid #efefef;
     z-index: 10;
     transition: top 0.2s ease-in-out;
 }
@@ -1962,10 +1964,6 @@ html {
     /* box-search */
 }
 
-.area-aside > div {
-    margin-bottom: 43px;
-}
-
 .area-aside ul {
     margin: 0;
     padding: 0;
@@ -2122,7 +2120,7 @@ html {
 }
 
 .area-aside .right-box {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     box-shadow: 0 10px 20px rgb(0 0 0 / 20%), 0 6px 4px rgb(0 0 0 / 20%);
     border-radius: 40px / 40px;
     padding: 20px;
@@ -4669,15 +4667,6 @@ html {
 #tt-body-guestbook.headerbannerdisplayon .area-promotion,
 #tt-body-page.headerbannerdisplayon .area-promotion {
     display: none;
-}
-
-#tt-body-index .main,
-#tt-body-category .main,
-#tt-body-search .main,
-#tt-body-tag .main,
-#tt-body-archive .main,
-#tt-body-guestbook .main {
-    padding-top: 56px;
 }
 
 /* ------------------ 2단형 ------------------ */
