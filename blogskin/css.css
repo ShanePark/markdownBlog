@@ -6118,7 +6118,7 @@ html {
     padding: 10px;
     font-size: 85%;
     line-height: 1.45;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 10px 10px;
     background-color: #222 !important;
     box-shadow: 0 0px 10px rgb(0 0 0 / 20%), 0 6px 4px rgb(0 0 0 / 20%);
     /* remove unexpected gap on Safari */
@@ -6546,15 +6546,16 @@ div#chartdiv {
 ******************************/
 .codeLabel {
     background: linear-gradient(#2c2c2c, #1b1b1b);
-    border-radius: 15px 15px 0px 0px;
-    height: 2.3em;
+    border-radius: 10px 10px 0px 0px;
+    height: 2em;
     margin-top: 30px;
 }
 
-.codelang {
+.codeLabel .codelang {
     margin-right: 15px;
     height: 2em;
-    padding-top: 6px;
+    padding-top: 4px;
+    transition: all 0.7s;
 }
 
 .codelang span {
@@ -6576,7 +6577,7 @@ div#chartdiv {
 .codeLabel .traffic-lights {
     width: 60px;
     float: left;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .traffic-light {
@@ -6716,4 +6717,43 @@ div#chartdiv {
 
 .traffic-light-maximize:active:hover:after {
     background-color: #1d9730;
+}
+
+/**/
+.hljs-copy-wrapper {
+    transition: all 0.5s;
+    height: 100%;
+}
+
+.hljs-copy-wrapper.minimize,
+.hljs-copy-wrapper.close {
+    height: 0px;
+    opacity: 0;
+}
+
+.codeLabel.minimize {
+    border-radius: 10px;
+}
+
+.codeLabel.close {
+    border-radius: 10px;
+    width: 74px;
+}
+
+.codeLabel.close .codelang {
+    width: 0px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.codeLabel.close .traffic-light-close:hover {
+    cursor: default;
+}
+
+.codeLabel.minimize .traffic-light-minimize:hover {
+    cursor: default;
+}
+
+.codeLabel.maximize .traffic-light-maximize:hover {
+    cursor: default;
 }
