@@ -1155,14 +1155,19 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
 
     <!--code block top-bar-->
     $(function () {
+      const languageMap = new Map();
+      languageMap.set('kt', 'kotlin');
+      languageMap.set('kts', 'kotlin');
+      languageMap.set('ts', 'typescript');
+      languageMap.set('py', 'python');
         setTimeout(() => {
             $(".hljs").parent().each(function () {
-                var prevText = $(this).prev().text();
-                var code = this.dataset.keLanguage;
-                var $labelDiv = $("<div class='codelang'>");
-                var classes = $(this).find('code').attr('class').split(' ');
-                var language = '';
-                for (var i = 0; i < classes.length; i++) {
+                const prevText = $(this).prev().text();
+                const code = this.dataset.keLanguage;
+                const $labelDiv = $("<div class='codelang'>");
+                const classes = $(this).find('code').attr('class').split(' ');
+                let language = '';
+                for (let i = 0; i < classes.length; i++) {
                     if (classes[i].startsWith('language-')) {
                         language = classes[i].substring(9);
                         if (language == 'undefined') {
@@ -1171,19 +1176,32 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
                         break;
                     }
                 }
-                var fileName = ''
-                if (language && prevText && (prevText.endsWith("()") || prevText.toUpperCase().endsWith("." + language.toUpperCase()))) {
+                let fileName = ''
+                if (sameLanguage(prevText, language, languageMap)) {
                     fileName = prevText;
                     $(this).prev().remove();
                 }
                 $labelDiv.html('<span class="language">' + ( (fileName.length > 0) ? fileName : language ) + '</span>');
                 var $codeLabel = $('<div class="codeLabel focus">')
-                  .append('<div class="traffic-lights"><button class="traffic-light traffic-light-close" id="close"></button><button class="traffic-light traffic-light-minimize" id="minimize"></button><button class="traffic-light traffic-light-maximize" id="maximize"></button></div>').append($labelDiv);
+                  .append('<div class="traffic-lights"><button class="traffic-light traffic-light-close" id="close"></button><button class="traffic-light traffic-light-minimize" id="minimize"></button><button class="traffic-light traffic-light-maximize" id="maximize"></button></div>')
+                  .append($labelDiv);
                 $(this).before($codeLabel);
 
             }, 1000)
         })
     })
+
+    function sameLanguage(prevText, language, languageMap) {
+      if (!prevText || !language) 
+        return false;
+      if (prevText.endsWith("()")) 
+        return true;
+      const ext = prevText.split('.')[1];
+      if(!ext) 
+        return false;
+      const preLang = languageMap.get(ext.toLowerCase()) ?? ext.toLowerCase();
+      return preLang == language.toLowerCase();
+    }
 
 </script>
 
