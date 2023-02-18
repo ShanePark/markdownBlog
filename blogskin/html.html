@@ -1176,8 +1176,9 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
                     fileName = prevText;
                     $(this).prev().remove();
                 }
-                $labelDiv.html('<span class="filename">' + fileName + '</span><span class="language">' + language + '</span>');
-                var $codeLabel = $('<div class="codeLabel">').append('<div class="traffic-light"><img src="./images/traffic.png" alt="traffic"/></div>').append($labelDiv);
+                $labelDiv.html('<span class="language">' + ( (fileName.length > 0) ? fileName : language ) + '</span>');
+                var $codeLabel = $('<div class="codeLabel focus">')
+                  .append('<div class="traffic-lights"><button class="traffic-light traffic-light-close" id="close"></button><button class="traffic-light traffic-light-minimize" id="minimize"></button><button class="traffic-light traffic-light-maximize" id="maximize"></button></div>').append($labelDiv);
                 $(this).before($codeLabel);
 
             }, 1000)
