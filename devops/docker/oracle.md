@@ -4,11 +4,9 @@
 
 ## 주의
 
-Apple Silicon arm64 방식의 Mac 에서는 적용되지 않습니다. 저도 m1 맥북에어를 사용중이기 때문에 도커에서 오라클 데이터베이스를 띄워보려고 여러 노력을 해봤었지만 지금까지도 전혀 방법이 없습니다. Apple Silicon 환경에서의 오라클 데이터 베이스 사용은 아래 링크를 참고해주세요. 
+본 글은 맥북 M1 / M2에 해당하는 글이 아닙니다. `x86/64` 윈도우 및 리눅스에만 해당됩니다.
 
-> [Apple Silicon m1 맥북에서 Oracle Database 사용하기](https://shanepark.tistory.com/208)
-
-​	
+애플 실리콘은 arm64 아키텍처를 사용하기 때문에 다른 방법이 필요합니다. 오라클 사용이 필요한 맥북 사용자분들은 다음의 링크를 참고 해 주세요. [[MacOS] M1 맥북 도커로 ORACLE DB 실행하기](https://shanepark.tistory.com/400)	
 
 ## 서론	
 
