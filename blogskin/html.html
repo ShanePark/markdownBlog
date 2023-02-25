@@ -1187,6 +1187,9 @@
               let fileName = ''
               if (sameLanguage(prevText, language, languageMap)) {
                   fileName = prevText;
+                  if( prevText.startsWith('${code:') && prevText.endsWith('}')) {
+                    fileName = prevText.substring(7,prevText.length - 1);
+                  } 
                   $(this).prev().remove();
               }
               $labelDiv.html('<span class="language">' + ( (fileName.length > 0) ? fileName : language ) + '</span>');
@@ -1221,6 +1224,8 @@
       if (!prevText || !language) 
         return false;
       if (prevText.endsWith("()")) 
+        return true;
+      if (prevText.startsWith('${code:') && prevText.endsWith('}'))
         return true;
       const ext = prevText.split('.')[1];
       if(!ext) 
