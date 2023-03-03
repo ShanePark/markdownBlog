@@ -3482,7 +3482,8 @@ html {
 
 /* article-page - 상세페이지 이전다음글  */
 .article-page {
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #666;
+    margin-bottom: 30px;
 }
 
 .article-page .title-footer {
@@ -6570,6 +6571,9 @@ div#chartdiv {
     font-size: 14px;
 }
 
+.hljs-copy-button {
+    background-color: #222;
+}
 .hljs-copy-button:hover {
     cursor: pointer;
 }

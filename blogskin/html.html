@@ -369,17 +369,26 @@
                 <s_rp>
                   <div class="area-reply">
                     <div class="article-reply">
-                      <script>
-                          let script = document.createElement('script');
-                          script.setAttribute('src', "https://utteranc.es/client.js");
-                          script.setAttribute('repo', "ShanePark/markdownBlog");
-                          script.setAttribute('issue-term', "pathname");
-                          let theme = "github-" + (isDarkMode ? "dark" : "light");
-                          script.setAttribute('theme', theme);
-                          script.crossorigin = "anonymous";
-                          script.addAttribute = "async";
-                          document.querySelector(".article-reply").append(script);
-                      </script>
+                    <script>
+                        let giscusAttributes = {
+                          "src": "https://giscus.app/client.js",
+                          "data-repo": "ShanePark/markdownBlog",
+                          "data-repo-id": "MDEwOlJlcG9zaXRvcnkzNTY3ODIxNTk=",
+                          "data-category": "Comments",
+                          "data-category-id": "DIC_kwDOFUQQT84CTrMq",
+                          "data-mapping": "pathname",
+                          "data-reactions-enabled": "0",
+                          "data-emit-metadata": "0",
+                          "data-theme": (isDarkMode ? "transparent_dark" : "light"),
+                          "data-lang": "en",
+                          "data-loading": "lazy",
+                          "crossorigin": "anonymous",
+                          "async": "",
+                        };
+                        let giscusScript = document.createElement("script");
+                        Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+                        document.querySelector('.article-reply').appendChild(giscusScript);
+                    </script>
                     </div>
                 </s_rp>
                 <!-- ad footer -->
@@ -1095,14 +1104,18 @@
         // darkMode toggle
         $('.wrapper .switch').on('change', function () {
             let isDarkMode = $(this).is(":checked");
-            let utte = $('.utterances iframe');
-            let utteSrc = utte.attr('src');
-            let modeBefore = isDarkMode ? "github-light" : "github-dark";
-            let modeAfter = isDarkMode ? "github-dark" : "github-light";
-            if (utteSrc) {
-                let newSrc = utteSrc.replace(modeBefore, modeAfter);
-                utte.attr("src", newSrc)
+
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
             }
+            sendMessage({
+              setConfig: {
+                theme: isDarkMode ? "transparent_dark" : "light"
+              }
+            });
+
             if (isDarkMode) {
                 setDark();
                 localStorage.setItem("isDarkMode", true);
