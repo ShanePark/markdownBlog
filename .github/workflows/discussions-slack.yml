@@ -10,24 +10,51 @@ jobs:
   send-create-discussion:
     runs-on: ubuntu-latest
     steps:
-      - name: Create Message
+      - name: slack notification
         if: ${{ github.event.discussion && github.event.comment }}
-        id: make-body
-        run: |
-          message='New comment on [${{ env.DISCUSSION_TITLE }}](${{ env.COMMENT_URL }}) by [@${{ env.USER_NAME }}](${{ env.USER_URL }}) \n\n${{ env.COMMENT_BODY }}'
-          echo ${message}
-          echo "MESSAGE_BODY=${message}" >> $GITHUB_OUTPUT
         env:
           DISCUSSION_TITLE: ${{ github.event.discussion.title }}
           COMMENT_URL: ${{ github.event.comment.html_url }}
           COMMENT_BODY: ${{ github.event.comment.body }}
           USER_URL: ${{ github.event.comment.user.html_url }}
           USER_NAME: ${{ github.event.comment.user.login }}
-      - name: slack notification
         run: |
-          curl -X POST https://hooks.slack.com/services/${{secrets.SLACK_TOKEN}} \
-               -H "Content-Type: application/json" \
-               -d '{"channel": "#blog-comments", "username": "webhookbot", "text": "${{ steps.make-body.outputs.MESSAGE_BODY }}", "icon_emoji": ":speech_balloon:"}'
+          curl --location --request POST 'https://hooks.slack.com/services/${{secrets.SLACK_TOKEN}}' \
+              --header 'Content-Type: application/json' \
+              --data-raw '{
+                  "channel": "#blog-comments",
+                  "username": "Shane'\''s Planet",
+                      "blocks": [
+                  {
+                    "type": "section",
+                    "fields": [
+                      {
+                        "type": "mrkdwn",
+                        "text": "New Comment on *<https://shanepark.tistory.com/${{ env.DISCUSSION_TITLE }}|${{ env.DISCUSSION_TITLE }}>*"
+                      },
+                      {
+                        "type": "mrkdwn",
+                        "text": "*Commented by:* <${{ env.USER_URL }}|${{ env.USER_NAME }}>"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "text": {
+                      "type": "mrkdwn",
+                      "text": ${{ toJSON(env.COMMENT_BODY) }}
+                    },
+                    "accessory": {
+                      "type": "button",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "Read it",
+                        "emoji": true
+                      },
+                      "url": "${{ env.COMMENT_URL }}",
+                    }
+                  }
+                ],
+                  "icon_emoji": ":speech_balloon:"
+              }'
         shell: bash
-
-
