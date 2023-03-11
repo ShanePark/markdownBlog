@@ -12,49 +12,54 @@ jobs:
     steps:
       - name: slack notification
         if: ${{ github.event.discussion && github.event.comment }}
+        run: |
+          body=$(
+          cat << "EOF"
+          ${{ env.COMMENT_BODY }}
+          EOF
+          )
+          printf -v comment_unescaped %b "$body"
+          jq -n -r --arg text "$comment_unescaped" '{
+            "channel": "#blog-comments",
+            "username": "Shane'\''s Planet",
+            "blocks": [
+              {
+                "type": "section",
+                "fields": [
+                  {
+                    "type": "mrkdwn",
+                    "text": "New Comment on *<https://shanepark.tistory.com/${{ env.DISCUSSION_TITLE }}|${{ env.DISCUSSION_TITLE }}>*"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Commented by:* <${{ env.USER_URL }}|${{ env.USER_NAME }}>"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": $text
+                },
+                "accessory": {
+                  "type": "button",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "Read it",
+                    "emoji": true
+                  },
+                  "url": "${{ env.COMMENT_URL }}",
+                }
+              }
+            ],
+            "icon_emoji": ":speech_balloon:"
+          }
+          '|curl -X POST -H 'Content-Type: application/json' -d @- https://hooks.slack.com/services/${{secrets.SLACK_TOKEN}}
+        shell: bash
         env:
           DISCUSSION_TITLE: ${{ github.event.discussion.title }}
           COMMENT_URL: ${{ github.event.comment.html_url }}
           COMMENT_BODY: ${{ github.event.comment.body }}
           USER_URL: ${{ github.event.comment.user.html_url }}
           USER_NAME: ${{ github.event.comment.user.login }}
-        run: |
-          curl --location --request POST 'https://hooks.slack.com/services/${{secrets.SLACK_TOKEN}}' \
-              --header 'Content-Type: application/json' \
-              --data-raw '{
-                  "channel": "#blog-comments",
-                  "username": "Shane'\''s Planet",
-                      "blocks": [
-                  {
-                    "type": "section",
-                    "fields": [
-                      {
-                        "type": "mrkdwn",
-                        "text": "New Comment on *<https://shanepark.tistory.com/${{ env.DISCUSSION_TITLE }}|${{ env.DISCUSSION_TITLE }}>*"
-                      },
-                      {
-                        "type": "mrkdwn",
-                        "text": "*Commented by:* <${{ env.USER_URL }}|${{ env.USER_NAME }}>"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "section",
-                    "text": {
-                      "type": "mrkdwn",
-                      "text": ${{ toJSON(env.COMMENT_BODY) }}
-                    },
-                    "accessory": {
-                      "type": "button",
-                      "text": {
-                        "type": "plain_text",
-                        "text": "Read it",
-                        "emoji": true
-                      },
-                      "url": "${{ env.COMMENT_URL }}",
-                    }
-                  }
-                ],
-                  "icon_emoji": ":speech_balloon:"
-              }'
-        shell: bash
