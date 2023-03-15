@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: slack notification
-        if: ${{ github.event.discussion && github.event.comment }}
+        if: ${{ github.event.discussion && github.event.comment && env.USER_NAME != 'ShanePark' }}
         run: |
           body=$(
           cat << "EOF"
