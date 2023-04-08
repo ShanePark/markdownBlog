@@ -1,28 +1,18 @@
 # Ubuntu 20.04LTS 설치하기 
 
-
-
-[우분투 Ubuntu 설치 USB 만들기 및 windows 멀티부팅 셋팅](https://shanepark.tistory.com/229) 에 이어지는 글 입니다.
-
-​	
-
-​		
+> [우분투 Ubuntu 설치 USB 만들기 및 windows 멀티부팅 셋팅](https://shanepark.tistory.com/229) 에 이어지는 글 입니다.
 
 ## USB로 부팅하기
 
-![IMG_3200](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3200.jpeg)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3200.jpeg" height=500 width=750 alt=first>
 
 윈도우에서 간단하게 USB로 부팅하는 기능이 있기는 하지만 보통의 경우 BIOS 설정에서 부팅 우선순위를 변경해줍니다.
 
-제가 Ubuntu 설치 디스크로 만든 SanDisk Ultra USB 를 제일 위의 우선순위로 올려 둡니다. 
-
-​	
+제가 Ubuntu 설치 디스크로 만든 SanDisk Ultra USB 를 제일 위의 우선순위로 올려 둡니다. 	
 
 그러고 나서 설정을 저장 하면 자연스럽게 USB로 부팅이 진행됩니다.
 
-​	
-
-![IMG_3224](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3224.jpeg)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3224.jpeg" height=600 width=750 alt=second>
 
 Ubuntu 를 선택 해 줍니다.
 

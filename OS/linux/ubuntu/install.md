@@ -6,7 +6,7 @@
 
 https://ubuntu.com/download/desktop
 
-![image-20210917194545200](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210917194545200.png)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/install.assets/image-20210917194545200.png" width=750 height=450 alt="first">
 
 위의 공식 홈페이지에서 다운 받을 수 있습니다.
 

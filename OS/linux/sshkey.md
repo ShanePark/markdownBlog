@@ -6,9 +6,7 @@
 
 아래와 같이 public key가 있다면 SSH Key 생성 과정은 건너 띌 수 있습니다. key 가 있으신 분은 SSH Key 등록하기 로 쭉쭉 스크롤 하시면 됩니다. Mac 이나 Linux 에서는 ~/.ssh 경로 입니다.
 
-![](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810153821908.png)
-
-
+<img src="https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/sshkey.assets/image-20210810153821908.png" alt="first" width="750" height="450">
 
 ## 1. SSH Key 생성하기
 

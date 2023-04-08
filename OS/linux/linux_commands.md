@@ -15,7 +15,7 @@
 - -l : 파일들의 상세 정보를 나타냅니다.
 - -a : 숨김 파일들을 표시합니다.
 
-![image-20210811091048650](https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/linux_commands.assets/image-20210811091048650.png)
+<img src="https://github.com/Shane-Park/markdownBlog/raw/master/OS/linux/linux_commands.assets/image-20210811091048650.png" height=500 width=750 alt=first>
 
 > 위의 사진에서 처럼 보이지 않던 폴더들이  (.으로 시작하는 폴더들은 hidden 입니다) ls -al 명령어에서는 보여줍니다		
 

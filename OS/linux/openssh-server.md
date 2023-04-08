@@ -1,6 +1,6 @@
 # Ubuntu 20.04 LTS ) SSH 접속 허용하기
 
-![Enable SSH on Ubuntu 18.04](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/featured_hud1de18774fc6feb5ae8168196a42a70d_96244_768x0_resize_q75_lanczos.jpg)		
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/featured_hud1de18774fc6feb5ae8168196a42a70d_96244_768x0_resize_q75_lanczos.jpg" height=430 width=750 alt=first>
 
 > https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-20-04/
 

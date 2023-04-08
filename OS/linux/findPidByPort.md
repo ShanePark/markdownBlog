@@ -1,7 +1,5 @@
 # Linux) 특정 port 사용중인 프로세스 찾아 죽이기
 
-​		
-
 ## 서론
 
 Tomcat을 사용하다 보면 어플리케이션이 정상적으로 종료가 되지 않아서 포트가 충돌 나는 경우가 있습니다. 
@@ -10,19 +8,25 @@ Tomcat을 사용하다 보면 어플리케이션이 정상적으로 종료가 �
 
 아래는 이클립스에서 톰캣을 실행 하려 할 때, 8080 port가 이미 점유중이라는 에러 메시지 입니다.
 
-![image-20211014100143457](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014100143457.png)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014100143457.png" height="450" width="750" alt=first>
 
 > The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
 
+이럴때는 프로세스를 찾아서 종료해줘야하는데요, 처음 이런 경우가 발생하면 정말 당황스럽습니다.
+
+몇가지 리눅스 명령어를 이용하면 손쉽게 해당 포트를 점유하고 있는 프로세스를 찾을 수 있고 종료도 할 수 있습니다.
+
+심지어는 한번의 명령어로 바로 해당 포트를 점유하는 프로세스를 종료시킬 수도 있습니다.
+
 ## port 번호로 pid 찾기	
 
-8080 port를 점유하고 있는 프로세스를 찾아보겠습니다.
+먼저 8080 port를 점유하고 있는 프로세스를 찾아보겠습니다.
 
 ```bash
 sudo ss -lptn 'sport = :8080'
 ```
 
-![image-20211014100309471](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014100309471.png)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014100309471.png" width=750 height=500 alt=second>
 
 PID 22706 에서 해당 포트를 사용 중 이라는 것을 확인 했습니다.. 또한 Process 이름은 java 입니다.		
 

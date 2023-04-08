@@ -12,7 +12,7 @@ Ubuntu 에서 한글 입력을 할 수 있도록 설정을 해 보도록 하겠�
 
 일단 제일 먼저 Settings 에 들어갑니다.
 
-![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/korean.assets/1.png)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/korean.assets/1.png" alt="first" height="500px" width="800px">
 
 Settings를 켠 후에는 Regions & Language 를 클릭 합니다. 키보드 설정이 따로 있는게 아니고 해당 설정은 지역 설정에서 하더라구요.
 
