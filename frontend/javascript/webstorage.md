@@ -1,22 +1,18 @@
 # 이제는 Cookie 대신 Web Storage 가 대세
 
-​		
-
 ## HTML Web Storage
 
 > 참고자료 : https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
 
-웹 스토리지를 이용하면 웹 어플리케이션은 데이터를 사용자의 브라우저에 내부적으로 저장 할 수 있습니다. HTML5 이전에는 어플리케이션의 데이터가 Cookie 에 저장되어야 했는데요, 그로 인해 매번의 서버에 대한 요청마다 포함되어야 했었습니다. 웹스토리지는 더 보안상 안전하며 훨씬 큰 데이터를 저장 할 수 있습니다. 심지어 웹사이트의 퍼포먼스에도 전혀 영향을 주지 않습니다.
+웹 스토리지를 이용하면 웹 어플리케이션은 데이터를 사용자의 브라우저에 내부적으로 저장 할 수 있습니다. HTML5 이전에는 어플리케이션의 데이터가 Cookie 에 저장되어야 했는데요, 그로 인해 매번의 서버에 대한 요청마다 포함되어야 했었습니다. 웹스토리지는 더 보안상 안전하며 훨씬 큰 데이터를 저장 할 수 있습니다. 심지어 웹사이트의 퍼포먼스에도 전혀 영향을 주지 않습니다	
 
-​	
-
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/webstorage.assets/image-20210928211338759.png)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/webstorage.assets/image-20210928211338759.png" height=500 width=600 alt=first>
 
 Cookie는 브라우저마다 최대 갯수와 최대 사이즈가 미묘하게 다르기는 하지만, 일단 최대 4096 bytes의 데이터를 저장 할 수 있습니다. 숫자가 커 보이지만 겨우 4kb 입니다. 의미 있는 문장을 저장하기에도 부족할 뿐 더러 직렬화 해서 뭔가의 객체나 데이터를 저장할 엄두도 내기 힘든 크기 입니다.
 
 ​		
 
-![image-20210928211847703](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/webstorage.assets/image-20210928211847703.png)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/webstorage.assets/image-20210928211847703.png" height=500 width=600 alt=second>
 
 반면에 Web Storage는 어떨까요? 무려 5MB의 크기를 제공합니다. 단순 비교로도 Cookie에 비해 1280배가 큽니다. 5MB라면 어지간한 이미지도 Base64 로 인코딩해서 문자로 저장 가능 할 정도 입니다.
 

@@ -9,7 +9,7 @@ Ruby와 Git 으로 개발된 MacOS용 패키지 매니저입니다.
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img.png)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img.png" width=750 height=143 alt=brew>
 
 > https://brew.sh/index_ko
 
