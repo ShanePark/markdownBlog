@@ -1,6 +1,6 @@
 # 우분투에서 아이폰 / 아이패드 미러링 하기
 
-​	 
+## Intro	 
 
 사실은 양방향 미러링을 하는 방법을 시도 해 보고 있었는데, 스크린 캐스트를 통해 단방향 미러링을 먼저 성공 하게 되었습니다. 반응이 굉장히 빠르기 때문에 분명 여러가지 유용하게 사용 될 것 같아 포스팅을 정리해 두려 합니다.
 
@@ -47,17 +47,17 @@ make
 
 빌드가 완료 되었습니다.
 
-![image-20211001220128420](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/image-20211001220128420.png)
+![image-20211001220128420](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/image-20211001220128420.webp)
 
 ​			
 
 빌드가 완료 되었으니 이제 실행 합니다. build 경로에서 실행 해 주세요.
 
-![image-20211001220226724](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/image-20211001220226724.png)	
+![image-20211001220226724](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/image-20211001220226724.webp)	
 
 이제 리눅스에서의 준비는 끝났습니다.
 
-![image-20211001222359064](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/image-20211001222359064.png)
+![image-20211001222359064](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/image-20211001222359064.webp)
 
 ​	
 
@@ -65,15 +65,15 @@ make
 
 제어센터를 열어 줍니다. 그러고 스크린 미러링을 눌러주는데요, 블루투스 아이콘 아래의 모니터 2개 모양이 스크린 미러링 입니다.
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/IMG_3362.PNG" alt="IMG_3362" style="zoom:150%;" />
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/IMG_3362.webp" alt="IMG_3362" style="zoom:150%;" />
 
 미러링에 뜬 UxPlay를 눌러줍니다.
 
-![IMG_3363](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/IMG_3363.PNG)
+![IMG_3363](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/IMG_3363.webp)
 
 선택을 하면 체크 모양이 나옵니다.
 
-![IMG_3364](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/IMG_3364.PNG)
+![IMG_3364](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/IMG_3364.webp)
 
 
 
@@ -89,7 +89,7 @@ sudo apt-get install gstreamer1.0-plugins-bad
 
 이후 미러링이 잘 진행됩니다. 리눅스에서 gif로 녹화하며 화질이 안좋아 보이지만 사실 화질도 괜찮게 나옵니다. 반응속도도 정말 빠르고요.
 
-![peek](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/peek.gif)
+![peek](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/iphone.assets/peek.webp)
 
 ​	
 
