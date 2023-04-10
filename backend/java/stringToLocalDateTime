@@ -18,7 +18,7 @@ API 호출을 하던 중에 JSON 형식으로 받아 온 시간 데이터를 JAV
 
 ​	
 
-![image-20211022142254060](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142254060.png)
+![image-20211022142254060](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142254060.webp)
 
 일단 code assist 를 받아보니 ofPattern 메서드로 패턴 형식만 받거나 혹은 Locale 정보를 같이 받더라구요. Locale 까지 넣진 않을거라 String 만 넣어서 사용 해 보겠습니다.
 
@@ -48,19 +48,19 @@ second 옆의 milliseconds 를 어떻게 표현해야 할지 몰라 찾아보니
 
 ​	
 
-![image-20211022142620913](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142620913.png)
+![image-20211022142620913](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142620913.webp)
 
 이번에는 parse를 해낼 차례입니다. 처음에는 DateTimeFormatter를 사용하지 않고 그냥 String만 넣어서 parsing을 시도 해 보았었는데요, 
 
 ​	
 
-![image-20211022142721414](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142721414.png)
+![image-20211022142721414](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142721414.webp)
 
 이렇게 `Text '2021-11-05 13:47:13.248' could not be parsed at index 10` 에러가 발생하여 파싱을 해내지 못했습니다. 
 
 ​	
 
-![image-20211022142806982](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142806982.png)
+![image-20211022142806982](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142806982.webp)
 
 그래서 메서드를 확인 해 보니 `2007-12-03T10:15:30` 형식의 문자열만 parse 할 수 있더라고요. 뭐, 처음 파싱에 실패하면 여러가지 차선의 방법으로 순서대로 파싱을 시도 해 보는 방법이 있을 수 있겠지만 그러다가는 사용자가 의도하지 않은 엉뚱한 시간 데이터를 반환하는 일말의 가능성이 생기기 때문에 애초에 그런 문제를 피하고자 예외 처리를 해 버리고, 그 외의 경우에는 사용자가 정확하게 Format을 기입하게끔 해 둔 듯 합니다.
 
@@ -77,6 +77,6 @@ System.out.println(dateTime);
 
 ​	
 
-![image-20211022143105991](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022143105991.png)
+![image-20211022143105991](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022143105991.webp)
 
 그러면 이제 정확하게 parsing을 해 내어 LocalDateTime 객체로 변환이 됩니다. 이상입니다.

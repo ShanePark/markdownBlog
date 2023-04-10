@@ -26,13 +26,13 @@ window.location.href = 'https://shanepark.tistory.com';
 
 ### 테스트 환경
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820225344230.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820225344230.webp)
 
 일단 바탕화면에 1.html, 2.html, 3.html 파일을 만듭니다. 1.html 에서 버튼을 클릭하면 2.html 파일로 이동하는데, 2.html 파일은 단순하게 3.html 파일로 리다이렉트 하는 역할을 하게끔 해 보겠습니다.	
 
 **1.html**
 
-![image-20210820230545572](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820230545572.png)
+![image-20210820230545572](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820230545572.webp)
 
 > 정말 단순하게 링크를 클릭하면 2.html 파일로 이동하는 페이지를 만들었습니다.
 
@@ -78,11 +78,11 @@ window.location.href = 'https://shanepark.tistory.com';
 
 ### 처음 페이지
 
-![image-20210820230746895](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820230746895.png)
+![image-20210820230746895](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820230746895.webp)
 
 의도한 처음 페이지 입니다. 한번 이동하기 버튼을 클릭 해 보겠습니다.		
 
-![image-20210820230813520](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820230813520.png)
+![image-20210820230813520](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820230813520.webp)
 
 리다이렉트가 정상적으로 이루어 졌고, 3.html 파일로 왔습니다. 
 
@@ -90,11 +90,11 @@ window.location.href = 'https://shanepark.tistory.com';
 
 ### 뒤로가기
 
-![image-20210820230920674](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820230920674.png)
+![image-20210820230920674](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820230920674.webp)
 
 뒤로가기를 누르면...
 
-![image-20210820230932957](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820230932957.png)
+![image-20210820230932957](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820230932957.webp)
 
 노출되면 안되는 2.html 파일이 열렸습니다. 
 

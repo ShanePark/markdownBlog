@@ -9,7 +9,7 @@ Ruby와 Git 으로 개발된 MacOS용 패키지 매니저입니다.
 
 ​	
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img.png" width=750 height=143 alt=brew>
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img.webp" width=750 height=143 alt=brew>
 
 > https://brew.sh/index_ko
 
@@ -26,55 +26,55 @@ Homebrew 설치하기에 보면 명령어가 친절하게 써있습니다. 복�
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112929369.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112929369.webp)
 
 거기에 Terminal 을 치고 엔터 치면 됩니다. ter 까지만 쳐도 실행 됩니다.
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948321.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948321.webp)
 
 복사한 텍스트를 붙여 넣기 하고 엔터 칩니다.
 
 ​		
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948342.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948342.webp)
 
 비밀번호를 입력하라고 나옵니다. 맥북 비밀번호를 입력합니다.
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948364.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948364.webp)
 
 계속하려면 엔터키, 중단하려면 아무 키나 누르라고 나옵니다. 엔터 키를 눌러 주면 설치가 됩니다.
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948396.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948396.webp)
 
 엔터키를 누르자마자 이것 저것 자동으로 설치해줍니다.
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948377.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948377.webp)
 
 Downloading Command Line 이라고 나오면 멈춰 있어 보여도 다운을 받는 중이니 기다려줍니다.
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948384.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948384.webp)
 
 기다리다 보면 뭔가 열심히 다운도 받고 설치도 합니다.
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948370.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948370.webp)
 
 설치가 완료되었습니다.
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948375.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948375.webp)
 
 
 
@@ -88,14 +88,14 @@ echo 'export PATH=/opt/homebrew/bin:$PATH' >> ~/.zshrc
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948370-5042588.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948370-5042588.webp)
 
 
 
 
 확인 하지 않으셔도 되지만, `vi ~/.zshrc`를 입력해서 직접 에디터를 실행해보면 아래 한줄이 자동으로 입력된 걸 확인할 수 있습니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948382.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948382.webp)
 
 ​	
 
@@ -104,20 +104,20 @@ zshrc가 수정된 후에는 꼭 `source ~/.zshrc` 를 입력해서 반영을 �
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948427.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948427.webp)
 
 
 
 이제 brew 명령어가 정상적으로 잘 작동합니다!
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948452.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948452.webp)
 
 ​	
 
 brew --version 을 입력하면 버전 확인이 가능합니다.
 brew update 로 업데이트도 가능합니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948445.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948445.webp)
 
 ​	이상입니다.
 
@@ -127,7 +127,7 @@ brew update 로 업데이트도 가능합니다.
 brew search alfred
 ```
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948447.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948447.webp)
 
 검색해보니 Casks로 존재합니다. Casks가 아니면 brew install alfred 만 입력하면 되지만, Casks이기 때문에 --cask 옵션을 붙여야 했었는데, 요즘 brew는 cask 옵션을 붙이지 않아도 되긴 하는 것 같더라고요.
 
@@ -137,20 +137,20 @@ brew install --cask alfred
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948411.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948411.webp)
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948420.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948420.webp)
 
 명령어가 입력되고 조금 기다리면 스스로 다운로드와 인스톨을 진행합니다.
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948481.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948481.webp)
 설치가 완료되었다는 메시지가 나옵니다.
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948490.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/brew.assets/img-20211024112948490.webp)
 
 
 applications 에 보니 정말 설치가 잘 되어 있는걸 확인 할 수 있습니다.
