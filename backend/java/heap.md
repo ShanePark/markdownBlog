@@ -22,7 +22,7 @@ Heap은 **최소값 및 최대값을 최대한 빠르게 찾아내기** 위해 �
 
 **그림으로 예를 들어보겠습니다.**
 
-[<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/Max-Heap.jpg" alt="Max-Heap" style="zoom:200%;" />](https://en.wikipedia.org/wiki/File:Max-Heap-new.svg)
+[<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/Max-Heap.webp" alt="Max-Heap" style="zoom:200%;" />](https://en.wikipedia.org/wiki/File:Max-Heap-new.svg)
 
 > https://en.wikipedia.org/wiki/Heap_(data_structure)
 
@@ -93,7 +93,7 @@ public class Heap {
 
 index에 대한 이해를 돕기 위해 아래의 그림을 준비 했습니다. 제가 보라색으로 써 넣은 숫자가 배열에서의 각각의 인덱스 입니다. 부모노드의 index에 2를 곱하고, 거기에 1을 더한게 leftChild의 index, 2를 더한게 rightChild의 인덱스 입니다. 인덱스 번호에서 1을 뺀 뒤에 2로 나누면 부모의 index를 찾을 수도 있습니다.
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016172947891.png" alt="image-20211016172947891" style="zoom:200%;" />
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016172947891.webp" alt="image-20211016172947891" style="zoom:200%;" />
 
 ​	
 
@@ -290,13 +290,13 @@ public static void main(String[] args) {
 
 작동 결과
 
-![image-20211016185716389](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016185716389.png)
+![image-20211016185716389](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016185716389.webp)
 
 ​	
 
 잘 작동되었는지 눈으로 보기엔 확인이 쉽지 않죠? 그림으로 직접 그려 보았습니다.
 
-![image-20211016190630060](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016190630060.png)
+![image-20211016190630060](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016190630060.webp)
 
 6번째 네모 박스에서 poll 이후에 4가 두개 있는 것 처럼 보이는데, size 가 줄었기 때문에 그 자리는 사실 없는 숫자 입니다.
 
@@ -319,7 +319,7 @@ poll 메서드에 위와 같이 `items[size-1]` 을 추가해줄 수 있습니�
 
 ​		
 
-![image-20211016190921296](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016190921296.png)
+![image-20211016190921296](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016190921296.webp)
 
 > 이제 poll 이후에 4가 말끔하게 제거 됩니다.
 
@@ -500,7 +500,7 @@ public class PriorityQueue {
 
 이렇게 2, 0 , 4 를 PriorityQueue 에 add 한 뒤에, 한 개 씩 꺼내어 출력 해 보면.
 
-![image-20211016201135309](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016201135309.png)
+![image-20211016201135309](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016201135309.webp)
 
 가장 작은 값 부터 하나씩 출력 되는 것을 확인 하실 수 있습니다. 
 
@@ -510,7 +510,7 @@ public class PriorityQueue {
 
 기본적으로 PriorityQueue는 min-Heap 을 구현 해 두었는데요, 예전에 잘 몰랐을 때는 모든 수를 음수로 만들어서 max Heap 처럼 사용 했었는데 이번에 알고 보니 생성자에서 Comparator를 받더라고요.
 
-![image-20211016201500145](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016201500145.png)
+![image-20211016201500145](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016201500145.webp)
 
 이를 이용해서 Comparator를 반대로 구현 해 둔다면 max Heap도 문제 없이 만들 수 있습니다.
 
@@ -533,7 +533,7 @@ public class MaxHeap {
 
 ```
 
-![image-20211016201612911](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016201612911.png)
+![image-20211016201612911](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/image-20211016201612911.webp)
 
 ​	
 

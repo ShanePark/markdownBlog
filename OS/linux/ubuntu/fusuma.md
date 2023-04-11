@@ -38,7 +38,7 @@ Fusuma(襖) 는 일본에서의 미닫이 문을 칭하는 말 입니다. 한국
 $ sudo gpasswd -a $USER input
 ```
 
-![image-20211008210922249](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008210922249.png)
+![image-20211008210922249](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008210922249.webp)
 
 이제 해당 사항을 적용 시키기 위해서는 logout을 하거나 재부팅을 한번 해주세요.	
 
@@ -58,7 +58,7 @@ $ newgrp input
 $ sudo apt-get install libinput-tools
 ```
 
-![image-20211008211153963](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008211153963.png)
+![image-20211008211153963](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008211153963.webp)
 
 #### 2. Ruby 설치
 
@@ -68,7 +68,7 @@ Fusuma는 Ruby로 실행되기 때문에 먼저 설치해야 합니다.
 $ sudo apt-get install ruby
 ```
 
-![image-20211008211305416](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008211305416.png)
+![image-20211008211305416](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008211305416.webp)
 
 #### 3. Fusuma 설치
 
@@ -76,7 +76,7 @@ $ sudo apt-get install ruby
 $ sudo gem install fusuma
 ```
 
-![image-20211008211336740](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008211336740.png)
+![image-20211008211336740](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008211336740.webp)
 
 #### 4. xdotool 설치 (선택)
 
@@ -86,7 +86,7 @@ $ sudo gem install fusuma
 $ sudo apt-get install xdotool
 ```
 
-​	![image-20211008213005659](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008213005659.png)
+​	![image-20211008213005659](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008213005659.webp)
 
 사실 선택이라고 써있어도 왠만한 제스처를 넣으려면 필수 입니다.
 
@@ -108,7 +108,7 @@ $ gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled
 $ fusuma
 ```
 
-![image-20211008211649914](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008211649914.png)
+![image-20211008211649914](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008211649914.webp)
 
 config file이 발견되지 않았다고 나옵니다. 설정 파일을 만들어 주어야 겠네요.
 
@@ -117,7 +117,7 @@ $ mkdir -p ~/.config/fusuma        # 설정 폴더 만들기
 $ vi ~/.config/fusuma/config.yml # 설정 파일 편집 하기
 ```
 
-![image-20211008211913941](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008211913941.png)
+![image-20211008211913941](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008211913941.webp)
 
 ​		
 
@@ -155,13 +155,13 @@ pinch:
 
 손가락 3개, 4개로 하는 제스처와 손가락 두개 집기로 확대, 축소 하는 제스처기본 설정입니다.
 
-![image-20211008212259338](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008212259338.png)
+![image-20211008212259338](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008212259338.webp)
 
 ​			
 
 설정을 저장 한 후 다시 fusuma 를 실행 해 봅니다.
 
-![image-20211008212518477](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008212518477.png)
+![image-20211008212518477](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008212518477.webp)
 
 이제는 설정파일을 읽어오네요. 이후 정말 손가락 세개를 좌, 우로 이동시 웹에서 뒤로가기 앞으로 가기가 되었습니다. 또한 손가락 3개를 위로 올리거나 내리면 Super 키를 입력할 때 처럼 동작 했습니다.
 
@@ -337,7 +337,7 @@ fusuma -l
 
 을 입력해 사용 가능한 디바이스 목록을 확인 하니 방금 연결한 Apple Inc. Magic Trackpad 2 가 목록에 보입니다.
 
-![image-20211008232352778](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008232352778.png)
+![image-20211008232352778](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008232352778.webp)
 
 그리고 사용을 해보니, 맥북에서 사용할 때와 굉장히 흡사하게 사용 할 수 있었습니다.
 
@@ -359,19 +359,19 @@ fusuma -d
 
 - `$ which fusuma` 를 입력해 fusuma가 어디에 설치된지 확인 합니다.
 
-![image-20211008232916841](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008232916841.png)
+![image-20211008232916841](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008232916841.webp)
 
 - `$ gnome-session-properties` 를 엽니다. 터미널에 입력하면 실행 됩니다.
 
-![image-20211008232857228](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008232857228.png)
+![image-20211008232857228](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008232857228.webp)
 
 - Fusuma 를 추가 합니다. 위에서 확인한 경로를 입력합니다.
 
-  ![image-20211008233000818](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008233000818.png)
+  ![image-20211008233000818](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008233000818.webp)
 
 - 커맨드 필드 마지막에 -d 옵션을 넣어 데몬에서 실행되도록 합니다.
 
-![image-20211008233133934](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008233133934.png)
+![image-20211008233133934](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fusuma.assets/image-20211008233133934.webp)
 
 ​	
 

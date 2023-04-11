@@ -96,7 +96,7 @@ public class Stream01 {
 
 또한 이렇게 하면 단 한줄로도 순회하며 출력하는 코드를 작성 할 수 있습니다.
 
-![image-20210905212522547](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905212522547.png)
+![image-20210905212522547](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905212522547.webp)
 
 > 실행 결과
 
@@ -224,7 +224,7 @@ public class Stream05 {
 }
 ```
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905214721091.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905214721091.webp)
 
 위의 코드와 실행 결과를 보면 좀 더 이해가 쉽습니다. distinct()를 통해 일단 중복 데이터인 5가 한개 제거 되었습니다. 다음으로 limit5 를 거쳐 8,5,4,3,6 이 Stream에 남았겠네요. 이제 sorted() 를 통해 정렬 이 됩니다. 3,4,5,6,8 이 있네요. 그 다음연산으로 filter에서 5보다 큰 숫자들은 제외가 됩니다. 그러면 3,4,5 만 남았네요. forEach를 통해 해당 숫자 들을 출력 해 주었습니다.
 
@@ -240,7 +240,7 @@ public class Stream05 {
 
 ### map
 
-![image-20210905215237124](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905215237124.png)
+![image-20210905215237124](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905215237124.webp)
 
 스트림의 요소를 변환 합니다. intermediate operation (중간연산) 이라는 설명도 해주네요. 
 
@@ -270,7 +270,7 @@ public class Stream06 {
 
 ​	
 
-![image-20210905215552921](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905215552921.png)
+![image-20210905215552921](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905215552921.webp)
 
 네. 맞습니다. 모든 스트림의 요소를 1씩 추가 하도록 했습니다. 이처럼 map 은 스트림의 요소를 변환 하는 데 사용되며, 중간 연산의 핵심 입니다.
 
@@ -278,7 +278,7 @@ public class Stream06 {
 
 ### flatMap	
 
-![image-20210905215719820](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905215719820.png)
+![image-20210905215719820](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905215719820.webp)
 
 핵심 중간연산을 하나 더 뽑자면 flatMap 이 있습니다. 제법 설명도 길게 되어 있네요.
 
@@ -304,7 +304,7 @@ public class Stream06 {
 }
 ```
 
-![image-20210905220810292](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905220810292.png)
+![image-20210905220810292](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905220810292.webp)
 
 ​	이런식으로 String 배열을 T 로 가진 Stream이 있습니다. 이 때 각 요소의 문자열들을 합쳐서 문자열이 요소인 스트림 Stream<String>을 만들려면 어떻게 해야 할까요?
 
@@ -332,7 +332,7 @@ public class Stream06 {
 }
 ```
 
-![image-20210905221340843](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905221340843.png)
+![image-20210905221340843](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905221340843.webp)
 
 ​		
 
@@ -358,7 +358,7 @@ public class Stream06 {
 }
 ```
 
-![image-20210905221631900](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905221631900.png)
+![image-20210905221631900](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905221631900.webp)
 
 이제야 원했던 결과가 나옵니다.
 
@@ -370,7 +370,7 @@ public class Stream06 {
 
 ### reduce()
 
-![image-20210905221909088](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905221909088.png)
+![image-20210905221909088](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905221909088.webp)
 
 reduce 라는 이름이 말 해주는 것 처럼, 스트림의 요소를 하나 씩 줄여 가면서 연산을 수행 하고, 최종 결과를 반환 하게 됩니다. 이번에도 예시 코드를 먼저 만들어 보겠습니다.
 
@@ -396,7 +396,7 @@ public class Stream07Reduce {
 }
 ```
 
-![image-20210905222547574](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905222547574.png)
+![image-20210905222547574](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905222547574.webp)
 
 ​	
 
@@ -423,7 +423,7 @@ public class Stream07Reduce2 {
 }
 ```
 
-![image-20210905222952919](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905222952919.png)
+![image-20210905222952919](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905222952919.webp)
 
 ​	최대값을 구해 보았습니다. 타입이 IntStream인 경우에는 Optional 객체를 사용 했는데요, Strem<T> 와는 다르게 IntStream에 정의 된 reduce() 의 반환 타입이 OptionalInt 이기 때문입니다. Optional 을 사용 해 보지 않았다면 .orElse(0)이 어떤 의미인지 잘 모를 수도 있는데, 값이 없다면 대신 0을 반환하라는 것 입니다. max.get()을 통해 값을 받아 올 수 도 있지만, Optional 객체를 사용하는 것 자체가 Null을 직접 다루지 않기 위해서 이며, .get을 했다가는 또 다시 NullPointException의 가능성이 있기 때문에 orElse를 사용하는 것 입니다.
 
@@ -431,7 +431,7 @@ public class Stream07Reduce2 {
 
 ### collect()
 
-![image-20210905223333923](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905223333923.png)
+![image-20210905223333923](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905223333923.webp)
 
 >  마지막으로 collect 입니다. 사실 스트림을 다룬 다면 지금 핵심으로 꼽은 네가지 메서드만 사용하는 경우는 별로 없고 매우 다양한 메서드들을 조합해서 사용하게 되는데요. 스트림의 기초를 먼저 알게 된다면 그 이후는 크게 어렵지 않게 응용 할 수 있을 테니 collect 까지만 다루어 보겠습니다. 
 
@@ -439,7 +439,7 @@ public class Stream07Reduce2 {
 
 ​	
 
-![image-20210905223905913](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905223905913.png)
+![image-20210905223905913](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905223905913.webp)
 
 아까 중간연산자들에 대해 공부 할 때, limit(), sorted(), filter() 등의 중간 연산을 거친 스트림을 최종적으로 collect 해 보려고 합니다. IDE의 도움을 받으니 toList, toSet, toCollection 등등 여러가지 기존에 이미 작성되어 있던 Collector를 사용 할 수 있습니다.
 
@@ -472,7 +472,7 @@ public class Stream08Collect {
 }
 ```
 
-![image-20210905224055727](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905224055727.png)
+![image-20210905224055727](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905224055727.webp)
 
 그렇게 스트림을 수집해 새로 만든 List는 또 다시 원하는 대로 얼마든지 사용 할 수 있습니다.
 
@@ -524,7 +524,7 @@ public class Stream08Collect2 {
 
 이번엔 Stream을 Map으로도 수집 해 보았습니다.  Map 의 경우에는 key-value 쌍으로 저장 해야 하기 때문에 객체의 어떤 필드를 키로 사용할지, 그리고 어떤 필드를 value 로 사용할 지를 정해줘야 합니다. 저는 p.number를 key로, p 자체를 value로 하게끔 해 보았습니다. 그렇게 만든  map 에서 key로 2를 넣어 조회를 하면,
 
-![image-20210905224737470](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905224737470.png)
+![image-20210905224737470](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stream.assets/image-20210905224737470.webp)
 
 의도한대로 2번 number를 가지고 있는 시라소니를 조회 해 옵니다.
 

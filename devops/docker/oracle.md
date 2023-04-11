@@ -26,7 +26,7 @@ docker run --name oracle11g -d -p 1521:1521 jaspeen/oracle-xe-11g
 
 이미지가 없다면 금새 다운을 받게 됩니다.
 
-![image-20210920123851964](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920123851964.png)
+![image-20210920123851964](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920123851964.webp)
 
 ​	
 
@@ -36,7 +36,7 @@ docker run --name oracle11g -d -p 1521:1521 jaspeen/oracle-xe-11g
 docker ps
 ```
 
-![image-20210920123931777](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920123931777.png)
+![image-20210920123931777](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920123931777.webp)
 
 ​		
 
@@ -48,7 +48,7 @@ docker logs oracle11g
 
 ​	
 
-![image-20210920124342439](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920124342439.png)
+![image-20210920124342439](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920124342439.webp)
 
 데이터베이스가 준비 되었다고 하네요 ! 
 
@@ -68,13 +68,13 @@ docker exec -it {컨테이너이름} bash 명령어를 컨테이너에 접속 �
 sudo docker exec -it oracle11g bash
 ```
 
-![image-20210920124719422](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920124719422.png)
+![image-20210920124719422](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920124719422.webp)
 
 ​	
 
 sqlplus로 접속 해 봅니다. 초기 관리자 ID 와 PW는 system / oracle 입니다.
 
-![image-20210920125019527](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920125019527.png)
+![image-20210920125019527](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920125019527.webp)
 
 ​	
 
@@ -84,7 +84,7 @@ sqlplus로 접속 해 봅니다. 초기 관리자 ID 와 PW는 system / oracle �
 password
 ```
 
-![image-20210920125229059](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920125229059.png)
+![image-20210920125229059](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920125229059.webp)
 
 ​	
 
@@ -98,7 +98,7 @@ password
 
 일단 각자 가지고 있는 Database Client를 사용하시면 되는데, Sql Developer를 사용해도 되지만 저는 DBeaver가 설치 되어 있어서 DBeaver를 사용합니다.
 
-![image-20210920130225357](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920130225357.png)
+![image-20210920130225357](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/oracle.assets/image-20210920130225357.webp)
 
 저는 docker를 설치해 Oracle Database를 올린 컴퓨터와 Host 컴퓨터가 따로라서 Host:에 해당 내부 아이피를 입력 했지만, 같은 컴퓨터라면 그냥 localhost를 입력 하시면 됩니다. Database: 는 xe로 꼭 변경해줘야 합니다.
 

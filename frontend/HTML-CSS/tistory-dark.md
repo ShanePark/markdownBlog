@@ -30,19 +30,19 @@
 
 일단 블로그관리 - > 스킨 편집 메뉴로 갑니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/HTML-CSS/tistory-dark.assets/img.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/HTML-CSS/tistory-dark.assets/img.webp)
 
 ​	
 
 우측 상단의 HTML 편집을 클릭합니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/HTML-CSS/tistory-dark.assets/img-16327139124842.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/HTML-CSS/tistory-dark.assets/img-16327139124842.webp)
 
 ​	
 
 우측 상단의 CSS 를 클릭합니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/HTML-CSS/tistory-dark.assets/img-16327139267324.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/HTML-CSS/tistory-dark.assets/img-16327139267324.webp)
 
 ​	
 

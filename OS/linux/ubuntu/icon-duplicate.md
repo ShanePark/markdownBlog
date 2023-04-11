@@ -6,13 +6,13 @@ dock 에 힘들게 아이콘을 추가 했는데도, 실행 할 경우 아이콘
 
 ​	
 
-![image-20210919103843945](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919103843945.png)
+![image-20210919103843945](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919103843945.webp)
 
 ​	
 
 한 두개 있을때야 그렇다 쳐도 이게 점점 늘어나게 되면 해결하지 않고는 불편해서 참을 수 없게 됩니다.
 
-![image-20210919104008438](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919104008438.png)
+![image-20210919104008438](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919104008438.webp)
 
 ​	
 
@@ -30,7 +30,7 @@ dock 에 힘들게 아이콘을 추가 했는데도, 실행 할 경우 아이콘
 
 Terminal에 xprop WM_CLASS 명령을 입력 하고 마우스가 십자가 모양으로 바뀌면 실행중인 해당 어플리케이션을 클릭 합니다.
 
-![image-20210919104628270](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919104628270.png)
+![image-20210919104628270](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919104628270.webp)
 
 그러면 이렇게 해당 어플리케이션의 WM_CLASS를 알 수 있습니다.
 
@@ -42,7 +42,7 @@ Terminal에 xprop WM_CLASS 명령을 입력 하고 마우스가 십자가 모양
 
 - 그러면 아래와 같이 Run a Command 창이 나오는데요 lg 를 입력합니다.
 
-  ![image-20210919104748131](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919104748131.png)
+  ![image-20210919104748131](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919104748131.webp)
 
 
 
@@ -50,7 +50,7 @@ Terminal에 xprop WM_CLASS 명령을 입력 하고 마우스가 십자가 모양
 
 ​	
 
-![image-20210919104545731](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919104545731.png)
+![image-20210919104545731](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919104545731.webp)
 
 ​		
 
@@ -60,13 +60,13 @@ Terminal에 xprop WM_CLASS 명령을 입력 하고 마우스가 십자가 모양
 
 STS4 를 dock에 등록 해 보겠습니다. WM_CLASS 를 먼저 알아내고.
 
-![image-20210919105600596](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919105600596.png)
+![image-20210919105600596](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919105600596.webp)
 
 
 
 /usr/share/applications 에서 해당하는 .desktop 파일을 찾아 냅니다. 저는 sts4 이기 때문에 아래와 같이 입력 해서 찾았습니다.
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919105652806.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919105652806.webp)
 
 ​	
 
@@ -84,10 +84,10 @@ sudo vi /usr/share/applications/sts4.desktop
 StartupWMClass=SpringToolSuite4
 ```
 
-![image-20210919105902060](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919105902060.png)
+![image-20210919105902060](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919105902060.webp)
 
 ​	
 
 이제 실행을 해 보면 더이상 아이콘이 중첩되어 생성되지 않습니다. !
 
-![image-20210919110043708](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919110043708.png)
+![image-20210919110043708](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919110043708.webp)

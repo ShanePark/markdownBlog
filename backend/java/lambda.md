@@ -36,7 +36,7 @@ Lambda는 2014년 3월 18일에 발표한 java 8에서 추가된 대표적인 �
 
 ​	
 
-![image-20210829191622585](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829191622585.png)
+![image-20210829191622585](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829191622585.webp)
 
 위의 코드에서 그 차이가 명확하게 구분됩니다.  Comparator를 구현하기 위해 코드 몇줄에 걸쳐 썼던 내용을, 아주 간단하게 처리 했습니다.
 
@@ -104,7 +104,7 @@ MyFunction 이라는 FunctionalInterface를 선언 한 뒤에, 여러가지 상�
 
 그리고 그 실행 결과 입니다.
 
-![image-20210829193304166](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829193304166.png)
+![image-20210829193304166](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829193304166.webp)
 
 ​		
 
@@ -193,23 +193,23 @@ MyFunction f = (MyFunction)({}->{});
 
 람다식 내에서 참조하는 지역 변수는 final이 붙지 않았어도 상수로 간주 됩니다. 
 
-![image-20210829195559011](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829195559011.png)
+![image-20210829195559011](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829195559011.webp)
 
 람다식 내에서 지역변수 i 를 사용하려고 하는데, 위에서 10으로 변경했기 때문에 에러가 발생하는 것을 확인 할 수 있습니다.
 
 ​	
 
-![image-20210829195732933](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829195732933.png)
+![image-20210829195732933](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829195732933.webp)
 
 반면에 이렇게 Inner 클래스의 변수인 this.val 이나 Outer 클래스의 인스턴스 변수인 Outer.this.val 은 상수로 간주되지 않기 때문에 위에 보이는 것 처럼 값을 변경해도 문제가 되지 않습니다.
 
-![image-20210829195814677](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829195814677.png)
+![image-20210829195814677](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829195814677.webp)
 
 ​	
 
 ### java.util.function 패키지 
 
-![image-20210829195915045](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829195915045.png)
+![image-20210829195915045](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829195915045.webp)
 
 대부분의 메서드들은 타입이 비슷 합니다. Parameter가 없거나 한개 아니면 두개.. return 값은 void로 없거나 혹은 한개. 심지어 지네릭 메서드로 정의한다면 매개변수나 반환 타입이 달라져도 아무런 문제가 되지 않습니다. 그래서 **java.util.function 패키지에 일반적으로 자주 쓰이는 형식의 메서드들을 함수형 인터페이스로** 미리 정의 해 두었는데요.
 
@@ -253,7 +253,7 @@ public class Lambda05 {
 
 f1을 Function 이라는 인터페이스로 구현 했습니다. String 을 Parameter로 받아 Integer 타입의 값을 반환 하는데요, 그것을 이용해서 특정 문자열의 길이를 반환하는 함수를 작성 해 보았습니다.
 
-![image-20210829201230189](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829201230189.png)
+![image-20210829201230189](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829201230189.webp)
 
 정확한 결과값인 5가 출력 됩니다.
 
@@ -283,7 +283,7 @@ public class Lambda06Consumer {
 }
 ```
 
-![image-20210829205224831](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829205224831.png)
+![image-20210829205224831](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829205224831.webp)
 
 ​		
 
@@ -338,7 +338,7 @@ isEmpty 라는 String 을 Parameter로 받아 해당 String이 empty인지 체�
 
 조금의 응용을 해 보기 위해 removeEmpty 라는 void 함수를 만들어 보았습니다. list를 순회 하면서 만약 항목이 인자로 받은 Predicate 로 test 한 결과가 true 일 경우에 해당 iterator를 제거하게끔 했습니다. 그래서 "abc", "  ", "dcf" 가 담긴 list를 아까 선언해둔 isEmpty Predecate와 같이 removeEmpty 메서드에 parameter로 넣어 메서드를 호출 했고, list 를 print 했을 때 empty 인 "  "가   List에서 제거 된 것을 확인 할 수 있었습니다.
 
-![image-20210829211238142](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829211238142.png)
+![image-20210829211238142](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829211238142.webp)
 
 ​	
 
@@ -375,7 +375,7 @@ public class Lambda08Supplier {
 }
 ```
 
-![image-20210829211713225](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829211713225.png)
+![image-20210829211713225](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829211713225.webp)
 
 ​	
 
@@ -410,7 +410,7 @@ public class Lambda08Supplier2 {
 }
 ```
 
-![image-20210829212338573](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829212338573.png)
+![image-20210829212338573](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829212338573.webp)
 
 이런 식으로도 활용 가능합니다.
 
@@ -418,7 +418,7 @@ public class Lambda08Supplier2 {
 
 ### 그 외
 
-![image-20210829214300018](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829214300018.png)
+![image-20210829214300018](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829214300018.webp)
 
 java.util.function 에는 그 외에도 많은 인터페이스들이 있습니다. 매개변수가 두 개인 함수형 인터페이스는 접두사  Bi를 붙이며, 매개변수의 타입과 반환 타입의 타입이 모두 일치하는 UnaryOperator와 BinaryOperator 또한 있습니다.
 
@@ -432,23 +432,23 @@ Java 8로 넘어오며 컬렉션 프레임웍의 인터페이스에도 다수의
 
 ### Collection
 
-![image-20210829220418739](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829220418739.png)
+![image-20210829220418739](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829220418739.webp)
 
 ### List
 
-![image-20210829220445071](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829220445071.png)
+![image-20210829220445071](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829220445071.webp)
 
 ### Iterable
 
-![image-20210829220458068](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829220458068.png)
+![image-20210829220458068](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829220458068.webp)
 
 
 
 ### Map
 
-![image-20210829221306269](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829221306269.png)
+![image-20210829221306269](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829221306269.webp)
 
-![image-20210829221403394](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829221403394.png)
+![image-20210829221403394](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/lambda.assets/image-20210829221403394.webp)
 
 ​	
 

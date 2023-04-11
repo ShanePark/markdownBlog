@@ -8,7 +8,7 @@
 
 ### 마지막으로 Vue를 활용해 게시판을 조금 더 "사용할 수 있음" 에 가깝게 수정 해 보았습니다.
 
-![image-20210828223218418](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223218418.png)
+![image-20210828223218418](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223218418.webp)
 
 ​		
 
@@ -16,7 +16,7 @@
 
 > 이에 따라 게시판 목록 에서는 삭제 버튼이 사라졌습니다. 
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223545594.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223545594.webp)
 
 각 글의 제목을 누르면 개별 글을 조회 할 수 있도록 하였습니다.
 
@@ -24,13 +24,13 @@
 
 ### 수정 버튼을 누르면 게시글 수정이 가능합니다.
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223556605.png" alt="image-20210828223556605" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223556605.webp" alt="image-20210828223556605" style="zoom:50%;" />
 
 게시글 수정은 게시글 작성 모달을 그대로 재활용하며 상황에 따라 다르게 작동하도록 하여 코드의 양을 줄이고 변경에 용이하도록 하였습니다.
 
 ​	
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223646654.png" alt="image-20210828223646654" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223646654.webp" alt="image-20210828223646654" style="zoom:50%;" />
 
 게시글 작성을 보면 아시겠지만 위의 "수정"과 거의 동일합니다.
 

@@ -16,7 +16,7 @@ PostgreSQL은 확장 가능성 및 표준 준수를 강조하는 객체-관계�
 brew search postgresql
 ```
 
-![image-20230329204805702](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20230329204805702.png)
+![image-20230329204805702](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20230329204805702.webp)
 
 ```bash
 brew install postgresql 
@@ -24,7 +24,7 @@ brew install postgresql
 
 을 입력 해서 기본버전을 설치합니다.
 
-![image-20230329204906201](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20230329204906201.png)
+![image-20230329204906201](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20230329204906201.webp)
 
 설치가 완료되었습니다. 버전을 명시하지 않았더니 14 버전이 설치되었네요.
 
@@ -32,7 +32,7 @@ brew install postgresql
 postgres -V
 ```
 
-![image-20230329205011285](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20230329205011285.png)
+![image-20230329205011285](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20230329205011285.webp)
 
 서비스 목록을 확인합니다.
 
@@ -40,7 +40,7 @@ postgres -V
 brew services list
 ```
 
-![image-20230329211706652](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20230329211706652.png)
+![image-20230329211706652](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20230329211706652.webp)
 
 > Status에 none으로 나옵니다.
 
@@ -50,7 +50,7 @@ brew services list
 brew services restart postgresql@14
 ```
 
-![image-20230329214009360](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20230329214009360.png)
+![image-20230329214009360](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20230329214009360.webp)
 
 > 실행되었습니다.!
 
@@ -58,7 +58,7 @@ brew services restart postgresql@14
 
 ### DB 확인
 
-![image-20210804112153207](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804112153207.png)
+![image-20210804112153207](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804112153207.webp)
 
 > https://www.postgresql.org/docs/current/postgres-user.html
 
@@ -70,7 +70,7 @@ Default 접속 계정을 확인하려고 PostgreSQL 의 Document를 확인하는
 psql postgres
 ```
 
-![image-20210804112349018](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804112349018.png)
+![image-20210804112349018](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804112349018.webp)
 
 아래 명령어로 role 리스트를 확인 할 수 있습니다.
 
@@ -78,9 +78,9 @@ psql postgres
 \du
 ```
 
-![image-20210804112516669](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804112516669.png)
+![image-20210804112516669](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804112516669.webp)
 
-![image-20210804112558176](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804112558176.png)
+![image-20210804112558176](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804112558176.webp)
 
 > 정말로 shane 이라는 Superuser가 생성되어 있습니다. 
 
@@ -88,19 +88,19 @@ psql postgres
 
 PostgreSQL Client Tool로는 TablePlus, Psequel(MYSQL의 Sequel Pro 입니다), SQLPro, Postico 등이 있다고 하는데요. 저는 DBeaver가 설치되어 있어 있던 걸 사용하겠습니다.
 
-![image-20210804111653995](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804111653995.png)
+![image-20210804111653995](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804111653995.webp)
 
 >  PostgreSQL 을 선택 하고
 
 ​	
 
-![image-20210804111718836](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804111718836.png)	
+![image-20210804111718836](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804111718836.webp)	
 
 > 필요한 Driver를 다운 받습니다.
 
 
 
-![image-20210804112817533](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804112817533.png)
+![image-20210804112817533](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804112817533.webp)
 
 
 
@@ -114,7 +114,7 @@ study 라는 이름의 데이터베이스를 만들어보겠습니다.
 create database study;
 ```
 
-![image-20210804114635428](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804114635428.png)
+![image-20210804114635428](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804114635428.webp)
 
 testuser라는 이름의 user를 생성합니다.
 
@@ -122,7 +122,7 @@ testuser라는 이름의 user를 생성합니다.
 create user testuser with encrypted password 'testpass';
 ```
 
-![image-20210804114757062](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804114757062.png)
+![image-20210804114757062](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804114757062.webp)
 
 testuser에게 데이터 베이스 생성 권한도 부여합니다.
 
@@ -130,7 +130,7 @@ testuser에게 데이터 베이스 생성 권한도 부여합니다.
 alter user testuser createdb;
 ```
 
-![image-20210804130407989](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804130407989.png)
+![image-20210804130407989](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804130407989.webp)
 
 > \du 로 확인해보니 권한이 잘 설정 되었습니다.
 
@@ -140,11 +140,11 @@ alter user testuser createdb;
 grant all privileges on database study to testuser;
 ```
 
-​	![image-20210804115213814](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804115213814.png)
+​	![image-20210804115213814](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804115213814.webp)
 
 연습용 Database기 때문에 모든 권한을 부여하지만 권한 설정을 자세하게 하려면 아래를 참고해주세요
 
-![image-20210804114911171](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804114911171.png)
+![image-20210804114911171](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804114911171.webp)
 
 > https://www.postgresql.org/docs/13/sql-grant.html 에서 확인 할 수 있습니다.
 
@@ -154,7 +154,7 @@ grant all privileges on database study to testuser;
 \list
 ```
 
-![image-20210804115845086](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804115845086.png)
+![image-20210804115845086](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804115845086.webp)
 
 아래 명령으로 테이블 리스트를 볼 수 있습니다.
 
@@ -170,7 +170,7 @@ grant all privileges on database study to testuser;
 \connect study
 ```
 
-![image-20210804120013637](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804120013637.png)
+![image-20210804120013637](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804120013637.webp)
 
 추가한 사용자로 접속해보겠습니다. `\q`로 접속 종료 후 -U 명령어와 username 을 입력 합니다.
 
@@ -181,7 +181,7 @@ psql postgres -U testuser
 
 
 
-![image-20210804124947663](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804124947663.png)
+![image-20210804124947663](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804124947663.webp)
 
 > postgres-# 에서 postgres=> 으로 바뀌었습니다. #은 super user를 뜻 합니다.
 
@@ -189,11 +189,11 @@ psql postgres -U testuser
 
 
 
-![image-20210804123255425](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804123255425.png)
+![image-20210804123255425](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804123255425.webp)
 
 
 
-![image-20210804123526458](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804123526458.png)
+![image-20210804123526458](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804123526458.webp)
 
 
 
@@ -258,7 +258,7 @@ from emp;
 
 
 
-![image-20210804135906609](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804135906609.png)
+![image-20210804135906609](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804135906609.webp)
 
 
 
@@ -270,7 +270,7 @@ from emp
 	inner join dept on (emp.deptno = dept.deptno);
 ```
 
-![image-20210804141139949](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804141139949.png)
+![image-20210804141139949](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804141139949.webp)
 
 > join 도 Oracle이나 MySQL 에서 썼던것처럼 ANSI SQL을 그대로 사용하면 됩니다.
 
@@ -284,7 +284,7 @@ group by dept.deptno, dname
 order by deptno;
 ```
 
-![image-20210804141723203](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804141723203.png)
+![image-20210804141723203](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804141723203.webp)
 
 group by 집계 함수도 사용 해 보았습니다. Oracle 데이터베이스를 처음 공부할 때 배우는 내용인데요, deptno=40에 해당하는 emp가 없기 때문에 count(*) 을 넣으면 의도한 값이 나오지 않습니다.  count(empno)라고 입력합니다.
 
@@ -300,7 +300,7 @@ where rank = 1;
 
 이번에는 각 부서별 최저 급여를 받는 사원 정보를 조회해 보았습니다.
 
-![](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804143931366.png)
+![](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804143931366.webp)
 
 
 
@@ -318,7 +318,7 @@ where rank = 1;
 
 PostgreSQL 에서는 FROM절에 있는 Subquery  (Inline View) 는 반드시 alias를 가져야 한다고 하며 실행이 되지 않습니다.
 
-![image-20210804143347457](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804143347457.png)
+![image-20210804143347457](https://github.com/ShanePark/markdownBlog/raw/master/database/postgresql/macpostgresql.assets/image-20210804143347457.webp)
 
 
 

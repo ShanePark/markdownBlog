@@ -8,7 +8,7 @@
 
 이번글에서는 Vue.js 의 기본 Component 중 하나인 Modal 기능을 이용 해 보겠습니다.
 
-![image-20210818222123919](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/modal.assets/image-20210818222123919.png)
+![image-20210818222123919](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/modal.assets/image-20210818222123919.webp)
 
 ​	
 
@@ -157,13 +157,13 @@ default content
 
 ​	
 
-![image-20210818225246594](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/modal.assets/image-20210818225246594.png)
+![image-20210818225246594](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/modal.assets/image-20210818225246594.webp)
 
 ​	
 
 그렇게 기존의 복잡했던 글 작성 form을 modal로 빼낼 준비를 했습니다. 지금 상태에서 작성 버튼을 클릭하면,
 
-![image-20210818225323617](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/modal.assets/image-20210818225323617.png)
+![image-20210818225323617](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/modal.assets/image-20210818225323617.webp)
 
 ​	
 
@@ -171,7 +171,7 @@ default content
 
 
 
-![image-20210818230625042](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/modal.assets/image-20210818230625042.png)
+![image-20210818230625042](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/modal.assets/image-20210818230625042.webp)
 
 새로 만들어본 글 작성 modal 입니다. 물론 css를 바꿔주지 않아 투박하긴 하지만, 처음에 같은 페이지에 있었던 것 보다는 훨씬 낫습니다. 글 작성 내용을 입력하고 등록을 누르면 글이 등록되며, board.load() 호출과 함께 Vue 바인딩에 의해 데이터가 깜빡임 없이 갱신됩니다. 모달을 닫는 것도 showModal 변수를 false로만 넣어주면 간단하게 닫을 수 있습니다.
 

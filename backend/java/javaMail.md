@@ -15,7 +15,7 @@
 ### 시작에 앞서 본인이 사용하실 이메일의 SMTP 설정을 확인해주세요. 저는 gmail을 기준으로 설명하겠습니다.
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/javaMail.assets/1.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/javaMail.assets/1.webp)
 
 
 
@@ -175,5 +175,5 @@ try {
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/javaMail.assets/2.png)	
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/javaMail.assets/2.webp)	
 

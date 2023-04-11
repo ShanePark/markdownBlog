@@ -8,17 +8,17 @@
 
 일단 스프링 부트 프로젝트를 생성 합니다.
 
-![image-20210814110046712](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110046712.png)
+![image-20210814110046712](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110046712.webp)
 
 > Spring Starter를 이용하면 쉽게 생성 할 수 있습니다
 
-![image-20210814110327294](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110327294.png)
+![image-20210814110327294](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110327294.webp)
 
 > Maven 프로젝트로 생성 했지만 Gradle로 해도 무관합니다. 적당한 Location에 적당한 이름으로 프로젝트를 생성합니다.
 
 ​	
 
-![image-20210814110440604](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110440604.png)
+![image-20210814110440604](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110440604.webp)
 
 > 간단하게 Sprinig Web만 추가해서 생성하겠습니다.
 
@@ -44,7 +44,7 @@ Finish 를 눌러 프로젝트를 생성 합니다.
 compile "io.pebbletemplates:pebble-spring-boot-starter:3.1.5"
 ```
 
-![image-20210814111833538](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814111833538.png)
+![image-20210814111833538](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814111833538.webp)
 
 > 이렇게 dependency 에 추가하는 것 만으로 충분하다고 설명되어 있습니다. 
 
@@ -59,7 +59,7 @@ compile "io.pebbletemplates:pebble-spring-boot-starter:3.1.5"
 
 
 
-![image-20210814114238572](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814114238572.png)
+![image-20210814114238572](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814114238572.webp)
 
 ### 외부 설정 옵션
 
@@ -82,7 +82,7 @@ application.properties 에 정의 할 수 있는 스프링 부트 외부 설정�
 
 이제 이전 글에서 했던 것과 똑같이 html 파일들과 controller를 추가해 보겠습니다.
 
-![image-20210814121906389](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814121906389.png)
+![image-20210814121906389](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814121906389.webp)
 
 
 
@@ -162,7 +162,7 @@ public class PebbleController {
 
 서버를 실행하면 이전 글과 마찬가지로 잘 렌더링 해 줍니다.
 
-![image-20210814122024959](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814122024959.png)
+![image-20210814122024959](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814122024959.webp)
 
 ## ViewResolver
 
@@ -222,7 +222,7 @@ public class PebbleModelController {
 
 궁금해서 열어보니 PebbleViewResolver는 아래와 같이 작성 되어 있습니다.
 
-![image-20210814142123818](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142123818.png)
+![image-20210814142123818](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142123818.webp)
 
 이제 템플릿을 만들어보겠습니다. 설정을 따로 바꾸지 않았기 떄문에 .pebble 확장자로 만들어 줘야 합니다.
 
@@ -266,11 +266,11 @@ extneds 에 ./base 라고 써있지만, default 설정에 의해 자동으로 ./
 
 이제 서버를 실행해서 localhost:8080/model로 접속 해 보겠습니다.
 
-![image-20210814142424292](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142424292.png)
+![image-20210814142424292](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142424292.webp)
 
 > 서버를 실행하고
 
-![image-20210814142436363](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142436363.png)
+![image-20210814142436363](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142436363.webp)
 
 의도대로 잘 출력되어서 나오는 것이 확인됩니다 ! 특히나 Pebble Template의 특징인 상속이 재밌습니다.
 
@@ -282,7 +282,7 @@ extneds 에 ./base 라고 써있지만, default 설정에 의해 자동으로 ./
 
 application.yml에 아래 suffix 내용을 추가해 줍니다.
 
-![image-20210814142851741](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142851741.png)
+![image-20210814142851741](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814142851741.webp)
 
 `.properties` 파일이라면 아래 처럼 작성 하면 됩니다.
 
@@ -357,7 +357,7 @@ public class PebbleModelController {
 
 이제 이렇게 하면 /templates/ Pebble View Resolver가 폴더에서 home.html 파일을 찾습니다. 그러고 home.html 파일은 동일 폴더 내의 base.html 파일을 찾아 상속 하고 스스로의 내용을 붙여서 렌더링 해 줍니다.	
 
-![image-20210814143418732](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814143418732.png)
+![image-20210814143418732](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814143418732.webp)
 
 
 
@@ -393,7 +393,7 @@ text.html
 
 response 데이터를 활용 할 수 있습니다.
 
-![image-20210814144119448](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814144119448.png)
+![image-20210814144119448](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814144119448.webp)
 
 
 
@@ -430,7 +430,7 @@ arr 이라는 이름으로 배열을 model에 담았는데요.
 
 결과를 확인해보면
 
-![image-20210814144739223](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814144739223.png)
+![image-20210814144739223](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814144739223.webp)
 
 배열에 담은 값들이 순차적으로 잘 출력 되었습니다.
 
@@ -462,23 +462,23 @@ arr이 있으면 위에서 처럼 데이터를 출력해주고, 없으면 데이
 
 
 
-![image-20210814151334250](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814151334250.png)
+![image-20210814151334250](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814151334250.webp)
 
 테스트를 위해 arr을 추가해주는 내용을 주석 처리 했습니다.
 
-![image-20210814151734095](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814151734095.png)
+![image-20210814151734095](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814151734095.webp)
 
 > if 문에 의해 데이터가 없을때는 해당 하는 화면을 출력 해 주는것이 확인 됩니다.
 
 ### 그 외
 
-![image-20210814151854676](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814151854676.png)
+![image-20210814151854676](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814151854676.webp)
 
 > empty를 체크해주는 기능이 있기 때문에 간편하게 String의 null 체크나 empty 체크를 할 수도 있습니다. String 뿐만 아니라 Collection 이나  Map의 empty 체크도 가능합니다.
 
 ​	
 
-![image-20210814151958582](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814151958582.png)
+![image-20210814151958582](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814151958582.webp)
 
 > iterable 을 체크할 수도 있습니다.
 
@@ -519,13 +519,13 @@ contains를 활용 해 보겠습니다.
 
 
 
-![image-20210814152450004](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814152450004.png)
+![image-20210814152450004](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814152450004.webp)
 
 contains 도 잘 작동합니다.
 
 
 
-![image-20210814152521541](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814152521541.png)
+![image-20210814152521541](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814152521541.webp)
 
 > 설명을 보면 contains에 배열 데이터도 넣을 수 있게 되어 있습니다.
 
@@ -535,7 +535,7 @@ contains 도 잘 작동합니다.
 
 마지막으로 verbatim에 대해 알아보겠습니다.
 
-![image-20210814152741896](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814152741896.png)
+![image-20210814152741896](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814152741896.webp)
 
 > verbatin에 들어간 내용은 Pebble이 parsing 하지 않고 있는 그대로 보내줍니다. 
 >
@@ -583,7 +583,7 @@ vebatim 블럭 안에 위에서 사용한 코드를 똑같이 넣어보겠습니
 
 
 
-![image-20210814153137834](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814153137834.png)
+![image-20210814153137834](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814153137834.webp)
 
 그러면 해당 블럭 안의 내용들은 있는 그대로 넘어갑니다. HTML의 pre 태그 같은 느낌이네요.
 

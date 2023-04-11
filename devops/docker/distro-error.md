@@ -10,7 +10,7 @@
 
 ​	
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914091052614.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914091052614.webp)
 
 발생하는 에러의 내용은 아래와 같습니다.
 
@@ -36,7 +36,7 @@
 
 시작 버튼을 누르고 검색에 CMD 를 입력 해 명령 프롬프트를 찾습니다. 관리자 권한으로 실행을 합니다.
 
-![image-20210914084014483](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914084014483.png)
+![image-20210914084014483](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914084014483.webp)
 
 ​	
 
@@ -51,15 +51,15 @@ net start lxssmanager
 
 그러면 이제 에러 상황에 따라 lxssmanager 서비스가 실행이 되는 중 일 때도 있고, 실행 조차 안되었을 때가 있습니다. 어느 상황에서든 서비스를 재 시작 해야 하기 때문에 stop을 먼저 하는 것이 좋습니다.
 
-![lxssmanager](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/lxssmanager.png)
+![lxssmanager](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/lxssmanager.webp)
 
-![image-20210914084338772](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914084338772.png)
+![image-20210914084338772](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914084338772.webp)
 
 ​	
 
 이렇게 리눅스 서비스를 재 시작 하고 나서 Docker를 다시 실행 해 보면,
 
-![image-20210914084834063](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914084834063.png)
+![image-20210914084834063](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914084834063.webp)
 
 > 아무 문제 없이 Docker가 잘 구동됩니다.
 
@@ -69,15 +69,15 @@ net start lxssmanager
 
 이제 근본적인 문제도 해결해야 할 차례인데, 정확한 원인이 밝혀지지 않았기 때문에
 
-![image-20210914085708986](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914085708986.png)
+![image-20210914085708986](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914085708986.webp)
 
 마침 또 Docker가 새로운 update가 나와서 업데이트를 해 보았습니다만, 업데이트 후에도 증상이 계속 같았습니다.
 
 ​		
 
-![image-20210914085533769](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914085533769.png)
+![image-20210914085533769](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914085533769.webp)
 
-![image-20210914085555061](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914085555061.png)
+![image-20210914085555061](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914085555061.webp)
 
 ​	
 

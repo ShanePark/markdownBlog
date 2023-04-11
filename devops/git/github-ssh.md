@@ -6,13 +6,13 @@
 
 저는 MacOS에서 Github repository에 접근 할 때 Github Desktop을 사용 하고 있습니다.
 
-![image-20210924233758006](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924233758006.png)
+![image-20210924233758006](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924233758006.webp)
 
 ​	
 
 Github Desktop의 완성도는 꽤나 괜찮은 편입니다. TypeScript로 작성 되어 있으며, [Release Note](https://desktop.github.com/release-notes)를 확인해 보시면 거의 1주일에 한번 꼴로 꾸준히 업데이트가 됩니다. 
 
-![image-20210924233902880](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924233902880.png)
+![image-20210924233902880](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924233902880.webp)
 
 > 심지어는 Microsoft에 인수된게 무색하게 발빠르게 Apple M1 칩셋에 대응도 했습니다. https://github.com/shiftkey/desktop/ Linux 버전의 Fork도 있어서 한번 테스트 해 보려 합니다.
 
@@ -28,7 +28,7 @@ Github Desktop의 완성도는 꽤나 괜찮은 편입니다. TypeScript로 작�
 
 특히 인증을 생각하면 무조건 SSH로 clone 해서 사용하는게 좋은데요. 
 
-![image-20210924235506407](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924235506407.png)
+![image-20210924235506407](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924235506407.webp)
 
 당장에 Github Desktop 으로 clone한 repository인데, CLI 환경에 와서 fetch 만 하려고 해도 대뜸 인증을 요구합니다.
 
@@ -36,7 +36,7 @@ Github Desktop의 완성도는 꽤나 괜찮은 편입니다. TypeScript로 작�
 
 그래서 아이디와 비밀번호를 입력 한다고 해도 fetch가 되지는 않습니다. 
 
-![image-20210924235602403](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924235602403.png)
+![image-20210924235602403](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924235602403.webp)
 
 2021년 8월 13일 부로 비밀번호를 입력해 인증하는 걸 보안상의 이유로 막았기 떄문인데요, 8월 13일 이전이었다고 해도 저는 Github에서 2FA (Two-factor Authentication)을 사용하고 있기 때문에 단순히 비밀번호를 입력하는 것 만으로는 인증이 되지 않았을 겁니다.
 
@@ -54,7 +54,7 @@ Github Desktop의 완성도는 꽤나 괜찮은 편입니다. TypeScript로 작�
 
 일단 Github에 들어가서 Settings -> SSH and GPG keys 에 들어갑니다.
 
-![image-20210925001252838](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925001252838.png)
+![image-20210925001252838](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925001252838.webp)
 
 ​	
 
@@ -76,7 +76,7 @@ ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
 
-![image-20210925001913278](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925001913278.png)
+![image-20210925001913278](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925001913278.webp)
 
 ​	
 
@@ -86,19 +86,19 @@ cat ~/.ssh/id_rsa.pub
 
 그러면 이제 Github 에서 New SSH key 버튼을 누르고
 
-![image-20210925002110631](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002110631.png)
+![image-20210925002110631](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002110631.webp)
 
 ​	
 
 Key를 등록 해 줍니다.
 
-![image-20210925002147799](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002147799.png)
+![image-20210925002147799](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002147799.webp)
 
 ​	
 
 이제  Key가 등록 되었습니다.
 
-![image-20210925002251791](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002251791.png)
+![image-20210925002251791](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002251791.webp)
 
 ​	
 
@@ -110,11 +110,11 @@ ssh git@github.com
 
 SSH 키를 등록 하기 전에는 원래 이렇게 떴지만
 
-![image-20210925002228813](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002228813.png)
+![image-20210925002228813](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002228813.webp)
 
 등록이 완료 되면 인증이 완료 되었다는 문구를 확인 할 수 있습니다.
 
-![image-20210925002319315](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002319315.png)
+![image-20210925002319315](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002319315.webp)
 
 ​	
 
@@ -124,7 +124,7 @@ SSH 키를 등록 하기 전에는 원래 이렇게 떴지만
 
 일단 제가 Github 으로 인증 해서 Clone 해둔 programmers repository 입니다. private 저장소 인데요 아래 보이는 것 처럼 git fetch만 하더라도 인증을 요구합니다.
 
-![image-20210925002540680](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002540680.png)
+![image-20210925002540680](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002540680.webp)
 
 ​	
 
@@ -134,13 +134,13 @@ rm -rf programmers
 
 과감하게 programmers 저장소를 삭제합니다.
 
-![image-20210925002632660](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002632660.png)
+![image-20210925002632660](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002632660.webp)
 
 ​	
 
 이제 새로 clone을 받을 건데요, 해당  Github 저장소에 들어갑니다. 우측의 Code 버튼을 누르면
 
-![image-20210925002736605](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002736605.png)
+![image-20210925002736605](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002736605.webp)
 
 기본으로 HTTPS로 되어 있는데, 이걸 SSH로 바꿔줍니다. 그럼 git@으로 시작하는 주소가 나오는데요 이걸 복사해서,
 
@@ -152,13 +152,13 @@ rm -rf programmers
 git clone git@github.com:Shane-Park/programmers.git
 ```
 
-![image-20210925002834356](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002834356.png)
+![image-20210925002834356](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002834356.webp)
 
 아까 SSH 키를 등록 해 두었기 때문에 특별한 인증 절차 없이 바로 잘 됩니다.
 
 ​	
 
-![image-20210925002930095](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002930095.png)
+![image-20210925002930095](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925002930095.webp)
 
 fetch 도 인증 없이 잘 이루어 집니다.
 
@@ -178,7 +178,7 @@ fetch 도 인증 없이 잘 이루어 집니다.
 
 gitlab 에서도 User Settings > SSH Keys 에 들어가면 키를 등록 할 수 있습니다.
 
-![image-20210925004733769](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925004733769.png)
+![image-20210925004733769](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925004733769.webp)
 
 ​	
 
@@ -188,7 +188,7 @@ gitlab 에서도 User Settings > SSH Keys 에 들어가면 키를 등록 할 수
 cat ~/.ssh/id_rsa.pub
 ```
 
-![image-20210925004857378](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925004857378.png)
+![image-20210925004857378](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925004857378.webp)
 
 ​	
 
@@ -224,7 +224,7 @@ vi ~/.ssh/config
 
 이렇게 .ssh 폴더의 config 파일을 열면 기존에 등록 해 둔 Host가 있으면 몇개가 뜰 거고 처음 설정하는 분은 아무것도 없을 수 있습니다.	
 
-![image-20210925005423703](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925005423703.png)
+![image-20210925005423703](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925005423703.webp)
 
 저는 몇개가 등록이 되어 있었는데요, 
 
@@ -248,7 +248,7 @@ Host gitlab.company.co.kr
 
 https://docs.gitlab.com/ee/ssh/ 공식 사이트에서 제안하는 테스트 입니다.
 
-![image-20210925011157365](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925011157365.png)
+![image-20210925011157365](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925011157365.webp)
 
 ```bash
  ssh -T git@gitlab.company.co.kr
@@ -278,11 +278,11 @@ IdentityFile ~/.ssh/id_rsa
 
 무튼 이렇게 Welcome to Gitlab 이 뜨면 성공입니다.
 
-![image-20210925015623229](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925015623229.png)
+![image-20210925015623229](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925015623229.webp)
 
 GItlab도 Github 에서 한 것 처럼 Repository 찾아가서, Clone 버튼 누르고 Clone with SSH 에 나온 주소를 복사해서 사용 하시면 됩니다. 그렇게 clone 하고 나서 fetch 까지 잘 이루어 지는 모습입니다.
 
-![image-20210925015807676](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925015807676.png)
+![image-20210925015807676](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925015807676.webp)
 
 ​	
 

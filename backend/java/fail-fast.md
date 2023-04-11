@@ -24,13 +24,13 @@ ArrayList, HashMap 등과 같은 java.util 패키지의 컬렉션에 대한 기�
 
 보통 코딩 테스트 문제 풀이 등을 하다가 순회 중인 list에 변화를 무의식적으로 줬을때 이와 같은 상황에 한번씩 처해보셨을 텐데요,
 
-![image-20210823214235253](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/fail-fast.assets/image-20210823214235253.png)
+![image-20210823214235253](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/fail-fast.assets/image-20210823214235253.webp)
 
 위의 코드를 실행 하면,
 
 ​	
 
-![image-20210823214349764](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/fail-fast.assets/image-20210823214349764.png)
+![image-20210823214349764](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/fail-fast.assets/image-20210823214349764.webp)
 
 
 
@@ -78,7 +78,7 @@ public static void main(String[] args) {
 
 보다시피 어떠한 에러도 발생하지 않습니다.
 
-![image-20210823220625203](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/fail-fast.assets/image-20210823220625203.png)
+![image-20210823220625203](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/fail-fast.assets/image-20210823220625203.webp)
 
 ​		
 
@@ -98,7 +98,7 @@ Fail-Safe 컬렉션의 예로는 java.util.concurrent 패키지의 ConcurrentHas
 
 
 
-![image-20210823222157760](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/fail-fast.assets/image-20210823222157760.png)
+![image-20210823222157760](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/fail-fast.assets/image-20210823222157760.webp)
 
 
 

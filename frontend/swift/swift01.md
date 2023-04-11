@@ -12,7 +12,7 @@ iOS는 Xcode를 사용해 개발 할 수 있으며, 당연하지만 Mac book, Ma
 
 
 
-![image-20210729220113754](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220113754.png)
+![image-20210729220113754](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220113754.webp)
 
 > 평점 상태가..
 
@@ -22,7 +22,7 @@ iOS는 Xcode를 사용해 개발 할 수 있으며, 당연하지만 Mac book, Ma
 
 
 
-![image-20210729220155781](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220155781.png)
+![image-20210729220155781](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220155781.webp)
 
 > 아름다운 Size를 보시라..
 
@@ -34,13 +34,13 @@ iOS는 Xcode를 사용해 개발 할 수 있으며, 당연하지만 Mac book, Ma
 
 
 
-![image-20210729220820383](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220820383.png)
+![image-20210729220820383](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220820383.webp)
 
 > 해당 페이지에 들어가면 Xcode beta 버전이 제일 먼저 보이는데요, 스크롤을 조금 내리면
 
 
 
-![image-20210729220906318](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220906318.png)
+![image-20210729220906318](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220906318.webp)
 
 
 
@@ -48,7 +48,7 @@ Appstore에 올라온 버전과 일치하는 버전을 찾을 수 있습니다. 
 
 
 
-![image-20210729221336601](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729221336601.png)
+![image-20210729221336601](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729221336601.webp)
 
 > 34.5 MB/sec 로 나쁘지 않은 다운로드 속도가 나옵니다.
 
@@ -68,7 +68,7 @@ App Store에서 불안전한 속도로 다운 받는것보다 개인적으로는
 gcc --version
 ```
 
-![image-20210729222211710](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729222211710.png)
+![image-20210729222211710](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729222211710.webp)
 
 저처럼 설치 경로나 버전에 대한 정보가 나온다면 설치가 되어 있는 거고요, no developers tools were found at ... 라며 에러가 나온다면 설치되어 있지 않은 겁니다. 
 
@@ -84,15 +84,15 @@ xcode-select --install
 
 
 
-![image-20210729222445100](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729222445100.png)
+![image-20210729222445100](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729222445100.webp)
 
 > Xcode 다운로드가 완료되었습니다.
 
-![image-20210729222505734](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729222505734.png)
+![image-20210729222505734](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729222505734.webp)
 
 바로 실행해서 압축을 풀어 줍니다. 용량이 크다보니 시간이 제법 소요됩니다.
 
-![image-20210729223053621](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729223053621.png)
+![image-20210729223053621](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729223053621.webp)
 
 >체감상 한 5분은 걸린 듯 하니 무작정 기다리기 보다 할일을 하고 있는게 정신 건강에 이롭습니다.
 
@@ -100,17 +100,17 @@ xcode-select --install
 
 이렇게 짠 ! 하고 압축이 풀립니다. 
 
-![image-20210729223238872](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729223238872.png)
+![image-20210729223238872](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729223238872.webp)
 
 바로 Applications로 옮겨주고, .xip 파일을 삭제해 주시면 됩니다. 
 
 바로 실행 해 보겠습니다.
 
-![image-20210729223310920](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729223310920.png)
+![image-20210729223310920](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729223310920.webp)
 
 SDK Lisence Agreement. 즉 Software Developer Kit 사용에 대한 동의를 합니다.
 
-![image-20210729223409353](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729223409353.png)
+![image-20210729223409353](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729223409353.webp)
 
 실행이 완료되었습니다. Apple Silicon에서 native로 실행되어서 그런지, 대용량의 어플리케이션 치고는 가볍게 열리는 느낌입니다.
 
@@ -118,13 +118,13 @@ SDK Lisence Agreement. 즉 Software Developer Kit 사용에 대한 동의를 합
 
 
 
-![image-20210729223716244](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729223716244.png)
+![image-20210729223716244](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729223716244.webp)
 
 > 몇가지 template들이 나오는데요
 
 
 
-![image-20210729224430638](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729224430638.png)
+![image-20210729224430638](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729224430638.webp)
 
 iOS를 선택하고 App을 만들어 보도록 하겠습니다.
 
@@ -132,7 +132,7 @@ iOS를 선택하고 App을 만들어 보도록 하겠습니다.
 
 
 
-![image-20210729230549426](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729230549426.png)
+![image-20210729230549426](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729230549426.webp)
 
 
 
@@ -152,7 +152,7 @@ iOS를 선택하고 App을 만들어 보도록 하겠습니다.
 
 나머지는 따로 설정 하지 않겠습니다. 
 
-![image-20210729224640843](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729224640843.png)
+![image-20210729224640843](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729224640843.webp)
 
 > Team은 선택 하면 personal team Profile을 다운 받을 수 있습니다. 
 
@@ -162,7 +162,7 @@ Next 버튼을 누릅니다.
 
 
 
-![image-20210729230633375](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729230633375.png)
+![image-20210729230633375](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729230633375.webp)
 
 > 저장할 경로를 선택하게 되는데요. 적당히 원하는 곳을 지정합니다.
 
@@ -174,7 +174,7 @@ Source Control : Create Git repository on my Mac은, 해당 프로젝트를 Git�
 
 
 
-![image-20210729230733474](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729230733474.png)
+![image-20210729230733474](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729230733474.webp)
 
 
 
@@ -186,7 +186,7 @@ Source Control : Create Git repository on my Mac은, 해당 프로젝트를 Git�
 
 ### 좌측에 보이는 Navigator area 입니다.
 
-![image-20210729231024262](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729231024262.png)
+![image-20210729231024262](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729231024262.webp)
 
 ### 
 
@@ -201,11 +201,11 @@ Source Control : Create Git repository on my Mac은, 해당 프로젝트를 Git�
 
 
 
-<img src="https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729231344075.png" alt="image-20210729231344075" style="zoom: 200%;" />
+<img src="https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729231344075.webp" alt="image-20210729231344075" style="zoom: 200%;" />
 
 > 디버그 아이콘이 정말 재밌습니다.
 
-![image-20210729231115937](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729231115937.png)
+![image-20210729231115937](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729231115937.webp)
 
 > 가장 기본적인 Show the Project Navigator를 많이 사용하게 되겠네요.
 
@@ -213,7 +213,7 @@ Source Control : Create Git repository on my Mac은, 해당 프로젝트를 Git�
 
 ### Editor Area 입니다.
 
-![image-20210729231655788](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729231655788.png)
+![image-20210729231655788](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729231655788.webp)
 
 Navigator Area에서 선택을 할 때마다, Editor Area에 표시되는 내용이 변경됩니다.
 
@@ -221,13 +221,13 @@ Navigator Area에서 선택을 할 때마다, Editor Area에 표시되는 내용
 
 
 
-![image-20210729232313399](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729232313399.png)
+![image-20210729232313399](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729232313399.webp)
 
 이렇게, 화면 구성을 확인 할 수 있습니다.
 
 
 
-![image-20210729232514710](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729232514710.png)
+![image-20210729232514710](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729232514710.webp)
 
 > Info.plist 에는 설정값들을 기록합니다.
 
@@ -235,7 +235,7 @@ Navigator Area에서 선택을 할 때마다, Editor Area에 표시되는 내용
 
 ### 우측의 Utilities pane 입니다. 
 
-![image-20210729232549220](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729232549220.png)
+![image-20210729232549220](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729232549220.webp)
 
 
 
@@ -247,13 +247,13 @@ Editor area에서 무엇을 클릭하는지에 따라 보이는게 달라집니�
 
 ### 상단의 Xcode toolbar 입니다
 
-![image-20210729232849134](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729232849134.png)
+![image-20210729232849134](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729232849134.webp)
 
 
 
 앱을 실행할 수 있는 버튼과 정지하는 버튼, 그리고 그 우측에는 
 
-![image-20210729232931247](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729232931247.png)
+![image-20210729232931247](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729232931247.webp)
 
 App을 실행할 destination 을 선택 할 수 있는 dropbox가 있습니다.
 
@@ -261,7 +261,7 @@ App을 실행할 destination 을 선택 할 수 있는 dropbox가 있습니다.
 
 그리고 중간에는 
 
-![image-20210729233026423](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729233026423.png)
+![image-20210729233026423](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729233026423.webp)
 
 status bar가 있습니다.
 
@@ -273,7 +273,7 @@ status bar가 있습니다.
 
 
 
-![Jul-29-2021%2023-36-43](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/Jul-29-2021%2023-36-43.gif)
+![Jul-29-2021%2023-36-43](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/Jul-29-2021%2023-36-43.webp)
 
 
 
@@ -291,25 +291,25 @@ status bar가 있습니다.
 
 
 
-![image-20210729234954519](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729234954519.png)
+![image-20210729234954519](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729234954519.webp)
 
 상단의 View - > Show Libary 를 클릭하거나 Shift + Command + L 을 입력합니다.
 
 
 
-![image-20210729235017620](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729235017620.png)
+![image-20210729235017620](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729235017620.webp)
 
 바로 Libarary 를 확인 할 수 있습니다. Java Swing이나 PyQt가 생각나네요.
 
 
 
-![image-20210729235201140](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729235201140.png)
+![image-20210729235201140](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729235201140.webp)
 
 Label을 검색 하고
 
 
 
-![Jul-29-2021%2023-55-52](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/Jul-29-2021%2023-55-52.gif)
+![Jul-29-2021%2023-55-52](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/Jul-29-2021%2023-55-52.webp)
 
 
 
@@ -317,7 +317,7 @@ Label을 검색 하고
 
 
 
-![Jul-30-2021%2000-08-05](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/Jul-30-2021%2000-08-05.gif)
+![Jul-30-2021%2000-08-05](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/Jul-30-2021%2000-08-05.webp)
 
 
 

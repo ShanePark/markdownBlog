@@ -16,7 +16,7 @@
 
 기존의 글. ..
 
-![image-20210821132153878](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/m1oracle.assets/image-20210821132153878.png)
+![image-20210821132153878](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/m1oracle.assets/image-20210821132153878.webp)
 
 ​	
 
@@ -78,5 +78,5 @@ M1 맥북에서는 native 에서도, docker를 사용해도 2021.08.21 현재 �
 
 혹시 중간에 막히거나 어려운 점 있으면 각각의 포스팅에 댓글 달아주시면 매일 수시로 확인해 댓글 달아드리겠습니다. 화이팅!
 
-![IMG_2175](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/m1oracle.assets/IMG_2175.jpeg)
+![IMG_2175](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/m1oracle.assets/IMG_2175.webp)
 

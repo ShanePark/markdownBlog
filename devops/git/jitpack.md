@@ -14,7 +14,7 @@
 
 인터넷에서 쉽게 찾을 수 있는 여러가지의 Open Source 라고 해도 다 같은 오픈 소스가 아니기 때문에 항상 사용할 때에는 Licence 부분을 잘 읽어 보아야 합니다. 여기서 간단하게 몇가지 흔히 사용되는  라이센스들에 대해 간략하게 짚어보자면..
 
-![license](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/license.png)
+![license](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/license.webp)
 
 > https://www.whitesourcesoftware.com/resources/blog/open-source-licenses-trends-and-predictions/
 
@@ -46,9 +46,9 @@
 
 간단한 jar를 만들 것 이기 때문에 일반 자바 프로젝트를 생성하면 됩니다. gradle이나 maven으로 만들어도 되겠습니다. 저는 maven으로 프로젝트를 만들었습니다.
 
-![Screenshot 2021-09-12 at 12.09.50 PM](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/50.png)
+![Screenshot 2021-09-12 at 12.09.50 PM](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/50.webp)
 
-![Screenshot 2021-09-12 at 12.11.32 PM](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/32.png)
+![Screenshot 2021-09-12 at 12.11.32 PM](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/32.webp)
 
 ​		
 
@@ -58,31 +58,31 @@
 
 ​	
 
-![image-20210912092516816](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912092516816.png)
+![image-20210912092516816](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912092516816.webp)
 
 일단 간단하게 NumberUtil 이라는 클래스를 생성 해 보았습니다.	
 
-![image-20210912095353135](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912095353135.png)
+![image-20210912095353135](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912095353135.webp)
 
 ​	
 
 참고로 intelliJ 에서는 테스트 할 클래스 위에 커서를 올린 후 Option(Alt) + Enter 를 누르면 Test를 생성 할 수 있습니다.
 
-![image-20210912095422059](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912095422059.png)
+![image-20210912095422059](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912095422059.webp)
 
-![image-20210912095521912](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912095521912.png)
+![image-20210912095521912](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912095521912.webp)
 
 ### 테스트
 
 의도한 대로 작동하는지 테스트를 진행 해 봅니다.
 
-![image-20210912095908022](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912095908022.png)
+![image-20210912095908022](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912095908022.webp)
 
 문제없이 test case 들을 통과 합니다.
 
 이번에는 만드는 김에 제가 알고리즘 문제들을 풀이 할 때 자주 쓰는, 자바스크립트 형태의 배열을 자바에서의 형태로 바꿔주는 유틸도 하나 만들어 보았습니다. 	
 
-![image-20210912100329402](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912100329402.png)
+![image-20210912100329402](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912100329402.webp)
 
 이제 지금 까지 만든 유틸 클래스를 다른 프로젝트에서 가져다 쓰도록 해 보겠습니다.	
 
@@ -92,19 +92,19 @@
 
 일단 같은 workspace 에 참조할 프로젝트를 불러와야 합니다.
 
-![image-20210912100548445](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912100548445.png)
+![image-20210912100548445](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912100548445.webp)
 
 ​		
 
 그 다음에는 간단하게 Build Path에 해당 프로젝트를 추가 하는 방법으로 참조 할수 있는데요.
 
-![image-20210912100804400](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912100804400.png)
+![image-20210912100804400](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912100804400.webp)
 
 프로젝트 우클릭 -> Build Path -> Configure Build Path... 에 들어가서
 
 ​	
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912101907828.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912101907828.webp)
 
 해당 프로젝트를 참조 시키면 됩니다. OK 를 눌러 참조 하고,
 
@@ -112,13 +112,13 @@
 
 이제 확인 해 보면 shaneutils 라는 프로젝트에 있는 클래스들을 바로 사용 할 수 있습니다.
 
-![image-20210912101114726](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912101114726.png)
+![image-20210912101114726](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912101114726.webp)
 
 ​	
 
 작동도 이상없이 하는 것을 확인 했습니다.
 
-![image-20210912102127250](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912102127250.png)
+![image-20210912102127250](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912102127250.webp)
 
 ​	
 
@@ -134,11 +134,11 @@
 
 일단 헷갈리지 않게 Build Path 에 추가 했던 것은 remove 버튼을 눌러 제거 해 줍니다.
 
-![image-20210912102505475](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912102505475.png)
+![image-20210912102505475](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912102505475.webp)
 
 ​		
 
-![image-20210912102541648](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912102541648.png)
+![image-20210912102541648](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912102541648.webp)
 
 자 이제 의도한 대로 빨간불이 들어 왔습니다.
 
@@ -152,13 +152,13 @@ IntelliJ IDEA에서는 Terminal 기능을 바로 제공하기 때문에 바로 �
 git init
 ```
 
-![image-20210912102959154](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912102959154.png)
+![image-20210912102959154](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912102959154.webp)
 
-![image-20210912103039610](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912103039610.png)
+![image-20210912103039610](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912103039610.webp)
 
 ​	
 
-![image-20210912103148186](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912103148186.png)
+![image-20210912103148186](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912103148186.webp)
 
 Eclipse 에도 Terminal이 있긴 한 것 같은데.. 해봤는데 아무것도 뜨지 않고 사용 방법을 모르겠더라고요. 그냥 해당 경로 찾아가서 git init 하시면 됩니다.. 혹시 git이 없다면 git을 설치 하시면 되구요. Mac은 기본적으로 깔려 있던 것으로 기억합니다.
 
@@ -166,7 +166,7 @@ Eclipse 에도 Terminal이 있긴 한 것 같은데.. 해봤는데 아무것도 
 
 그러고 이제 commit을 해줍니다.	
 
-![image-20210912103507853](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912103507853.png)
+![image-20210912103507853](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912103507853.webp)
 
 ​	
 
@@ -180,7 +180,7 @@ git status
 
 를 입력 해서 상태를 조회 하구요.
 
-![image-20210912103711395](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912103711395.png)
+![image-20210912103711395](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912103711395.webp)
 
 ​	
 
@@ -198,13 +198,13 @@ git add .
 git commit
 ```
 
-![image-20210912104609146](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912104609146.png)
+![image-20210912104609146](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912104609146.webp)
 
 ​	
 
 그러면 기본 git editor로 설정된 에디터가 실행 됩니다. 저의 경우에는  vi 에디터가 실행 되었는데, 윈도우즈 환경에서는 어떤 텍스트 편집기가 뜨는지 잘 모르겠네요. git config --local core.editor notepad 명령어를 입력 해서 텍스트 편집기를 메모장으로 바꿀 수 있습니다.
 
-![image-20210912105000731](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105000731.png)
+![image-20210912105000731](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105000731.webp)
 
 커밋 메시지를 남기고 저장 해 줍니다. 산넘어 산이네요 Git 사용법으로 조금 샜다가 이제 vim 사용법도 적어야 할 판인데.. 일단 너무 주제에서 벗어나기 때문에, 이렇게 까지 하지 않아도 되고 커밋 메시지를 한줄 만 남기셔도 됩니다. ( vim 에서 나가려면 esc 를 누르고 :q! 입력 후 엔터 치면 됩니다.)
 
@@ -220,9 +220,9 @@ git commit -m "남길 커밋 메시지"
 
 ​	
 
-![image-20210912105349033](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105349033.png)
+![image-20210912105349033](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105349033.webp)
 
-​	![image-20210912105403150](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105403150.png)
+​	![image-20210912105403150](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105403150.webp)
 
 ​	
 
@@ -230,15 +230,15 @@ commit이 완료되었습니다.  Github으로 push 해야 겠네요.
 
 push 는 인증 절차가 들어가기 때문에 저는 지금부터는 가장 쉬운 Github Desktop을 이용하겠습니다. 사실 Commit 도 Github desktop을 이용했디먄 더 쉽게 하실 수 있었습니다.
 
-![image-20210912105552097](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105552097.png)
+![image-20210912105552097](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105552097.webp)
 
 Github desktop 을 (없다면 다운받고) 켜서, Add Existing Repository 를 해서 방금 만든 git 프로젝트를 불러옵니다.
 
-![image-20210912105816254](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105816254.png)
+![image-20210912105816254](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105816254.webp)
 
 ​			
 
-![image-20210912105847202](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105847202.png)
+![image-20210912105847202](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105847202.webp)
 
 >  아까 commit 했던 내용들이 나와 있네요.
 
@@ -246,13 +246,13 @@ Github desktop 을 (없다면 다운받고) 켜서, Add Existing Repository 를 
 
 우측 상단의 Publish repository 를 클릭 합니다.
 
-![image-20210912105941144](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105941144.png)
+![image-20210912105941144](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912105941144.webp)
 
 이제 등록 할 Github 저장소 정보를 입력 해야 하는데요, Keep this code private 체크를 하지 않도록 해주세요. private 으로 해도 jitpack 이용해 배포 할 수 없는 건 아니지만, 우리의 지금 의도와는 다르기 때문에 public을 기준으로 포스팅 하겠습니다.
 
 ​				
 
-![image-20210912110113515](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912110113515.png)
+![image-20210912110113515](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912110113515.webp)
 
 이제 Github에 들어가서 확인 해 보면, 방금 추가한 저장소가 등록 된 것을 확인 할 수 있습니다. 딴길로 많이 다녀왔는데 지금부터가 본론이 되겠네요..
 
@@ -264,17 +264,17 @@ jitpack 사용에 대한 메뉴얼을 개인적으로 확인 하고 싶다면 ht
 
 Release 를 관리 한다면,
 
-![image-20210912110658387](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912110658387.png)
+![image-20210912110658387](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912110658387.webp)
 
 우측의 Create a new release 를 눌러 버전을 관리 하며 관리되는 tag 들을 각각 의존 하게 할 수 있습니다.
 
 하지만 저희는 아직 Release 관리에 대한 지식이 없다는 전제 하에 Master 브랜치의 SNAPSHOT을 의존 하도록 해 보겠습니다.
 
-![image-20210912111758955](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912111758955.png)
+![image-20210912111758955](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912111758955.webp)
 
 >  [jitpack.io](https://jitpack.io)에 접속 해서 저장소 주소를 붙여 넣기 한 후 Look up 을 클릭합니다.
 
-![image-20210912111952671](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912111952671.png)
+![image-20210912111952671](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912111952671.webp)
 
 > 그러면 Commit 내용들이 쭉 나옵니다. 
 
@@ -282,19 +282,19 @@ Release 가 있다면 제일 좌측의 Release를 눌르거나 특정 Branch 를
 
 -SNAPSHOT 에 있는 Get it 을 클릭 합니다.
 
-![image-20210912131139188](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912131139188.png)
+![image-20210912131139188](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912131139188.webp)
 
-![image-20210912122908578](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912122908578.png)
+![image-20210912122908578](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912122908578.webp)
 
 Get it 이 되는 동안 빨간색이 뱅글 뱅글 돕니다. 빌드에 실패했다면 Delete.DS_Store 커밋 옆에 붙은 것 처럼 빨간색 문서가 뜨게 되는데요, 저의 경우에는 java 14로 빌드 했다가 실패해서 8로 바꿨습니다. JitPack에서 java 8 이상의 메이븐 컴파일러를 지원 하지 않는 것 같더라고요.
 
-![image-20210912123235066](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912123235066.png)
+![image-20210912123235066](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912123235066.webp)
 
 >  빌드가 완료 된다면 이렇게 초록색 문서 형태가 나옵니다. -SNAPSHOT 의 경우에는 따로 초록색으로 변하지 않았던 걸로 기억합니다.
 
 Get it 을 클릭합니다.
 
-![image-20210912112143059](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912112143059.png)
+![image-20210912112143059](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912112143059.webp)
 
 이제 해당 의존성을 어떻게 추가 할 지에 대해 나옵니다. 본인이 사용하시는 빌드관리 툴에 따라 Gradle 혹은 Maven 탭을 클릭 해서 사용 하시면 됩니다.
 
@@ -304,9 +304,9 @@ Get it 을 클릭합니다.
 
 build.gradle 파일을 엽니다.
 
-![image-20210912112410712](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912112410712.png)
+![image-20210912112410712](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912112410712.webp)
 
-![image-20210912112556998](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912112556998.png)
+![image-20210912112556998](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912112556998.webp)
 
 How to 에 나온 내용들을 추가 해 줍니다. repositories 에는 
 
@@ -330,7 +330,7 @@ implementation 'com.github.Shane-Park:shaneutils:83fc899d41'
 
 이제 빌드를 새로 해줍니다.
 
-![image-20210912112806553](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912112806553.png)
+![image-20210912112806553](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912112806553.webp)
 
 ​		
 
@@ -355,7 +355,7 @@ pom.xml 파일을 엽니다.
 
 ```
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912113254188.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912113254188.webp)
 
 마찬가지로 위의 내용들을 적절한 위치에 입력 후에 maven > update project(Option/Alt + F5) 를 하면 되겠습니다.
 
@@ -363,13 +363,13 @@ pom.xml 파일을 엽니다.
 
 이제 잘 적용이 완료 되었다면
 
-![image-20210912113522111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912113522111.png)
+![image-20210912113522111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912113522111.webp)
 
 > Maven Dependencies 에 shaneutils 가 추가 된 것을 확인 할 수 있습니다.
 
 ​	
 
-![image-20210912114706750](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912114706750.png)
+![image-20210912114706750](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912114706750.webp)
 
 >  Gradle도 잘 추가 되었습니다.
 
@@ -377,13 +377,13 @@ pom.xml 파일을 엽니다.
 
 - 일단  gradle 로 의존성을 추가한 programmers 프로젝트 입니다.
 
-![image-20210912132426733](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912132426733.png)
+![image-20210912132426733](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912132426733.webp)
 
 STool 의존을 잘 받아와서 해당 모듈을 문제 없이 사용 합니다.
 
 - 이번에는 Maven으로 의존성을 추가한 vuejs 프로젝트 입니다.
 
-![image-20210912132543852](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912132543852.png)
+![image-20210912132543852](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912132543852.webp)
 
 역시 문제없이 모듈을 잘 사용 합니다!
 
@@ -393,7 +393,7 @@ STool 의존을 잘 받아와서 해당 모듈을 문제 없이 사용 합니다
 
 ### 비용
 
-![image-20210912134550300](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912134550300.png)
+![image-20210912134550300](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/image-20210912134550300.webp)
 
 JitPack은 Open-source를 사용한다면 항상 무료이며, 만약 private 저장소를 사용 하고 싶다면 소정의 돈을 내고 사용 해야 합니다.
 

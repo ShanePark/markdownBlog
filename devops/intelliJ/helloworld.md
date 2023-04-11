@@ -2,7 +2,7 @@
 
 ​		
 
-![image-20210821161806428](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821161806428.png)
+![image-20210821161806428](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821161806428.webp)
 
 https://www.jetbrains.com/ko-kr/lp/language-pack/
 
@@ -22,7 +22,7 @@ https://www.jetbrains.com/ko-kr/lp/language-pack/
 
 ### 또한 그중에서도 제일 불편했던 점은, 맥북으로 Eclipse를 쓰는 분들이라면 모두 공감하시겠지만
 
-![eclipse](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/eclipse.gif)
+![eclipse](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/eclipse.webp)
 
 한글 입력시 마지막 글자가 자꾸 사라진다는 겁니다. 몇 년이 지나도 고쳐지지 않는 걸로 봐서는 고칠 생각이 전혀 없는 것 같습니다.
 
@@ -38,7 +38,7 @@ https://www.jetbrains.com/ko-kr/lp/language-pack/
 
 ​	
 
-![image-20210821162622217](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821162622217.png)
+![image-20210821162622217](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821162622217.webp)
 
 ​	
 
@@ -46,19 +46,19 @@ https://www.jetbrains.com/ko-kr/lp/language-pack/
 
 ​	
 
-![image-20210821162715155](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821162715155.png)
+![image-20210821162715155](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821162715155.webp)
 
 반면 개인이 사용하면 연 $149로 훨씬 저렴합니다. 내가 이만큼의 돈을 내고 IntelliJ IDEA를 이용한다면, 그 다음 해에 내 연봉을 IntelliJ IDEA를 사용하지 않았을 때에 비해 $149 이상을 올리는데 기여할 수 있을까에 대한 답은 그닥 어렵지 않습니다. 
 
 ​			
 
-![image-20210821163601698](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821163601698.png)
+![image-20210821163601698](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821163601698.webp)
 
 개인적인 구매를 해서 회사에서 사용하는건 아무런 제약이 없습니다.
 
 ​			
 
-![image-20210821163527497](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821163527497.png)
+![image-20210821163527497](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821163527497.webp)
 
 단지 그 돈을 내는 주체가 회사인가 개인인가에 의해서 가격이 크게 갈리는 것 뿐입니다.
 
@@ -72,7 +72,7 @@ https://www.jetbrains.com/ko-kr/lp/language-pack/
 
 처음 다운받으면, Free 30-day trial을 할 수 있기 때문에 부담없이 사용 해 볼 수 있습니다.	
 
-![image-20210821164158278](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821164158278.png)
+![image-20210821164158278](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821164158278.webp)
 
 https://www.jetbrains.com/idea/download/#section=mac
 
@@ -85,7 +85,7 @@ https://www.jetbrains.com/idea/download/#section=mac
 
 ### 프로젝트 선택
 
-![image-20210821155127720](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155127720.png)
+![image-20210821155127720](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155127720.webp)
 
 처음 IntelliJ IDEA를 열면 project를 생성하거나 Open 할 수 있습니다. Git에서도 받아 올 수 있네요.
 
@@ -99,7 +99,7 @@ https://www.jetbrains.com/idea/download/#section=mac
 
 +New Project 버튼을 눌러 생성합니다.
 
-![image-20210821155239790](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155239790.png)
+![image-20210821155239790](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155239790.webp)
 
 처음에는 SDK: 라고, 사용할 JDK 버전을 선택 해 줘야 합니다. 기존에 본인이 가지고 있는 JDK 를 사용하셔도 되고, download를 누르면 IntelliJ가 제공하는 많은 최신의 JDK가 있기 때문에 다운받아서 사용하셔도 됩니다.
 
@@ -107,35 +107,35 @@ https://www.jetbrains.com/idea/download/#section=mac
 
 template을 사용하려면 체크 하지만 저는 그냥 Next를 누르겠습니다.
 
-![image-20210821155252505](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155252505.png)
+![image-20210821155252505](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155252505.webp)
 
 ​	
 
 그리고 이제 Project name 및 location을 선택합니다.
 
-![image-20210821155334120](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155334120.png)
+![image-20210821155334120](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155334120.webp)
 
 ​	
 
-![image-20210821155343188](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155343188.png)
+![image-20210821155343188](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155343188.webp)
 
 경로가 없다면 만들어 주면 됩니다.
 
 ​	
 
-![image-20210821155410321](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155410321.png)
+![image-20210821155410321](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155410321.webp)
 
 간단하게 프로젝트가 생성되었습니다. src를 우클릭하고 New - Java Class를 생성해줍니다.
 
 ​	
 
-![image-20210821155524319](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155524319.png)
+![image-20210821155524319](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155524319.webp)
 
 당연히 HelloWorld를 빼놓을 수 없겠죠.
 
 ​	
 
-![image-20210821155542913](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155542913.png)
+![image-20210821155542913](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155542913.webp)
 
 우클릭해서 Run 하면 됩니다.
 
@@ -143,7 +143,7 @@ template을 사용하려면 체크 하지만 저는 그냥 Next를 누르겠습�
 
 ​	
 
-![image-20210821155602424](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155602424.png)
+![image-20210821155602424](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821155602424.webp)
 
 
 
@@ -159,19 +159,19 @@ template을 사용하려면 체크 하지만 저는 그냥 Next를 누르겠습�
 
 ​	
 
-![image-20210821160756965](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821160756965.png)
+![image-20210821160756965](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821160756965.webp)
 
 프로젝트 목록에서 상단의 Open을 클릭합니다.
 
 ​	
 
-![image-20210821160835112](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821160835112.png)
+![image-20210821160835112](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821160835112.webp)
 
 이클립스에서는 프로젝트 열 때부터 Maven, Gradle 등을 선택해서 정확히 열었어야 하는데, IntelliJ IDEA는 그냥 폴더 열듯 열면 됩니다. vuejs 프로젝트를 열어보겠습니다.
 
 ​	
 
-![image-20210821160857817](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821160857817.png)
+![image-20210821160857817](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821160857817.webp)
 
 프로젝트 설정이 2개 발견되었다고 합니다. Maven project 기 때문에 Maven project를 선택해서 Open 하겠습니다.
 
@@ -179,23 +179,23 @@ template을 사용하려면 체크 하지만 저는 그냥 Next를 누르겠습�
 
 간단한 경고문이 나오는데 신뢰 할 수 있는 프로젝트라면 Trust Project를 선택합니다.
 
-![image-20210821160906467](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821160906467.png)
+![image-20210821160906467](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821160906467.webp)
 
 ​	
 
-![image-20210821161007297](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821161007297.png)
+![image-20210821161007297](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821161007297.webp)
 
 JPA Buddy 라는 플러그인을 깔으라고 뜨길래 설치 해줬습니다.
 
 ​	
 
-![image-20210821161033636](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821161033636.png)
+![image-20210821161033636](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821161033636.webp)
 
 프로젝트가 빌드가 되면 Run을 한번 해봅니다. 우측 상단에 버튼이 있습니다.
 
 ​	
 
-![image-20210821161140051](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821161140051.png)
+![image-20210821161140051](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821161140051.webp)
 
 Eclipse 사용했을 때와 다를 것 없이 스프링 부트 프로젝트가 실행 됩니다.
 
@@ -217,31 +217,31 @@ Eclipse 사용했을 때와 다를 것 없이 스프링 부트 프로젝트가 �
 
   
 
-![image-20210821170259602](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821170259602.png)
+![image-20210821170259602](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821170259602.webp)
 
 > 엔드포인트를 한눈에 보기 쉽게 나열해줍니다.
 
 ​	
 
-![image-20210821170355200](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821170355200.png)
+![image-20210821170355200](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821170355200.webp)
 
 > 내장되어있는 Git 또한 나무랄 데가 없습니다.
 
 ​	
 
-![image-20210821170525503](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821170525503.png)
+![image-20210821170525503](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821170525503.webp)
 
 Dependencies에는 심지어 Github Star수가 몇개인지, 어떤 License 인지 까지 나옵니다.
 
 ​	
 
-![search](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/search.gif)
+![search](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/search.webp)
 
 기본적으로 제공하는 검색 기능이 말도 안되게 빠릅니다. 이클립스의 Ctrl+H 를 생각하면 사실 검색 기능만으로도 충분히 넘어 올 이유가 될 수 있습니다.
 
 ​	
 
-![image-20210821185321512](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821185321512.png)
+![image-20210821185321512](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821185321512.webp)
 
 Eclipse도 그렇지만, 다양한 Plugin을 제공합니다. 다만 이클립스에서는 플러그인의 충돌이나 호환성 등 문제가 있었지만 인텔리제이는 보다 안정적입니다. 특히 요즘 사용중인 Pebble template의 플러그인이 Eclipse에는 없는데 IntelliJ IDEA에는 있습니다.
 
@@ -249,6 +249,6 @@ Eclipse도 그렇지만, 다양한 Plugin을 제공합니다. 다만 이클립�
 
 그래서 저는 8월이 끝나기 전에 30% 할인된 가격으로 구독을 하기로 결정했습니다. 당장 업무에서 사용하기에는 무리가 있고 단축키를 익히는데 시간이 필요하겠지만, 개인적인 공부나 프로젝트에서 활용하며 점차 그 사용을 늘려 볼 계획입니다.
 
-![image-20210822093227801](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210822093227801.png)
+![image-20210822093227801](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210822093227801.webp)
 
-![image-20210822093135000](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210822093135000.png)
+![image-20210822093135000](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210822093135000.webp)

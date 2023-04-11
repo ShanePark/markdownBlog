@@ -14,7 +14,7 @@ vi
 
 ​	
 
-![image-20210903132847205](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903132847205.png)
+![image-20210903132847205](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903132847205.webp)
 
 다만, windows에 설치한 vim Editor는 , vi 를 입력하면 실행이 되지 않습니다.
 
@@ -24,7 +24,7 @@ vi
 vim
 ```
 
-![image-20210903132927441](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903132927441.png)
+![image-20210903132927441](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903132927441.webp)
 
 정확히 vim 이라고 입력 해야만 vim 데이터가 실행이 되는데요. 아무래도 mac이나 Linux 환경에서 vi 를 입력해 에디터로 넘어갔던 대부분의 분들이 저와 같이 불편함을 느끼셨을 거라고 생각합니다.
 
@@ -40,7 +40,7 @@ vim
 Get-Alias
 ```
 
-![image-20210903133314493](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133314493.png)
+![image-20210903133314493](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133314493.webp)
 
 수많은 Alias 목록이 나옵니다만, vim은 찾아 볼 수 없었습니다.
 
@@ -54,9 +54,9 @@ Set-Alias vi vim
 
 ​	
 
-![image-20210903133343308](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133343308.png)
+![image-20210903133343308](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133343308.webp)
 
-![image-20210903133351351](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133351351.png)
+![image-20210903133351351](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133351351.webp)
 
 잘 실행 되죠 ? 그런데 문제가 있습니다.
 
@@ -64,7 +64,7 @@ Set-Alias vi vim
 
 한번 Terminal / PowerShell 을 껐다 다시 켜면
 
-![image-20210903133422168](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133422168.png)
+![image-20210903133422168](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133422168.webp)
 
 바로 전에 저장해 둔 Alias가 사라지게 됩니다. 해당 설정을 영구 저장해야 할 필요가 있습니다.
 
@@ -80,7 +80,7 @@ $profile
 
 ​		
 
-![image-20210903133208987](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133208987.png)
+![image-20210903133208987](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133208987.webp)
 
 경로가 확인이 되었습니다. 저런 경로에 있다고 합니다.
 
@@ -90,7 +90,7 @@ $profile
 
 ​	
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133541927.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133541927.webp)
 
 ​	
 
@@ -102,7 +102,7 @@ Set-Alias vi vim
 
 ​	
 
-![image-20210903133601793](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133601793.png)
+![image-20210903133601793](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133601793.webp)
 
 ​	
 
@@ -112,7 +112,7 @@ Set-Alias vi vim
 
 ​	
 
-![image-20210903133631639](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133631639.png)
+![image-20210903133631639](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133631639.webp)
 
 터미널을 켜자 마자 오히려 더 에러가 납니다. 스크립트를 실행 할 수 없다고 하네요.
 
@@ -126,7 +126,7 @@ get-help ExecutionPolicy
 
 ​	
 
-![image-20210903133850991](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133850991.png)
+![image-20210903133850991](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133850991.webp)
 
 Get과 Set 명령을 사용 할 수 있네요. 
 
@@ -140,7 +140,7 @@ Get-ExecutionPolicy
 
 
 
-![image-20210903133919334](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133919334.png)
+![image-20210903133919334](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133919334.webp)
 
 > Restricted 라고 나오네요. 해당 정책은  ps1 스크립트 파일을 로드하여 실행 할 수 없는 정책 입니다.
 
@@ -152,7 +152,7 @@ Get-ExecutionPolicy
 get-help Set-ExecutionPolicy
 ```
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133936561.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903133936561.webp)
 
 사용할 수 있는 옵션들이 쭉 나오네요, 그 중에 remoteSigned를 사용하겠습니다.
 
@@ -164,7 +164,7 @@ Set-ExecutionPolicy remoteSigned
 
 ​	
 
-![image-20210903134117081](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134117081.png)
+![image-20210903134117081](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134117081.webp)
 
 하려고 했더니 관리자 권한으로 실행 해야 만 한다고 합니다.
 
@@ -174,7 +174,7 @@ Set-ExecutionPolicy remoteSigned
 
 > 우클릭 -> 자세히 - > 관리자 권한으로 실행 하면 됩니다.
 
-![image-20210903134140167](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134140167.png)
+![image-20210903134140167](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134140167.webp)
 
 ​	
 
@@ -186,7 +186,7 @@ Set-ExecutionPolicy remoteSigned
 
 ​	
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134351779.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134351779.webp)
 
 성공 했습니다. 이제 exit를 입력 하고 새로 켭니다.
 
@@ -194,13 +194,13 @@ Set-ExecutionPolicy remoteSigned
 
 ​	
 
-![image-20210903134447648](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134447648.png)
+![image-20210903134447648](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134447648.webp)
 
 아무 오류도 없네요. 이제 vi 를 입력하면
 
 ​	
 
-![image-20210903134456087](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134456087.png)
+![image-20210903134456087](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903134456087.webp)
 
 vim 에디터가 실행 됩니다 ! m 하나 덜 치는게 쉽지 않았네요. 힘든 길 저와 함께 걷는다고 수고 많으셨습니다!
 

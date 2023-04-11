@@ -10,7 +10,7 @@
 
 
 
-![image-20210821094604223](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821094604223.png)
+![image-20210821094604223](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821094604223.webp)
 
 ### 일단 위에 보이는 것 처럼 SQL Developer에서 전자지갑으로 연결이 가능 한 상태가 준비 되어 있어야 합니다. 아직 오라클 전자지갑을 통한 데이터베이스 연결 준비가 되어있지 않다면 [Mac) Oracle FreeTier 이용해 웹 어플리케이션 배포하기 4) 무료 데이터 베이스 만들기 및 데이터 이관하기](https://shanepark.tistory.com/173) 를 먼저 해주세요.
 
@@ -26,13 +26,13 @@
 
 > 기존에 프로젝트가 있는 분들은 그냥 사용중인 프로젝트 이용하시면 됩니다.
 
-![image-20210821095232354](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821095232354.png)
+![image-20210821095232354](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821095232354.webp)
 
 스프링 부트 프로젝트와 DB 연결을 해보기 위해 스프링 부트 프로젝트를 생성 합니다.
 
 ### 	
 
-![image-20210821095435493](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821095435493.png)
+![image-20210821095435493](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821095435493.webp)
 
 국비 학원 수강하시는 분들 중에 m1 맥북을 샀다가 고생하는 분들이 대부분인 것 같은데요, 그래서 대부분의 국비 학원에서 사용하는 Mybatis 를 이용해 DB 접속을 하겠습니다. 참 ! 위에 있는 Spring Data JPA 는 추가하지 말아주세요. 저도 나중에 뺐습니다.
 
@@ -42,7 +42,7 @@ Finish 를 눌러 프로젝트 생성을 완료합니다.
 
 ### 프로젝트가 준비되었습니다.
 
-![image-20210821095702185](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821095702185.png)
+![image-20210821095702185](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821095702185.webp)
 
 일단 최소한 데이터 베이스 접속을 위해 기본 구조를 만들어 보겠습니다.
 
@@ -64,13 +64,13 @@ WHERE TABLE_NAME = 'ISSUE'
 ORDER BY COLUMN_ID;
 ```
 
-![image-20210821100326471](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100326471.png)
+![image-20210821100326471](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100326471.webp)
 
 ​	
 
 ### 위에서 조회된 쿼리 결과를
 
-![image-20210821100535881](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100535881.png)
+![image-20210821100535881](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100535881.webp)
 
 간단하게 붙여넣기만 하면 VO 객체가 생성됩니다. Javax.Validation이 필요한데 가지고 있질 않네요.
 
@@ -78,15 +78,15 @@ ORDER BY COLUMN_ID;
 
 프로젝트를 우클릭 하고, Spring -> Add Starters 를 클릭하면
 
-![image-20210821100717809](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100717809.png)
+![image-20210821100717809](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100717809.webp)
 
-![image-20210821100744496](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100744496.png)
+![image-20210821100744496](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100744496.webp)
 
 얼마든지 나중에도 Dependency를 추가 할 수 있습니다.
 
 ​	
 
-![image-20210821100857223](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100857223.png)
+![image-20210821100857223](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100857223.webp)
 
 그럼 추가 전 후의 차이를 미리 보기 할 수 있습니다. 변경할 내용을 체크 한 뒤에 Finish 를 클릭합니다.
 
@@ -103,7 +103,7 @@ ORDER BY COLUMN_ID;
 
 
 
-![image-20210821101331074](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821101331074.png)
+![image-20210821101331074](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821101331074.webp)
 
 그럼 이제 javax.validation을 import 해서 빨간불이 모두 사라졌습니다.
 
@@ -117,7 +117,7 @@ ORDER BY COLUMN_ID;
 
 패키지 구조는 아래와 같습니다.
 
-![image-20210821105344285](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821105344285.png)
+![image-20210821105344285](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821105344285.webp)
 
 
 
@@ -255,7 +255,7 @@ mybatis.mapper-locations=classpath:mappers/*.xml
 
 이렇게 간단한 어플리케이션을 생성 해서 작동 해 보았습니다.
 
-![image-20210821105939556](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821105939556.png)
+![image-20210821105939556](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821105939556.webp)
 
 ​	
 
@@ -263,7 +263,7 @@ POSTMAN을 통해 해당 URL로 GET 요청을 보내니 데이터를 잘 받아�
 
 ### 단순히 요청에 대한 응답을 보내는 지 정도만 체크하고 싶고, GET 방식이라면 그냥 주소창에 넣고 입력 하셔도 괜찮습니다.
 
-![image-20210821110028490](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821110028490.png)
+![image-20210821110028490](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821110028490.webp)
 
 ​	
 
@@ -277,7 +277,7 @@ http://javaperformancetools.blogspot.com/2017/06/oracle-wallet-jdbc-jpa-configur
 
 일단 지갑을 압축 풀 필요는 없지만 혹시 풀어본다면 tnsnames.ora 파일에서 제일 위에 shane_high 가 보입니다. 각자 본인의 _high 이름을 체크 하셔서 해당 이름으로 접속 해야 합니다. 무작정 test_high 이런 식으로 쓰면 접속이 되지 않습니다.
 
-![image-20210821112724130](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821112724130.png)
+![image-20210821112724130](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821112724130.webp)
 
 ​	
 
@@ -303,7 +303,7 @@ mybatis.mapper-locations=classpath:mappers/*.xml
 
 ​	
 
-![image-20210821113259914](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821113259914.png)
+![image-20210821113259914](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821113259914.webp)
 
 ​	
 
@@ -311,7 +311,7 @@ mybatis.mapper-locations=classpath:mappers/*.xml
 
 ​	
 
-![image-20210821113516004](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821113516004.png)
+![image-20210821113516004](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821113516004.webp)
 
 ​	
 
@@ -354,7 +354,7 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 ​	
 
-![image-20210821114935495](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821114935495.png)
+![image-20210821114935495](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821114935495.webp)
 
 ### 이제 Oracle 지갑을 이용하기 위해 osdt_cert, osdt_core, oraclepki 를 추가해줍니다.
 
@@ -383,15 +383,15 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 이제 다시 시도 해 보겠습니다.
 
-![image-20210821115321842](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821115321842.png)
+![image-20210821115321842](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821115321842.webp)
 
 분명 오류 메시지인데 왜이렇게 기쁠까요 ? 비밀번호는 잘 입력한 것 같은데 보니 username 을 확인해보니 admin 으로 써야 하는데 shane 이라고 써놨었습니다. 해당 내용을 변경 한 후 다시 시도 해보면..
 
 ​	
 
-![image-20210821115612007](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821115612007.png)
+![image-20210821115612007](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821115612007.webp)
 
-![image-20210821121732152](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821121732152.png)
+![image-20210821121732152](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821121732152.webp)
 
 성공했습니다.  쉽지 않았네요. 저보다 먼저 고생하며 앞에서 길을 열어준 "help"님 덕분에 많은 분들에게 해당 내용을 공유할 수 있게 되어 기쁩니다.
 

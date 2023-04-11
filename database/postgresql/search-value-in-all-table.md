@@ -182,7 +182,7 @@ select * from search_columns('23fb9d28-3976-4b87-9545-403c45f8b8c8');
 
 특정 UUID 를 검색 한다면, 관련된 모든 데이터를 전체 테이블에서 찾아줍니다.
 
-![peek](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/postgresql/search-value-in-all-table.assets/peek.gif)
+![peek](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/postgresql/search-value-in-all-table.assets/peek.webp)
 
 모든 테이블을 다 찾기 때문에 데이터베이스의 크기가 클때 검색 시간은 꽤 걸리지만 그래도 덤핑해서 검색하거나 한 테이블씩 모두 찾을 때에 비해서는 훨씬 효율적입니다. 
 

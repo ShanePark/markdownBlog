@@ -24,13 +24,13 @@
 
 ### 1. 해당 프로젝트를 우클릭 하고 - properties를 들어갑니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img.webp)
 
 
 
 ### 2. Run/Debug Setting 으로 갑니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830379.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830379.webp)
 
 이때 해당 프로젝트를 아직 한번도 실행하지 않았었다면 이렇게 아무것도 나오지 않습니다. 일단 한번 실행 해 주고 설정 하는것도 좋습니다.
 
@@ -38,7 +38,7 @@
 
 ### 3. 한번이라도 실행 했다면 스프링 부트 Configuration이 보여집니다. Edit 을 누릅니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830370.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830370.webp)
 
  	
 
@@ -48,7 +48,7 @@
 -Dspring.profiles.active=dev
 ```
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830372.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830372.webp)
 
 
 
@@ -56,13 +56,13 @@
 
 설정 전 후 비교를 해보면 아래 보이는 것 처럼 원래는 어플리케이션을 실행했을때 default profiles: default 라고 나오지만
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830353.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830353.webp)
 
 
 
 ### 6. 설정후에는
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830374.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img-20210819214830374.webp)
 
 이렇게 The following profiles are **active : dev** 로 나오는 것을 확인 할 수 있습니다.
 
@@ -74,19 +74,19 @@
 
 ​	
 
-![image-20210902085016491](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/image-20210902085016491.png)
+![image-20210902085016491](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/image-20210902085016491.webp)
 
 우측 상단에 Edit Configurations.. 라는 드랍박스 메뉴를 클릭 합니다.
 
 ​	
 
-![image-20210902085041400](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/image-20210902085041400.png)
+![image-20210902085041400](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/image-20210902085041400.webp)
 
 Active profiles를 적는 란이 바로 있네요. 거기에 그냥 dev 를 써주면 끝 입니다. Eclipse 보다 간단하네요.
 
 ​	
 
-![image-20210902085109736](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/image-20210902085109736.png)
+![image-20210902085109736](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/image-20210902085109736.webp)
 
 ​	
 

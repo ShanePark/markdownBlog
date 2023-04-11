@@ -22,7 +22,7 @@ Ubuntu GNOME의 GTK 테마를 유저들이 워낙 기가막히게 만들어 뒀�
 
 글 시작에 앞서 제가 세팅 완료 후 사용중인 환경을 보여드리겠습니다. 얼핏 보면 누가봐도 MacOS 라고 생각할텐데, 우분투 환경 입니다.	
 
-![ubuntu](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/ubuntu.png)
+![ubuntu](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/ubuntu.webp)
 
 ​	
 
@@ -36,13 +36,13 @@ Ubuntu GNOME의 GTK 테마를 유저들이 워낙 기가막히게 만들어 뒀�
 
 https://www.gnome-look.org/p/1403328
 
-![image-20210930230116799](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20210930230116799.png)
+![image-20210930230116799](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20210930230116799.webp)
 
 ​	
 
 우측 상단의 Download 를 클릭 하고
 
-![image-20210930230142136](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20210930230142136.png)
+![image-20210930230142136](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20210930230142136.webp)
 
 ​	원하는 테마를 다운 받으세요. 이번에는 dark 버전으로 선택 합니다만 여러개 받아서 선택하며 고르셔도 됩니다.  개인적으로는 전부 다 다운받고 골라 쓰는걸 추천드립니다. 개당 0.18 MB 밖에 안하잖아요. solid 와 일반버전의 차이는 solid는 불투명, solid가 붙어있지 않은 경우는 투명입니다.
 
@@ -50,11 +50,11 @@ https://www.gnome-look.org/p/1403328
 
  solid의 경우
 
-![image-20211001083002279](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001083002279.png)
+![image-20211001083002279](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001083002279.webp)
 
 solid가 아닐 경우
 
-![image-20211001083101110](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001083101110.png)
+![image-20211001083101110](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001083101110.webp)
 
 차이를 아시겠죠 ? 취향에 따라 쓸수 있습니다.
 
@@ -62,7 +62,7 @@ solid가 아닐 경우
 
 다운이 완료되었으면
 
-![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/1.png)
+![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/1.webp)
 
 이제 압축을 풀어서 ~/.themes 폴더에 넣어줘야 합니다.
 
@@ -102,7 +102,7 @@ $ sudo apt install gnome-tweaks
 
 ```
 
-![2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/2.png)
+![2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/2.webp)
 
 설치는 금방 됩니다.
 
@@ -110,25 +110,25 @@ $ sudo apt install gnome-tweaks
 
 설치된 Tweaks 를 실행 합니다.
 
-![3](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/3.png)
+![3](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/3.webp)
 
 ​	
 
 Apperance 탭에 가면 Themes > Applications 을 설정 할 수 있는데요
 
-![4](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/4.png)
+![4](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/4.webp)
 
 ​	
 
 아까 ~/.themes 폴더에 잘 넣어줬다면, 이제 WhiteSur 테마를 선택 할 수 있습니다. 선택하자 마자 바로 바뀌었네요.
 
-![5](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/5.png)
+![5](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/5.webp)
 
 ​		
 
 여기에서 이제 Windows Titlebars 설정에서 Titlebar Buttons Placement를 Right에서 Left 로 바꾸면 정말 Mac과 같아집니다.
 
-![6](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/6.png)
+![6](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/6.webp)
 
 ​	
 
@@ -140,7 +140,7 @@ Apperance 탭에 가면 Themes > Applications 을 설정 할 수 있는데요
 
 https://www.gnome-look.org/p/1403328 링크를 보면 아래에 하나씩 추가 설정을 할 수 있도록 링크가 다 달려있습니다.
 
-![image-20210930232544047](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20210930232544047.png)
+![image-20210930232544047](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20210930232544047.webp)
 
 ​	
 
@@ -148,11 +148,11 @@ https://www.gnome-look.org/p/1403328 링크를 보면 아래에 하나씩 추가
 
 일단 Icon을 한번 변경 해 볼까요? Icon theme를 다운 받습니다.
 
-![7](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/7.png)
+![7](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/7.webp)
 
 ​		
 
-![image-20211001083503898](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001083503898.png)
+![image-20211001083503898](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001083503898.webp)
 
 이번에도 여러가지가 있는데요, 제일 위에 있는 것을 다운 받았습니다.
 
@@ -180,13 +180,13 @@ mv ~/Downloads/WhiteSur-grey ~/.icons
 
 그러고 나서 또 Tweaks를 실행 시켜 보면
 
-![image-20211001083645196](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001083645196.png)
+![image-20211001083645196](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001083645196.webp)
 
 이번에는 Icons에 Whitesur-dark가 생겼습니다. 설정을 해주면
 
 ​		
 
-![image-20211001084150890](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001084150890.png)
+![image-20211001084150890](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001084150890.webp)
 
 아까보다 더 MacOS에 가까워졌습니다.
 
@@ -200,19 +200,19 @@ MacOS에서는 San Francisco font를 사용하고 있습니다. 개인적으로 
 
 Twekas 에서 Fonts에 들어가면 폰트를 바꿀 수 있는데요 Interface Text와 Monospace Text를 변경 해 주시면 됩니다.
 
-![11](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/11.png)
+![11](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/11.webp)
 
 ​	
 
 Garuda Regular로 해주시면 됩니다.
 
-![10](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/10.png)
+![10](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/10.webp)
 
 ​	
 
 폰트까지 바꾸니 더 좋습니다.
 
-![12](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/12.png)
+![12](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/12.webp)
 
 ​	
 
@@ -220,19 +220,19 @@ Garuda Regular로 해주시면 됩니다.
 
 https://www.pling.com/p/1355701/ 에서 맥북 커서를 받을 수 있습니다.
 
-![image-20211001084949625](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001084949625.png)
+![image-20211001084949625](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001084949625.webp)
 
 ​	
 
 한가지 특이한점은 cursor도 .cursor 폴더가 아닌 .icons 폴더에 저장한다는 점 입니다.
 
-![image-20211001085020773](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001085020773.png)
+![image-20211001085020773](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001085020773.webp)
 
 ​	
 
 다운받은 커서를 .icons 폴더에 위치 시키고 나서 다시 Tweaks를 켜면 Cursor에도 McMojave-cursors 가 추가되어 있습니다.
 
-![image-20211001084923315](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001084923315.png)
+![image-20211001084923315](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/image-20211001084923315.webp)
 
 ​	
 
@@ -246,7 +246,7 @@ dock 을 변경 할 수도 있고 https://github.com/vinceliuice/WhiteSur-gtk-th
 
 Firefox를 사파리 처럼 만들 수도 있습니다. https://github.com/vinceliuice/WhiteSur-gtk-theme/tree/master/src/other/firefox
 
-![01](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/firefox-whitesur.png)
+![01](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/firefox-whitesur.webp)
 
 ​	
 
@@ -264,7 +264,7 @@ Firefox를 사파리 처럼 만들 수도 있습니다. https://github.com/vince
 
 최종적으로 Theme 제작자가 제안하는 완성본은 아래와 같습니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/ef3a77dd79e583851b8d38e4d98fcdf694c6c9d6a22bdda79d52208b0f9d4e553917.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gtk-mac-theme.assets/ef3a77dd79e583851b8d38e4d98fcdf694c6c9d6a22bdda79d52208b0f9d4e553917.webp)
 
 ​	
 

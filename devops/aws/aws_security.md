@@ -12,25 +12,25 @@ Amazon Web Service 프리티어 서버를 열때 public으로 연다고 연 것 
 
 #### 1 AWS 로그인을 한 뒤, AWS Management Console 창으로 들어가줍니다.
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/1.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/1.webp)
 
 ​	
 
 #### 2 DB instance로 들어 갑니다
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/2.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/2.webp)
 
 ​	
 
 #### 3 본인의 RDS 인스턴스에 들어가시면 Security 설정을 할 수 있는 곳이 있습니다.
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/3.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/3.webp)
 
 ​	
 
 #### 4 Security group ID에 들어가면 보안 설정을 하실 수 있습니다.
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/4.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/4.webp)
 
 ​	
 
@@ -38,13 +38,13 @@ Amazon Web Service 프리티어 서버를 열때 public으로 연다고 연 것 
 
 맨 위에 제가 처음 에 쓰던 집 컴퓨터의 ip주소가 있습니다. 이후 학원 아이피를 아래에 추가해서 쓰다가 지금은 전체 공개를 위해 0.0.0.0 아이피를 추가해서 사용하고 있습니다.    
 Oracle-RDS로 Type 설정을 해주는걸 잊지 마세요.
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/5.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/5.webp)
 
 ​	
 
 #### 6 Edit inbound rules를 눌러주셨으면 들어오는 화면입니다.
 
 여기에서 수정을 한 뒤에 save rules를 잊지 말고 눌러주세요. 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/6.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/6.webp)
 
 설정을 모두 마치고 나면 문제 없이 접속 되는걸 확인 하실 수 있습니다.

@@ -20,7 +20,7 @@ docker나 docker-compose가 아직 준비되어 있지 않다면 아래 글을 �
 git clone https://github.com/deviantony/docker-elk.git
 ```
 
-## ![Screenshot from 2021-09-20 14-35-32](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/14-35-32.png)
+## ![Screenshot from 2021-09-20 14-35-32](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/14-35-32.webp)
 
 
 
@@ -32,19 +32,19 @@ docker-compose up -d
 
 필요한 이미지를 다운 받고, 컨테이너가 모두 구동 됩니다.
 
-![image-20210920155055174](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/image-20210920155055174.png)
+![image-20210920155055174](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/image-20210920155055174.webp)
 
 
 
 키바나도 포트인 5601로 접속 해보면  잘 작동되는 것을 확인 할 수 있습니다.
 
-![image-20210920152438739](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/image-20210920152438739.png)
+![image-20210920152438739](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/image-20210920152438739.webp)
 
 
 
 엘라스틱 서치는 9200 포트 입니다.
 
-![image-20210920184100766](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/image-20210920184100766.png)
+![image-20210920184100766](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/image-20210920184100766.webp)
 
 ​	
 

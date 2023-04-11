@@ -76,7 +76,7 @@ StopWatch 객체를 생성 하고,  start() 메서드를 호출 해 준 다음�
 
 ​		
 
-![image-20210831212402500](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831212402500.png)
+![image-20210831212402500](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831212402500.webp)
 
 ​	
 
@@ -90,19 +90,19 @@ StopWatch 클래스의 기본 사용 용도를 알았으니 조금 더 자세히
 
 StopWatch 클래스의 코드를 까 보니 소스코드가 200여줄 정도 밖에 안 될 정도로 매우 간단합니다. 
 
-![image-20210831212912804](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831212912804.png)
+![image-20210831212912804](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831212912804.webp)
 
 위에 나온 것 처럼 IntelliJ 에서 .class 를 토대로 역 컴파일 한 코드라고는 하지만 코드를 보니 정말 작동 시간 측정 용도로만 작성 된 클래스 입니다.
 
 ### Constructors (생성자)
 
-![image-20210831212753401](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831212753401.png)
+![image-20210831212753401](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831212753401.webp)
 
 생성자로는 id를 parameter로 받는 생성자 하나와 기본 생성자. 이렇게 총 2개가 있네요.
 
 ### Methods
 
-​	![image-20210831213204057](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831213204057.png)
+​	![image-20210831213204057](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831213204057.webp)
 
 intelliJ IDEA에서 코드 어시스트를 받아 보니 이만큼의 메서드가 나옵니다. 
 
@@ -165,7 +165,7 @@ Recursive 와 Dynamic Programming 방식의 피보나치 계산을 각각 한 �
 
 ​		
 
-![image-20210831221325041](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831221325041.png)
+![image-20210831221325041](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/StopWatch.assets/image-20210831221325041.webp)
 
 전체 해당 StopWatch의 소요시간을 보여주고, 각각의 Task를 작업하는데 걸린 시간과 비중을 보여줍니다.
 

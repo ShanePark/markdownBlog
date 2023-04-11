@@ -23,13 +23,13 @@
 
 Repositories 메뉴에서 우측 상단의 New 를 눌러서 생성하시면됩니다.
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github1.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github1.webp)
 
 > 저장소 이름을 쓰는데, 뭐 잘못쓴다고 큰일 나는건 아니니까 편한 대로 작성하시면 됩니다.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github2.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github2.webp)
 
 >  다른 사람이 내 저장소를 못보게 하고 싶으면 Private 로 하시면 됩니다.
 
@@ -39,7 +39,7 @@ Repositories 메뉴에서 우측 상단의 New 를 눌러서 생성하시면됩�
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github3.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github3.webp)
 
 순식간에 저장소가 생성되었습니다. 뭐 어려워 보이는 화면이 훅 들어오지만, 당황할 필요 없습니다.
 
@@ -50,7 +50,7 @@ Github에서의 세팅은 이걸로 끝입니다.
 [www.sourcetreeapp.com/](https://www.sourcetreeapp.com/)
 
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github4.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github4.webp)
 
 Windows 를 쓰시는 분이면 Download for Windows 를 선택해서 다운 받으시면 됩니다.
 
@@ -58,7 +58,7 @@ Windows 를 쓰시는 분이면 Download for Windows 를 선택해서 다운 받
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github5.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github5.webp)
 
 소스트리를 사용하기 위해 Bitbucket 회원가입을 하라고 하는데요, 나중에 이 Bitbucket 아이디와 Github 아이디를 혼동하지 않도록 조심하세요. 가입 안하고도 다음 단계로 넘어 갈 수 있습니다.
 
@@ -66,7 +66,7 @@ Author 이름 및 이메일 주소를 등록할때는 Github에 등록할 이메
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github6.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github6.webp)
 
 본인의 아이디가 없다면 회원 가입을 하시면 등록 완료 하며 다음 화면으로 넘어 갈 수  있습니다.
 
@@ -74,7 +74,7 @@ Author 이름 및 이메일 주소를 등록할때는 Github에 등록할 이메
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github7.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github7.webp)
 
 SSH 키가 뭔지 모르신다면 그냥 '아니오'를 선택하시면 됩니다. 본인이 SSH 키를 가지고 계신 분들은 등록 하시면 됩니다.
 
@@ -91,15 +91,15 @@ SSH 키가 뭔지 모르신다면 그냥 '아니오'를 선택하시면 됩니�
 
 Remote를 누르고 Add an account 를 해서 본인의 Github 계정으로 로그인 해 주세요.
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github8.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github8.webp)
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github9.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github9.webp)
 
 OAuth 를 이용하면 아이디 비번 치지 않고도 크롬에 로그인 되어 있는 깃허브 정보를 통해 쉽게 로그인 하실 수 있습니다.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github10.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github10.webp)
 
 로그인이 완료 되면 저와 같은 화면을 보실 수 있습니다.
 
@@ -107,13 +107,13 @@ OAuth 를 이용하면 아이디 비번 치지 않고도 크롬에 로그인 되
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github11.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github11.webp)
 
 제가 가지고 있는 저장소의 목록이 나옵니다. 저는 방금 만든 basicJava 저장소에 제 컴퓨터에 있는 basicJava 폴더를 동기화 시킬 예정입니다.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github12.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github12.webp)
 
 동기화 시키는 요령이야 사람마다 다르겠지만, 제가 여러번의 시행 착오를 통해 깨달은 간단하게 따라하는 방법을 알려드리겠습니다. 혹시 본인 실수로 삭제할까 불안한 분들은 미리 해당 폴더를 .zip 파일로 만들거나 하셔서 백업해두세요.
 
@@ -121,13 +121,13 @@ OAuth 를 이용하면 아이디 비번 치지 않고도 크롬에 로그인 되
 
 \* 지금부터는 차근차근 확실하게 하나씩 놓치지 말고 잘 따라해주세요.
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github13.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github13.webp)
 
 1. Github에 동기화시키고자 하는 폴더의 이름을 변경합니다.
 
    ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github14.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github14.webp)
 
 2) 새로만들기 - 폴더를 한 뒤 새 폴더를 만들어줍니다. 이름은 해당 폴더의 원래 이름으로 합니다.
 
@@ -135,13 +135,13 @@ OAuth 를 이용하면 아이디 비번 치지 않고도 크롬에 로그인 되
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github15.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github15.webp)
 
 3. 다시 Sourcetree로 돌아와, 내가 동기화 하고자 하는 저장소를 선택해 Clone 버튼을 누릅니다.
 
    ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github16.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github16.webp)
 
 그러면 여기에서 첫줄에는 자동으로 내가 동기화 하고자 하는 저장소의 주소가 들어가게됩니다.
 
@@ -149,7 +149,7 @@ OAuth 를 이용하면 아이디 비번 치지 않고도 크롬에 로그인 되
 
    ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github17.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github17.webp)
 
 5) 여기에서 BasicJava Copy 를누르는 실수를 하지 않도록 하세요. 어차피 아래꺼 눌러도 동기화가 되지 않습니다. Clone 할때는 빈 폴더만 선택 할 수 있습니다. 그리고 그게 BaiscJava Copy로 동기화 하고자 하는 폴더를 피신시킨 이유입니다.
 
@@ -157,7 +157,7 @@ OAuth 를 이용하면 아이디 비번 치지 않고도 크롬에 로그인 되
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github18.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github18.webp)
 
 모든 준비가 끝났습니다.
 
@@ -169,7 +169,7 @@ Clone 버튼을 누릅니다.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github19.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github19.webp)
 
 6) 아무일도 일어나지 않은 것 같지만, 모든 일이 끝났습니다.
 
@@ -177,25 +177,25 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github20.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github20.webp)
 
 7. 다시 Copy 폴더로 돌아와, 모든 파일들을 제자리로 돌려주시면 됩니다.
 
    ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github21.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github21.webp)
 
 복사하기로 가져와도 되고, 잘라내기로 가져와도 됩니다.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github22.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github22.webp)
 
 동기화 된 폴더에 붙여넣기 해줍니다.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github23.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github23.webp)
 
 8). 잘라내기로 가져왔다면 BasicJava Copy에 혹시 못가져온 파일은 없는지 우클릭-속성 으로 정보를 조회합니다.
 
@@ -203,13 +203,13 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github24.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github24.webp)
 
 보기 - 숨긴 항목을 체크해서 혹시 못가져온 파일이 있는건 아닌지 확인 해 봅니다.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github25.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github25.webp)
 
 9) Copy 폴더마저 지우고 나면, 이제 폴더는 말끔하게 이전의 상태로 정리가 완료되었습니다.
 
@@ -217,7 +217,7 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github26.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github26.webp)
 
 파일 상태에 보면 새로 등록된 파일들이 잔뜩 있는걸 확인 할 수 있습니다.
 
@@ -225,7 +225,7 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github27.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github27.webp)
 
 11. 맨 아래 에 있는 Push changes immediately to 를 체크해줍니다.
 
@@ -253,15 +253,15 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 저는 잘 모르겠어서 no helper 선택 두번 해서 사용하고 있습니다. 이것 저것 다 해보긴 했었는데 지금까진 딱히 사용상에 차이를 잘 모르겠습니다. 그냥 no helper 하시면 될 듯 합니다. 제 기억 상 같은 화면이 두번 뜹니다.
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github28.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github28.webp)
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github29.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github29.webp)
 
 13 . 커밋이 완료되었습니다 ! Nothing to commit.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github30.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github30.webp)
 
 14. 깃허브에서 본인 저장소에 들어가보시면  업로드 된 내용을 확인 하실 수 있습니다.
 
@@ -279,7 +279,7 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ​	새로운 컴퓨터에서 같은 저장소를 동기화 하는 방법 설명해드리겠습니다.
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github31.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github31.webp)
 
  등록하고자 하는 컴퓨터에는 해당 폴더가 없을테니 이렇게 시작하겠습니다.
 
@@ -287,7 +287,7 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github32.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github32.webp)
 
 1 ) 새폴더 만들기를 합니다.  저는 1.BasicJava 라는 이름으로 만들었습니다.
 
@@ -297,9 +297,9 @@ Github의 저장소와 본인 컴퓨터의 해당 폴더는 서로 연결이 되
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github33.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github33.webp)
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github34.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github34.webp)
 
 2 ) 새로운 컴퓨터에 소스트리 다운로드 하고 로그인 합니다.
 
@@ -312,31 +312,31 @@ clone 버튼을 바로 누르지 마세요!
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github35.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github35.webp)
 
 4 ) Clone 바로 누르지 마세요! 두번째에 있는  Browse 버튼 눌러서, 
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github36.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github36.webp)
 
 5. 방금 만든 폴더 찾아서 폴더 선택 해 줍니다.
 
    ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github37.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github37.webp)
 
 Clone 누르면 끝입니다.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github38.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github38.webp)
 
 새로 만든 폴더에 저장소 내용이 동기화 되었습니다.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github39.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github39.webp)
 
 6 . 폴더에 들어가보면 잘 동기화 된 것을 확인 할 수 있습니다.
 
@@ -348,12 +348,12 @@ Clone 누르면 끝입니다.
 
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github40.png)
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github41.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github40.webp)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github41.webp)
 
 예시로 java 파일 한개를 수정 한 뒤 저장해보겠습니다.
 
-​	![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github42.png)
+​	![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github42.webp)
 
 오른쪽에서 수정된 내용을 확인 할 수 있습니다.
 
@@ -371,16 +371,16 @@ Clone 누르면 끝입니다.
 
 하면 쉽게 끝납니다.
 
-​	![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github43.png)
+​	![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github43.webp)
 
 파일 올라간 것 확인 뒤 메시지 쓰고 Commit 까지 누르면 커밋이 됩니다.
 
-​	![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github44.png)
+​	![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github44.webp)
 
 저장소에 돌아와 보면 새로 커밋한 시간 (33초전) 과
 
 변경된 메시지 ( test commit) 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github45.png)
+![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github45.webp)
 
 그리고 변경 된 파일 까지 확인 할 수 있습니다.
 
@@ -388,14 +388,14 @@ Clone 누르면 끝입니다.
 
 저장소가 수정되었다면 다른 컴퓨터에서는 해당 수정된 내용을 받아와야 겠죠???
 
-​	![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github46.png)
+​	![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github46.webp)
 본인 개인 컴퓨터에서 작업을 했고, 이제 학원에 돌아와서 소스트리를 킨다면 ( 반대의 경우에도 마찬가지)
 
 Pull 버튼에 보통 1 숫자가 들어와 있습니다.
 
 안들어와있어도 꼭 pull 을 해주셔야 합니다. 
 
-​	![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github47.png)
+​	![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github47.webp)
 
 Pull 버튼을 누르면 무난하게 해당 컴퓨터에도 수정 내용을 받아오실 수 있습니다.
 

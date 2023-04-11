@@ -123,7 +123,7 @@ window.location.href = 'https://shanepark.tistory.com';
 
 window.location.href 대신 replace를 썼을 뿐인데 어떻게 달라졌나 확인 을 해보겠습니다.	
 
-![page](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/page.gif)
+![page](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/page.webp)
 
 > 이 경우에는 뒤로가기와 앞으로가기를 눌러도 2.html 파일이 노출되지 않습니다.
 

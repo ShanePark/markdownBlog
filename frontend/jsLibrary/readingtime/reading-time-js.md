@@ -8,7 +8,7 @@
 
 
 
-## ![Why show the reading time for an editorial article? - User Experience Stack  Exchange](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/h5fpf-20210908224905202.jpg)
+## ![Why show the reading time for an editorial article? - User Experience Stack  Exchange](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/h5fpf-20210908224905202.webp)
 
 > 보통 이런식으로 얼마나 걸릴지를 미리 가늠할 수 있게 해줍니다.
 
@@ -26,7 +26,7 @@ https://github.com/michael-lynch/reading-time
 
 ​	
 
-![image-20210908225115995](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908225115995.png)
+![image-20210908225115995](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908225115995.webp)
 
 첫번째로 jQuery와 plugin을 page의 head 혹은 footer에 포함시키라고 합니다.
 
@@ -41,19 +41,19 @@ https://github.com/michael-lynch/reading-time
 
 ​		
 
-![image-20210908225249869](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908225249869.png)이번에는 읽는데 소요되는 예상 시간이 보여질 element를 만들으라고 합니다. class 이름은 eta로 하라고 하네요.
+![image-20210908225249869](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908225249869.webp)이번에는 읽는데 소요되는 예상 시간이 보여질 element를 만들으라고 합니다. class 이름은 eta로 하라고 하네요.
 
 또한 총 단어 갯수를 보여주고 싶다면 아무 class 나 ID로 하나 더 만들어 보라고도 합니다.	
 
 ​	
 
-![image-20210908225420719](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908225420719.png)
+![image-20210908225420719](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908225420719.webp)
 
 총 단어 갯수를 보여줄 word-count 요소도 만든다면 이런 식으로 만들 수 있겠습니다.
 
 ​	
 
-![image-20210908225453561](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908225453561.png)
+![image-20210908225453561](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908225453561.webp)
 
 이제 마지막으로 target이 될 요소를 대상으로 .readingTime() 함수를 호출 해 주면 끝이 납니다. 
 
@@ -114,19 +114,19 @@ https://github.com/michael-lynch/reading-time
 
 ​	
 
-![image-20210908230040910](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908230040910.png)
+![image-20210908230040910](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908230040910.webp)
 
 article을 잘 분석 해서 3분짜리라고 알려줍니다. 제 기준에선 아무리 봐도 3분짜리 article로는 보이지 않지만.. 원어민들은 이정도면 3분 짜리 글 인가 봅니다..
 
 ​	
 
-![image-20210908230204541](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908230204541.png)
+![image-20210908230204541](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908230204541.webp)
 
 다양한 Option 들도 사용 할 수 있습니다. 아쉽게도 한국어는 포함되어 있지 않네요. 
 
 ​	
 
-​	<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908232042741.png" alt="image-20210908232042741" style="zoom: 67%;" />
+​	<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210908232042741.webp" alt="image-20210908232042741" style="zoom: 67%;" />
 
 > 그래서 제가 한국어를 추가 해서 Pull request 를 올려 두었습니다.
 
@@ -138,7 +138,7 @@ article을 잘 분석 해서 3분짜리라고 알려줍니다. 제 기준에선 
 
 https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/readingtime.js
 
-![image-20210910214810168](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910214810168.png)
+![image-20210910214810168](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910214810168.webp)
 
 같은 폴더에 readingtime.js 과 style.css 파일을 넣고
 
@@ -206,7 +206,7 @@ css 와 js 파일을 새로 첨부해줍니다.
 
 ### 실행결과
 
-![image-20210910215351929](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910215351929.png)
+![image-20210910215351929](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910215351929.webp)
 
 심지어 새로운 버전에서는 사람들이 읽는 속도가 빨라졌는지 2분으로 줄었네요 !
 
@@ -263,7 +263,7 @@ css 와 js 파일을 새로 첨부해줍니다.
 
 > 1분보다 적을 경우에 뭐라고 표시 해 줄지 설정할 수 있습니다.  따로 설정하지 않으면 각 언어별 기본 설정을 따라갑니다.
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910221553741.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910221553741.webp)
 
 - prependTimeString: string
   A string that is prepended before the estimated reading time (default: '').
@@ -308,7 +308,7 @@ $('article').readingTime({
 
 ### 그 결과입니다.
 
-![image-20210910221755513](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910221755513.png)
+![image-20210910221755513](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910221755513.webp)
 
 ##### 		
 

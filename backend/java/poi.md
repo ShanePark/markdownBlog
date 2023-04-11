@@ -57,7 +57,7 @@ public class ExcelController {
 
 ​					
 
-![image-20211015143646765](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015143646765.png)
+![image-20211015143646765](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015143646765.webp)
 
 게시판의 Board 객체가 차례대로 출력 됩니다. boardNo, title, content, writer 총 4개의 프로퍼티가 있습니다.
 
@@ -69,7 +69,7 @@ mvnrepository에 방문 해서 poi를 검색 해 보았습니다.
 
 > https://mvnrepository.com/artifact/org.apache.poi/poi
 
-![image-20211015145031788](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015145031788.png)
+![image-20211015145031788](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015145031788.webp)
 
 ​			
 
@@ -92,7 +92,7 @@ pom.xml 에 아래의 내용을 추가 한 뒤에 Maven Reload Project 해줍니
 
 의존성이 잘 추가 되었다면, org.apache.poi 에서 Workbook 클래스를 정상적으로 불러옵니다.
 
-![image-20211015145344870](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015145344870.png)
+![image-20211015145344870](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015145344870.webp)
 
 ​	
 
@@ -100,7 +100,7 @@ pom.xml 에 아래의 내용을 추가 한 뒤에 Maven Reload Project 해줍니
 
 Workbook의 생성자를 보니 HSSFWorkbook이 보입니다. 이건 만들 엑셀 파일의 확장자를 xls로 할지 아니면 xlsx로 할지에 따라 달라집니다. xlsx가 최신 버전이지만 xls 파일을 먼저 만들어 보기 위해 HSSFWorkbook 생성자를 활용 해 보겠습니다. .xlsx 파일을 생성하려면 XSSFWorkbook을 생성해야 합니다.
 
-![image-20211015145517624](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015145517624.png)
+![image-20211015145517624](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015145517624.webp)
 
 ​		
 
@@ -232,7 +232,7 @@ Sheet sheet = workbook.createSheet("게시판글들");
 
 이제 컨트롤러에 적힌 해당 주소로 요청을 보내면 다운로드 받는 화면이 나옵니다.
 
-![image-20211015150526526](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015150526526.png)
+![image-20211015150526526](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015150526526.webp)
 
 ​		
 
@@ -240,13 +240,13 @@ Sheet sheet = workbook.createSheet("게시판글들");
 
 다운을 받고, Downloads 폴더에 가면 boardlist.xls 라는 파일명으로 파일 다운로드가 되어 있습니다.
 
-![	](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015150742740.png)
+![	](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015150742740.webp)
 
 해당 파일을 열어보겠습니다.
 
 ​	
 
-![image-20211015150654757](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015150654757.png)
+![image-20211015150654757](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015150654757.webp)
 
 게시판의 모든 내용이 엑셀 파일로 잘 정리되어 있습니다. 아주 간단하게 넣어 보았는데 이것 만으로도 왠만한 상황에서는 훌륭하게 사용 할 수 있습니다.
 
@@ -258,7 +258,7 @@ Sheet sheet = workbook.createSheet("게시판글들");
 
 참, .xls 확장자도 최신의 .xlsx 를 사용하게끔 변경 하였습니다. 그걸 위해서는 Workbook을 생성 할 때 HSSF 대신에 XSSF를 생성해야하는데요,
 
-![image-20211015154342734](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015154342734.png)
+![image-20211015154342734](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015154342734.webp)
 
 그냥은 추가가 되지 않습니다.
 
@@ -279,7 +279,7 @@ Sheet sheet = workbook.createSheet("게시판글들");
 
 이제 XSSFWorkbook을 사용 할 수 있습니다.	
 
-![image-20211015154924342](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015154924342.png)
+![image-20211015154924342](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015154924342.webp)
 
 ​			
 
@@ -386,13 +386,13 @@ row에 style을 넣으면 원래 됐었는데 5.0.0 버전에서는 뭔가 달�
 
 실행 해 보았습니다.
 
-![image-20211015161227350](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015161227350.png)
+![image-20211015161227350](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015161227350.webp)
 
 다운 로드 받아보니 .xlsx 파일을 받는게 확인 됩니다.
 
 ​			
 
-![image-20211015160745877](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015160745877.png)
+![image-20211015160745877](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015160745877.webp)
 
 또한 임시파일도 잘 삭제되는 게 확인 됩니다.
 
@@ -400,7 +400,7 @@ row에 style을 넣으면 원래 됐었는데 5.0.0 버전에서는 뭔가 달�
 
 새로 받은 파일을 확인 해 봅니다.
 
-![image-20211015162002849](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015162002849.png)
+![image-20211015162002849](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/poi.assets/image-20211015162002849.webp)
 
 Header 부분에는 스타일링이 원하는 대로 적용 되었습니다. 글자가 살짝 더 크고 배경이 파랑색이며 글은 흰색으로 작성 되었습니다.
 

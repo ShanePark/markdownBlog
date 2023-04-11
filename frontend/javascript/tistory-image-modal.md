@@ -4,7 +4,7 @@
 
 ### 티스토리는 기본적으로 lightbox를 지원합니다.	
 
-![image-20210826233718764](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826233718764.png)
+![image-20210826233718764](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826233718764.webp)
 
 > 그런데 이게 지원하는 정도가 아니라 아에 해당 css와 js 파일을 뺄 수 없을 정도로 못 박아 두었습니다. 뭐 사용하기에만 편하면 된다 생각하는데, 문제는 제가 티스토리를 순수 markdown으로 작성하고, 첨부하는 이미지들도 Github에 올리고 링크를 연결하는 방식으로 올리다 보니, Tistory의 기본 lightbox가 작동하지 않았습니다.
 
@@ -22,19 +22,19 @@
 
 스킨편집에 들어가서
 
-![image-20210826234322609](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826234322609.png)	
+![image-20210826234322609](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826234322609.webp)	
 
 ​	
 
 html 편집을 클릭하면 됩니다.
 
-![image-20210826234347019](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826234347019.png)
+![image-20210826234347019](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826234347019.webp)
 
 ​		
 
 여기에서 HTML / CSS 등을 편집 할 수 있습니다.
 
-![image-20210826234412845](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826234412845.png)
+![image-20210826234412845](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826234412845.webp)
 
 ​	
 
@@ -120,7 +120,7 @@ $(function(){
 
 > 군더더기 없이 깔끔하게 이미지만 나오도록 구현 했습니다. 개인적으로 닫기 버튼이 따로 있는 것 보다 그냥 이미지만 있는게 깔끔하고 보기 좋다고 생각되었습니다. 어디를 클릭해도 잘 닫히기만 하면 요즘 UX 추세상 헤맬것도 없다고 판단했습니다.
 
-![gif](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/gif.gif)
+![gif](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/gif.webp)
 
 ​	
 

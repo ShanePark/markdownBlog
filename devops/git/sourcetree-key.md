@@ -16,7 +16,7 @@
 
 ​	
 
-![image-20210824220841746](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824220841746.png)
+![image-20210824220841746](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824220841746.webp)
 
 ```
 Command: git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks ls-remote https://github.com/Shane-Park/programmers.git
@@ -38,13 +38,13 @@ fatal: Authentication failed for 'https://github.com/Shane-Park/programmers.git/
 
 일단 로그인 후 Settings에 들어갑니다.
 
-![image-20210824221020382](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221020382.png)
+![image-20210824221020382](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221020382.webp)
 
 ​	
 
 왼쪽 하단에 보면 Developer settings 라고 있습니다.
 
-![image-20210824221225279](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221225279.png)
+![image-20210824221225279](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221225279.webp)
 
 ​	
 
@@ -54,7 +54,7 @@ fatal: Authentication failed for 'https://github.com/Shane-Park/programmers.git/
 
 
 
-![image-20210824221245242](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221245242.png)
+![image-20210824221245242](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221245242.webp)
 
 ​	
 
@@ -62,13 +62,13 @@ Note에 토큰 이름을 편하게 지정 합니다.
 
 그리고 scopes 설정을 해주는데, sourcetree 에서 쓰기에는 repo만 있으면 충분 한 것 같습니다. Expiration은 해당 Token의 유효기간인데, No expiration 의 경우에는 상황에 따라 보안상 위혐이 될 수 있기 때문에 권장하지 않습니다.
 
-![image-20210824221343183](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221343183.png)
+![image-20210824221343183](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221343183.webp)
 
 ​	
 
 설정을 마쳤으면 Generate token을 클릭해서 생성해줍니다.
 
-![image-20210824221400153](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221400153.png)
+![image-20210824221400153](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221400153.webp)
 
 ​	
 
@@ -76,7 +76,7 @@ Note에 토큰 이름을 편하게 지정 합니다.
 
 >  저는 토큰 발급 해서 블로그 첨부용으로 스샷을 찍고 해당 토큰을 바로 Revoke 했지만, 실제 본인이 사용하는 Token의 경우에는 코드가 유출되지 않도록 주의 해야 합니다. 특히나 You won't be able to see it again! 에서 보이는 것 처럼 다시 보여주지 않으니 잘 카피 하거나 로그인 할 때까지는 해당 창을 닫지 않도록 합니다. 저는 어디 적어두는 것도 보안상 좋지 않다고 생각해서 Sourcetree를 연결 할 때 까지 해당 창을 띄워 두고 따로 복사해두지 않아서 토큰값은 아무도 모르게 됩니다.
 
-![image-20210824221433990](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221433990.png)
+![image-20210824221433990](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824221433990.webp)
 
 ​	
 
@@ -96,25 +96,25 @@ C:\Users\[계정이름]\AppData\Local\Atlassian\SourceTree\passwd
 
 아래의 파일을 삭제해줍니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/img.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/img.webp)
 
 
 
 이제  다시 Fetch 나 Pull 을 시도 해 봅니다. 비밀번호를 입력하라는 화면이 나옵니다!
 
-![image-20210824222112113](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824222112113.png)
+![image-20210824222112113](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824222112113.webp)
 
 
 
 그러면 Github 로그인 비밀번호가 아닌 위에서 발급받은 Token 값을 입력 해 줍니다. 후 Login을 누르면
 
-![image-20210824222135991](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824222135991.png)
+![image-20210824222135991](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824222135991.webp)
 
 ​	
 
 Pull을 정상적으로 해냅니다!
 
-![image-20210824222151815](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824222151815.png)
+![image-20210824222151815](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824222151815.webp)
 
 
 

@@ -10,7 +10,7 @@
 
 ### Connect to irods via docker
 
-![image-20210915174759987](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915174759987.png)
+![image-20210915174759987](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915174759987.webp)
 
 ​		
 
@@ -20,7 +20,7 @@
 find / -name core.re
 ```
 
-![image-20210915174956647](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915174956647.png)
+![image-20210915174956647](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915174956647.webp)
 
 ​	
 
@@ -30,7 +30,7 @@ find / -name core.re
 vi /etc/irods/core.re
 ```
 
-![image-20210915175138688](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915175138688.png)
+![image-20210915175138688](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915175138688.webp)
 
 ​	
 
@@ -40,13 +40,13 @@ vi /etc/irods/core.re
 :/acRescQuotaPolicy
 ```
 
-![image-20210915175323371](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915175323371.png)
+![image-20210915175323371](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915175323371.webp)
 
 ​	
 
 ### change the setting to "on" and save
 
-![image-20210915175353639](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915175353639.png)
+![image-20210915175353639](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915175353639.webp)
 
 ​	
 
@@ -56,7 +56,7 @@ vi /etc/irods/core.re
 iadmin lq
 ```
 
-![image-20210915174721844](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915174721844.png)
+![image-20210915174721844](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915174721844.webp)
 
 >  as we can see user "admin" is using over quota.
 
@@ -68,7 +68,7 @@ iadmin lq
 iquota
 ```
 
-![image-20210915175622038](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915175622038.png)
+![image-20210915175622038](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915175622038.webp)
 
 ​		
 
@@ -82,7 +82,7 @@ That's it. but it never work until you put
 iadmin cu
 ```
 
-![image-20210915181546366](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915181546366.png)
+![image-20210915181546366](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915181546366.webp)
 
 it looks nothing, but after uploading file you have to do this otherwise it never knows your quota is exceed.
 
@@ -90,7 +90,7 @@ it looks nothing, but after uploading file you have to do this otherwise it neve
 
 ### The error message from jargon
 
-![image-20210915181027881](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915181027881.png)
+![image-20210915181027881](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota.assets/image-20210915181027881.webp)
 
 ​	
 

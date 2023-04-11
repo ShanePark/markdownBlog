@@ -4,7 +4,7 @@
 
 ## 개요
 
-![image-20210919195440966](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919195440966.png)
+![image-20210919195440966](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919195440966.webp)
 
 저는 MacBook 을 사용 하면서 text replace 기능을 정말 유용하게 사용 했습니다.
 
@@ -24,7 +24,7 @@ vi mdblog.sh
 
 저는 mdblog 이란 텍스트를 치환하는게 필요 하기 때문에 파일명을 mdblog.sh 로 지었습니다.
 
-![image-20210919193124111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919193124111.png)	
+![image-20210919193124111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919193124111.webp)	
 
 ​	
 
@@ -51,7 +51,7 @@ vi mdblog.sh
   
   ```
 
-  ​	![image-20210919193457343](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919193457343.png)
+  ​	![image-20210919193457343](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919193457343.webp)
 
 작성을 완료 했으니 저장 합니다.
 
@@ -65,7 +65,7 @@ vi mdblog.sh
 bash mdblog.sh
 ```
 
-![image-20210919193822373](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919193822373.png)
+![image-20210919193822373](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919193822373.webp)
 
 실행 했더니 원하는 텍스트를 잘 표기 해 줍니다.
 
@@ -87,7 +87,7 @@ sudo mv mdblog.sh /bin
 bash /bin/mdblog.sh
 ```
 
-![image-20210919194426081](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919194426081.png)
+![image-20210919194426081](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919194426081.webp)
 
 ​	
 
@@ -107,7 +107,7 @@ vi ~/.bashrc
 alias mdblog='bash /bin/mdblog.sh'
 ```
 
-![image-20210919194811414](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919194811414.png)
+![image-20210919194811414](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919194811414.webp)
 
 적당히 원하는 위치에 아무데나 넣으면됩니다. 저는 4번째 줄에 그냥 바로 넣었습니다.
 
@@ -115,7 +115,7 @@ alias mdblog='bash /bin/mdblog.sh'
 
 터미널을 한번 껐다 켠 후에 이제 mdblog 을 입력해서 의도한 대로 잘 되는지 확인 해 봅니다.
 
-![image-20210919194906821](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919194906821.png)
+![image-20210919194906821](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919194906821.webp)
 
 ​	
 

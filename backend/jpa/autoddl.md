@@ -34,7 +34,7 @@ persistence.xml 설정파일에 아래와 같은 property를 넣어 줍니다.
 
 그러고 나서 이제 실행을 해 보면..
 
-![image-20210922115820020](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922115820020.png)
+![image-20210922115820020](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922115820020.webp)
 
 위에서 보이는 것 처럼 drop table, create table을 먼저 수행합니다.
 
@@ -42,13 +42,13 @@ persistence.xml 설정파일에 아래와 같은 property를 넣어 줍니다.
 
 당연하겠지만, 새로 만든 테이블이기에 기존 자료들이 모두 삭제되고 테이블 스키마만 남게 됩니다.
 
-![image-20210922115940184](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922115940184.png)
+![image-20210922115940184](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922115940184.webp)
 
 ​	
 
 거기에 Entity 에 phone 이라는 이름의 String 타입 데이터를 추가한다면		
 
-![image-20210922120055559](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922120055559.png)
+![image-20210922120055559](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922120055559.webp)
 
 ​	
 
@@ -56,9 +56,9 @@ persistence.xml 설정파일에 아래와 같은 property를 넣어 줍니다.
 
 ​	
 
-![image-20210922120236461](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922120236461.png)
+![image-20210922120236461](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922120236461.webp)
 
-![image-20210922120256839](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922120256839.png)
+![image-20210922120256839](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922120256839.webp)
 
 원래 같았으면 데이터베이스 스키마가 변화 할 때 마다 다시 DROP 해주고, CREATE 테이블 날리고, 가끔은 ALTER도 해 주고 번거로운 작업이 있었는데 한단한 설정 만으로 편하게 새로 만들 수 있습니다.
 
@@ -93,7 +93,7 @@ persistence.xml 설정파일에 아래와 같은 property를 넣어 줍니다.
 
 똑같은 내용을 실행 하면
 
-![image-20210922120638210](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922120638210.png)
+![image-20210922120638210](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922120638210.webp)
 
 어플리케이션이 종료되기 직전에 다시 drop table 시키는 것을 확인 할 수 있습니다.
 
@@ -101,7 +101,7 @@ persistence.xml 설정파일에 아래와 같은 property를 넣어 줍니다.
 
 실제로 테이블이 삭제되고 남아있지 않습니다.
 
-![image-20210922120850051](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922120850051.png)
+![image-20210922120850051](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922120850051.webp)
 
 ​	
 
@@ -160,17 +160,17 @@ public class Member {
 
 그다음에 address 라는 항목을 추가 해 보겠습니다.
 
-![image-20210922121128219](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121128219.png)
+![image-20210922121128219](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121128219.webp)
 
 ​	
 
 그러고 나서 실행..
 
-![image-20210922121148864](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121148864.png)
+![image-20210922121148864](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121148864.webp)
 
 위에 보이는 것 처럼 더이상 drop 이나 create 가 되지 않고 alter table이 되었습니다. 기존의 테이블 상태를 확인 한 후에 변경 사항만 간단하게 적용 하게 되었습니다.
 
-![image-20210922121311462](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121311462.png)
+![image-20210922121311462](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121311462.webp)
 
 당연히 데이터 베이스 상에 해당 내용이 적용 되어 있습니다.
 
@@ -178,13 +178,13 @@ public class Member {
 
 그렇다면 이번엔 지우는 건 어떨까요? 방금 추가한 address 를 삭제해서 실행 해보면.
 
-![image-20210922121357736](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121357736.png)
+![image-20210922121357736](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121357736.webp)
 
 ​	
 
 이번에는 아무 일도 일어나지 않습니다. update는 추가하는 것만 됩니다.
 
-![image-20210922121410579](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121410579.png)
+![image-20210922121410579](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121410579.webp)
 
 ​	
 
@@ -200,7 +200,7 @@ validate는 엔티티와 테이블이 정상 매핑되어 있는지만 확인 �
 
 이번에는 department를 추가 해서 
 
-![image-20210922121756323](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121756323.png)
+![image-20210922121756323](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121756323.webp)
 
 어플리케이션을 그대로 실행 해 보겠습니다.
 
@@ -208,7 +208,7 @@ validate는 엔티티와 테이블이 정상 매핑되어 있는지만 확인 �
 
 이번에는 에러가 발생 합니다. 
 
-![image-20210922121822980](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121822980.png)
+![image-20210922121822980](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922121822980.webp)
 
 ​		
 
@@ -238,13 +238,13 @@ Schema-validation: missing column [department] in table [MEMBER]
 
 아래 보이는 것 처럼  Entity에 length나 nullable 옵션을 걸어 준다면
 
-![image-20210922124423841](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922124423841.png)
+![image-20210922124423841](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922124423841.webp)
 
 ​	
 
 쿼리가 나갈때도 varchar(30) 혹은 not null 같은 제약 조건을 추가 해 줍니다.	
 
-![image-20210922124454340](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922124454340.png)
+![image-20210922124454340](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/jpa/autoddl.assets/image-20210922124454340.webp)
 
 >  DDL 생성 기능은 DDL을 자동 생성 할 때만 사용되고, JPA의 실행 로직에는 영향을 주지 않습니다.
 

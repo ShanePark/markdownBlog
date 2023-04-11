@@ -1,6 +1,6 @@
 # 객체지향설계 5대원칙 SOLID
 
-![](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/design/SOLID.assets/img.png)
+![](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/design/SOLID.assets/img.webp)
 
 > 학원 수업에서 선생님이 항상 강조하셨던 SOLID 원칙이 잘 이해가 되지 않아서 개인적으로 공부하기 위해 여러가지 검색을 해보고 많은 글들을 읽어보았습니다. 그러다 우연히 Youtube에서 41분짜리 영상을 접하게 되었는데, 앞부분만 잠깐 보려고 했던게 결국 영상을 마지막까지 보게 되었고 도움이 제법 많이 되었습니다.
 
@@ -89,7 +89,7 @@ https://www.youtube.com/watch?v=rtmFCcjEgEw
 
 ​	
 
-![](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/design/SOLID.assets/1.jpeg)
+![](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/design/SOLID.assets/1.webp)
 오리가 있고 RubberDuck이 있습니다. 둘다 꽥 소리를 내고, 둘다 오리처럼 생겼습니다. 그렇다면,  
 class RubberDuck extends Duck{} 이 가능할까요? 그건 불가능합니다. 단적인 예로 오리는 혼자 움직일 수도, 때론 날라갈 수도 있지만 Rubber duck은 배터리 없이는 어떤 동작도 할 수 없습니다.
 

@@ -8,7 +8,7 @@ Tomcat을 사용하다 보면 어플리케이션이 정상적으로 종료가 �
 
 아래는 이클립스에서 톰캣을 실행 하려 할 때, 8080 port가 이미 점유중이라는 에러 메시지 입니다.
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014100143457.png" height="450" width="750" alt=first>
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014100143457.webp" height="450" width="750" alt=first>
 
 > The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
 
@@ -26,7 +26,7 @@ Tomcat을 사용하다 보면 어플리케이션이 정상적으로 종료가 �
 sudo ss -lptn 'sport = :8080'
 ```
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014100309471.png" width=750 height=500 alt=second>
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014100309471.webp" width=750 height=500 alt=second>
 
 PID 22706 에서 해당 포트를 사용 중 이라는 것을 확인 했습니다.. 또한 Process 이름은 java 입니다.		
 
@@ -36,7 +36,7 @@ PID 22706 에서 해당 포트를 사용 중 이라는 것을 확인 했습니�
 
 System Monitor를 통해 해당 PID의 프로세스를 찾고
 
-![image-20211014101003289](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014101003289.png)
+![image-20211014101003289](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014101003289.webp)
 
 우클릭을 해서 프로세스를 강제 종료하는 방법이 있습니다. 가장 직관적이며 왠만한 운영체제에서 모두 사용 할 수 있는 방법입니다.
 
@@ -85,7 +85,7 @@ System Monitor를 통해 해당 PID의 프로세스를 찾고
 kill 22706
 ```
 
-![image-20211014101222197](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014101222197.png)
+![image-20211014101222197](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211014101222197.webp)
 
 프로세스가 종료 된 후 8080 포트를 사용하는 프로세스가 더이상 없는 것이 확인 됩니다. 
 
@@ -101,7 +101,7 @@ kill 명령어는 옵션 없이 사용하면 기본적으로 kill -TERM 혹은 k
 
 혹시 MacOS 를 사용하신다면, ss 명령어가 없기 때문에 `lsof -i:8080` 를 사용하시면 됩니다.
 
-![image-20211017214426199](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211017214426199.png)
+![image-20211017214426199](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20211017214426199.webp)
 
 ## 쉽게하기
 
@@ -115,7 +115,7 @@ kill 명령어는 옵션 없이 사용하면 기본적으로 kill -TERM 혹은 k
 fuser 포트번호/tcp
 ```
 
-![image-20220907173324856](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20220907173324856.png)
+![image-20220907173324856](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20220907173324856.webp)
 
 종료는 -k 옵션으로 가능합니다.
 
@@ -123,12 +123,12 @@ fuser 포트번호/tcp
 fuser -k [포트번호]/tcp
 ```
 
-![image-20220907173630537](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20220907173630537.png)
+![image-20220907173630537](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20220907173630537.webp)
 
 > 정상적으로 종료가 된 모습니다.
 
 한번에 여러 프로세스를 종료 할 수도 있습니다.
 
-![image-20220907173818048](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20220907173818048.png)
+![image-20220907173818048](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/findPidByPort.assets/image-20220907173818048.webp)
 
 훨씬 간편합니다. 이상입니다.

@@ -4,7 +4,7 @@
 
 ## USB로 부팅하기
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3200.jpeg" height=500 width=750 alt=first>
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3200.webp" height=500 width=750 alt=first>
 
 윈도우에서 간단하게 USB로 부팅하는 기능이 있기는 하지만 보통의 경우 BIOS 설정에서 부팅 우선순위를 변경해줍니다.
 
@@ -12,19 +12,19 @@
 
 그러고 나서 설정을 저장 하면 자연스럽게 USB로 부팅이 진행됩니다.
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3224.jpeg" height=600 width=750 alt=second>
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3224.webp" height=600 width=750 alt=second>
 
 Ubuntu 를 선택 해 줍니다.
 
 ​		
 
-![IMG_3225](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3225.jpeg)	
+![IMG_3225](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3225.webp)	
 
 그러면 이제 Checking disks를 하게 되는데요. 이게 아마 설치 USB를 검사 하는 것 같습니다. 시간이 제법 걸리던데 처음 할 때는 검사를 끝까지 했었는데요. 이게 USB가 잘 만들어 졌다는 확신이 잇으면 Ctrl + C 를 입력해서 검사를 건너 뛸 수도 있습니다.
 
 ​		
 
-![IMG_3201](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3201.jpeg)
+![IMG_3201](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3201.webp)
 
 Welcome 이 나옵니다. 좌측에서는 사용할 언어를 선택 하실 수 있구요. Try Ubuntu 와 Install Ubuntu 메뉴가 나옵니다. 언어를 선택 한 후에 우리는 Ubuntu를 설치 할 것 이기 때문에 Install Ubuntu 버튼을 눌러 줍니다.
 
@@ -32,13 +32,13 @@ Welcome 이 나옵니다. 좌측에서는 사용할 언어를 선택 하실 수 
 
 혹시 이전글을 보고 RTS 설정을 해지하지 않았다면 아래와 같이 **Turn off RST** 오류를 만날 수 있습니다.
 
-![IMG_3202](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3202.jpeg)
+![IMG_3202](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3202.webp)
 
 ​		
 
 그럴때는 당황하지 않고 BIOS 로 들어가서 SATA Operation 설정을 RAID On 에서 AHCI 로 변경 해 주면 됩니다.
 
-![IMG_3203](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3203-1948050.jpeg)
+![IMG_3203](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3203-1948050.webp)
 
 하지만 사용하고 있는 Windows와 멀티 부팅을 설정 할 예정이라면 무작정 AHCI 로 변경하지 마시고 먼저 아래 글을 참고 해 주세요.
 
@@ -52,17 +52,17 @@ Keyboard layout은 Korean 한국어로 설정 해 줘야겠죠.
 
 가끔 iBus 에러가 발생해서 설치과정에 입력이 안될 수도 있으니 Keyboard layout도 English로 해서 설치 한 후에 나중에 한글입력을 추가 하는 것도 괜찮습니다.
 
-![IMG_3228](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3228.jpeg)
+![IMG_3228](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3228.webp)
 
 ​		
 
 ​	와이파이가 사용 가능하다면 와이파이도 연결 해 줍니다.
 
-![IMG_3229](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3229.jpeg)
+![IMG_3229](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3229.webp)
 
 ​	
 
-![IMG_3204](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3204.jpeg)
+![IMG_3204](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3204.webp)
 
 Updates and other software 에 대한 설정인데요. 필요한 software 들을 다운 받도록 위와 같이 설정 해줍니다.
 
@@ -72,7 +72,7 @@ Updates and other software 에 대한 설정인데요. 필요한 software 들을
 
 ## Installation type
 
-![IMG_3205](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3205.jpeg)	
+![IMG_3205](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3205.webp)	
 
 어떻게 설치 할 것인지에 대한 선택 입니다.
 
@@ -86,25 +86,25 @@ Updates and other software 에 대한 설정인데요. 필요한 software 들을
 
 미리 만들어 둔 공간을 이제 partition으로 할당 해 줍니다. free space 가 있는 것을 확인 한 뒤 + 를 누릅니다.
 
-![IMG_3206](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3206.jpeg)
+![IMG_3206](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3206.webp)
 
  Logigal / Beginning of this space 로 설정 하고 Mount point는 루트(/) 로 파티션을 생성 했습니다.
 
 ​	
 
-![IMG_3207](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3207.jpeg)
+![IMG_3207](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3207.webp)
 
 그러고 이제 방금 만든 Mount point / 의 파티션은 Format에 v 체크를 해 주고요, 제일 위에 있는 /dev/드라이브이름 을 선택해 Install Now 버튼을 클릭 합니다.
 
 ​	
 
-![IMG_3208](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3208.jpeg)
+![IMG_3208](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3208.webp)
 
 그러면 이제 아래의 파티션에 변화가 생긴다는 경고가 나옵니다. 잘 읽어 보고 Continue를 눌러 진행 합니다.
 
 ​		
 
-![IMG_3231](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3231.jpeg)
+![IMG_3231](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3231.webp)
 
 시간대는  Seoul로 설정 해 주고 
 
@@ -112,11 +112,11 @@ Updates and other software 에 대한 설정인데요. 필요한 software 들을
 
 컴퓨터 이름과 유저 이름을 설정하는 화면도 나오는데 본인에 맞게 설정 해 줍니다.
 
-![IMG_3238](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3238.jpeg)
+![IMG_3238](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3238.webp)
 
 ​		
 
-![IMG_3232](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3232.jpeg)
+![IMG_3232](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/IMG_3232.webp)
 
 그러면 본격적으로 설치가 진행 됩니다.
 
@@ -126,7 +126,7 @@ Updates and other software 에 대한 설정인데요. 필요한 software 들을
 
 ​	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/sc.png)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ubuntu-install.assets/sc.webp)
 
 ​	
 

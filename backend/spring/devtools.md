@@ -10,7 +10,7 @@
 
 ### 1. Preferences 에서 Compirer에 Build Project automatically 를 체크해줍니다.
 
-![image-20210825220857546](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/devtools.assets/image-20210825220857546.png)
+![image-20210825220857546](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/devtools.assets/image-20210825220857546.webp)
 
 ​		
 
@@ -22,7 +22,7 @@
 
 >  이 내용이 위에서 말하던 allow.when.app.running 항목인데 새로운 위치로 이동 되었습니다.
 
-![image-20210825221549377](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/devtools.assets/image-20210825221549377.png)
+![image-20210825221549377](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/devtools.assets/image-20210825221549377.webp)
 
 ​		
 
@@ -32,13 +32,13 @@
 
 우측 상단에 있는 드롭박스 메뉴를 클릭하고 Edit Configurations 로 들어갑니다.
 
-![image-20210825222055250](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/devtools.assets/image-20210825222055250.png)
+![image-20210825222055250](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/devtools.assets/image-20210825222055250.webp)
 
 ​	
 
 ### 그다음에 해당 Application을 선택 하고, Running Application Update Policies를 변경해줍니다.
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/devtools.assets/image-20210825222201154.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/devtools.assets/image-20210825222201154.webp)
 
 On 'Update' action 과 On frame deactivation이 기본은 Do nothing 으로 되어 있습니다. Update Classes and Resources로 변겨 해 줍니다. 
 

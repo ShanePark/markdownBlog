@@ -14,55 +14,55 @@ Mac에서 preview 등으로 간편하게 하는 방법이 있지만 아이에 �
 
 
 
-![image-20210824212243030](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212243030.png)
+![image-20210824212243030](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212243030.webp)
 
 ​	
 
 ### 하단의 new Document를 눌러 새로운 문서를 생성 합니다.
 
-![image-20210824212406674](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212406674.png)
+![image-20210824212406674](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212406674.webp)
 
 ​	
 
 ### Quick Action을 선택합니다.
 
-![image-20210824212433129](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212433129.png)
+![image-20210824212433129](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212433129.webp)
 
 ​	
 
 ### Copy Finder itmes ( Finder 항목 복사하기)를 더블클릭해 추가해줍니다. 위치는 Desktop으로 설정합니다.
 
-![image-20210824212609724](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212609724.png)
+![image-20210824212609724](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212609724.webp)
 
 ​		
 
 ### 이번에는 Change Type of images를 선택합니다. To Type: 에는 JPEG를 선택합니다.
 
-![image-20210824212709133](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212709133.png)
+![image-20210824212709133](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212709133.webp)
 
 ​	
 
 ### 이제 File -> Save... 를 선택하거나 커맨드 +S 를 눌러 저장합니다.
 
-![image-20210824212752859](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212752859.png)
+![image-20210824212752859](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212752859.webp)
 
 ​	
 
 ### 적당히 이름을 지어 줍니다.
 
-![image-20210824212818406](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212818406.png)
+![image-20210824212818406](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212818406.webp)
 
 ​	
 
 이제  변환하고 싶은 이미지들을 모아 우클릭 -> Quick Actions에 들어가보면 images to jpeg가 추가 되어 있습니다.
 
-![image-20210824212903115](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212903115.png)
+![image-20210824212903115](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212903115.webp)
 
 ​	
 
 클릭을 하면	
 
-![image-20210824212952400](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212952400.png)
+![image-20210824212952400](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212952400.webp)
 
 아주 간단하게 모든 사진이 jpg로 변환됩니다.
 

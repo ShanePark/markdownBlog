@@ -8,7 +8,7 @@
 cat /var/log/auth.log
 ```
 
-![image-20211006203126847](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006203126847.png)
+![image-20211006203126847](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006203126847.webp)
 
 세상에나 무수히 많은 Connection 시도와 Failed password 가 수북하게 쌓여 있습니다. 
 
@@ -28,7 +28,7 @@ echo $HISTSIZE
 
 를 입력하면 그 값을 볼 수 있습니다.
 
-![image-20211006204205296](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006204205296.png)
+![image-20211006204205296](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006204205296.webp)
 
 저는 최대 1000개 까지 저장하고 있습니다.
 
@@ -46,7 +46,7 @@ history 500
 
 제가 우분투를 설치한 지 얼마 안된 컴퓨터다 보니 천개가 채 안되더라고요. 그래서 쭉 다 로그를 확인 해 보니 다행히도 bash가 털린 기록은 없었습니다.
 
-![image-20211006204316916](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006204316916.png)
+![image-20211006204316916](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006204316916.webp)
 
 ​	
 
@@ -54,7 +54,7 @@ history 500
 
 아직 털린 기록이 없기는 하지만 저런 무작위 대입 공격이 썩 달갑지는 않습니다. 쉽게 뚫리지는 않는다고 해도 누군가 악의적으로 공격을 한다면 언젠가는 뚫리게 되어있습니다. 조금이라도 보안을 높이기 위해 비밀번호 입력을 통한 접속을 아에 차단 시켜 보겠습니다.
 
-![image-20211006205618917](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006205618917.png)
+![image-20211006205618917](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006205618917.webp)
 
 일단 테스트를 위해 ssh 키를 등록 하지 않은, 비밀번호로 접속 할 컴퓨터가 필요 했습니다. 그래서 오라클 클라우드에 띄워 놓은 무료 인스턴스 중 하나로 접속 한 다음에 그 컴퓨터를 이용해 접속 했습니다.
 
@@ -66,7 +66,7 @@ ssh 에 대한 설정은 아래의 파일에서 합니다. 관리자 권한으�
  sudo vi /etc/ssh/sshd_config
 ```
 
-​	![image-20211006205921562](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006205921562.png)
+​	![image-20211006205921562](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006205921562.webp)
 
 #으로 시작하는 주석을 제외 하고 다른 번호를 쓰면 ssh에 사용하는 Port 번호도 변경 할 수 있습니다. 왠만하면 바꾸는게 좋겠죠.
 
@@ -78,7 +78,7 @@ Password 로 검색을 해봅니다.
 /Password
 ```
 
-![image-20211006210112252](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006210112252.png)
+![image-20211006210112252](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006210112252.webp)
 
 바로 해당하는 옵션을 찾을 수 있네요.
 
@@ -104,7 +104,7 @@ PasswordAuthentication 을 no 로 변경하면 패스워드 접근을 차단합�
 
 ​	
 
-![image-20211006210534331](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006210534331.png)
+![image-20211006210534331](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006210534331.webp)
 
 PasswordAuthentication 을 no 로 변경했으니 한번 시도 해 보겠습니다.
 
@@ -118,7 +118,7 @@ systemctl restart sshd
 
 ## 접속 시도
 
-![image-20211006210706478](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006210706478.png)
+![image-20211006210706478](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006210706478.webp)
 
 네. 이제 비밀번호를 입력한 접속을 아주 단호하게 거부합니다.
 
@@ -126,7 +126,7 @@ systemctl restart sshd
 
 하지만 평소처럼 SSH로 접속을 한다면?
 
-![image-20211006210739375](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006210739375.png)
+![image-20211006210739375](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006210739375.webp)
 
 접속이 아주 잘 됩니다.
 

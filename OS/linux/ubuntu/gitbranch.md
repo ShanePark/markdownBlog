@@ -16,7 +16,7 @@ SmartGit이 원래 제일 많이 쓰인다고 해서 설치해보니 역시 유�
 sudo apt install git-cola
 ```
 
-![image-20210924204431809](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924204431809.png)
+![image-20210924204431809](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924204431809.webp)
 
 ​		
 
@@ -26,7 +26,7 @@ sudo apt install git-cola
 
 programmers 라는 Git 저장소가 있는데요. 지금은 이게 Git 경로가 맞는지 알 방법이 없습니다.
 
-![image-20210924203252180](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924203252180.png)
+![image-20210924203252180](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924203252180.webp)
 
 ​	
 
@@ -40,7 +40,7 @@ vi ~/.bashrc
 
 그러면 Vi Editor 가 뜨는데, 저는 alias를 몇개 지정해 사용하다 보니 alias 에 대한 내용이 있지만 보통은 주석 투성이의 문서가 나올 겁니다.
 
-![image-20210924204902699](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924204902699.png)
+![image-20210924204902699](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924204902699.webp)
 
 ​	
 
@@ -57,7 +57,7 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 ​				
 
-​	![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924205202428.png)
+​	![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924205202428.webp)
 
 내용을 넣고 저장(wq)을 하고 나옵니다.	
 
@@ -73,7 +73,7 @@ source ~/.bashrc
 
 굳이 껐다 켜지 않아도 바로 적용이 되는 것을 확인 할 수 있습니다. 저는 중간에 공백을 너무 많이 넣어서 띄어쓰기가 4개나 들어 갔었네요. 마지막에도 모양이 불편해 (main)과 $ 사이를 하나 더 띄웠는데요, 위에있는 코드블럭은 개선된 사항이니 안심하고 붙여 넣으시면 됩니다.
 
-![image-20210924205441494](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924205441494.png)	
+![image-20210924205441494](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924205441494.webp)	
 
 ​	
 
@@ -87,7 +87,7 @@ git checkout -b test
 
 이제는 brach 이름이 test 로 바뀐게 바로 확인이 됩니다. 더이상 헷갈일 일이 없겠네요!
 
-![image-20210924205933111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924205933111.png)
+![image-20210924205933111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924205933111.webp)
 
 ​	완성입니다.
 
@@ -95,7 +95,7 @@ git checkout -b test
 
 ## oh my zsh
 
-![ohmy](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/ohmy.png)
+![ohmy](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/ohmy.webp)
 
 마지막으로 Git branch 이름이 표기되는 것에서 끝나지 않고, oh-my-zsh를 설치 해서 사용한다면 전체적인 Terminal 사용이 정말 쾌적해집니다. 특히나 Git branch 표시도  깔끔하게 되니 관심있는 분은 아래 링크를 확인 해 주세요.
 

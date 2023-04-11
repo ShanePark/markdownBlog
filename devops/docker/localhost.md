@@ -6,7 +6,7 @@ docker에서 컨테이너들이 실행 중인 서버를 바라 봐야 할 경우
 
 Docker Compose를 이용해 여러개의 도커 컨테이너를 실행해서 하나의 어플리케이션을 담당한다고 했을때, 하나의 네트워크로 연결해 사용하게 되는데요. 정작 **컨테이너에서 로컬 서버**에는 어떻게 접근해야 할까요?
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821144823960.png" width=750 height=450 alt=first>
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821144823960.webp" width=750 height=450 alt=first>
 
 제 맥북에서 사용중인 Docker에는 컨테이너가 아직 PostgreSQL 하나밖에 없어서, 이 컨테이너를 이용해서 시도 해 보겠습니다.
 
@@ -20,11 +20,11 @@ Docker Compose를 이용해 여러개의 도커 컨테이너를 실행해서 하
 
 Github Desktop을 사용하는 경우 컨테이너에 접속하는 방법입니다.
 
-![image-20210821145005719](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145005719.png)
+![image-20210821145005719](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145005719.webp)
 
 위에 보이는 CLI 버튼으로 쉽게 접속 해 터미널을 띄울 수 있습니다.
 
-![image-20210821145031263](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145031263.png)
+![image-20210821145031263](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145031263.webp)
 
 간단하죠. 
 
@@ -34,7 +34,7 @@ Github Desktop을 사용하는 경우 컨테이너에 접속하는 방법입니�
 
 1. 터미널을 켭니다
 
-![image-20210821145111588](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145111588.png)
+![image-20210821145111588](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145111588.webp)
 
 2. 실행중인 Docker 컨테이너 목록 확인
 
@@ -44,7 +44,7 @@ docker ps
 
 명령어로 가동중인 컨테이너들을 볼 수 있습니다. -a 옵션을 붙이면 멈춰있는 컨테이너도 다 표시해줍니다.
 
-![image-20210821145225043](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145225043.png)
+![image-20210821145225043](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145225043.webp)
 
 그럼 제일 왼쪽에 79..로 시작하는게 해당 컨테이너의 ID 입니다.
 
@@ -54,7 +54,7 @@ docker ps
  docker exec -it 79edaba9d6cb /bin/bash
 ```
 
-![image-20210821145747468](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145747468.png)
+![image-20210821145747468](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145747468.webp)
 
 그러면 이제 해당 컨테이너에 접속이 완료 된 상태입니다.
 
@@ -62,7 +62,7 @@ docker ps
 
 각자 컨테이너에 접속을 잘 해다고 보고, 이제 다음 스텝으로 넘어가겠습니다.
 
-![image-20210821145813776](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145813776.png)
+![image-20210821145813776](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145813776.webp)
 
 curl 을 이용해 테스트 해 보려 했는데 curl이 없습니다.	
 
@@ -72,7 +72,7 @@ apt update
 
 로 업데이트를 한번 해주고
 
-![image-20210821145843706](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145843706.png)
+![image-20210821145843706](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821145843706.webp)
 
 ```bash
 apt install curl
@@ -82,7 +82,7 @@ apt install curl
 
 curl을 설치 해 줍니다.
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150012235.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150012235.webp)
 
 당연히 Y 를 입력해야 설치가 됩니다. 
 
@@ -96,7 +96,7 @@ curl localhost:8080
 
 ​	
 
-![image-20210821150042104](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150042104.png)
+![image-20210821150042104](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150042104.webp)
 
 Failed to connect to localhost port 8080: Connection refused 가 나오네요..
 
@@ -104,7 +104,7 @@ Failed to connect to localhost port 8080: Connection refused 가 나오네요..
 
 하지만
 
-![image-20210821150118245](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150118245.png)
+![image-20210821150118245](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150118245.webp)
 
 ​		
 
@@ -112,7 +112,7 @@ Failed to connect to localhost port 8080: Connection refused 가 나오네요..
 
 로컬에서 같은 명령어를 입력 하면
 
-![image-20210821150150657](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150150657.png)
+![image-20210821150150657](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150150657.webp)
 
 잘 받아오는 것을 확인할 수 있습니다. Docker에서 localhost는 컨테이너 그 자신의 주소기 때문에 이런 문제가 발생 한 것 입니다.
 
@@ -136,7 +136,7 @@ ipconfig getifaddr en0
 
 를 입력해 간단히 내부아이피 주소를 찾을 수 있습니다.
 
-![image-20210821150703240](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150703240.png)
+![image-20210821150703240](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150703240.webp)
 
 그 다음 해당 내부아이피 주소를 이용하면 됩니다.
 
@@ -146,7 +146,7 @@ curl 192.168.0.19:8080
 
 
 
-![image-20210821150740984](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150740984.png)
+![image-20210821150740984](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150740984.webp)
 
 물론, 접속이 잘 되지만 이건 좋은 방법이 아닙니다. 내부아이피야 인터넷 사용하는 환경에 따라 매번 달라질 수 있는데 그럴때마다 수정을 할 수도 없고 번거롭습니다.
 
@@ -158,7 +158,7 @@ curl 192.168.0.19:8080
 curl host.docker.internal:8080
 ```
 
-![image-20210821150858573](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150858573.png)
+![image-20210821150858573](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/localhost.assets/image-20210821150858573.webp)
 
 아주 간단하죠. 환경에 따라 변할 걱정도 할 필요가 없습니다.
 

@@ -20,7 +20,7 @@
 
 1. ssh 로 해당 서버에 접속 합니다. 로컬이라면 이 과정은 필요 없겠네요.
 
-![image-20211003165141590](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003165141590.png)	
+![image-20211003165141590](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003165141590.webp)	
 
 2. service 파일 생성
 
@@ -90,7 +90,7 @@ sudo systemctl enable docker-elastic.service
 
 재부팅을 해서 확인을 해 봅니다.
 
-![image-20211003180958875](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003180958875.png)
+![image-20211003180958875](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003180958875.webp)
 
 재시작 후에 서비스에 등록된 두 컨테이너들이 모두 시작 된 것을 확인 하실 수 있습니다.
 
@@ -107,7 +107,7 @@ restart 옵션에는 몇가지가 있는데요
 
 일단 위에서 서비스로 등록 했다면 서비스에서 제외 해 줍니다.
 
-![image-20221127143036234](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127143036234.png)
+![image-20221127143036234](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127143036234.webp)
 
 그러고 나서는 restart 옵션을 줘서 컨테이너를 시작해줘야하는데요, 이미 커테이너가 떠있기 때문에 update 명령으로 옵션을 업데이트 합니다.
 
@@ -118,7 +118,7 @@ docker update --restart=unless-stopped PostgreSQL
 docker update --restart=unless-stopped oracle
 ```
 
-![image-20221127143226627](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127143226627.png)
+![image-20221127143226627](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127143226627.webp)
 
 >  모든 컨테이너의 재시작 옵션이 변경되었습니다.
 
@@ -131,7 +131,7 @@ docker inspect elastic
 docker inspect elastic | grep -A 3 "RestartPolicy"
 ```
 
-![image-20221127143927337](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127143927337.png)
+![image-20221127143927337](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127143927337.webp)
 
 > RestartPolicy 설정이 잘 적용 되어 있습니다.
 
@@ -141,7 +141,7 @@ docker inspect elastic | grep -A 3 "RestartPolicy"
 sudo systemctl restart docker
 ```
 
-![image-20221127144117562](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127144117562.png)
+![image-20221127144117562](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20221127144117562.webp)
 
 컨테이너가 자동으로 실행되는 것이 확인 됩니다.
 
@@ -155,7 +155,7 @@ sudo systemctl restart docker
 sudo vi /etc/crontab
 ```
 
-![image-20211003181857037](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003181857037.png)	
+![image-20211003181857037](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003181857037.webp)	
 
 굉장히 직관적으로 자세한 사용 방법이 써 있네요.
 
@@ -176,7 +176,7 @@ sudo vi /etc/crontab
 
 /etc/crontab을 아래와 같이 저장 해 두었습니다.	
 
-![image-20211003182235241](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003182235241.png)
+![image-20211003182235241](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003182235241.webp)
 
 ​		
 
@@ -184,7 +184,7 @@ sudo vi /etc/crontab
 
 ​	
 
-![image-20211003182319066](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003182319066.png)
+![image-20211003182319066](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003182319066.webp)
 
 21분 55초 에서 딱 5초를 기다리니 remote host 로 부터 커넥션이 끊겼습니다.
 
@@ -192,7 +192,7 @@ sudo vi /etc/crontab
 
 잠시 기다렸다가 다시 접속 해 봅니다.
 
-![image-20211003182429943](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003182429943.png)
+![image-20211003182429943](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211003182429943.webp)
 
 22분에 재부팅에 들어갔고, 24분쯤 다시 접속 했을때 컨테이너가 올라온지 43초가 지났다고 하는 걸 보니 대략 재부팅 후 컨테이너가 켜지는데 1분정도 걸리는 걸로 보입니다. 문제없이 재부팅이 되고, 컨테이너도 다 잘 올라오는걸 확인 했습니다.
 
@@ -210,7 +210,7 @@ sudo vi /etc/crontab
 
 이제 다음날 자고 일어나 docker container들의 러닝 타임을 체크해보면 정말 새벽4시에 잘 재부팅이 되었는지 확인 할 수 있겠습니다.
 
-![image-20211004164116437](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211004164116437.png)
+![image-20211004164116437](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/service.assets/image-20211004164116437.webp)
 
 그리고 계획 한 대로 다음날 오후 4시 40분에 확인을 해 보니 container status 에 Up 13hours 라고 나옵니다. 정상적으로 새벽 4 시에 한번 꺼졌다 켜진게 확실 하네요.
 

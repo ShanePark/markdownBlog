@@ -20,7 +20,7 @@ Vue.js, SpringBoot, PostgreSQL, Hibernate 중 익숙하지 않은 기술이 있�
 
 ### 전체적인 패키지 구조는 아래와 같으며 자바 코드는 모두 위의 간단 게시판 만들기에서 작성한 restapi 들을 그대로 가져와서 활용했습니다.
 
-![image-20210817222928597](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817222928597.png)
+![image-20210817222928597](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817222928597.webp)
 
 ​	
 
@@ -453,7 +453,7 @@ mount는 해당 뷰 인스턴스가 준비 되었을 때 실행되는데, load �
 
 이제 페이지를 띄워 보면,
 
-![image-20210817224343320](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817224343320.png)
+![image-20210817224343320](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817224343320.webp)
 
 게시글 목록들을 잘 불러옵니다 !
 
@@ -461,13 +461,13 @@ mount는 해당 뷰 인스턴스가 준비 되었을 때 실행되는데, load �
 
 ### 이번에는 글 작성을 해보았습니다.
 
-![image-20210817232334253](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817232334253.png)
+![image-20210817232334253](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817232334253.webp)
 
 이렇게 input 태그에 내용을 작성 하고 "등록" 을 누르면
 
 ​	
 
-![image-20210817232429467](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817232429467.png)
+![image-20210817232429467](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817232429467.webp)
 
 깜빡임 없이 간단하게 새 글이 맨 위에 등록 됩니다. 중간의 텅 빈 화면에서 눈치 채셨겠지만 저도 꽤나 삽질을 했습니다.
 
@@ -526,7 +526,7 @@ data에 필요한 변수 명들을 선언 해 주어야 합니다. create 함수
 
 ### 이번에는 마지막으로 삭제 하는 기능을 추가해보겠습니다.
 
-![image-20210817235044469](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817235044469.png)
+![image-20210817235044469](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817235044469.webp)
 
 
 

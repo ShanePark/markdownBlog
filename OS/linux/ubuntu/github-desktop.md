@@ -1,6 +1,6 @@
 # [Ubuntu 20.04 Git GUI 추천] 우분투 Github Desktop 설치
 
-![image-20220707131920597](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20220707131920597.png)
+![image-20220707131920597](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20220707131920597.webp)
 
 해당 사진은 우분투에 MacOS 테마를 설치 해 두어서 Mac 처럼 보이긴 하지만 Ubuntu 가 맞습니다.
 
@@ -14,7 +14,7 @@ Windows나 MacOS에서는 소스트리가 Git GUI로 흔하게 사용되는데�
 
 리눅스에서는 Git Kraken, Smartgit 등은 다 유료인게 부담스러워서 쓸 수 없었고 Git-cola가 그나마 무료길래 한동안 사용했었는데 기능이 너무 제한적입니다. 한참을 고민 하다가 Github Desktop에서 포크된 리눅스 버전을 설치 해 보았는데 Windows/ MacOS 에서 사용했을 때와 기본 기능들은 100% 일치하게 사용 할 수 있습니다. 
 
-![image-20211001150250111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20211001150250111-16330696617131.png)
+![image-20211001150250111](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20211001150250111-16330696617131.webp)
 
 Github Desktop은 순수 오픈소스입니다. 그래서 개발속도도 굉장히 빠르고 거의 매주 새로운 기능이 추가 되고 있습니다. 
 
@@ -80,11 +80,11 @@ $ sudo dnf install github-desktop
 
 https://github.com/shiftkey/desktop/tags
 
-![image-20211001151326714](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20211001151326714.png)
+![image-20211001151326714](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20211001151326714.webp)
 
 > 위에서 원하는 버전을 선택 해서 들어 간 뒤에
 
-![image-20211001151553242](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20211001151553242.png)
+![image-20211001151553242](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20211001151553242.webp)
 
 > 아래에서 본인의 리눅스에 맞는 설치파일을 다운 받아 설치 할 수도 있습니다. 
 >
@@ -92,4 +92,4 @@ https://github.com/shiftkey/desktop/tags
 
 설치 후에는 Github Desktop을 검색해서 사용하시면 됩니다. 이상입니다.
 
-![image-20211001151657293](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20211001151657293.png)
+![image-20211001151657293](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20211001151657293.webp)

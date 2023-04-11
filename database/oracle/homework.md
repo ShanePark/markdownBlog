@@ -18,7 +18,7 @@ FROM
 
 ```
 
->![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/1.png)
+>![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/1.webp)
 
 ​	          
 
@@ -32,7 +32,7 @@ from (
     group by mem_id, mem_name, mem_mail)
 where orders = 0
 ```
->![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/2.png)
+>![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/2.webp)
 
 ​          	
 
@@ -46,7 +46,7 @@ from(
     group by lprod_gu, lprod_nm)
 where cnt = 0
 ```
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/3.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/3.webp)
 
 ​          
 
@@ -62,7 +62,7 @@ from prod
 group by prod_id, prod_name,lprod_nm,prod_mileage, buyer_name
 order by sales desc
 ```
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/4.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/4.webp)
 
 >가장 많이 팔린 상품    
 
@@ -79,7 +79,7 @@ from(
     order by sales desc) a
 where rownum = 1;
 ```
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/5.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/5.webp)
 >가장 적게 팔린 상품    
 
 ```
@@ -95,7 +95,7 @@ from(
     order by sales asc) a
 where rownum = 1;
 ```
->![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/6.png)
+>![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/6.webp)
 
 ​          
 
@@ -109,7 +109,7 @@ from buyer
 group by buyer_id, buyer_name,lprod_nm
 order by cnt desc; 
 ```
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/7.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/7.webp)
 > 가장 많은 거래처
 ```
 select a.*
@@ -122,7 +122,7 @@ from(
     order by cnt desc)a
 where rownum = 1;
 ```
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/8.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/8.webp)
 > 가장 적은 거래처
 ```
 select a.*
@@ -135,7 +135,7 @@ from(
     order by cnt asc)a
 where rownum = 1;
 ```
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/9.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/9.webp)
 
 ​          
 
@@ -165,7 +165,7 @@ from (
     order by sum(cart_qty) desc)
 where rownum=1
 ```
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/10.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/10.webp)
 
 ​          
 
@@ -178,7 +178,7 @@ from member
 group by mem_id, mem_name
 order by amount desc
 ```
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/11.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/11.webp)
           
 
 ## 10. 각 상품별 구매왕 조회(구매왕아이디, 회원명, 구매총액)
@@ -193,4 +193,4 @@ from(
 where rank=1
 ```
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/12.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/homework.assets/12.webp)

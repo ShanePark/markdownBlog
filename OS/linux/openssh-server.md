@@ -1,6 +1,6 @@
 # Ubuntu 20.04 LTS ) SSH 접속 허용하기
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/featured_hud1de18774fc6feb5ae8168196a42a70d_96244_768x0_resize_q75_lanczos.jpg" height=430 width=750 alt=first>
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/featured_hud1de18774fc6feb5ae8168196a42a70d_96244_768x0_resize_q75_lanczos.webp" height=430 width=750 alt=first>
 
 > https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-20-04/
 
@@ -30,7 +30,7 @@ sudo apt install openssh-server
 
 ```
 
-![image-20210919214413094](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/image-20210919214413094.png)
+![image-20210919214413094](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/image-20210919214413094.webp)
 
 ​	
 
@@ -41,7 +41,7 @@ sudo systemctl status ssh
 
 ```
 
-![image-20210919214607301](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/image-20210919214607301.png)
+![image-20210919214607301](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/image-20210919214607301.webp)
 
 > 정상적으로 ssh 서비스가 구동 되고 있습니다.
 
@@ -53,7 +53,7 @@ sudo systemctl status ssh
 sudo ufw allow ssh
 ```
 
-![image-20210919214738075](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/image-20210919214738075.png)
+![image-20210919214738075](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/image-20210919214738075.webp)
 
 ​	
 
@@ -67,7 +67,7 @@ SSH가 준비 되었고, 접속 준비가 완료 되었습니다. Linux나 MacOS
 ip a
 ```
 
-![image-20210919214945303](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/image-20210919214945303.png)
+![image-20210919214945303](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/image-20210919214945303.webp)
 
 내부아이피가 192.168.0.32 로 확인 됩니다.
 
@@ -83,7 +83,7 @@ ssh shane@192.168.0.32
 
 ​	처음에 접속 할 때는 아래와 같이 한번 확인을 해 주는데요, yes를 입력 합니다.
 
-![1 ](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/1.png)
+![1 ](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/1.webp)
 
 ​	 	
 
@@ -91,11 +91,11 @@ ssh shane@192.168.0.32
 
 비밀번호를 입력 합니다.
 
-![2 ](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/2.png)
+![2 ](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/2.webp)
 
 ​			
 
-![3 ](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/3.png)
+![3 ](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/3.webp)
 
 정말로 접속이 되었습니다.
 
@@ -105,13 +105,13 @@ ssh shane@192.168.0.32
 
 일단 공유기 설정(192.168.0.1)에 들어가서 Port Forwarding에 22번 port를 추가 해 주었습니다. Apply를 눌러줍니다.
 
-![image-20210919220416348](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/image-20210919220416348.png)
+![image-20210919220416348](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/image-20210919220416348.webp)
 
 ​		
 
 해당 포트를 열고 나서는 외부 아이피로도 ssh 접속을 할 수 있습니다.
 
-![Screenshot from 2021-09-19 22-06-30](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/22-06-30.png)
+![Screenshot from 2021-09-19 22-06-30](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/openssh-server.assets/22-06-30.webp)
 
 ​	
 

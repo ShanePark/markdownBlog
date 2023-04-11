@@ -11,7 +11,7 @@ Got permission denied while trying to connect to the Docker daemon socket at uni
 
 무심히 도커 명령어를 사용하려 할 때 마다 permission denied가 나오는 경험을 많이들 해보셨을 겁니다.
 
-![image-20210929204332090](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/usermod.assets/image-20210929204332090.png)
+![image-20210929204332090](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/usermod.assets/image-20210929204332090.webp)
 
 비단 docker 뿐만이 아니라, 몇몇 다른 어플리케이션도 굳이 루트 권한 없이 실행했으면 하는게 있을 텐데요, 그럴 때는 간단한 설정 하나 만으로 특정 유저에게 해당 어플리케이션의 사용 권한을 줄 수 있습니다.
 
@@ -31,7 +31,7 @@ sudo usermod -aG docker {사용자명}
 
 현재 사용자 아이디를 굳이 직접 칠 필요도 없는데요. $USER 는 지금 접속중인 사용자를 나타냅니다.
 
-![image-20210929204954135](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/usermod.assets/image-20210929204954135.png)
+![image-20210929204954135](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/usermod.assets/image-20210929204954135.webp)
 
 ​	
 
@@ -47,7 +47,7 @@ sudo usermod -aG docker $USER
 
 명령어를 입력 했으니 이제 docker 명령어를 써 보려고 하면
 
-![image-20210929205038976](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/usermod.assets/image-20210929205038976.png)
+![image-20210929205038976](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/usermod.assets/image-20210929205038976.webp)
 
 여전히 안되는 것 처럼 보이는데요, 새로 등록 된 그룹은 새로 로그인 했을 때부터 적용됩니다.
 
@@ -59,7 +59,7 @@ logout
 
 ​	
 
-![image-20210929205239562](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/usermod.assets/image-20210929205239562.png)
+![image-20210929205239562](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/usermod.assets/image-20210929205239562.webp)
 
 이후 다시 로그인 해서 docker 명령어를 사용 해 보았습니다. sudo 권한이 없이도 (Super User Do 의 약자입니다.) 간단하게 docker 명령어를 이용할 수 있습니다.
 

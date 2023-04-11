@@ -10,7 +10,7 @@
 
 ### docker를 통해 irods에 접속합니다.
 
-![image-20210915174759987](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915174759987.png)
+![image-20210915174759987](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915174759987.webp)
 
 ​		
 
@@ -20,7 +20,7 @@
 find / -name core.re
 ```
 
-![image-20210915174956647](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915174956647.png)
+![image-20210915174956647](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915174956647.webp)
 
 ​	
 
@@ -30,7 +30,7 @@ find / -name core.re
 vi /etc/irods/core.re
 ```
 
-![image-20210915175138688](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915175138688.png)
+![image-20210915175138688](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915175138688.webp)
 
 ​	
 
@@ -40,13 +40,13 @@ vi /etc/irods/core.re
 :/acRescQuotaPolicy
 ```
 
-![image-20210915175323371](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915175323371.png)
+![image-20210915175323371](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915175323371.webp)
 
 ​	
 
 ### 해당 설정을 on 으로 변경합니다.
 
-![image-20210915175353639](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915175353639.png)
+![image-20210915175353639](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915175353639.webp)
 
 ​	
 
@@ -60,7 +60,7 @@ vi /etc/irods/core.re
 iadmin lq
 ```
 
-![image-20210915174721844](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915174721844.png)
+![image-20210915174721844](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915174721844.webp)
 
 > admin 유저가 할당된 quota 이상으로 사용하고 있는게 확인됩니다.
 
@@ -72,7 +72,7 @@ iadmin lq
 iquota
 ```
 
-![image-20210915175622038](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915175622038.png)
+![image-20210915175622038](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915175622038.webp)
 
 ​		
 
@@ -86,7 +86,7 @@ iquota
 iadmin cu
 ```
 
-![image-20210915181546366](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915181546366.png)
+![image-20210915181546366](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915181546366.webp)
 
 ​	quota를 계산 해주지 않으면 설정을 on 으로 변경 했음에도 불구하고 계속해서 업로드 되는 상황이 있었습니다.
 
@@ -94,7 +94,7 @@ iadmin cu
 
 ### Quota 초과시 Jaron이 던지는 에러 메시지는 아래와 같습니다.
 
-![image-20210915181027881](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915181027881.png)
+![image-20210915181027881](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915181027881.webp)
 
 ​	
 

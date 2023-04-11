@@ -1,6 +1,6 @@
 # 제발 한국인이라면 자바스크립트 Object를 Map 처럼 사용하지 맙시다.	
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/Map.assets/aa.jpeg)
+![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/Map.assets/aa.webp)
 
 >  Photo by [Steve Johnson](https://unsplash.com/@steve_j?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 
@@ -8,7 +8,7 @@
 
 오늘 코딩하던 중에 Javascript 에서 만든 Map을 Controller 쪽으로 어떻게 넘길지에 대해 고민 하는 일이 있었습니다. JavaScript 에서는 Object 를 사용하면 왠만하면 다른 언어에서의 Map 과 유사하게 사용 할 수 있기 때문에 딱히 Map을 사용 해 본 적이 없었는데요.  
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/Map.assets/image-20210902220829730.png)
+![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/Map.assets/image-20210902220829730.webp)
 
 특히 나중에 자바에서 스프링 부트에서 제공하는 JsonParser 를 이용하면 JSON 데이터를 List 아니면 Map 으로 Parsing을 하더라고요. Object 형태로 보내지 않고 Map을 Marshalling 해서 보낸다면 다시 언마샬링 할 때도 좀 더 쉽게 하지 않을까 생각 했습니다.
 
@@ -49,7 +49,7 @@ console.log(map['key1']);
 
 그리고 당연하게도 모든 브라우저에서 지원 합니다.
 
-![image-20210902222822091](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/Map.assets/image-20210902222822091.png)
+![image-20210902222822091](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/Map.assets/image-20210902222822091.webp)
 
 > Internet Explorer는 예뻐할래야 예뻐 할 수가 없습니다. IE 만 안되니까 다 되는게 맞습니다.
 
