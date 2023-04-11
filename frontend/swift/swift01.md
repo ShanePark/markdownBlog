@@ -6,13 +6,7 @@ iOS 개발에 앞서 개발환경을 세팅해야 합니다.
 
 iOS는 Xcode를 사용해 개발 할 수 있으며, 당연하지만 Mac book, Mac Mini , iMac 등의 Mac 제품이 필요합니다.
 
-
-
-<hr>
-
-
-
-![image-20210729220113754](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220113754.webp)
+<img src=https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220113754.webp width=650 height=400 alt=1>
 
 > 평점 상태가..
 
@@ -22,7 +16,7 @@ iOS는 Xcode를 사용해 개발 할 수 있으며, 당연하지만 Mac book, Ma
 
 
 
-![image-20210729220155781](https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220155781.webp)
+<img src=https://github.com/Shane-Park/markdownBlog/raw/master/frontend/swift/swift01.assets/image-20210729220155781.webp width=650 height=300 alt=2>
 
 > 아름다운 Size를 보시라..
 

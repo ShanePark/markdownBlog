@@ -1,10 +1,10 @@
-# Linux) 실행 할 수 있는 Shell Script 만들기 - 부제 : Mac의 text replace Linux에서 흉내내기
+# Linux)  Mac의 text replace Linux에서 흉내내기
 
-​		
+> 실행 할 수 있는 Shell Script 만들기
 
 ## 개요
 
-![image-20210919195440966](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919195440966.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919195440966.webp" width=750 height=600 alt=main>
 
 저는 MacBook 을 사용 하면서 text replace 기능을 정말 유용하게 사용 했습니다.
 

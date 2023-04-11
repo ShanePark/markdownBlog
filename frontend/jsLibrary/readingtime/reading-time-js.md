@@ -1,14 +1,12 @@
 # reading-time.js 활용해 읽는 시간 표시해주기
 
-​	
+## Intro	
 
-### 요즘 해외 뉴스나 블로그 등 에서 많이 사용 되고 있는 reading time 라이브러리 입니다. 
+요즘 해외 뉴스나 블로그 등 에서 많이 사용 되고 있는 reading time 라이브러리 입니다. 
 
 보통 글의 header 부분의 제목 바로 다음에서 해당 article을 읽는데 대략 어느 정도가 걸리는지 시간으로 알려줌으로서 독자들이 빠르게 대강 읽을 지 혹은 천천히 꼼꼼히 읽을지를 그것도 아니면 안읽고 말지에 대해 결정하게끔 도와 줍니다.
 
-
-
-## ![Why show the reading time for an editorial article? - User Experience Stack  Exchange](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/h5fpf-20210908224905202.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/h5fpf-20210908224905202.webp width=750 height=500 alt=1>
 
 > 보통 이런식으로 얼마나 걸릴지를 미리 가늠할 수 있게 해줍니다.
 
@@ -18,7 +16,7 @@
 
 함께 하나씩 따라 해 보면서 기능을 익혀보겠습니다.
 
-​	
+## 시작
 
 https://github.com/michael-lynch/reading-time
 
@@ -154,7 +152,7 @@ css 와 js 파일을 새로 첨부해줍니다.
 
 ​		
 
-### 그렇게 새로 만들어 본 reading-time-js.html 입니다.
+그렇게 새로 만들어 본 reading-time-js.html 입니다.
 
 ```html
 <html>
@@ -204,7 +202,7 @@ css 와 js 파일을 새로 첨부해줍니다.
 
 ​	
 
-### 실행결과
+실행결과
 
 ![image-20210910215351929](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910215351929.webp)
 
@@ -216,7 +214,7 @@ css 와 js 파일을 새로 첨부해줍니다.
 
 ​		
 
-### Options
+Options
 
 - readingTimeAsNumber: boolean
   If you want to take reading time as integer, you can use this (default: 'false').
@@ -306,7 +304,7 @@ $('article').readingTime({
 
 ​	
 
-### 그 결과입니다.
+그 결과입니다.
 
 ![image-20210910221755513](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-js.assets/image-20210910221755513.webp)
 

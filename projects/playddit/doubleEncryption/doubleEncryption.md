@@ -1,11 +1,9 @@
 ## Playddit 비밀번호 이중 암호화 적용기
 
-![](main.jpg)
-
 ### 🔐 AES256
 Playddit에서는 AES256 방식으로 비밀번호를 암호화 하고 있었습니다. 이유는 단 한가지 학원에서 AES256를 이용한 암호화를 배웠기 때문이었습니다.
 
-```
+```java
 public static String encryptAES256(String str, String key) throws UnsupportedEncodingException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, IllegalBlockSizeException, BadPaddingException {
     String iv = key.substring(0,16);
     byte[] keyBytes = new byte[16];
@@ -32,7 +30,7 @@ public static String encryptAES256(String str, String key) throws UnsupportedEnc
 위의 코드를 통해 평문을 AES256 방식으로 암호화 하였습니다.
 AES256은 양방향 암호화 알고리즘입니다. 위의 암호화를 배웠을때는 단방향암호라는걸 몰랐을 때였는데, 위의 방식 만으로는 키를 알고 있으면 누구든 비밀번호를 알아 낼 수 있었기 때문에 어떻게든 비밀번호는 복호화가 불가능 하게끔 만들고 싶었습니다. 특히나 Github 상에 코드를 공개할 예정이었기 때문에 더더욱 신경이 쓰였습니다.
 
-```
+```java
 public static String encryptPass(String id, String password) {
     String encryptedPass = "";
     try {
@@ -67,7 +65,7 @@ public static String encryptPass(String id, String password) {
 위의 과정으로 암호화를 하면, 기존에 가입되어있는 회원들의 데이터는 이미 암호화 된 비밀번호들만 한번씩 Sha512 암호화를 덧붙여 새로 저장해주면 되겠고, 기존의 암호 알고리즘만 이중 암호화를 적용하게끔 코드를 변경해서 이후 가입하는 회원들은 이중으로 암호화시킨다면 무리 없이 적용이 가능하겠다고 생각되었고, 그대로 테스트 해 보니 문제없이 잘 되었습니다.
 
 아래는 Sha512 암호화 코드입니다.
-```
+```java
 public static String encryptSha512(String plain) throws NoSuchAlgorithmException {
     // 단방향 암호화, 해시값(일정한 길이의 문자열로 출력되는 값)
     MessageDigest md = MessageDigest.getInstance("SHA-512");
@@ -80,7 +78,7 @@ public static String encryptSha512(String plain) throws NoSuchAlgorithmException
 ```
 
 아래는 최종 비밀번호 생성 코드입니다.
-```
+```java
 public static String encryptPass(String id, String password) {
     String encryptedPass = "";
     try {
@@ -104,7 +102,7 @@ public static String encryptPass(String id, String password) {
 새로운 이중 암호화된 비밀번호 : 
 ewf+wJ8JYiu6fahn8rqMMV6t3HNGJoDVD6mI4Tok5QS08Mr0mnFCf8zNk+c8TyiWX5o3kiTa9TbN61lbiR2o0g==
 ```
-  
+
 테스팅을 마치고 바로 동작중이던 서버를 종료 한 뒤에 새로 배포를 해서 서버를 다시 실행했습니다.  
 
 코드와 DB상에 모두 변화가 있었는데, 아무 일도 없었던 것 처럼 그대로 동작하는 사이트를 보니, 참 신기하기도 하고 변화가 없음에도 저는 변화를 알고 있기에 기분이 좋습니다.

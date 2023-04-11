@@ -6,7 +6,7 @@ dock 에 힘들게 아이콘을 추가 했는데도, 실행 할 경우 아이콘
 
 ​	
 
-![image-20210919103843945](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919103843945.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/icon-duplicate.assets/image-20210919103843945.webp" width=750 height=450 alt=1>
 
 ​	
 

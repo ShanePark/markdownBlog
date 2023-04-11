@@ -7,7 +7,7 @@
 프로젝트 팀에서 혼자만 맥을 사용하다 보니, 협업에서 더 유리한 프로그램을 찾다 Figma를 선택하게 되었습니다.    
 일단 불과 한시간 정도의 분량이지만 sketch 에서 작업한 .sketch 파일을 바로 불러 올 수 있다는게 크게 매력적으로 다가왔습니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/figma/figma.assets/1.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/figma/figma.assets/1.webp" width=750 height=600 alt=1>
 
 >처음 가입을 하고 프로젝트를 생성하면 이런 화면이 나옵니다.   
 Community에서 버튼이나 아이콘 등 다른 이용자들이 만들어 무료로 배표해둔 자료들을 손쉽게 이용할 수 있는것도 마음에 듭니다.

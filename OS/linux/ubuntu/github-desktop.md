@@ -1,6 +1,6 @@
 # [Ubuntu 20.04 Git GUI 추천] 우분투 Github Desktop 설치
 
-![image-20220707131920597](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20220707131920597.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/github-desktop.assets/image-20220707131920597.webp width=750 height=600 alt=1>
 
 해당 사진은 우분투에 MacOS 테마를 설치 해 두어서 Mac 처럼 보이긴 하지만 Ubuntu 가 맞습니다.
 

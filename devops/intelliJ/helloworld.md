@@ -2,7 +2,7 @@
 
 ​		
 
-![image-20210821161806428](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821161806428.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/helloworld.assets/image-20210821161806428.webp width=750 height=400 alt=1>
 
 https://www.jetbrains.com/ko-kr/lp/language-pack/
 

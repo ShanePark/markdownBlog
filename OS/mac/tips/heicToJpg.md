@@ -14,13 +14,13 @@ Mac에서 preview 등으로 간편하게 하는 방법이 있지만 아이에 �
 
 
 
-![image-20210824212243030](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212243030.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212243030.webp width=750 height=200 alt=1>
 
 ​	
 
 ### 하단의 new Document를 눌러 새로운 문서를 생성 합니다.
 
-![image-20210824212406674](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212406674.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/heicToJpg.assets/image-20210824212406674.webp width=750 height=500>
 
 ​	
 

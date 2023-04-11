@@ -8,13 +8,13 @@
 
 예를 들어 아래와 같은 코드가 있을 때
 
-![image-20210911083716887](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/javadoc.assets/image-20210911083716887.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/javadoc.assets/image-20210911083716887.webp height=500 width=750 alt=1>
 
 ​	
 
 arrayConverter 메서드에 커서를 올린 후, 해당 단축키를 입력 하면..
 
-![image-20210911083746080](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/javadoc.assets/image-20210911083746080.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/intelliJ/javadoc.assets/image-20210911083746080.webp width=750 height=400 alt=2>
 
 아주 간단하게 javadoc을 작성 할 수 있습니다.
 

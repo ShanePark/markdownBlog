@@ -14,7 +14,7 @@
 
 인터넷에서 쉽게 찾을 수 있는 여러가지의 Open Source 라고 해도 다 같은 오픈 소스가 아니기 때문에 항상 사용할 때에는 Licence 부분을 잘 읽어 보아야 합니다. 여기서 간단하게 몇가지 흔히 사용되는  라이센스들에 대해 간략하게 짚어보자면..
 
-![license](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/license.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/jitpack.assets/license.webp width=750 height=500 alt=1>
 
 > https://www.whitesourcesoftware.com/resources/blog/open-source-licenses-trends-and-predictions/
 

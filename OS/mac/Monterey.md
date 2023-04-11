@@ -10,7 +10,7 @@ Monterey는 Apple이 WWDC21에서 발표한 macOS Big Sur의 차기 버전입니
 
 ​	
 
-![image-20211009095609326](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009095609326.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/Monterey.assets/image-20211009095609326.webp width=750 height=500 alt=1>
 
 > https://en.wikipedia.org/wiki/MacOS_Monterey#Release_history
 

@@ -20,7 +20,7 @@ docker나 docker-compose가 아직 준비되어 있지 않다면 아래 글을 �
 git clone https://github.com/deviantony/docker-elk.git
 ```
 
-## ![Screenshot from 2021-09-20 14-35-32](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/14-35-32.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/elk.assets/14-35-32.webp width=750 height=600 alt=1>
 
 
 

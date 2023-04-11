@@ -26,7 +26,7 @@ window.location.href = 'https://shanepark.tistory.com';
 
 ### 테스트 환경
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820225344230.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/redirect.assets/image-20210820225344230.webp width=500 height=300 alt=1>
 
 일단 바탕화면에 1.html, 2.html, 3.html 파일을 만듭니다. 1.html 에서 버튼을 클릭하면 2.html 파일로 이동하는데, 2.html 파일은 단순하게 3.html 파일로 리다이렉트 하는 역할을 하게끔 해 보겠습니다.	
 

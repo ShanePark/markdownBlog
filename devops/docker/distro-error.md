@@ -10,7 +10,7 @@
 
 ​	
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914091052614.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/docker/distro-error.assets/image-20210914091052614.webp" width=750 height=600 alt=1>
 
 발생하는 에러의 내용은 아래와 같습니다.
 

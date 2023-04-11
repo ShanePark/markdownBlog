@@ -1,7 +1,5 @@
 # 티스토리 다크모드 적용하기
 
-​	
-
 블로그에 들어올 때 마다 새하얀 화면에 너무 눈이 부셔서 다크모드를 적용하기로 했습니다.
 
 쉽지 않은 작업이 될 거라고 생각은 했지만 세부적으로 워낙에 신경쓸 부분이 많기 때문에 생각보다 시간이 제법 소요되었습니다.
@@ -30,7 +28,7 @@
 
 일단 블로그관리 - > 스킨 편집 메뉴로 갑니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/HTML-CSS/tistory-dark.assets/img.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/HTML-CSS/tistory-dark.assets/img.webp width=350 height=500 alt=1>
 
 ​	
 

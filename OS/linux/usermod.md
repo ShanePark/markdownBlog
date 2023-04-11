@@ -11,7 +11,7 @@ Got permission denied while trying to connect to the Docker daemon socket at uni
 
 무심히 도커 명령어를 사용하려 할 때 마다 permission denied가 나오는 경험을 많이들 해보셨을 겁니다.
 
-![image-20210929204332090](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/usermod.assets/image-20210929204332090.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/usermod.assets/image-20210929204332090.webp width=600 height=440 alt=1>
 
 비단 docker 뿐만이 아니라, 몇몇 다른 어플리케이션도 굳이 루트 권한 없이 실행했으면 하는게 있을 텐데요, 그럴 때는 간단한 설정 하나 만으로 특정 유저에게 해당 어플리케이션의 사용 권한을 줄 수 있습니다.
 

@@ -2,19 +2,15 @@
 
 > https://shanepark.tistory.com/224 에 이어지는 글 입니다.
 
+이번에는 블로그에서 직접 적용을 시켜보도록 하겠습니다. 		
 
-
-### 이번에는 블로그에서 직접 적용을 시켜보도록 하겠습니다. 
-
-​		
-
-![image-20210910223242280](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-blog.assets/image-20210910223242280.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-blog.assets/image-20210910223242280.webp width=600 height=400 alt=1>
 
 ​	블로그 적용하기 전 화면입니다. 작성 일 우측에 공간이 꽤 남기 때문에 해당 공간이 넣으면 되겠습니다.
 
 
 
-### 우측 상단 버튼을 눌러 블로그 관리에 들어 갑니다.	
+우측 상단 버튼을 눌러 블로그 관리에 들어 갑니다.	
 
 ![image-20210910223356462](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-blog.assets/image-20210910223356462.webp)
 
@@ -117,7 +113,7 @@ js 파일을 업로드 해 준 다음에
 
 
 
-### 업로드 된 파일을 확인 한 후에	
+업로드 된 파일을 확인 한 후에	
 
 ![image-20210910224756109](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-blog.assets/image-20210910224756109.webp)
 
@@ -135,7 +131,7 @@ js 파일을 업로드 해 준 다음에
 
 ​	
 
-### 이제 readingtime.js 를 호출 하도록 script를 작성합니다.
+이제 readingtime.js 를 호출 하도록 script를 작성합니다.
 
 ​	
 
@@ -145,7 +141,7 @@ body 의 맨 아래쪽으로 내려가니 $(function() 안에, document가 준�
 
 ​	
 
-### 아래와 같이 추가 했습니다.
+아래와 같이 추가 했습니다.
 
 ![image-20210910225936457](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-blog.assets/image-20210910225936457.webp)
 
@@ -165,7 +161,7 @@ body 의 맨 아래쪽으로 내려가니 $(function() 안에, document가 준�
 
 
 
-### 잘 작동하는지 확인 해 보겠습니다.	
+잘 작동하는지 확인 해 보겠습니다.	
 
 ![image-20210910230354040](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-blog.assets/image-20210910230354040.webp)
 

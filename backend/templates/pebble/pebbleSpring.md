@@ -8,11 +8,11 @@
 
 일단 스프링 부트 프로젝트를 생성 합니다.
 
-![image-20210814110046712](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110046712.webp)
+<img src=https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110046712.webp width=750 height=600 alt=1>
 
 > Spring Starter를 이용하면 쉽게 생성 할 수 있습니다
 
-![image-20210814110327294](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110327294.webp)
+<img src=https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebbleSpring.assets/image-20210814110327294.webp width=500 height=600 alt=2>
 
 > Maven 프로젝트로 생성 했지만 Gradle로 해도 무관합니다. 적당한 Location에 적당한 이름으로 프로젝트를 생성합니다.
 

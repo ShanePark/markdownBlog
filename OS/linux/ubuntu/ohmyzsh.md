@@ -1,10 +1,8 @@
 # Ubuntu에 oh-my-zsh 설치
 
-​	
-
 ## MacOS 이야기
 
-![image-20210926193827237](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ohmyzsh.assets/image-20210926193827237.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ohmyzsh.assets/image-20210926193827237.webp width=600 height=500 alt=1>
 
 MacOS 에서는 Catalina 부터 기본 쉘이 zsh(Z shell)이 되었습니다. m1 맥북을 구매해서 BigSur를 첫 OS로 사용하기 시작한 저도 자연스럽게 zsh를 이용해 왔는데요. 특히 iTerm2 를 설치하고 oh-my-zsh를 올려 사용하며 여러가지 편의성이 었었습니다.
 
@@ -16,7 +14,7 @@ MacOS 에서는 Catalina 부터 기본 쉘이 zsh(Z shell)이 되었습니다. m
 
 ## Ubuntu 이야기
 
-![image-20210926193452597](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ohmyzsh.assets/image-20210926193452597.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/ohmyzsh.assets/image-20210926193452597.webp width=600 hegiht=500 alt=2>
 
 Ubuntu를 설치하면 기본적으로 BASH(Bourne Again Shell)이 기본 쉘로 설치되어 있습니다. 사용하며 딱히 불편 한 점은 없었지만 전부 비슷한 환경을 꾸밀 수는 없더라도 shell 정도는 MacOS에서 사용하는 것과 같은 환경으로 맞춰야 겠다는 생각이 들었습니다. 사소한 차이지만 ~/.bashrc 설정을 바꾸는 대신 평소처럼 ~/.zshrc 를 변경 하면 되며 Terminal 디자인도 일관적인게 좋겠다는 생각이 들었습니다.
 

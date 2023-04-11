@@ -1,7 +1,5 @@
 # MacOS) 마우스 가속 기능 끄기
 
-![image-20211206210849682](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/image-20211206210849682.webp)
-
 ## Intro
 
 맥북에서는 트랙패드면 사용하기에 충분하지만 트랙패드만 쓰다 보면 정교하고 빠른 작업등에서 약점이 있습니다. 특히 회사에서는 리눅스 컴퓨터를 사용하다가 집에서는 맥북을 사용하다 보니, 가끔씩은 트랙패드가 답답하기도 합니다. 
@@ -12,7 +10,7 @@
 
 이때, SteelSeries 에서 만든 ExactMouse Tool을 사용하면, 스틸시리즈의 마우스가 아닌 다른 마우스를 사용한다고 해도 상관 없이 마우스 가속을 끌 수 있습니다. 저는 로지택의 G304 마우스가 너무 마음에 들어서, 윈도우, 맥북, 리눅스 각각 한대씩 흰색, 파랑색, 보라색 세가지를 구입해서 사용하고 있습니다.
 
-![6c9d3647-df54-4d8a-9088-b544cefe47cf](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/6c9d3647-df54-4d8a-9088-b544cefe47cf.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/exactMouseTool.assets/6c9d3647-df54-4d8a-9088-b544cefe47cf.webp width=750 height=600 alt=1>
 
 > 평소 게임할 시간이 없어서 즐겨 하지는 못하는 편 이지만, 마우스 가속을 껐을때의 효과를 확인 하려고 리그오브 레전드와 스타크래프트를 한판씩 해 보았는데, 확실히 괜찮습니다. 오히려 키보드가  매직키보드라서 문제가 되었습니다.
 >

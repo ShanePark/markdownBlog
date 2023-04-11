@@ -16,7 +16,7 @@ SmartGit이 원래 제일 많이 쓰인다고 해서 설치해보니 역시 유�
 sudo apt install git-cola
 ```
 
-![image-20210924204431809](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924204431809.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/gitbranch.assets/image-20210924204431809.webp width=750 height=600 alt=1>
 
 ​		
 

@@ -1,7 +1,5 @@
 # Mac) Oracle Cloud FreeTier 이용해 웹 어플리케이션 배포하기 6) 오라클 전자지갑 사용해 프로젝트와 연결하기
 
-
-
 [4) 무료 데이터 베이스 만들기 및 데이터 이관하기](https://shanepark.tistory.com/173) 에서 만든 무료 Oracle Cloud FreeTier 의 데이터베이스를 프로젝트와 연결 해 보겠습니다.
 
 정말 많은 분들이 무료 데이터 베이스를 만드는데 관심이 있었지만 난이도가 난이도다 보니 실패한 분들이 꽤 많은 것 같았습니다. 어렵게 어렵게 성공을 했는데 도저히 프로젝트와는 어떻게 연결하는지 어려움을 겪는 분들이 상당히 많아서 이메일도 많이 받았는데요.
@@ -10,13 +8,13 @@
 
 
 
-![image-20210821094604223](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821094604223.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821094604223.webp width=600 height=500 alt=1>
 
-### 일단 위에 보이는 것 처럼 SQL Developer에서 전자지갑으로 연결이 가능 한 상태가 준비 되어 있어야 합니다. 아직 오라클 전자지갑을 통한 데이터베이스 연결 준비가 되어있지 않다면 [Mac) Oracle FreeTier 이용해 웹 어플리케이션 배포하기 4) 무료 데이터 베이스 만들기 및 데이터 이관하기](https://shanepark.tistory.com/173) 를 먼저 해주세요.
+일단 위에 보이는 것 처럼 SQL Developer에서 전자지갑으로 연결이 가능 한 상태가 준비 되어 있어야 합니다. 아직 오라클 전자지갑을 통한 데이터베이스 연결 준비가 되어있지 않다면 [Mac) Oracle FreeTier 이용해 웹 어플리케이션 배포하기 4) 무료 데이터 베이스 만들기 및 데이터 이관하기](https://shanepark.tistory.com/173) 를 먼저 해주세요.
 
 ​	
 
-## 지금부터 간단한 프로젝트를 생성 해서 데이터베이스와 Oracle 전자지갑 이용해 DB 연결을 하는 것을 함께 해 보겠습니다. 쉽지 않은 내용이니 차근차근 읽으며 해주시고 막히는 부분은 댓글로 남겨주세요.
+지금부터 간단한 프로젝트를 생성 해서 데이터베이스와 Oracle 전자지갑 이용해 DB 연결을 하는 것을 함께 해 보겠습니다. 쉽지 않은 내용이니 차근차근 읽으며 해주시고 막히는 부분은 댓글로 남겨주세요.
 
 ​	
 
@@ -40,7 +38,7 @@ Finish 를 눌러 프로젝트 생성을 완료합니다.
 
 ​	
 
-### 프로젝트가 준비되었습니다.
+프로젝트가 준비되었습니다.
 
 ![image-20210821095702185](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821095702185.webp)
 
@@ -68,7 +66,7 @@ ORDER BY COLUMN_ID;
 
 ​	
 
-### 위에서 조회된 쿼리 결과를
+위에서 조회된 쿼리 결과를
 
 ![image-20210821100535881](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821100535881.webp)
 
@@ -109,7 +107,7 @@ ORDER BY COLUMN_ID;
 
 
 
-## 기존의 URL 방식대로 연결을 하는 프로젝트를 생성
+### 기존의 URL 방식대로 연결을 하는 프로젝트를 생성
 
 > 작동을 확인한 후에 전자지갑으로 연결하도록 변경을 해 보도록 하겠습니다.
 
@@ -127,7 +125,7 @@ ORDER BY COLUMN_ID;
 
 
 
-### IssueVO.java
+IssueVO.java
 
 ```java
 package com.shane.vo;
@@ -162,7 +160,7 @@ public class IssueVO {
 
 ​	
 
-### IssueDao.java
+IssueDao.java
 
 ```java
 package com.shane.dao;
@@ -184,7 +182,7 @@ public interface IssueDao {
 
 ​	
 
-### IssueController.java
+IssueController.java
 
 ```java
 package com.shane.controller;
@@ -217,7 +215,7 @@ public class IssueController {
 
 ​	
 
-### issue.xml
+issue.xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -235,7 +233,7 @@ public class IssueController {
 
 이제 가장 중요한
 
-### application.properties
+application.properties
 
 ```properties
 # datasource
@@ -261,13 +259,13 @@ mybatis.mapper-locations=classpath:mappers/*.xml
 
 POSTMAN을 통해 해당 URL로 GET 요청을 보내니 데이터를 잘 받아옵니다.
 
-### 단순히 요청에 대한 응답을 보내는 지 정도만 체크하고 싶고, GET 방식이라면 그냥 주소창에 넣고 입력 하셔도 괜찮습니다.
+단순히 요청에 대한 응답을 보내는 지 정도만 체크하고 싶고, GET 방식이라면 그냥 주소창에 넣고 입력 하셔도 괜찮습니다.
 
 ![image-20210821110028490](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821110028490.webp)
 
 ​	
 
-## 그럼 이제 전자지갑으로 접속을 변경시켜 보겠습니다.
+그럼 이제 전자지갑으로 접속을 변경시켜 보겠습니다.
 
 https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-jdbc-thin-wallet.html#GUID-5ED3C08C-1A84-4E5A-B07A-A5114951AA9E 
 
@@ -356,7 +354,7 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 ![image-20210821114935495](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/wallet.assets/image-20210821114935495.webp)
 
-### 이제 Oracle 지갑을 이용하기 위해 osdt_cert, osdt_core, oraclepki 를 추가해줍니다.
+이제 Oracle 지갑을 이용하기 위해 osdt_cert, osdt_core, oraclepki 를 추가해줍니다.
 
 > 이때 제가 댓글 열심히 달았던 내용을 보니 제가 동문서답 한 내용들이 많이 보여 부끄러웠습니다.
 
@@ -397,7 +395,7 @@ spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 ​	
 
-## 맥북을 구매하셔서 오라클 데이터베이스를 사용하는데 큰 어려움이 있으시겠지만 모두 개발자로서의 큰 성장의 트리거가 되셨으면 좋겠습니다. 수고하셨습니다.
+맥북을 구매하셔서 오라클 데이터베이스를 사용하는데 큰 어려움이 있으시겠지만 모두 개발자로서의 큰 성장의 트리거가 되셨으면 좋겠습니다. 수고하셨습니다.
 
 ​	
 

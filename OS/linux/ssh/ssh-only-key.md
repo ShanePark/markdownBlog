@@ -8,7 +8,7 @@
 cat /var/log/auth.log
 ```
 
-![image-20211006203126847](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006203126847.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006203126847.webp width=750 height=500 alt=1>
 
 세상에나 무수히 많은 Connection 시도와 Failed password 가 수북하게 쌓여 있습니다. 
 
@@ -28,7 +28,7 @@ echo $HISTSIZE
 
 를 입력하면 그 값을 볼 수 있습니다.
 
-![image-20211006204205296](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006204205296.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ssh/ssh-only-key.assets/image-20211006204205296.webp width=750 height=500 alt=1>
 
 저는 최대 1000개 까지 저장하고 있습니다.
 

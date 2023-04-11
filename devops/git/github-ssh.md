@@ -6,13 +6,13 @@
 
 저는 MacOS에서 Github repository에 접근 할 때 Github Desktop을 사용 하고 있습니다.
 
-![image-20210924233758006](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924233758006.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924233758006.webp" width=750 height=600 alt=1>
 
 ​	
 
 Github Desktop의 완성도는 꽤나 괜찮은 편입니다. TypeScript로 작성 되어 있으며, [Release Note](https://desktop.github.com/release-notes)를 확인해 보시면 거의 1주일에 한번 꼴로 꾸준히 업데이트가 됩니다. 
 
-![image-20210924233902880](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924233902880.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924233902880.webp width=750 height=600 alt=2>
 
 > 심지어는 Microsoft에 인수된게 무색하게 발빠르게 Apple M1 칩셋에 대응도 했습니다. https://github.com/shiftkey/desktop/ Linux 버전의 Fork도 있어서 한번 테스트 해 보려 합니다.
 

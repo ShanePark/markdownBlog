@@ -14,13 +14,13 @@ Ubuntu를 사용하다 보면 ssh 접속을 이용해 굉장히 편하게 사용
 
 Sharing 을 검색 해서 실행 합니다.
 
-![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/1.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/1.webp width=750 height=500 alt=1>
 
 ​	
 
 여기에서 Screen Sharing 이 보이는 분도 안보이는 분도 있을 겁니다. 저도 집에 있는 ubuntu 중에 처음 할 때는 있어서 기본으로 있는 줄알았는데 두번째 컴퓨터의 셋팅을 할 때 보니 처음에 없더라고요.
 
-![2](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/2.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/2.webp width=750 height=500 alt=2>
 
 ​	
 

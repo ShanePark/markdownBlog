@@ -1,7 +1,5 @@
 # Sourcetree 에서 잘못된 비밀번호로 저장소 접근 안될때 해결방법
 
-​		
-
 ## 원인
 
 소스트리에서는 한번 입력된 비밀번호가 잘못 되어도 절대 다시 입력하라고 하지 않고, 계속해서 비밀번호가 틀렸다는 메시지만 주구 장창 띄웁니다. 심지어 8월 13일 부로 Github에서는 password authentication을 공식적으로 제거하고는 personal access token 만을 사용하도록 정책을 변경 했는데요. 이미 오래전 부터 경고해왔기 때문에 갑작스러운 일은 아닙니다.
@@ -16,7 +14,7 @@
 
 ​	
 
-![image-20210824220841746](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824220841746.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/sourcetree-key.assets/image-20210824220841746.webp width=750 height=600 alt=1>
 
 ```
 Command: git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks ls-remote https://github.com/Shane-Park/programmers.git

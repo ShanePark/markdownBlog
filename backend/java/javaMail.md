@@ -1,25 +1,27 @@
-# JAVA 이용해 이메일 보내기
+# javax.mail 이용해 이메일 보내기
 
-### play ddit에서 웹사이트에 회원가입시 저희는 '이메일'을 회원 아이디로 할 예정입니다.
+play ddit에서 웹사이트에 회원가입시 저희는 '이메일'을 회원 아이디로 할 예정입니다.
+
 > 이메일을 통해 대부분의 확인을 할 예정이기때문에 회원가입시 입력한 이메일이 본인의 것이라는게 확인이 되어야만 합니다.
 
 ​	
 
-### 백엔드 서버를 Servlet으로 구현할 예정이기 때문에, 자바에서 입력한 이메일로 본인의 이메일임을 확인 할 수 있는 코드를 보낼 예정입니다.
+백엔드 서버를 Servlet으로 구현할 예정이기 때문에, 자바에서 입력한 이메일로 본인의 이메일임을 확인 할 수 있는 코드를 보낼 예정입니다.
+
 >해당 코드는 랜덤으로 생성한 난수를 보낼 것이며, 정확히 입력시 본인의 이메일임을 증명할 수 있습니다.
 ​	
 
 
 
+시작에 앞서 본인이 사용하실 이메일의 SMTP 설정을 확인해주세요. 저는 gmail을 기준으로 설명하겠습니다.
 
-### 시작에 앞서 본인이 사용하실 이메일의 SMTP 설정을 확인해주세요. 저는 gmail을 기준으로 설명하겠습니다.
 ​	
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/javaMail.assets/1.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/javaMail.assets/1.webp width=750 height=500 alt=1>
 
 
 
-### ☐ 전체코드를 먼저 한번에 올린 뒤 파트별로 따로 설명해드리겠습니다.
+☐ 전체코드를 먼저 한번에 올린 뒤 파트별로 따로 설명해드리겠습니다.
 
 
 
@@ -96,7 +98,7 @@ public class VerifyEmail {
 
 ​	
 
-### 1. 저는 이용자에 따라 달라지는 변수인 수신자와, 난수로 설정할 값을 코드 제일 위에 선언했습니다.
+1. 저는 이용자에 따라 달라지는 변수인 수신자와, 난수로 설정할 값을 코드 제일 위에 선언했습니다.
 
 ```java
 
@@ -106,7 +108,7 @@ String code = "abc";
 
 
 
-### 2. 발신자의 메일 계정과 비밀번호를 입력해줍니다. 제가 **로 적어뒀지만, 구현하실때는 본인의 비밀번호를 꼭 입력해주세요.
+2. 발신자의 메일 계정과 비밀번호를 입력해줍니다. 제가 **로 적어뒀지만, 구현하실때는 본인의 비밀번호를 꼭 입력해주세요.
 
 ```java
 final String user = "ddit302@gmail.com";
@@ -115,7 +117,7 @@ final String password = "********";
 
 ​	
 
-### 3. Property에 SMTP 서버의 정보를 설정해줍니다.    
+3. Property에 SMTP 서버의 정보를 설정해줍니다.    
 
 >  사용하시는 이메일 계정에서 SMTP 사용에 대한 허용도 꼭 해주셔야 합니다.
 
@@ -130,7 +132,7 @@ prop.put("mail.smtp.ssl.trust", "smtp.gmail.com");
 
 
 
-4. ### SMTP 서버정보와 사용자 정보를 기반으로 Session 클래스의 인스턴스 생성해주기  
+4. SMTP 서버정보와 사용자 정보를 기반으로 Session 클래스의 인스턴스 생성해주기  
 
    > 괄호가 여러개 있으니 신중하게 구조를 봐주세요.  
 
@@ -144,7 +146,7 @@ Session session = Session.getDefaultInstance(prop, new javax.mail.Authenticator(
 
 ​	
 
-5. ### Message 클래스의 객체를 사용하여 수신자와 내용, 제목의 메시지를 작성한 뒤, transport 클래스를 사용하여 작성한 메세지를 전달합니다.
+5. Message 클래스의 객체를 사용하여 수신자와 내용, 제목의 메시지를 작성한 뒤, transport 클래스를 사용하여 작성한 메세지를 전달합니다.
 
 ```java
 MimeMessage message = new MimeMessage(session);

@@ -8,7 +8,7 @@
 
 띄어쓰기를 할 때 자꾸 해당 자리에서 하는 게 아니고 이전 자리에서 하게 되고, 방향키를 입력 할 때에도 마찬가지로 문제가 생겼습니다. 
 
-![image-20211020093734578](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020093734578.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/fctix.assets/image-20211020093734578.webp width=600 height=300 alt=1>
 
 
 

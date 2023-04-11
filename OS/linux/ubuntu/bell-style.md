@@ -1,8 +1,10 @@
-# Ubuntu Terminal에서 백스페이스/방향키 누를때 삐 하는 비프음 안나게 하기
+# [Ubuntu] 터미널에서 삐 하는 비프음 안나게 하기
 
-​	
+> 터미널에서 백스페이스 혹은 방향키 누를때마다 나는 삐 소리 없애기
 
-터미널 에서 뭐 만 입력하려고 하면 자꾸 삐 삐 거리는게 신경이 굉장히 쓰입니다.
+
+
+터미널 에서 뭐만 입력하려고 하면 자꾸 삐 삐 거리는게 신경이 굉장히 쓰입니다..
 
 간단하게 해당 설정을 변경 할 수있습니다.
 
@@ -22,7 +24,7 @@ sudo vi /etc/inputrc
 set bell-style off
 ```
 
-![image-20210918225634365](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/bell-style.assets/image-20210918225634365.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/bell-style.assets/image-20210918225634365.webp" width=750 height=500 alt=first>
 
 ​	
 
@@ -36,7 +38,7 @@ set bell-style off
 
 dconf Editor를 실행 해 줍니다. 없다면 apt-get install dconf-editor 으로 설치 해 주세요.
 
-![image-20210918225947369](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/bell-style.assets/image-20210918225947369.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/bell-style.assets/image-20210918225947369.webp" width=750 height=450 alt=1>
 
 ​	
 

@@ -24,7 +24,7 @@ ArrayList, HashMap 등과 같은 java.util 패키지의 컬렉션에 대한 기�
 
 보통 코딩 테스트 문제 풀이 등을 하다가 순회 중인 list에 변화를 무의식적으로 줬을때 이와 같은 상황에 한번씩 처해보셨을 텐데요,
 
-![image-20210823214235253](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/fail-fast.assets/image-20210823214235253.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/fail-fast.assets/image-20210823214235253.webp width=500 height=500 alt=1>
 
 위의 코드를 실행 하면,
 

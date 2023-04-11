@@ -16,7 +16,7 @@ Karabiner 어플리케이션을 사용해 설정 하는데요, `한영` 키 조�
 
 생각보다 간단하니 얼른 설정 해 보겠습니다.
 
-![image-20211023102817120](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/backAndForwardButton.assets/image-20211023102817120.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/mac/tips/backAndForwardButton.assets/image-20211023102817120.webp" width=300 height=300 alt=main>
 
 일단 메뉴바에서 Karabiner 를 확인 해 보면 Launch EventViewer 라는게 있습니다. 실시간으로 입력되는 이벤트들을 감지 해 주는 건데, 뒤로가기와 앞으로 가기 버튼을 눌렀을 때 어떤 키 입력이 되는지 확인 하기 위해 실행 합니다.
 

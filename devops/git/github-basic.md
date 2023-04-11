@@ -23,7 +23,7 @@
 
 Repositories 메뉴에서 우측 상단의 New 를 눌러서 생성하시면됩니다.
 
-![image](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github1.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-basic.assets/github1.webp width=750 height=500 alt=1>
 
 > 저장소 이름을 쓰는데, 뭐 잘못쓴다고 큰일 나는건 아니니까 편한 대로 작성하시면 됩니다.
 

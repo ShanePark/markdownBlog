@@ -20,7 +20,7 @@ Vue.js, SpringBoot, PostgreSQL, Hibernate 중 익숙하지 않은 기술이 있�
 
 ### 전체적인 패키지 구조는 아래와 같으며 자바 코드는 모두 위의 간단 게시판 만들기에서 작성한 restapi 들을 그대로 가져와서 활용했습니다.
 
-![image-20210817222928597](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817222928597.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vueboard.assets/image-20210817222928597.webp width=500 height=600 alt=1>
 
 ​	
 

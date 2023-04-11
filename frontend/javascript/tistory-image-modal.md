@@ -1,10 +1,8 @@
-# 티스토리 이미지 클릭시 원본 사이즈 모달 구현하기
+# 티스토리 이미지 클릭시 원본 사이즈 모달 구현하기	
 
-​	
+티스토리는 기본적으로 lightbox를 지원합니다.	
 
-### 티스토리는 기본적으로 lightbox를 지원합니다.	
-
-![image-20210826233718764](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826233718764.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826233718764.webp width=400 height=400 alt=1>
 
 > 그런데 이게 지원하는 정도가 아니라 아에 해당 css와 js 파일을 뺄 수 없을 정도로 못 박아 두었습니다. 뭐 사용하기에만 편하면 된다 생각하는데, 문제는 제가 티스토리를 순수 markdown으로 작성하고, 첨부하는 이미지들도 Github에 올리고 링크를 연결하는 방식으로 올리다 보니, Tistory의 기본 lightbox가 작동하지 않았습니다.
 
@@ -12,7 +10,7 @@
 
 ​	
 
-### Modal을 내가 그냥 만들어야 겠다 라고 생각했습니다.
+Modal을 그냥 제가 만들어야 겠다 라고 생각했습니다.
 
 ​		
 
@@ -22,7 +20,7 @@
 
 스킨편집에 들어가서
 
-![image-20210826234322609](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826234322609.webp)	
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/tistory-image-modal.assets/image-20210826234322609.webp width=300 height=300 alt=1>	
 
 ​	
 

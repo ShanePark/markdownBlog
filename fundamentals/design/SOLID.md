@@ -1,6 +1,6 @@
 # 객체지향설계 5대원칙 SOLID
 
-![](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/design/SOLID.assets/img.webp)
+<img src=https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/design/SOLID.assets/img.webp width=750 height=200 alt=1>
 
 > 학원 수업에서 선생님이 항상 강조하셨던 SOLID 원칙이 잘 이해가 되지 않아서 개인적으로 공부하기 위해 여러가지 검색을 해보고 많은 글들을 읽어보았습니다. 그러다 우연히 Youtube에서 41분짜리 영상을 접하게 되었는데, 앞부분만 잠깐 보려고 했던게 결국 영상을 마지막까지 보게 되었고 도움이 제법 많이 되었습니다.
 

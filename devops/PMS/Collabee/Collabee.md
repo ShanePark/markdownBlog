@@ -5,40 +5,40 @@
 
 
 ### 1. 협업공간
-![img](1.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/1.png)
 ### 2. 독립공간
-![img](2.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/2.png)
 ### 3. 문서공유
-![img](3.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/3.png)
 ### 4. 프로젝트 관리
-![img](4.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/4.png)
 ### 5. 전체 디자인
 > 메일함 같은 구조를 가지고 있음
 
-![img](5.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/5.png)
 ### 6. 가격
-![img](price.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/price.png)
 
 
 # Collabee 메신저
-![img](m1.png)
-![img](m2.png)
-![img](m3.png)
-![img](m4.png)
-![img](m5.png)
-![img](m6.png)
-![img](m7.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m1.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m2.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m3.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m4.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m5.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m6.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m7.png)
 
 # Collabee 사용예시
 ### 메일 인증
-![img](p1.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p1.png)
 ### 첫 페이지
-![img](p2.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p2.png)
 ### 일정 혹은 할일 추가
-![img](p3.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p3.png)
 ### 칸반 문서 생성
-![img](p4.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p4.png)
 ### 캘린더
-![img](p5.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p5.png)
 ### 키보드 단축키
-![img](p6.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p6.png)

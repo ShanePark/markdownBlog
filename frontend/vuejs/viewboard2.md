@@ -1,14 +1,12 @@
 # Vue.js 사용 하기 4 ) PostgreSQL로 간단 게시판 작성 해보기 - 조회 및 수정 기능 추가
 
-​	
-
 > [Vue.js 사용 하기 3) postgreSQL 게시판에서 Modal 이용하기](https://shanepark.tistory.com/203?category=1186787) 에 이어지는 글 입니다.
 
 ​	
 
 ### 마지막으로 Vue를 활용해 게시판을 조금 더 "사용할 수 있음" 에 가깝게 수정 해 보았습니다.
 
-![image-20210828223218418](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223218418.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223218418.webp width=750 height=350 alt=1>
 
 ​		
 
@@ -16,7 +14,7 @@
 
 > 이에 따라 게시판 목록 에서는 삭제 버튼이 사라졌습니다. 
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223545594.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/viewboard2.assets/image-20210828223545594.webp width=750 height=400 alt=2>
 
 각 글의 제목을 누르면 개별 글을 조회 할 수 있도록 하였습니다.
 

@@ -2,8 +2,6 @@
 
 https://programmers.co.kr/learn/courses/30/lessons/12913
 
-![image-20210731191647775](https://github.com/Shane-Park/markdownBlog/raw/master/fundamentals/algorithm/dp.assets/image-20210731191647775.webp)
-
 > 자세한 문제는 programmers를 통해 확인 해 주세요.
 
 ## 문제

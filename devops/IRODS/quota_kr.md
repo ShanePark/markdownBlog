@@ -2,19 +2,25 @@
 
 > reference https://groups.google.com/g/irod-chat/c/2Fu71_sWv7Q/m/pL6D9yZVUW0J
 
-​	
+## Intro
 
-## 1. core.re 설정변경
+블로그 정리를 하고 있습니다. 모든 이미지 파일들을 webp 형식으로 바꾸다가, 작성해두었었지만 미처 블로그에 올리지 않았던 본 글을 발견했습니다.
 
-​	
+오래전에 iRods의 Quota 설정을 하며 남겨두었던 글 입니다.
 
-### docker를 통해 irods에 접속합니다.
+2021년 9월에 작성해두었던 문서로, 이미 19개월이나 지났지만, iRods의 경우 참고할 문서가 거의 없어 비록 늦었지만 남겨두는 의미로 올립니다.
 
-![image-20210915174759987](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915174759987.webp)
+## 본문
+
+1. core.re 설정변경
+
+docker를 통해 irods에 접속합니다.
+
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915174759987.webp width=750 height=500 alt=1>
 
 ​		
 
-### core.re 파일을 찾습니다.
+core.re 파일을 찾습니다.
 
 ```bash
 find / -name core.re
@@ -24,7 +30,7 @@ find / -name core.re
 
 ​	
 
-### core.re 파일을 수정합니다.
+core.re 파일을 수정합니다.
 
 ```bash
 vi /etc/irods/core.re
@@ -34,7 +40,7 @@ vi /etc/irods/core.re
 
 ​	
 
-### vim 에서 acRescQuotaPolicy 를 검색합니다.
+vim 에서 acRescQuotaPolicy 를 검색합니다.
 
 ```
 :/acRescQuotaPolicy
@@ -44,17 +50,17 @@ vi /etc/irods/core.re
 
 ​	
 
-### 해당 설정을 on 으로 변경합니다.
+해당 설정을 on 으로 변경합니다.
 
 ![image-20210915175353639](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915175353639.webp)
 
 ​	
 
-## 2. 변경사항 확인
+2. 변경사항 확인
 
 
 
-### iRODS 에 설정된 Quota의 목록들을 확인해봅니다.
+iRODS 에 설정된 Quota의 목록들을 확인해봅니다.
 
 ```bash
 iadmin lq
@@ -92,7 +98,7 @@ iadmin cu
 
 
 
-### Quota 초과시 Jaron이 던지는 에러 메시지는 아래와 같습니다.
+Quota 초과시 Jaron이 던지는 에러 메시지는 아래와 같습니다.
 
 ![image-20210915181027881](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/IRODS/quota_kr.assets/image-20210915181027881.webp)
 

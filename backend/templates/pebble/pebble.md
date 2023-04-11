@@ -1,8 +1,8 @@
-# Spring 에서 페블 템플릿 Pebble template 사용하기 1 ) 기본 사용	
+# Spring 에서 페블 템플릿 Pebble template 사용하기 1) 기본사용
 
 ## Pebble Template이란 ?
 
-![image-20210812224842647](https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812224842647.webp)
+<img src=https://github.com/Shane-Park/markdownBlog/raw/master/backend/templates/pebble/pebble.assets/image-20210812224842647.webp width=750 height=400 alt=1>
 
 > Pebble은 PHP의 유명 템플릿 엔진인 Twig 에서 영감을 받았으며 Python Jinja의 Template Engine 문법과 유사한 Java 템플릿 엔진 입니다. template을 상속 하는 기능과 읽기 쉬운 문법이 특징인 서버사이드 템플릿 엔진 입니다.
 
@@ -171,5 +171,4 @@ server.port = 8081
 다음번에는 Spring Boot에 PebbleViewResolver를 선언하고 PebbleEngine이나 Loader도 커스터마이징 해 보도록 하겠습니다.
 
 다음글에서는 Spring Boot 프로젝트에서 PebbleViewResolver를 활용해 보고, 문법도 알아보겠습니다.
-
 

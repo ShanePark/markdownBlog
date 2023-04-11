@@ -10,7 +10,7 @@ rerefence
 
 GNONE은 Ubuntu 20.04의 기본 데스크탑 환경 입니다. 처음에 여러분이 Ubuntu 를 띄웠을때는 스크린의 왼쪽에 Dock이 떠 있습니다. Windows 나 Mac 사용자들에게는 익숙하지 않은 화면 인데요. 지금부터 Dock을 커스터마이징 해 보도록 하겠습니다.
 
-![1](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dock.assets/1.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dock.assets/1.webp" width=750 height=500 alt=1>
 
 ​	
 

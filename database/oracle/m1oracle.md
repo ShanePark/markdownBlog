@@ -16,7 +16,7 @@
 
 기존의 글. ..
 
-![image-20210821132153878](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/m1oracle.assets/image-20210821132153878.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/database/oracle/m1oracle.assets/image-20210821132153878.webp width=750 height=500 alt=1>
 
 ​	
 

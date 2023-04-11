@@ -14,7 +14,7 @@ vi
 
 ​	
 
-![image-20210903132847205](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903132847205.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903132847205.webp" width=750 height=400 alt=first>
 
 다만, windows에 설치한 vim Editor는 , vi 를 입력하면 실행이 되지 않습니다.
 
@@ -24,7 +24,7 @@ vi
 vim
 ```
 
-![image-20210903132927441](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903132927441.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/windows/bashrc.assets/image-20210903132927441.webp" width=750 height=400 alt=second>
 
 정확히 vim 이라고 입력 해야만 vim 데이터가 실행이 되는데요. 아무래도 mac이나 Linux 환경에서 vi 를 입력해 에디터로 넘어갔던 대부분의 분들이 저와 같이 불편함을 느끼셨을 거라고 생각합니다.
 

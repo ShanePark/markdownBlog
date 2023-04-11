@@ -12,7 +12,7 @@ Amazon Web Service 프리티어 서버를 열때 public으로 연다고 연 것 
 
 #### 1 AWS 로그인을 한 뒤, AWS Management Console 창으로 들어가줍니다.
 
-![](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/1.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/aws/aws_security.assets/1.webp" width=750 height=470 alt=first>
 
 ​	
 

@@ -16,7 +16,7 @@ reference
 
 https://linux-hardware.org/?id=usb:27c6-5395&hwid=401e4e7bdfc4
 
-![image-20210918183843289](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/image-20210918183843289.webp)
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/image-20210918183843289.webp" width=750 height=600 alt=1>
 
 ​	
 
@@ -113,12 +113,6 @@ Ringerprint Login에 Disabled > 된 것을 클릭 합니다.
 
 ​	
 
-손가락을 찍어 보도록 하겠습니다.
-
-​	
-
-![IMG_3241](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/dell-finger.assets/IMG_3241.webp)
-
-​	
+이제 손가락을 찍어 보도록 하겠습니다.
 
 비밀번호를 입력 하지 않았지만 지문인식만으로 로그인이 됩니다 ! 

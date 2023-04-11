@@ -22,7 +22,7 @@ Heap은 **최소값 및 최대값을 최대한 빠르게 찾아내기** 위해 �
 
 **그림으로 예를 들어보겠습니다.**
 
-[<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/Max-Heap.webp" alt="Max-Heap" style="zoom:200%;" />](https://en.wikipedia.org/wiki/File:Max-Heap-new.svg)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/heap.assets/Max-Heap.webp width=500 height=500 alt=1>
 
 > https://en.wikipedia.org/wiki/Heap_(data_structure)
 

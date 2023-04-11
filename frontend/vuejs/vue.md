@@ -1,10 +1,6 @@
 # Vue.js 사용 하기 1 ) 기본 문법
 
-​	
-
-![image-20210816194319145](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816194319145.webp)
-
-​	
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816194319145.webp width=750 height=500 alt=1>
 
 ## Vue.js란?
 
@@ -18,7 +14,7 @@
 
 사실 Vue.js는 자바스크립트 프레임워크기 때문에 Node.js 를 쓰건 SpringBoot를 사용하건, 아니면 아에 그냥 .html 파일만 만들어서 해도 무방 할 듯 합니다.
 
-![image-20210816191954366](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816191954366.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/vue.assets/image-20210816191954366.webp width=500 height=600 alt=2>
 
 ​	
 

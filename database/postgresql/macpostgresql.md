@@ -1,5 +1,3 @@
-
-
 # MacOS PostgreSQL 설치 하고 테이블 생성, 조회하기
 
 ## Intro

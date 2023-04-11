@@ -1,6 +1,6 @@
-# 제발 한국인이라면 자바스크립트 Object를 Map 처럼 사용하지 맙시다.	
+# 제발 한국인이라면 자바스크립트 Object를 Map 처럼 사용하지 맙시다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/Map.assets/aa.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/javascript/Map.assets/aa.webp width=750 height=600 alt=1>
 
 >  Photo by [Steve Johnson](https://unsplash.com/@steve_j?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 
