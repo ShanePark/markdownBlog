@@ -5,40 +5,41 @@
 
 
 ### 1. 협업공간
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/1.png)
+<img src=https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/1.webp width=750 height=403 alt=1>
+
 ### 2. 독립공간
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/2.png)
+<img src=https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/2.webp width=750 height=430 alt=2>
 ### 3. 문서공유
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/3.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/3.webp)
 ### 4. 프로젝트 관리
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/4.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/4.webp)
 ### 5. 전체 디자인
 > 메일함 같은 구조를 가지고 있음
 
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/5.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/5.webp)
 ### 6. 가격
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/price.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/price.webp)
 
 
 # Collabee 메신저
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m1.png)
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m2.png)
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m3.png)
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m4.png)
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m5.png)
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m6.png)
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/m7.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/m1.webp)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/m2.webp)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/m3.webp)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/m4.webp)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/m5.webp)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/m6.webp)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/m7.webp)
 
 # Collabee 사용예시
 ### 메일 인증
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p1.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/p1.webp)
 ### 첫 페이지
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p2.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/p2.webp)
 ### 일정 혹은 할일 추가
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p3.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/p3.webp)
 ### 칸반 문서 생성
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p4.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/p4.webp)
 ### 캘린더
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p5.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/p5.webp)
 ### 키보드 단축키
-![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/p6.png)
+![img](https://raw.githubusercontent.com/ShanePark/markdownblog/master/devops/PMS/Collabee/Collabee.assets/p6.webp)
