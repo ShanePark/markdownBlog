@@ -18,7 +18,7 @@ API 호출을 하던 중에 JSON 형식으로 받아 온 시간 데이터를 JAV
 
 ​	
 
-![image-20211022142254060](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142254060.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/java/stringToLocalDateTime.assets/image-20211022142254060.webp width=750 height=230 alt=1>
 
 일단 code assist 를 받아보니 ofPattern 메서드로 패턴 형식만 받거나 혹은 Locale 정보를 같이 받더라구요. Locale 까지 넣진 않을거라 String 만 넣어서 사용 해 보겠습니다.
 

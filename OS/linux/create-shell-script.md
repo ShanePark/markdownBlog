@@ -4,7 +4,7 @@
 
 ## 개요
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919195440966.webp" width=750 height=600 alt=main>
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/create-shell-script.assets/image-20210919195440966.webp" width=750 height=680 alt=main>
 
 저는 MacBook 을 사용 하면서 text replace 기능을 정말 유용하게 사용 했습니다.
 

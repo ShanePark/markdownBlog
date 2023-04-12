@@ -12,7 +12,7 @@
 
 우측 상단 버튼을 눌러 블로그 관리에 들어 갑니다.	
 
-![image-20210910223356462](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-blog.assets/image-20210910223356462.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/jsLibrary/readingtime/reading-time-blog.assets/image-20210910223356462.webp width=290 height=230 alt=2>
 
 ​	
 

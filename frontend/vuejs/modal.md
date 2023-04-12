@@ -8,7 +8,7 @@
 
 이번글에서는 Vue.js 의 기본 Component 중 하나인 Modal 기능을 이용 해 보겠습니다.
 
-<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/modal.assets/image-20210818222123919.webp width=750 height=400 alt=1>
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/frontend/vuejs/modal.assets/image-20210818222123919.webp width=750 height=340 alt=1>
 
 ​	
 

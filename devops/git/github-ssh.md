@@ -6,7 +6,7 @@
 
 저는 MacOS에서 Github repository에 접근 할 때 Github Desktop을 사용 하고 있습니다.
 
-<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924233758006.webp" width=750 height=600 alt=1>
+<img src="https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210924233758006.webp" width=750 height=500 alt=1>
 
 ​	
 

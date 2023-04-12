@@ -14,7 +14,7 @@ Ubuntu를 사용하다 보면 ssh 접속을 이용해 굉장히 편하게 사용
 
 Sharing 을 검색 해서 실행 합니다.
 
-<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/1.webp width=750 height=500 alt=1>
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/vnc.assets/1.webp width=750 height=470 alt=1>
 
 ​	
 

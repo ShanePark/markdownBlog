@@ -12,7 +12,7 @@ Ubuntu에서 tar.gz 파일을 다운 받아서 설치하는건 STS를 설치 할
 
 https://spring.io/tools
 
-<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/sts.assets/image-20210919094725557.webp width=750 height=600 alt=1>
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/OS/linux/ubuntu/sts.assets/image-20210919094725557.webp width=750 height=630 alt=1>
 
 ​			
 
