@@ -24,7 +24,7 @@ application.yml (혹은 application.properties) 파일은 기본 설정 파일�
 
 1. 해당 프로젝트를 우클릭 하고 - properties를 들어갑니다.
 
-![img](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img.webp)
+<img src=https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/backend/spring/profile.assets/img.webp width=315 height=264 alt=1>
 
 
 
