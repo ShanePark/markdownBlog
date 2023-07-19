@@ -259,9 +259,9 @@ https://docs.gitlab.com/ee/ssh/ 공식 사이트에서 제안하는 테스트 �
 ​		
 
 ```
- shane  ~/.ssh  ssh -T git@gitlab.argonet.co.kr
+ shane  ~/.ssh  ssh -T git@gitlab.company.co.kr
 Load key "/Users/shane/.ssh/id_rsa.pub": invalid format
-git@gitlab.argonet.co.kr: Permission denied (publickey).
+git@gitlab.company.co.kr: Permission denied (publickey).
 ```
 
 저는 Load key invalid format 에러가 났었는데요. openssh 버전에서 뭔가 문제가 있다는 것 같더라고요 https://bbs.archlinux.org/viewtopic.php?pid=1914847 
