@@ -42,7 +42,9 @@ Github Desktop의 완성도는 꽤나 괜찮은 편입니다. TypeScript로 작�
 
 ​	
 
-## Git SSH 접속
+## Gitub
+
+### SSH 접속
 
 그래서 이제  SSH로 접속을 하는게 필요합니다. 단순히 CLI 환경에서 Git 을 사용 할 수 있을 뿐 만 아니라, 번거로운 인증 절차를 아주 효과적이고 높은 수준의 보안으로 간소화 시킬 수 있으며 SSH로 접속이 된다면 Git Client를 가리지 않는다는 정말 큰 장점이 있습니다.
 
@@ -118,7 +120,7 @@ SSH 키를 등록 하기 전에는 원래 이렇게 떴지만
 
 ​	
 
-## SSH로 Clone 하기
+### SSH로 Clone 하기
 
 그러면 SSH를 등록 했는데 이걸로 무엇을 할 수 있을까 싶겠는데요 함께 해 보겠습니다.
 
@@ -168,7 +170,9 @@ fetch 도 인증 없이 잘 이루어 집니다.
 
 ​	
 
-## Gitlab CE SSH 접속하기
+## 내부 Gitlab
+
+### SSH 접속하기
 
 > Git SSH port가 다르다면?
 
@@ -230,7 +234,9 @@ vi ~/.ssh/config
 
 
 
-이제 새로운 등록을 해 보겠습니다. Ubuntu 에서는  IdentityFile에 공개키를 했었는데 Mac에서는 개인 키를 걸어둬야 접속이 되더라고요. 이렇게 입력 하고 각자 사용하시는 company 주소 입력해서 저장 합니다.
+이제 새로운 등록을 해 보겠습니다. IdentityFile에는 공개키가 아닌 개인 키를 걸어둬야 접속이 되더라고요. 
+
+이렇게 입력 하고 각자 사용하시는 company 주소 입력해서 저장 합니다.
 
 ```bash
 # gitlab company
@@ -239,10 +245,8 @@ Host gitlab.company.co.kr
   User shane
   Port 31922
   PreferredAuthentications publickey
-  IdentityFile ~/.ssh/id_rsa.pub
+  IdentityFile ~/.ssh/id_rsa
 ```
-
-​	
 
 이제 테스트를 해보겠습니다. Github 방식으로 해보니 안되어서 Gitlab 사이트에 들어가 보니 조금 방식이 다르더라구요. 
 
@@ -254,9 +258,7 @@ https://docs.gitlab.com/ee/ssh/ 공식 사이트에서 제안하는 테스트 �
  ssh -T git@gitlab.company.co.kr
 ```
 
-접속 테스트를 해봅니다.
-
-​		
+접속 테스트를 해봅니다.		
 
 ```
  shane  ~/.ssh  ssh -T git@gitlab.company.co.kr
@@ -264,21 +266,19 @@ Load key "/Users/shane/.ssh/id_rsa.pub": invalid format
 git@gitlab.company.co.kr: Permission denied (publickey).
 ```
 
-저는 Load key invalid format 에러가 났었는데요. openssh 버전에서 뭔가 문제가 있다는 것 같더라고요 https://bbs.archlinux.org/viewtopic.php?pid=1914847 
+이런 에러가 나는 분들은 실수로 공개키를 등록한 것이기 때문에, IdentityFile 부분의 마지막 .pub 을 지워 주세요. 
 
-​	
-
-이런 에러가 나는 분들만, IdentityFile 부분의 마지막 .pub 을 지워 주세요. 저는 Ubuntu 에서는 id_rsa.pub 까지 썼는데 Mac 에서 이상하게 이러더라고요. 보통 chmod로 id_rsa를 400 으로 바꾸어서 해결해도 된다고 하던데 저는 해결되지 않았습니다.
+ `Permissions 0644 for '/home/~/.ssh/id_rsa.pub' are too open.` 이라며 함정을 파지만, 사실은 개인키 경로가 들어가야 할 자리에 공개키가 들어갔기 때문입니다.
 
 ```bash
 IdentityFile ~/.ssh/id_rsa
 ```
 
-​		
-
-무튼 이렇게 Welcome to Gitlab 이 뜨면 성공입니다.
+이렇게 Welcome to Gitlab 이 뜨면 성공입니다.
 
 ![image-20210925015623229](https://raw.githubusercontent.com/Shane-Park/markdownBlog/master/devops/git/github-ssh.assets/image-20210925015623229.webp)
+
+### Clone 
 
 GItlab도 Github 에서 한 것 처럼 Repository 찾아가서, Clone 버튼 누르고 Clone with SSH 에 나온 주소를 복사해서 사용 하시면 됩니다. 그렇게 clone 하고 나서 fetch 까지 잘 이루어 지는 모습입니다.
 
@@ -286,9 +286,15 @@ GItlab도 Github 에서 한 것 처럼 Repository 찾아가서, Clone 버튼 누
 
 ​	
 
+## 마치며
+
 이렇게 Git SSH 등록을 해 보았습니다. 로그인 토큰을 만들어서 접속 하는 방법도 있지만 번거롭기도 하고 로그인 할 때도 매번 귀찮은데.. git credential helper store 를 쓰면 되기는 하지만.. 
 
-SSH가 제일 편하고 한번 등록 해 두면 정말 잘 이용할 수 있고 좋은 듯 합니다. 특히 Source tree는 비밀번호 잘못 입력했다가는 잘못된 비밀번호를 저장해버리고 다시 묻지 않는 정말 귀찮은 상황이 벌어지기 떄문에 [Sourcetree 에서 잘못된 비밀번호로 저장소 접근 안될때 해결방법](https://shanepark.tistory.com/214) 더욱 SSH를 쓰는 편이 좋아 보입니다.
+SSH가 제일 편하고 한번 등록 해 두면 정말 잘 이용할 수 있고 좋은 듯 합니다. 특히 Source tree는 비밀번호 잘못 입력했다가는 잘못된 비밀번호를 저장해버리고 다시 묻지 않는 정말 귀찮은 상황이 벌어지기 떄문에
+
+> [Sourcetree 에서 잘못된 비밀번호로 저장소 접근 안될때 해결방법](https://shanepark.tistory.com/214) 
+
+더더욱 SSH를 쓰는 편이 좋아 보입니다.
 
 ​	
 
