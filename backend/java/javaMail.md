@@ -41,7 +41,7 @@ import javax.mail.internet.MimeMessage;
 public class VerifyEmail {
 	
 	public static void main(String[] args) {
-		String recipient = "psh40963@naver.com";
+		String recipient = "email@naver.com";
 		String code = "abc";
 		
 		// 1. 발신자의 메일 계정과 비밀번호 설정
@@ -102,7 +102,7 @@ public class VerifyEmail {
 
 ```java
 
-String recipient = "psh40963@naver.com";
+String recipient = "email@naver.com";
 String code = "abc";
 ```
 
